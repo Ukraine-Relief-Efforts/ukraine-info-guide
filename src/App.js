@@ -1,29 +1,23 @@
-import { useTranslation } from 'react-i18next';
-import logo from './logo.svg';
 import './App.css';
-import './components/LanguagePicker';
-import LanguagePicker from './components/LanguagePicker';
+import { useTranslation } from 'react-i18next';
+import { PolandBorderInfo } from './Pages/PolandBorder';
+
+//COMPONENTS
+import Navbar from './Components/Navbar/Navbar';
+import LanguagePicker from './Components/LanguagePicker/LanguagePicker';
+
+//PAGES
+import Home from './Components/Home/Home';
 
 function App() {
   const { t } = useTranslation();
 
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          {t('Ukraine')}
-        </a>
-        <LanguagePicker />
-      </header>
+      <LanguagePicker />
+      <Navbar />
+      <PolandBorderInfo />
+      <Home />
     </div>
   );
 }
