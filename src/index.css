@@ -37,12 +37,16 @@ code {
   @apply flex mb-1 bg-gray-300 p-2 rounded-lg text-center;
 }
 
+.border-card-reception {
+  @apply bg-gray-500 rounded-lg px-2 pb-4 mt-5;
+}
+
 .border-card-qr {
-  @apply mt-5;
+  @apply mt-5 flex flex-col items-center justify-center;
 }
 
 .border-card-google {
-  @apply py-2 mt-5 px-4 rounded-lg bg-gray-300;
+  @apply py-2 mt-5 px-4 rounded-lg bg-gray-300 flex flex-col items-center justify-center;
 }
 
 .border-card-address {
