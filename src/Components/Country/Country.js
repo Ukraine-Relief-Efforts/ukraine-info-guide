@@ -17,7 +17,9 @@ function BorderCard() {
           );
         })}
       </ul>
-      <ReceptionPoint />
+      {data.reception.map((item) => {
+        return <ReceptionPoint data={item} />;
+      })}
     </section>
   );
 }
