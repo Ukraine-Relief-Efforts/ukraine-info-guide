@@ -1,4 +1,11 @@
 # Ukraine Info Guide
 
-TODO:
-- Potentially scrape information from https://www.gov.pl/web/udsc/ukraina-en and auto-update website
+## Contributing
+
+Use Issues for discussion and tracking additions.
+
+Make PR, merge. Contact @adunna for collaborator access.
+
+## Web
+
+Static page generation using Jekyll, source for generation is in `/docs`.
