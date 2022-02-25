@@ -1,5 +1,4 @@
 function ReceptionPoint(props) {
-  console.log(props);
   return (
     <section className="border-card-reception">
       <div className="border-card-address">
