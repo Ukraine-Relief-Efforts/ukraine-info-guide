@@ -1,18 +1,20 @@
-import React from 'react';
-import { useTranslation }  from 'react-i18next';
+import React from "react";
+import { useTranslation } from "react-i18next";
 
 const LanguagePicker = () => {
-	const { i18n } = useTranslation();
+  const { i18n } = useTranslation();
 
-	const onChange = ev => i18n.changeLanguage(ev.target.value || 'en');
+  const onChange = (ev) => i18n.changeLanguage(ev.target.value || "en");
 
-	return (
-		<select onChange={onChange} value={i18n.language}>
-			<option value="en">English</option>
-			<option value="ua">Українська</option>
-			<option value="ru">Русский</option>
-		</select>
-	);
-}
+  return (
+    <section className="flex flex-col items-center justify-center p-2">
+      <select onChange={onChange} value={i18n.language}>
+        <option value="en">English</option>
+        <option value="ua">Українська</option>
+        <option value="ru">Русский</option>
+      </select>
+    </section>
+  );
+};
 
 export default LanguagePicker;
