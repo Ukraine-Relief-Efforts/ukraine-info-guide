@@ -30,7 +30,7 @@ code {
 }
 
 .border-card {
-  @apply p-5 mx-5 flex flex-col items-center justify-center bg-gray-400 bg-opacity-75 rounded-xl mb-10;
+  @apply p-5 mx-5 flex flex-col items-center justify-center bg-gray-400 bg-opacity-75 rounded-xl mb-10 2xl:w-4/6;
 }
 
 .border-card-point {
@@ -38,7 +38,7 @@ code {
 }
 
 .border-card-reception {
-  @apply bg-gray-500 rounded-lg px-2 pb-4 mt-5;
+  @apply bg-gray-500 rounded-lg px-2 pb-4 mt-5 2xl:w-2/6;
 }
 
 .border-card-qr {
