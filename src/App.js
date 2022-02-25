@@ -4,6 +4,7 @@ import "./App.css";
 import HomePage from "./pages/home";
 import AboutPage from "./pages/about";
 import ServicesPage from "./pages/services";
+import BorderInfomation from "./pages/border-information";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <hr />
       <Routes>
         <Route path="/" element={<HomePage />} />
+        <Route path="border-information" element={<BorderInfomation />} />
         <Route path="about" element={<AboutPage />} />
         <Route path="services" element={<ServicesPage />} />
       </Routes>
