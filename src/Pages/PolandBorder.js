@@ -1,7 +1,7 @@
 const PolandBorderInfo = () => (
   <div className="h-screen justify-center items-center flex">
     <div className=" items-center">
-      <p className="text-3xl text-red-500 text-center">
+      <p className="text-3xl text-bold text-red-500 text-center">
         Information how to cross Poland's border
       </p>
       <p className="text-2xl text-center">
