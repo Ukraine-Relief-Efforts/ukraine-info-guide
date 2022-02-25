@@ -9,9 +9,22 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  @apply bg-gray-500;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.navbar {
+  @apply bg-white flex items-center justify-center flex-wrap shadow-xl;
+}
+
+.navbar-item {
+  @apply flex items-center justify-center text-xl font-semibold my-3 mr-5 py-3 px-5 rounded-lg hover:bg-gray-200 hover:text-black transition-all ease-in-out duration-200 cursor-pointer text-gray-700 hover:scale-105;
+}
+
+.navbar-item-active {
+  @apply bg-gray-200 text-gray-700;
 }
