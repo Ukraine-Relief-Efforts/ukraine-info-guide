@@ -1,6 +1,8 @@
 import { useTranslation } from 'react-i18next';
 import logo from './logo.svg';
 import './App.css';
+import './components/LanguagePicker';
+import LanguagePicker from './components/LanguagePicker';
 
 function App() {
   const { t } = useTranslation();
@@ -20,6 +22,7 @@ function App() {
         >
           {t('Ukraine')}
         </a>
+        <LanguagePicker />
       </header>
     </div>
   );
