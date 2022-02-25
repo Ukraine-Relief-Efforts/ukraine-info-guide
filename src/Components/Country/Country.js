@@ -2,7 +2,7 @@ import ReceptionPoint from "./ReceptionPoint";
 
 import data from "../../dummydata/poland_data.json";
 
-function BorderCard() {
+function Country() {
   return (
     <section className="border-card">
       <p className="text-2xl font-semibold">Poland</p>
@@ -17,10 +17,12 @@ function BorderCard() {
           );
         })}
       </ul>
-      {data.reception.map((item) => {
-        return <ReceptionPoint data={item} />;
-      })}
+      <div className="flex flex-wrap">
+        {data.reception.map((item) => {
+          return <ReceptionPoint data={item} />;
+        })}
+      </div>
     </section>
   );
 }
-export default BorderCard;
+export default Country;
