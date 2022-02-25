@@ -6,7 +6,7 @@ function Navbar() {
           <a className="">Leave Ukraine</a>
         </div>
         <div className="navbar-item">
-          <a className="">Border information</a>
+          <a className="">Border info</a>
         </div>
       </nav>
     </section>
