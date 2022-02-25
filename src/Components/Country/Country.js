@@ -17,7 +17,7 @@ function Country() {
           );
         })}
       </ul>
-      <div className="flex flex-wrap">
+      <div className="flex flex-wrap w-full items-center justify-center">
         {data.reception.map((item) => {
           return <ReceptionPoint data={item} />;
         })}
