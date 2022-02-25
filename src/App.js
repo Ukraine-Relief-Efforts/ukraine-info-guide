@@ -1,21 +1,22 @@
-import { Routes, Route, Link } from "react-router-dom";
-
+import { Routes, Route } from "react-router-dom";
 import "./App.css";
-import HomePage from "./pages/home";
+
+//COMPONENTS
+import Navbar from "./Components/Navbar/Navbar";
+
+//PAGES
+import Home from "./pages/home";
 import AboutPage from "./pages/about";
 import ServicesPage from "./pages/services";
-import BorderInfomation from "./pages/border-information";
+import BorderInformationpage from "./pages/border-information";
 
 function App() {
   return (
-    <div>
-      <nav>
-        <Link to="/">Home</Link> | <Link to="/about">About</Link> | <Link to="/services">Services</Link>
-      </nav>
-      <hr />
+    <div className="App">
+      <Navbar />
       <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="border-information" element={<BorderInfomation />} />
+        <Route path="/" element={<Home />} />
+        <Route path="border-information" element={<BorderInformationpage />} />
         <Route path="about" element={<AboutPage />} />
         <Route path="services" element={<ServicesPage />} />
       </Routes>
