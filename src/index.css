@@ -34,7 +34,7 @@ code {
 }
 
 .border-card-point {
-  @apply flex mb-1 bg-gray-300 p-2 rounded-lg text-center;
+  @apply flex mb-1 bg-gray-300 p-2 rounded-lg text-left;
 }
 
 .border-card-reception {

@@ -12,6 +12,9 @@ function Navbar() {
         <div className="navbar-item">
           <a className="">{t("Border info")}</a>
         </div>
+        <div className="navbar-item">
+          <a className="">{t("About")}</a>
+        </div>
       </nav>
     </section>
   );
