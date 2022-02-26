@@ -9,7 +9,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  @apply bg-gray-500;
+  @apply bg-gray-100;
 }
 
 code {
@@ -18,7 +18,7 @@ code {
 }
 
 .navbar {
-  @apply bg-gray-200 flex items-center justify-center flex-wrap shadow-xl;
+  @apply bg-gray-200 flex items-center justify-center flex-wrap;
 }
 
 .navbar-item {
@@ -29,12 +29,20 @@ code {
   @apply bg-gray-300 text-gray-700;
 }
 
+.border-information {
+  @apply hover:underline;
+}
+
+.border-information-info-list {
+  margin-left: 15px;
+}
+
 .border-card {
-  @apply p-5 flex flex-col items-center justify-center bg-gray-400 bg-opacity-75 rounded-xl mb-10 2xl:w-5/6;
+  @apply p-5 flex flex-col justify-center bg-gray-300 bg-opacity-75 rounded-xl mb-10 2xl:w-5/6;
 }
 
 .border-card-point {
-  @apply flex mb-1 bg-gray-300 p-2 rounded-lg text-left;
+  @apply flex mb-1 bg-gray-300 p-3 text-left;
 }
 
 .border-card-reception {
