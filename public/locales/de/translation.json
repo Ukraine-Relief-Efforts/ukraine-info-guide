@@ -1,11 +1,22 @@
 {
+  "Map": "",
   "Leave Ukraine": "Ukraine verlassen",
   "Border info": "Informationen zu Grenzübergängen",
   "About": "Über",
   "Services": "Dienstleistungen",
+  "Poland": "",
+  "to Poland": "",
+  "Moldova": "",
+  "to Moldova": "",
+  "Hungary": "",
+  "to Hungary": "",
+  "Slovakia": "",
+  "to Slovakia": "",
   "About us": "Über uns",
   "Join us <1>on Github</1>": "Auf <1>Github</1> beitragen",
-  "How to cross Poland's border": "Die Polnische grenze überquert",
+  "How to cross the border": "",
+  "Choose a country": "",
+  "Information for Ukrainian citizens travelling {{to_country}}": "",
   "Information about border crossings": "Informationen über Grenzübertritte",
   "Services we provide": "Dienstleistungen wir anbieten"
 }
