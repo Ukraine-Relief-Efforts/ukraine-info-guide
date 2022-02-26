@@ -7,8 +7,6 @@ import "./i18n/i18n";
 import { store } from "./globalState/store";
 import { Provider } from "react-redux";
 
-console.log(store);
-
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>

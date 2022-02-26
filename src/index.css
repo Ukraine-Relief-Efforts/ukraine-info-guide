@@ -50,7 +50,7 @@ code {
 }
 
 .border-card-reception {
-  @apply bg-gray-500 rounded-lg px-2 pb-4 mt-5 2xl:w-2/6 2xl:mr-5 w-full;
+  @apply bg-gray-500 rounded-lg px-2 pb-4 mt-5 2xl:w-2/6 2xl:mr-5 w-full min-h-[350px] flex flex-col justify-between;
 }
 
 .border-card-qr {

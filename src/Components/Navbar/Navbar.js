@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import menuSvg from "../../assets/menu.svg";
@@ -9,12 +8,7 @@ import { setCurrentPage, openMenu } from "../../globalState/slices/currentPage";
 function Navbar() {
   const dispatch = useDispatch();
   const page = useSelector((state) => state.currentPage);
-  console.log(page);
   const { t } = useTranslation();
-  const [isOpen, setIsOpen] = useState(false);
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
   return (
     <section>
       <div className="bg-gray-200 py-5">
