@@ -9,6 +9,7 @@ const languages = [
   { value: "it", label: "Italiana", },
   { value: "de", label: "Deutsch", },
   { value: "es", label: "Español", },
+  { value: "pl", label: "Polski", },
 ];
 
 const LanguagePicker = () => {
