@@ -129,7 +129,7 @@ const PolandFormPage = () => {
             className="mt-4 mb-20 p-3 rounded"
             style={{ backgroundColor: "#999" }}
           >
-            {t("Sumbit")}
+            {t("Submit")}
           </button>
         </form>
       </div>
