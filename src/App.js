@@ -9,7 +9,6 @@ import Navbar from "./Components/Navbar/Navbar";
 import Home from "./pages/home";
 import AboutPage from "./pages/about";
 import ServicesPage from "./pages/services";
-import Header from "./Components/Header/Header";
 import BorderInformationPage from "./pages/border-information";
 import Footer from "./Components/Footer/Footer";
 import PolandFormPage from "./pages/poland-form";
@@ -26,7 +25,6 @@ function App() {
         </Helmet>
         <Suspense fallback="Loading...">
           <div className="grid grid-rows-[auto_1fr_auto] min-h-screen">
-            <Header />
             <Navbar />
             <Routes>
               <Route path="/" element={<Home />} />
