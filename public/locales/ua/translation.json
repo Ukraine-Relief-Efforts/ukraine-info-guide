@@ -2,8 +2,8 @@
   "Map": "",
   "Leave Ukraine": "виїхати з України",
   "Border info": "Інформація про кордон",
-  "About": "",
-  "Services": "",
+  "About": "Інформація",
+  "Services": "Сервіси",
   "Poland": "",
   "to Poland": "",
   "Moldova": "",
@@ -12,11 +12,11 @@
   "to Hungary": "",
   "Slovakia": "",
   "to Slovakia": "",
-  "About us": "",
-  "Join us <1>on Github</1>": "Join us <1>on Github</1>",
+  "About us": "Про нас",
+  "Join us <1>on Github</1>": "",
   "How to cross the border": "",
   "Choose a country": "",
   "Information for Ukrainian citizens travelling {{to_country}}": "",
-  "Information about border crossings": "",
-  "Services we provide": ""
+  "Information about border crossings": "Інформація щодо перетину кордону",
+  "Services we provide": "Послуги, що ми надаємо"
 }
