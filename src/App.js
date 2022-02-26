@@ -3,7 +3,9 @@ import { Helmet, HelmetProvider } from "react-helmet-async";
 
 //COMPONENTS
 import Navbar from "./Components/Navbar/Navbar";
-import Header from "./Components/Header/Header";
+
+//PAGES
+import Footer from "./Components/Footer/Footer";
 
 import Router from "./pages/Router";
 
@@ -21,9 +23,11 @@ function App() {
           <meta name="keywords" content="ukraine, help, info, leaveukraine" />
         </Helmet>
         <Suspense fallback="Loading...">
-          <Header />
-          <Navbar />
-          <Router />
+          <div className="grid grid-rows-[auto_1fr_auto] min-h-screen">
+            <Navbar />
+            <Router />
+            <Footer />
+          </div>
         </Suspense>
       </div>
     </HelmetProvider>

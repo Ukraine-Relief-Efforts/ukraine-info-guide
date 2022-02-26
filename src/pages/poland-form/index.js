@@ -11,8 +11,7 @@ const PolandFormPage = () => {
   };
 
   return (
-    <Layout>
-      <Hero title={t("Form to apply for Asylum in Poland")} />
+    <Layout hero={<Hero title={t("Form to apply for Asylum in Poland")} />}>
       <div>
         <form onSubmit={handleSubmit}>
           <fieldset>
@@ -124,11 +123,7 @@ const PolandFormPage = () => {
               <input name="postalCode" />
             </label>
           </fieldset>
-          <button
-            type="submit"
-            className="mt-4 mb-20 p-3 rounded"
-            style={{ backgroundColor: "#999" }}
-          >
+          <button type="submit" className="mt-4 mb-20 p-3 rounded" style={{ backgroundColor: "#999" }}>
             {t("Submit")}
           </button>
         </form>
