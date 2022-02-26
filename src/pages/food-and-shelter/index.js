@@ -16,7 +16,7 @@ const FoodAndShelterPage = () => {
   const selectedCountry = useSelector((state) =>
     state.borderCrossingData.selectedCountry);
 
-  const { data, name } = availableCountries.find(({ code }) =>
+  const { data, inName } = availableCountries.find(({ code }) =>
     code === selectedCountry);
 
   useEffect(() => {
@@ -42,8 +42,8 @@ const FoodAndShelterPage = () => {
     >
       {data && <FoodAndShelterInfo
         title={t(
-          "Information for Ukrainian citizens in {{country}}",
-          { country: t(name) },
+          "Information for Ukrainian citizens {{in_country}}",
+          { in_country: t(inName) },
         )}
         data={data}
       />}

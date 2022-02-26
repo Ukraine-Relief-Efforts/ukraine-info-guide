@@ -25,6 +25,7 @@ const borderCrossingData = createSlice({
       {
         name: t("Poland"),
         toName: t("to Poland"),
+        inName: t("in Poland"),
         code: "pl",
         link: "https://www.gov.pl/web/udsc/ukraina-en",
         data: null,
@@ -32,18 +33,21 @@ const borderCrossingData = createSlice({
       {
         name: t("Moldova"),
         toName: t("to Moldova"),
+        inName: t("in Moldova"),
         code: "md",
         data: null,
       },
       {
         name: t("Hungary"),
         toName: t("to Hungary"),
+        inName: t("in Hungary"),
         code: "hu",
         data: null,
       },
       {
         name: t("Slovakia"),
         toName: t("to Slovakia"),
+        inName: t("in Slovakia"),
         code: "sk",
         data: null,
       },
