@@ -1,3 +1,4 @@
+import LanguagePicker from "./LanguagePicker";
 import Link from "./Link";
 
 const Links = ({ t }) => {
@@ -7,8 +8,9 @@ const Links = ({ t }) => {
       <Link title={t("Border info")} url="/border-information" />
       <Link title={t("About")} url="/about" />
       <Link title={t("Services")} url="/services" />
+      <LanguagePicker />
     </>
   );
-}
+};
 
 export default Links;
