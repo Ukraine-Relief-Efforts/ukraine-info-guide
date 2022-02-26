@@ -12,13 +12,15 @@ const Navbar = () => {
   const dispatch = useDispatch();
   const page = useSelector((state) => state.currentPage);
 
-  const toggleMenu = () => dispatch(openMenu({ menuOpen: !page.menuOpen }))
+  const toggleMenu = () => dispatch(openMenu({ menuOpen: !page.menuOpen }));
 
   return (
     <section>
       <div className="bg-gray-200 py-5 flex flex-row items-center">
         <div className="grow ml-4 text-xl">
-          <NavLink to="/">LeaveUkraine.com</NavLink>
+          <NavLink className="font-bold" to="/">
+            LeaveUkraine.com
+          </NavLink>
         </div>
         <LanguagePicker />
         <MobileMenuButton {...{ page, toggleMenu }} />
@@ -31,5 +33,5 @@ const Navbar = () => {
       <MobileMenu {...{ page, toggleMenu, t }} />
     </section>
   );
-}
+};
 export default Navbar;

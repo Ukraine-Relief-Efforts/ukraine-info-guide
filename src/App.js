@@ -18,20 +18,14 @@ function App() {
         <Helmet>
           <title>Leave Ukraine</title>
           <link rel="canonical" href="https://www.leaveukraine.com/" />
-          <meta
-            name="description"
-            content="Help and information for refugees trying to leave ukraine"
-          />
+          <meta name="description" content="Help and information for refugees trying to leave ukraine" />
           <meta name="keywords" content="ukraine, help, info, leaveukraine" />
         </Helmet>
         <Suspense fallback="Loading...">
           <Navbar />
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route
-              path="border-information"
-              element={<BorderInformationPage />}
-            />
+            <Route path="border-information" element={<BorderInformationPage />} />
             <Route path="about" element={<AboutPage />} />
             <Route path="services" element={<ServicesPage />} />
           </Routes>
