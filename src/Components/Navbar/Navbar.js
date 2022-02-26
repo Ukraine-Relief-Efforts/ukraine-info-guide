@@ -4,6 +4,7 @@ import menuSvg from "../../assets/menu.svg";
 import { useSelector } from "react-redux";
 import { useDispatch } from "react-redux";
 import { setCurrentPage, openMenu } from "../../globalState/slices/currentPage";
+import LanguagePicker from "./LanguagePicker";
 
 const Link = ({ title, url }) => {
   const dispatch = useDispatch();
@@ -31,20 +32,28 @@ const Links = ({ t }) => {
   );
 }
 
-const Navbar = () => {
+const MobileMenu = ({ page }) => {
   const dispatch = useDispatch();
+  return (
+    <img
+      src={menuSvg}
+      alt="menu"
+      width={40}
+      onClick={() => dispatch(openMenu({ menuOpen: !page.menuOpen }))}
+      className="cursor-pointer"
+    />
+  );
+}
+
+const Navbar = () => {
   const page = useSelector((state) => state.currentPage);
   const { t } = useTranslation();
   return (
     <section>
-      <div className="bg-gray-200 py-5">
-        <div
-          className="sm:hidden flex items-center justify-center cursor-pointer"
-          onClick={() => dispatch(openMenu({ menuOpen: !page.menuOpen }))}
-        >
-          <img src={menuSvg} alt="menu" width={40} />
-          <p className="text-xl font-semibold ml-2">{t(page.page)}</p>
-        </div>
+      <div className="bg-gray-200 py-5 flex flex-row items-center">
+        <div className="grow ml-2 text-lg">LeaveUkraine.com</div>
+        <LanguagePicker />
+        <MobileMenu page={page} />
         <div className={page.menuOpen ? "block" : "hidden"}>
           <nav className="navbar-mobile">
             <Links t={t} />

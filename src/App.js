@@ -1,6 +1,6 @@
+import { Suspense } from "react";
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
-import LanguagePicker from "./Components/LanguagePicker/LanguagePicker";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 
 //COMPONENTS
@@ -25,17 +25,18 @@ function App() {
           />
           <meta name="keywords" content="ukraine, help, info, leaveukraine" />
         </Helmet>
-        <LanguagePicker />
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route
-            path="border-information"
-            element={<BorderInformationPage />}
-          />
-          <Route path="about" element={<AboutPage />} />
-          <Route path="services" element={<ServicesPage />} />
-        </Routes>
+        <Suspense fallback="Loading...">
+          <Navbar />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route
+              path="border-information"
+              element={<BorderInformationPage />}
+            />
+            <Route path="about" element={<AboutPage />} />
+            <Route path="services" element={<ServicesPage />} />
+          </Routes>
+        </Suspense>
       </div>
     </HelmetProvider>
   );
