@@ -1,5 +1,5 @@
-import Country from "../Country/Country";
-import { PolandBorderInfo } from "../../Pages/PolandBorder";
+import Country from "../../Components/Country/Country";
+import { PolandBorderInfo } from "../border-information/PolandBorder";
 
 function Home() {
   return (
