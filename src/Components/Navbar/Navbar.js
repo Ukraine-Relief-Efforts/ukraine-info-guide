@@ -57,7 +57,9 @@ const Navbar = () => {
   return (
     <section>
       <div className="bg-gray-200 py-5 flex flex-row items-center">
-        <div className="grow ml-2 text-lg">LeaveUkraine.com</div>
+        <div className="grow ml-2 text-xl">
+          <NavLink to="/">LeaveUkraine.com</NavLink>
+        </div>
         <LanguagePicker />
         <MobileMenuButton {...{ page, toggleMenu }} />
         <nav className="navbar">
