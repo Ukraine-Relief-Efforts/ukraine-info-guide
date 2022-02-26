@@ -25,8 +25,8 @@ function App() {
           />
           <meta name="keywords" content="ukraine, help, info, leaveukraine" />
         </Helmet>
-        <Header />
         <Suspense fallback="Loading...">
+          <Header />
           <Navbar />
           <Routes>
             <Route path="/" element={<Home />} />
