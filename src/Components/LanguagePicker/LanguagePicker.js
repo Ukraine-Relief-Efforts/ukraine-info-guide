@@ -13,7 +13,7 @@ const LanguagePicker = () => {
         <option value="ua">Українська</option>
         <option value="ru">Русский</option>
         <option value="it">Italiana</option>
-        <option value="de">Deutsche</option>
+        <option value="de">Deutsch</option>
       </select>
     </section>
   );
