@@ -9,12 +9,16 @@
   "Services": "Dienstleistungen",
   "Poland": "Polen",
   "to Poland": "nach Polen",
+  "in Poland": "",
   "Moldova": "Moldawien",
   "to Moldova": "nach Moldawien",
+  "in Moldova": "",
   "Hungary": "Ungarn",
   "to Hungary": "nach Ungarn",
+  "in Hungary": "",
   "Slovakia": "Slowakei",
   "to Slovakia": "in die Slowakei",
+  "in Slovakia": "",
   "About us": "Über uns",
   "Join us <1>on Github</1>": "Auf <1>Github</1> beitragen",
   "How to cross the border": "Wie man die Grenze überwindet",
@@ -52,5 +56,8 @@
   "Building Number": "Hausnummer",
   "Apartment number": "Wohnungsnummer",
   "Postal Code": "Postleitzahl",
-  "Submit": "Absenden"
+  "Submit": "Absenden",
+  "Available locations for food and shelter": "",
+  "Information for Ukrainian citizens {{in_country}}": "",
+  "Food and Shelter": ""
 }

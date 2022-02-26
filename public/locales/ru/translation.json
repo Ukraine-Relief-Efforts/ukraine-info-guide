@@ -9,12 +9,16 @@
   "Services": "Услуги",
   "Poland": "Польша",
   "to Poland": "В Польшу",
+  "in Poland": "В Польше",
   "Moldova": "Молдова",
   "to Moldova": "В Молдову",
+  "in Moldova": "В Молдове",
   "Hungary": "Венгрия",
   "to Hungary": "В Венгрию",
+  "in Hungary": "В Венгрии",
   "Slovakia": "Словакия",
   "to Slovakia": "В Словакию",
+  "in Slovakia": "В Словакии",
   "About us": "О нас",
   "Join us <1>on Github</1>": "Присоединиться к нам <1>в GitHub</1>",
   "How to cross the border": "Как пересечь границу",
@@ -52,5 +56,8 @@
   "Building Number": "",
   "Apartment number": "",
   "Postal Code": "Почтовый код",
-  "Submit": "Подтвердить"
+  "Submit": "Подтвердить",
+  "Available locations for food and shelter": "Доступные локации с едой и укрытием",
+  "Information for Ukrainian citizens {{in_country}}": "Информация для Украинцев, находящихся {{in_country}}",
+  "Food and Shelter": "Еда и приют"
 }
