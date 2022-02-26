@@ -1,12 +1,15 @@
-import React from "react";
+import Hero from "../../Components/Hero/Hero";
+import Layout from "../../Components/Layout/Layout";
+import NewTabLink from "../../Components/NewTabLink/NewTabLink";
+import { useTranslation, Trans } from "react-i18next";
 
 const ServicesPage = () => {
+  const { t } = useTranslation();
+
   return (
-    <section>
-      <div className="flex flex-col items-center">
-        <p>Services</p>
-      </div>
-    </section>
+    <Layout hero={<Hero title={t("Services")} />}>
+      <p>{t("Services we provide")}</p>
+    </Layout>
   );
 };
 
