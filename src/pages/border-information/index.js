@@ -3,9 +3,12 @@ import { PolandBorderInfo } from "../../Components/PolandBorder";
 
 const BorderInformationpage = () => {
   return (
-    <div>
+    <section>
       <PolandBorderInfo></PolandBorderInfo>
-    </div>
+      <div className="flex flex-col items-center">
+        <p>Border information</p>
+      </div>
+    </section>
   );
 };
 
