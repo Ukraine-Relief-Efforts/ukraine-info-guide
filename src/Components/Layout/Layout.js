@@ -1,8 +1,9 @@
 const Layout = ({ children, hero = null }) => {
   return (
-    <section>
+    <section className="w-full bg-white">
       {hero}
-      <div className="max-w-6xl mx-auto flex flex-col flex-wrap mt-10 items-center justify-center">{children}</div>
+
+      <div className="max-w-6xl mx-auto my-10 flex flex-col flex-wrap items-center justify-center">{children}</div>
     </section>
   );
 };
