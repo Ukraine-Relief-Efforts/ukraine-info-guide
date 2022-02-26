@@ -1,7 +1,5 @@
 # Ukraine Info Guide
 
-## Project Board [Here](https://github.com/orgs/Ukraine-Relief-Efforts/projects/1/views/4)
-
 The frontend repo for the Ukraine Info Guide.
 
 ## Adding New Languages

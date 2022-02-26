@@ -46,5 +46,16 @@
             "gmaps": "https://www.google.pl/maps/place/%C5%81odyna+41,+38-700+%C5%81odyna/@49.4601555,22.5926813,17z/data=!3m1!4b1!4m5!3m4!1s0x473b8d201b3780cd:0xa2cdd669984b3272!8m2!3d49.460152!4d22.59487",
             "address": "Była Szkoła Podstawowa w Łodynie,  Łodyna 41, 38-700 Ustrzyki Dolne"
         }
+    ],
+    "general2": [
+        "Places with avaliable food and shelter"
+    ],
+    "foodshelter": [ 
+        {
+            "type": "Food & Accomodation",
+            "thumbnail": "https://lh5.googleusercontent.com/p/AF1QipOX5XQad8VmVGX8W8ZFHXl3zxtDFs5b45DBnR98=w408-h302-k-no", 
+            "gmaps": "https://www.google.co.uk/maps/place/49%C2%B047'00.0%22N+22%C2%B046'00.0%22E/@49.7833342,22.7661195,19z/data=!3m1!4b1!4m5!3m4!1s0x0:0xf64c473d3e0f9182!8m2!3d49.7833333!4d22.7666667",
+            "address": "Wybrzeże Marszałka Józefa Piłsudskiego 7, 37-700 Przemyśl, Poland"
+        }
     ]
 }

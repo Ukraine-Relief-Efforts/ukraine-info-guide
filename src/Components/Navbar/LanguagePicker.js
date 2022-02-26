@@ -6,10 +6,9 @@ const languages = [
   { value: "en", label: "English", },
   { value: "ua", label: "Українська", },
   { value: "ru", label: "Русский", },
-  { value: "it", label: "Italiano", },
+  { value: "it", label: "Italiana", },
   { value: "de", label: "Deutsch", },
   { value: "es", label: "Español", },
-  { value: "pl", label: "Polski", },
 ];
 
 const LanguagePicker = () => {
