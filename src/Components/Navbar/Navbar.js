@@ -23,9 +23,11 @@ const Navbar = () => {
         </div>
         <LanguagePicker />
         <MobileMenuButton {...{ page, toggleMenu }} />
-        <nav className="navbar">
-          <Links t={t} />
-        </nav>
+        <div className="hidden lg:block ml-4">
+          <nav className="navbar">
+            <Links t={t} />
+          </nav>
+        </div>
       </div>
       <MobileMenu {...{ page, toggleMenu, t }} />
     </section>

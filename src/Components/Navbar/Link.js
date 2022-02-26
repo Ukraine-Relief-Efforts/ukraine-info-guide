@@ -9,6 +9,7 @@ const Link = ({ title, url }) => {
       className={({ isActive }) =>
         `navbar-item ${isActive ? "navbar-item-active" : ""}`
       }
+      style={{ padding: "0.3em 0.5em", margin: "0.2em 0", fontSize: "1em" }}
       onClick={() => dispatch(setCurrentPage({ page: title }))}
       to={url}
     >

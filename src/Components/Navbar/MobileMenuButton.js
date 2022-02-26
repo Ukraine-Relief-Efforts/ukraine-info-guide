@@ -7,7 +7,7 @@ const MobileMenuButton = ({ page, toggleMenu }) => {
       alt="Open menu"
       width={35}
       onClick={toggleMenu}
-      className="cursor-pointer mr-4 ml-4"
+      className="cursor-pointer mr-4 ml-4 lg:hidden"
     />
   );
 }

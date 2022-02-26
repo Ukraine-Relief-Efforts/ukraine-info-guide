@@ -25,10 +25,6 @@ code {
   @apply items-center justify-center flex-wrap flex-col flex;
 }
 
-.navbar-item {
-  @apply flex items-center justify-center text-xl font-semibold my-3 mr-2 py-3 px-5 rounded-lg  transition-all ease-in-out duration-200 cursor-pointer hover:text-black text-gray-700 hover:scale-105 hover:bg-gray-400;
-}
-
 .navbar-item-active {
   @apply bg-gray-300 text-gray-700;
 }
