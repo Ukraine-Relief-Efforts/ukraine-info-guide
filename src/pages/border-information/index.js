@@ -11,17 +11,13 @@ const BorderInformationPage = () => {
   const { t } = useTranslation();
   const dispatch = useDispatch();
 
-  const availableCountries = useSelector((state) =>
-    state.borderCrossingData.availableCountries);
-  const selectedCountry = useSelector((state) =>
-    state.borderCrossingData.selectedCountry);
+  const availableCountries = useSelector((state) => state.borderCrossingData.availableCountries);
+  const selectedCountry = useSelector((state) => state.borderCrossingData.selectedCountry);
 
-  const { data, toName } = availableCountries.find(({ code }) =>
-    code === selectedCountry);
+  const { data, toName } = availableCountries.find(({ code }) => code === selectedCountry);
 
   useEffect(() => {
-    if (!data)
-      dispatch(loadCountryData(selectedCountry));
+    if (!data) dispatch(loadCountryData(selectedCountry));
   }, [selectedCountry, data, dispatch]);
 
   return (
@@ -31,22 +27,14 @@ const BorderInformationPage = () => {
           title={t("How to cross the border")}
           subcomponent={
             <section className="mt-10 text-center">
-              <p className="text-xl font-semibold">
-                {t("Choose a country")}:
-              </p>
+              <p className="text-xl font-semibold">{t("Choose a country")}:</p>
               <CountryPicker {...{ availableCountries, selectedCountry }} />
             </section>
           }
         />
       }
     >
-      {data && <BorderCrossingInfo
-        title={t(
-          "Information for Ukrainian citizens travelling {{to_country}}",
-          { to_country: toName },
-        )}
-        data={data}
-      />}
+      {data && <BorderCrossingInfo title={t("Information for Ukrainian citizens travelling {{to_country}}", { to_country: t(toName) })} data={data} />}
     </Layout>
   );
 };
