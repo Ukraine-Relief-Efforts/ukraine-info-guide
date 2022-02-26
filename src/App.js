@@ -11,6 +11,7 @@ import Home from "./pages/home";
 import AboutPage from "./pages/about";
 import ServicesPage from "./pages/services";
 import BorderInformationpage from "./pages/border-information";
+import Header from "./Components/Header/Header";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           />
           <meta name="keywords" content="ukraine, help, info, leaveukraine" />
         </Helmet>
+        <Header />
         <LanguagePicker />
         <Navbar />
         <Routes>
