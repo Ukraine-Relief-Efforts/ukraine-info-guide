@@ -50,15 +50,16 @@ code {
 }
 
 .border-card-reception {
-  @apply bg-gray-500 rounded-lg px-2 pb-4 mt-5 2xl:w-2/6 2xl:mr-5 w-full min-h-[350px] flex flex-col justify-between;
+  @apply bg-gray-500 rounded-lg px-2 pb-4 m-2 2xl:w-2/6 2xl:mr-5 w-full min-h-[300px] flex flex-col justify-between;
+  max-width: 280px;
 }
 
 .border-card-qr {
-  @apply mt-5 flex flex-col items-center justify-center;
+  @apply m-2 flex flex-col items-center justify-center;
 }
 
 .border-card-google {
-  @apply py-2 mt-5 px-4 rounded-lg bg-gray-300 flex flex-col items-center justify-center;
+  @apply py-2 px-4 rounded-lg bg-gray-300 flex flex-col items-center justify-center;
 }
 
 .border-card-address {
