@@ -1,9 +1,9 @@
 import ReceptionPoint from "./ReceptionPoint";
 import Map from "../Map/Map";
 
-import data from "../../dummydata/poland_data.json";
+const BorderCrossingInfo = ({ data }) => {
+  const { general, reception } = data;
 
-function Country() {
   return (
     <section className="border-card">
       {/*<p className="text-2xl font-semibold">Poland</p>*/}
@@ -13,7 +13,7 @@ function Country() {
           <p className="font-semibold mb-5">
             INFORMATION FOR UKRAINE CITIZENS WHO ARE TRYING TO TRAVEL TO POLAND
           </p>
-          {data.general.map((item) => {
+          {general.map((item) => {
             return (
               <li className="mb-2" key={item}>
                 {item}
@@ -22,13 +22,14 @@ function Country() {
           })}
         </ul>
       </div>
-      <Map markers={data.reception} />
+      <Map markers={reception} />
       <div className="flex flex-wrap w-full items-center justify-center">
-        {data.reception.map((item, index) => {
+        {reception.map((item, index) => {
           return <ReceptionPoint data={item} key={index} />;
         })}
       </div>
     </section>
   );
 }
-export default Country;
+
+export default BorderCrossingInfo;
