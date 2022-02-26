@@ -5,10 +5,10 @@ import "./App.css";
 import Navbar from "./Components/Navbar/Navbar";
 
 //PAGES
-import Home from "./Pages/home";
-import AboutPage from "./Pages/about";
-import ServicesPage from "./Pages/services";
-import BorderInformationpage from "./Pages/border-information";
+import Home from "./pages/home";
+import AboutPage from "./pages/about";
+import ServicesPage from "./pages/services";
+import BorderInformationpage from "./pages/border-information";
 import LanguagePicker from "./Components/LanguagePicker/LanguagePicker";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 
