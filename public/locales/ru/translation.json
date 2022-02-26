@@ -1,11 +1,11 @@
 {
-  "Leave Ukraine": "Уехать из Украины",
+  "Leave Ukraine": "Выехать из Украины",
   "Border info": "Информация о границе",
-  "About": "",
-  "Services": "",
-  "About us": "",
+  "About": "Информация",
+  "Services": "Услуги",
+  "About us": "О нас",
   "Join us <1>on Github</1>": "Join us <1>on Github</1>",
-  "How to cross Poland's border": "",
-  "Information about border crossings": "",
-  "Services we provide": ""
+  "How to cross Poland's border": "Как пересечь границу с Польшей",
+  "Information about border crossings": "Информация о пересечении границ",
+  "Services we provide": "Предоставляемые услуги"
 }
