@@ -1,15 +1,26 @@
-import React from "react";
-import { PolandBorderInfo } from "../../Components/PolandBorder";
+import Layout from "../../Components/Layout/Layout";
+import Hero from "../../Components/Hero/Hero";
+import BorderCrossingInfo from "../../Components/BorderCrossingInfo/BorderCrossingInfo";
+import { useTranslation } from "react-i18next";
 
-const BorderInformationpage = () => {
+import dummyData from "../../dummydata/poland_data.json";
+
+const BorderInformationPage = () => {
+  const { t } = useTranslation();
+
   return (
-    <section>
-      <PolandBorderInfo></PolandBorderInfo>
-      <div className="flex flex-col items-center">
-        <p>Border information</p>
-      </div>
-    </section>
+    <Layout
+      hero={
+        <Hero
+          title={t("How to cross Poland's border")}
+          subtitle="👉 www.gov.pl 👈"
+          subtitleLink="https://www.gov.pl/web/udsc/ukraina-en"
+        />
+      }
+    >
+      <BorderCrossingInfo data={dummyData} />
+    </Layout>
   );
 };
 
-export default BorderInformationpage;
+export default BorderInformationPage;
