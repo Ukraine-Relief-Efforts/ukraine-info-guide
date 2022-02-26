@@ -1,6 +1,5 @@
+import { Suspense } from "react";
 import { Routes, Route } from "react-router-dom";
-import "./App.css";
-import LanguagePicker from "./Components/LanguagePicker/LanguagePicker";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 
 //COMPONENTS
@@ -10,7 +9,7 @@ import Navbar from "./Components/Navbar/Navbar";
 import Home from "./pages/home";
 import AboutPage from "./pages/about";
 import ServicesPage from "./pages/services";
-import BorderInformationpage from "./pages/border-information";
+import BorderInformationPage from "./pages/border-information";
 
 function App() {
   return (
@@ -25,17 +24,18 @@ function App() {
           />
           <meta name="keywords" content="ukraine, help, info, leaveukraine" />
         </Helmet>
-        <LanguagePicker />
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route
-            path="border-information"
-            element={<BorderInformationpage />}
-          />
-          <Route path="about" element={<AboutPage />} />
-          <Route path="services" element={<ServicesPage />} />
-        </Routes>
+        <Suspense fallback="Loading...">
+          <Navbar />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route
+              path="border-information"
+              element={<BorderInformationPage />}
+            />
+            <Route path="about" element={<AboutPage />} />
+            <Route path="services" element={<ServicesPage />} />
+          </Routes>
+        </Suspense>
       </div>
     </HelmetProvider>
   );
