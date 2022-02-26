@@ -10,7 +10,7 @@ import Navbar from "./Components/Navbar/Navbar";
 import Home from "./pages/home";
 import AboutPage from "./pages/about";
 import ServicesPage from "./pages/services";
-import BorderInformationpage from "./pages/border-information";
+import BorderInformationPage from "./pages/border-information";
 
 function App() {
   return (
@@ -31,7 +31,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route
             path="border-information"
-            element={<BorderInformationpage />}
+            element={<BorderInformationPage />}
           />
           <Route path="about" element={<AboutPage />} />
           <Route path="services" element={<ServicesPage />} />
