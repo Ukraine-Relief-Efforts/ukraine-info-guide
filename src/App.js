@@ -9,6 +9,7 @@ import Navbar from "./Components/Navbar/Navbar";
 import Home from "./pages/home";
 import AboutPage from "./pages/about";
 import ServicesPage from "./pages/services";
+import Header from "./Components/Header/Header";
 import BorderInformationPage from "./pages/border-information";
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
           <meta name="keywords" content="ukraine, help, info, leaveukraine" />
         </Helmet>
         <Suspense fallback="Loading...">
+          <Header />
           <Navbar />
           <Routes>
             <Route path="/" element={<Home />} />
