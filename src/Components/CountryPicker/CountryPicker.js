@@ -7,9 +7,13 @@ const CountryPicker = ({ availableCountries, selectedCountry }) => {
   const { t } = useTranslation();
 
   return (
-    <div className="flex flex-row">
+    <div className="flex flex-row justify-center">
       {availableCountries.map(({ name, code }) => (
-        <p key={code} className="m-4 link cursor-pointer" onClick={() => dispatch(setSelectedCountry(code))}>
+        <p
+          key={code}
+          className="m-4 link cursor-pointer"
+          onClick={() => dispatch(setSelectedCountry(code))}
+        >
           {t(name)}
         </p>
       ))}
