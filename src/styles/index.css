@@ -63,3 +63,46 @@ code {
 .border-card-address {
   @apply mt-5 py-2 px-4 rounded-lg bg-gray-300 flex flex-col items-center justify-center;
 }
+
+/* */
+
+.foodshelter-information {
+  @apply hover:underline;
+}
+
+.foodshelter-information-info-list {
+  margin-left: 15px;
+}
+
+.foodshelter-card {
+  @apply p-5 flex flex-col justify-center bg-gray-300 bg-opacity-75 rounded-xl mb-10 2xl:w-5/6;
+}
+
+.foodshelter-card-point {
+  @apply flex mb-1 bg-gray-300 p-3 text-left;
+}
+
+.foodshelter-card-reception {
+  @apply bg-gray-500 rounded-lg px-2 pb-4 m-2 2xl:w-2/6 2xl:mr-5 w-full min-h-[300px] flex flex-col justify-between;
+  max-width: 280px;
+}
+
+.foodshelter-card-thumbnail {
+  @apply m-2 flex flex-col items-center justify-center;
+}
+
+.foodshelter-card-google {
+  @apply py-2 px-4 rounded-lg bg-gray-300 flex flex-col items-center justify-center;
+}
+
+.foodshelter-card-type {
+  @apply mt-5 py-2 px-4 rounded-lg bg-gray-300 flex flex-col items-center justify-center;
+}
+
+.foodshelter-card-address {
+  @apply mt-5 py-2 px-4 rounded-lg bg-gray-300 flex flex-col items-center justify-center;
+}
+
+.link {
+  color: blue;
+}
