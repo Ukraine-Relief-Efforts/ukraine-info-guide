@@ -1,14 +1,21 @@
-import React from "react";
-import { PolandBorderInfo } from "../../Components/PolandBorder";
+import Hero from "../../Components/Hero/Hero";
+import Layout from "../../Components/Layout/Layout";
+import { useTranslation, Trans } from "react-i18next";
 
 const AboutPage = () => {
+  const { t } = useTranslation();
+
   return (
-    <section>
-      <PolandBorderInfo></PolandBorderInfo>
-      <div className="flex flex-col items-center">
-        <p>About page</p>
-      </div>
-    </section>
+    <Layout hero={<Hero title={t("About us")} />}>
+      <p>
+        <Trans t={t} i18nKey="Join us <1>on Github</1>">
+          Join us <a
+            href="https://github.com/Ukraine-Relief-Efforts"
+            className="link"
+          >on Github</a>
+        </Trans>
+      </p>
+    </Layout>
   );
 };
 
