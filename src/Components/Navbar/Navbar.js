@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
 function Navbar() {
@@ -6,15 +7,41 @@ function Navbar() {
   return (
     <section>
       <nav className="navbar">
-        <div className="navbar-item navbar-item-active">
-          <a className="">{t("Leave Ukraine")}</a>
-        </div>
-        <div className="navbar-item">
-          <a className="">{t("Border info")}</a>
-        </div>
-        <div className="navbar-item">
-          <a className="">{t("About")}</a>
-        </div>
+        <NavLink
+          className={({ isActive }) =>
+            `navbar-item ${isActive ? "navbar-item-active" : ""}`
+          }
+          to="/"
+        >
+          {t("Leave Ukraine")}
+        </NavLink>
+
+        <NavLink
+          className={({ isActive }) =>
+            `navbar-item ${isActive ? "navbar-item-active" : ""}`
+          }
+          to="/border-information"
+        >
+          {t("Border info")}
+        </NavLink>
+
+        <NavLink
+          className={({ isActive }) =>
+            `navbar-item ${isActive ? "navbar-item-active" : ""}`
+          }
+          to="/about"
+        >
+          {t("About")}
+        </NavLink>
+
+        <NavLink
+          className={({ isActive }) =>
+            `navbar-item ${isActive ? "navbar-item-active" : ""}`
+          }
+          to="/services"
+        >
+          Services
+        </NavLink>
       </nav>
     </section>
   );
