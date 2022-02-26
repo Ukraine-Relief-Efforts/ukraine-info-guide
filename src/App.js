@@ -1,5 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
+import LanguagePicker from "./Components/LanguagePicker/LanguagePicker";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 
 //COMPONENTS
 import Navbar from "./Components/Navbar/Navbar";
@@ -9,8 +11,6 @@ import Home from "./pages/home";
 import AboutPage from "./pages/about";
 import ServicesPage from "./pages/services";
 import BorderInformationpage from "./pages/border-information";
-import LanguagePicker from "./Components/LanguagePicker/LanguagePicker";
-import { Helmet, HelmetProvider } from "react-helmet-async";
 
 function App() {
   return (
