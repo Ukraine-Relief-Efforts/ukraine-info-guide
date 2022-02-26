@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 import { BrowserRouter } from "react-router-dom";
 import "./index.css";
 import App from "./App";
+import "./i18n/i18n";
 import { store } from "./globalState/store";
 import { Provider } from "react-redux";
 

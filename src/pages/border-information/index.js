@@ -1,5 +1,5 @@
 import React from "react";
-import { PolandBorderInfo } from "./PolandBorder";
+import { PolandBorderInfo } from "../../Components/PolandBorder";
 
 const BorderInformationpage = () => {
   return (
