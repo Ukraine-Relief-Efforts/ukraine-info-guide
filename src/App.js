@@ -10,6 +10,7 @@ import Home from "./pages/home";
 import AboutPage from "./pages/about";
 import ServicesPage from "./pages/services";
 import BorderInformationPage from "./pages/border-information";
+import PolandFormPage from "./pages/poland-form";
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
             />
             <Route path="about" element={<AboutPage />} />
             <Route path="services" element={<ServicesPage />} />
+            <Route path="poland-form" element={<PolandFormPage />} />
           </Routes>
         </Suspense>
       </div>
