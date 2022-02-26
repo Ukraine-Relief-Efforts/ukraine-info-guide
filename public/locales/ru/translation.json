@@ -52,5 +52,8 @@
   "Building Number": "",
   "Apartment number": "",
   "Postal Code": "Почтовый код",
-  "Submit": "Подтвердить"
+  "Submit": "Подтвердить",
+  "Available locations for food and shelter": "Доступные локации с едой и укрытием",
+  "Information for Ukrainian citizens in {{country}}": "Информация для Украинцев, находящихся в {{country}}",
+  "Food and Shelter": "Еда и приют"
 }

@@ -52,5 +52,8 @@
   "Building Number": "Hausnummer",
   "Apartment number": "Wohnungsnummer",
   "Postal Code": "Postleitzahl",
-  "Submit": "Absenden"
+  "Submit": "Absenden",
+  "Available locations for food and shelter": "",
+  "Information for Ukrainian citizens in {{country}}": "",
+  "Food and Shelter": ""
 }

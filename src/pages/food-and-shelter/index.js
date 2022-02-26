@@ -43,7 +43,7 @@ const FoodAndShelterPage = () => {
       {data && <FoodAndShelterInfo
         title={t(
           "Information for Ukrainian citizens in {{country}}",
-          { country: name },
+          { country: t(name) },
         )}
         data={data}
       />}
