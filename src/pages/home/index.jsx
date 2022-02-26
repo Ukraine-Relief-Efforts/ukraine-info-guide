@@ -3,7 +3,7 @@ import Layout from "../../Components/Layout/Layout";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 
-function Home() {
+const Home = () => {
   const { t } = useTranslation();
 
   return (
