@@ -4,22 +4,27 @@
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   @apply bg-gray-100;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
 }
+
+/* Navbar */
 
 .navbar {
   @apply items-center justify-center sm:flex-wrap flex-col sm:flex-row hidden sm:flex;
 }
 
 .navbar-mobile {
-  @apply items-center justify-center flex-wrap flex-col flex;
+  @apply items-center justify-start flex-wrap flex-col flex bg-blue-ukraine h-full;
 }
 
 .navbar-item {
@@ -33,6 +38,21 @@ code {
 .navbar-item-active {
   @apply font-bold text-yellow-ukraine;
 }
+
+.authentication-button {
+  @apply bg-yellow-ukraine text-black rounded-xl my-3 mr-4 py-2 px-4;
+}
+
+/* Navbar mobile */
+.navbar-mobile .navbar-item:not(:first-child) {
+  @apply mr-0 mb-2;
+}
+
+.navbar-mobile .authentication-button {
+  @apply mr-0 mb-6;
+}
+
+/* */
 
 .border-information {
   @apply hover:underline;
@@ -108,8 +128,4 @@ code {
 
 .link {
   @apply text-blue-ukraine border-b border-b-blue-ukraine hover:text-blue-500 space-y-4;
-}
-
-.authentication-button {
-  @apply bg-yellow-ukraine text-black mr-4 rounded-xl py-2 px-4;
 }
