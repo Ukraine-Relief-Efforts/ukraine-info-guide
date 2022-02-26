@@ -1,7 +1,6 @@
 import { NavLink } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import { useSelector } from "react-redux";
-import { useDispatch } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import { openMenu } from "../../globalState/slices/currentPage";
 import LanguagePicker from "./LanguagePicker";
 import Links from "./Links";
@@ -18,12 +17,12 @@ const Navbar = () => {
   return (
     <section>
       <div className="bg-gray-200 py-5 flex flex-row items-center">
-        <div className="grow ml-2 text-xl">
+        <div className="grow ml-4 text-xl">
           <NavLink to="/">LeaveUkraine.com</NavLink>
         </div>
         <LanguagePicker />
         <MobileMenuButton {...{ page, toggleMenu }} />
-        <div className="hidden lg:block ml-4">
+        <div className="hidden lg:block mx-4">
           <nav className="navbar">
             <Links t={t} />
           </nav>
