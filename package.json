@@ -17,6 +17,7 @@
     "react-helmet-async": "^1.2.3",
     "react-i18next": "^11.15.5",
     "react-leaflet": "^3.2.5",
+    "react-modern-drawer": "^1.0.1",
     "react-redux": "^7.2.6",
     "react-router-dom": "^6.2.1",
     "react-scripts": "5.0.0",
