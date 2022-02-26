@@ -1,8 +1,8 @@
-# Ukraine Info Guide
+# [Leave Ukraine](https://leaveukraine.com/) Info Guide 
 
 ## Project Board [Here](https://github.com/orgs/Ukraine-Relief-Efforts/projects/1/views/4)
 
-The frontend repo for the Ukraine Info Guide.
+The frontend repo for the Leave Ukraine Info Guide.
 
 ## Adding New Languages
 
@@ -11,7 +11,7 @@ one of the other languages and update the translations as needed.
 
 When adding a new language, you also need to add it to the list of locales in
 `i18next-parser.config.js` and to the language picker in
-`src/Components/NavBar/LanguagePicler.js` (if you don't know how to do
+`src/Components/NavBar/LanguagePicker.js` (if you don't know how to do
 this then just create a pull request anyway and the reviewer can handle it).
 
 ## Available Scripts
@@ -30,7 +30,7 @@ You may also see any lint errors in the console.
 
 Builds the app for production to the `build` folder.
 
-### npm run update-translations
+### `npm run update-translations`
 
 Parses the code and extracts new translatable strings into the json files.
 
