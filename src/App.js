@@ -12,6 +12,7 @@ import ServicesPage from "./pages/services";
 import BorderInformationPage from "./pages/border-information";
 import Footer from "./Components/Footer/Footer";
 import PolandFormPage from "./pages/poland-form";
+import FoodAndShelterPage from "./pages/food-and-shelter";
 
 function App() {
   return (
@@ -29,9 +30,10 @@ function App() {
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="border-information" element={<BorderInformationPage />} />
+              <Route path="food-and-shelter" element={<FoodAndShelterPage />} />
+              <Route path="poland-form" element={<PolandFormPage />} />
               <Route path="about" element={<AboutPage />} />
               <Route path="services" element={<ServicesPage />} />
-              <Route path="poland-form" element={<PolandFormPage />} />
             </Routes>
             <Footer />
           </div>

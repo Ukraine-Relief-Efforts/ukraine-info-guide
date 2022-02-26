@@ -34,7 +34,7 @@ const BorderInformationPage = () => {
         />
       }
     >
-      {data && <BorderCrossingInfo title={t("Information for Ukrainian citizens travelling {{to_country}}", { to_country: toName })} data={data} />}
+      {data && <BorderCrossingInfo title={t("Information for Ukrainian citizens travelling {{to_country}}", { to_country: t(toName) })} data={data} />}
     </Layout>
   );
 };
