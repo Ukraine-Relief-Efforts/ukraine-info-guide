@@ -1,4 +1,5 @@
 import ReceptionPoint from "./ReceptionPoint";
+import Map from "../Map/Map";
 
 import data from "../../dummydata/poland_data.json";
 
@@ -21,9 +22,10 @@ function Country() {
           })}
         </ul>
       </div>
+      <Map markers={data.reception} />
       <div className="flex flex-wrap w-full items-center justify-center">
-        {data.reception.map((item) => {
-          return <ReceptionPoint data={item} />;
+        {data.reception.map((item, index) => {
+          return <ReceptionPoint data={item} key={index} />;
         })}
       </div>
     </section>
