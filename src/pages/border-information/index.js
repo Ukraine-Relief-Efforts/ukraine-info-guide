@@ -22,7 +22,7 @@ const BorderInformationPage = () => {
   useEffect(() => {
     if (!data)
       dispatch(loadCountryData(selectedCountry));
-  }, [selectedCountry]);
+  }, [selectedCountry, data, dispatch]);
 
   return (
     <Layout
