@@ -1,18 +1,26 @@
 import Hero from "../../Components/Hero/Hero";
 import Layout from "../../Components/Layout/Layout";
+import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 
 function Home() {
+  const { t } = useTranslation();
+
   return (
     <Layout
       hero={
-        <Hero
-          title="How to cross Poland's border"
-          subtitle="👉 www.gov.pl 👈"
-          subtitleLink="https://www.gov.pl/web/udsc/ukraina-en"
-        />
+        <Hero title={t("Leave Ukraine")} />
       }
     >
-      <p>Home page</p>
+      <Link to="/border-information" className="link">
+        {t("Information about border crossings")}
+      </Link>
+      <Link to="/about" className="link">
+        {t("About us")}
+      </Link>
+      <Link to="/services" className="link">
+        {t("Services we provide")}
+      </Link>
     </Layout>
   );
 }

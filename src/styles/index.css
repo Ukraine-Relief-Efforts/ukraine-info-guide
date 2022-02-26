@@ -64,3 +64,7 @@ code {
 .border-card-address {
   @apply mt-5 py-2 px-4 rounded-lg bg-gray-300 flex flex-col items-center justify-center;
 }
+
+.link {
+  color: blue;
+}
