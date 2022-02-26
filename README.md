@@ -1,4 +1,4 @@
-# Ukraine Info Guide
+# [Leave Ukraine](https://leaveukraine.com/) Info Guide 
 
 ## Project Board [Here](https://github.com/orgs/Ukraine-Relief-Efforts/projects/1/views/4)
 
@@ -30,7 +30,7 @@ You may also see any lint errors in the console.
 
 Builds the app for production to the `build` folder.
 
-### npm run update-translations
+### `npm run update-translations`
 
 Parses the code and extracts new translatable strings into the json files.
 
