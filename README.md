@@ -9,7 +9,7 @@ one of the other languages and update the translations as needed.
 
 When adding a new language, you also need to add it to the list of locales in
 `i18next-parser.config.js` and to the language picker in
-`src/Components/LanguagePicker/LanguagePicler.js` (if you don't know how to do
+`src/Components/NavBar/LanguagePicler.js` (if you don't know how to do
 this then just create a pull request anyway and the reviewer can handle it).
 
 ## Available Scripts
