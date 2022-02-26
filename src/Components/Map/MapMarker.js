@@ -1,8 +1,11 @@
 import { Marker, Popup } from "react-leaflet";
+import { coordsToGoogleMapsUrl } from "../../utils";
 import NewTabLink from "../NewTabLink/NewTabLink";
 
-const MapMarker = ({ qr, gmaps, address, position }) => {
-  if (!position) return null;
+const MapMarker = ({ qr, address, lat, lon, position }) => {
+  if (!position || !lat || !lon) return null;
+
+  const url = coordsToGoogleMapsUrl(lat, lon);
 
   return (
     <Marker position={position}>
@@ -14,7 +17,7 @@ const MapMarker = ({ qr, gmaps, address, position }) => {
             justifyContent: "center",
           }}
         >
-          <NewTabLink href={gmaps} className="text-center">
+          <NewTabLink href={url} className="text-center">
             <p className="font-semibold">{address}</p>
             <img
               src={qr}

@@ -1,8 +1,11 @@
 import { useTranslation } from "react-i18next";
+import { coordsToGoogleMapsUrl } from "../../utils";
+import NewTabLink from "../NewTabLink/NewTabLink";
 
 const ReceptionPointCard = ({ data }) => {
   const { t } = useTranslation();
-  const { address, qr, gmaps } = data;
+  const { address, qr, lat, lon } = data;
+  const url = coordsToGoogleMapsUrl(lat, lon);
 
   return (
     <section className="border-card-reception">
@@ -12,9 +15,9 @@ const ReceptionPointCard = ({ data }) => {
       <div className="border-card-qr">
         <img src={qr} alt="QR code" />
       </div>
-      <a href={gmaps} className="border-card-google font-semibold">
+      <NewTabLink href={url} className="border-card-google font-semibold">
         {t("Map")}
-      </a>
+      </NewTabLink>
     </section>
   );
 }

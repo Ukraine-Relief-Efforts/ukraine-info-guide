@@ -1,30 +1,18 @@
-import { useEffect } from "react";
-import { useTranslation } from "react-i18next";
-import { useSelector, useDispatch } from "react-redux";
-import { loadCountryData } from "../../globalState/slices/borderCrossingData";
 import Layout from "../../Components/Layout/Layout";
 import Hero from "../../Components/Hero/Hero";
 import BorderCrossingInfo from "../../Components/BorderCrossingInfo/BorderCrossingInfo";
 import CountryPickerV2 from "../../Components/CountryPicker/CountryPickerV2";
+import useCountryData from "../../hooks/useCountryData";
 
 const BorderInformationPage = () => {
-  const { t } = useTranslation();
-  const dispatch = useDispatch();
+  const {
+    t,
+    availableCountries,
+    selectedCountryData,
+    setSelectedCountry,
+  } = useCountryData({ defaultCountry: "pl" });
 
-  const availableCountries = useSelector(
-    (state) => state.borderCrossingData.availableCountries
-  );
-  const selectedCountry = useSelector(
-    (state) => state.borderCrossingData.selectedCountry
-  );
-
-  const { data, toName } = availableCountries.find(
-    ({ code }) => code === selectedCountry
-  );
-
-  useEffect(() => {
-    if (!data) dispatch(loadCountryData(selectedCountry));
-  }, [selectedCountry, data, dispatch]);
+  const { data, toName } = selectedCountryData;
 
   return (
     <Layout
@@ -34,7 +22,11 @@ const BorderInformationPage = () => {
           subcomponent={
             <section className="mt-5 text-center text-blue-ukraine">
               <p className="text-xl font-semibold">{t("Choose a country")}:</p>
-              <CountryPickerV2 {...{ availableCountries, selectedCountry }} />
+              <CountryPickerV2 {...{
+                availableCountries,
+                selectedCountryData,
+                setSelectedCountry,
+              }} />
             </section>
           }
         />

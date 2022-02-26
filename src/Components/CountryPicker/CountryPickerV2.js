@@ -1,6 +1,4 @@
 import { useTranslation } from "react-i18next";
-import { useDispatch } from "react-redux";
-import { setSelectedCountry } from "../../globalState/slices/borderCrossingData";
 import styled from "styled-components";
 import { CountryIconSelector } from "./CountryIconSelector";
 
@@ -32,8 +30,11 @@ const StyledCountryIcon = styled.img`
 
 const StyledCountryName = styled.p``;
 
-const CountryPickerV2 = ({ availableCountries, selectedCountry }) => {
-  const dispatch = useDispatch();
+const CountryPickerV2 = ({
+  availableCountries,
+  selectedCountry,
+  setSelectedCountry,
+}) => {
   const { t } = useTranslation();
 
   const countries = availableCountries.map(({ name, code }) => {
@@ -45,7 +46,7 @@ const CountryPickerV2 = ({ availableCountries, selectedCountry }) => {
           alt={t(name)}
           width={40}
           className="cursor-pointer mt-4"
-          onClick={() => dispatch(setSelectedCountry(code))}
+          onClick={() => setSelectedCountry(code)}
         />
         <StyledCountryName className="text-white text-lg upper m4 mt-4">
           {t(name)}
