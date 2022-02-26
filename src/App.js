@@ -1,6 +1,5 @@
 import { Suspense } from "react";
 import { Routes, Route } from "react-router-dom";
-import "./App.css";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 
 //COMPONENTS
