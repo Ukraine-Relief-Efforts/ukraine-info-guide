@@ -1,5 +1,5 @@
-import Hero from "../../components/Hero/Hero";
-import Layout from "../../components/Layout/Layout";
+import Hero from "../../components/Hero";
+import Layout from "../../components/Layout";
 import { useTranslation } from "react-i18next";
 
 const ServicesPage = () => {

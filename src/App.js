@@ -2,10 +2,10 @@ import { Suspense } from "react";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 
 //COMPONENTS
-import Navbar from "./components/Navbar/Navbar";
+import Navbar from "./components/Navbar";
 
 //PAGES
-import Footer from "./components/Footer/Footer";
+import Footer from "./components/Footer";
 
 import Router from "./pages/Router";
 

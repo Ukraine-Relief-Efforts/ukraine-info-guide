@@ -2,9 +2,9 @@ import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { useSelector, useDispatch } from "react-redux";
 import { loadCountryData } from "../../store/slices/borderCrossingData";
-import Layout from "../../components/Layout/Layout";
-import Hero from "../../components/Hero/Hero";
-import BorderCrossingInfo from "../../components/BorderCrossingInfo/BorderCrossingInfo";
+import Layout from "../../components/Layout";
+import Hero from "../../components/Hero";
+import BorderCrossingInfo from "../../components/BorderCrossingInfo";
 import CountryPickerV2 from "../../components/CountryPicker/CountryPickerV2";
 
 const BorderInformationPage = () => {

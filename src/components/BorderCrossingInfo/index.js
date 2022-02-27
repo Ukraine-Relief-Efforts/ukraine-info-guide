@@ -1,5 +1,5 @@
 import ReceptionPointCard from "./ReceptionPointCard";
-import Map from "../Map/Map";
+import Map from "../Map";
 
 const BorderCrossingInfo = ({ title, data }) => {
   const { general, reception } = data;

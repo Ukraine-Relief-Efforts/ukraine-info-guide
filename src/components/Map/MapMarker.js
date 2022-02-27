@@ -1,5 +1,5 @@
 import { Marker, Popup } from "react-leaflet";
-import NewTabLink from "../NewTabLink/NewTabLink";
+import NewTabLink from "../NewTabLink";
 
 const MapMarker = ({ qr, gmaps, address, position }) => {
   if (!position) return null;
