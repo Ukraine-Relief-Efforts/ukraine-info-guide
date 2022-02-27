@@ -105,7 +105,6 @@ const useCountryData = ({
     },
     setSelectedCountry: (countryCode) => {
       setSelectedCountry(countryCode);
-      console.log(dataViewRef.current);
       if (dataViewRef.current)
         dataViewRef.current.scrollIntoView({
           block: "start",

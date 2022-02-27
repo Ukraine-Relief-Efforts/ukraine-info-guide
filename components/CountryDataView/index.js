@@ -1,6 +1,8 @@
+import dynamic from "next/dynamic";
 import LocationCard from "./LocationCard";
-import Map from "../Map";
 import Spinner from "../Spinner";
+
+const Map = dynamic(() => import("../Map"), { ssr: false });
 
 const CountryDataView = ({ title, data, errorMessage, dataViewRef }) => {
   const { error, general, reception } = data;

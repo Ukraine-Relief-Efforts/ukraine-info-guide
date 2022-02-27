@@ -1,8 +1,15 @@
-import Layout from "../../components/Layout";
-import CountryDataView from "../../components/CountryDataView";
-import useCountryData from "../../hooks/useCountryData";
-import { POLAND } from "../../configs/constants";
-import HeroChooseCountry from "../../components/Hero/HeroChooseCountry";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import Layout from "../components/Layout";
+import CountryDataView from "../components/CountryDataView";
+import HeroChooseCountry from "../components/Hero/HeroChooseCountry";
+import useCountryData from "../hooks/useCountryData";
+import { POLAND } from "../configs/constants";
+
+export const getStaticProps = async ({ locale }) => ({
+  props: {
+    ...(await serverSideTranslations(locale, ["translation"])),
+  }
+});
 
 const BorderInformationPage = () => {
   const {
