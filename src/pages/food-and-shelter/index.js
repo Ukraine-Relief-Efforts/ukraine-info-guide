@@ -1,5 +1,5 @@
-import Layout from "../../Components/Layout";
-import Hero from "../../Components/Hero";
+import Layout from "../../components/Layout";
+import Hero from "../../components/Hero";
 import CountryDataView from "../../components/CountryDataView";
 import CountryPicker from "../../components/CountryPicker";
 import useCountryData from "../../hooks/useCountryData";
