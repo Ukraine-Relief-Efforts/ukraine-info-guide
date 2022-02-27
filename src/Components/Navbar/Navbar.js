@@ -17,7 +17,7 @@ const Navbar = () => {
     <section className="w-full bg-blue-ukraine text-white">
       <div className="container mx-auto max-w-6xl py-5 flex flex-row items-center">
         <div className="grow ml-4 text-xl">
-          <NavLink className="font-bold text-yellow-ukraine" to="/">
+          <NavLink className="font-semibold text-yellow-dark" to="/">
             LeaveUkraine.com
           </NavLink>
         </div>

@@ -3,8 +3,9 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        "blue-ukraine": "#0057b7",
-        "yellow-ukraine": "#FFDD00",
+        "blue-ukraine": "#0058b7",
+        "yellow-ukraine": "#F7EDBF",
+        "yellow-dark": "#FADC4B",
       },
     },
   },

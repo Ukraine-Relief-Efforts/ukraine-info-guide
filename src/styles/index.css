@@ -2,11 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700;800&display=swap");
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: "Poppins", sans-serif, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   @apply bg-gray-100;
@@ -36,11 +38,11 @@ code {
 }
 
 .navbar-item-active {
-  @apply font-bold text-yellow-ukraine;
+  @apply font-semibold text-yellow-dark;
 }
 
 .authentication-button {
-  @apply bg-yellow-ukraine text-black rounded-xl my-3 mr-4 py-2 px-4;
+  @apply bg-yellow-dark text-blue-ukraine rounded-xl my-3 mr-4 py-2 px-4;
 }
 
 /* Navbar mobile */
@@ -64,7 +66,6 @@ code {
 
 .border-card {
   color: rgb(90, 90, 90);
-  font-family: sans-serif;
   @apply p-0 lg:p-5 flex flex-col justify-center lg:bg-gray-200 bg-opacity-75 rounded-xl mb-10 2xl:w-5/6;
 }
 
