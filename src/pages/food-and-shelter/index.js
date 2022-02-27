@@ -47,8 +47,8 @@ const FoodAndShelterPage = () => {
             "Information for Ukrainian citizens {{in_country}}",
             { in_country: t(inName) },
           )}
+          errorMessage={t("Sorry! We don't have information about this country at the moment")}
           data={data}
-          t={t}
         />
       )}
     </Layout>

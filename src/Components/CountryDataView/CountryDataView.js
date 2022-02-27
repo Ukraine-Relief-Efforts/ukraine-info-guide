@@ -2,7 +2,7 @@ import LocationCard from "./LocationCard";
 import Map from "../Map/Map";
 import Spinner from "../Spinner/Spinner";
 
-const CountryDataView = ({ t, title, data }) => {
+const CountryDataView = ({ title, data, errorMessage }) => {
   const { error, general, reception } = data;
 
   return (
@@ -19,9 +19,7 @@ const CountryDataView = ({ t, title, data }) => {
           }
         </ul>
         <Spinner enabled={!error && !general && !reception} />
-        {error && <p>
-          {t("Sorry! We don't have this information at the moment")}
-        </p>}
+        {error && <p>{errorMessage}</p>}
       </div>
       {!error && reception &&
         <>

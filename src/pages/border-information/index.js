@@ -39,8 +39,8 @@ const BorderInformationPage = () => {
             "Information for Ukrainian citizens travelling {{to_country}}",
             { to_country: t(toName) }
           )}
+          errorMessage={t("Sorry! We don't have information about this border at the moment")}
           data={data}
-          t={t}
         />
       )}
     </Layout>
