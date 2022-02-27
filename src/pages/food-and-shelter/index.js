@@ -8,7 +8,13 @@ import { POLAND } from "../../configs/constants";
 import dummyData from "../../dummydata/foodshelter_data.json";
 
 const FoodAndShelterPage = () => {
-  const { t, selectedCountryData, dataViewRef } = useCountryData({
+  const {
+    t,
+    selectedCountryData,
+    dataViewRef,
+    availableCountries,
+    setSelectedCountry,
+  } = useCountryData({
     defaultCountry: POLAND,
     fetchApiDataCallback: () => dummyData,
   });
@@ -20,6 +26,10 @@ const FoodAndShelterPage = () => {
       hero={
         <HeroChooseCountry
           title={t("Available locations for food and shelter")}
+          {...{
+            availableCountries,
+            setSelectedCountry,
+          }}
         />
       }
     >

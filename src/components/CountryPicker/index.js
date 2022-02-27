@@ -37,18 +37,17 @@ const StyledCountryIcon = styled.img`
 
 const StyledCountryName = styled.p``;
 
-const CountryPicker = ({
-  availableCountries,
-  selectedCountry,
-  setSelectedCountry,
-}) => {
+const CountryPicker = ({ availableCountries, setSelectedCountry }) => {
   const { t } = useTranslation();
 
   const countries = availableCountries.map(({ name, code }) => (
     <CountryItem
       key={code}
       className="bg-blue-ukraine"
-      onClick={() => setSelectedCountry(code)}
+      onClick={() => {
+        console.log("onclick", code);
+        setSelectedCountry(code);
+      }}
     >
       <StyledCountryIcon
         src={SelectCountryIcon[code]}

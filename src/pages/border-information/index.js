@@ -5,14 +5,30 @@ import { POLAND } from "../../configs/constants";
 import HeroChooseCountry from "../../components/Hero/HeroChooseCountry";
 
 const BorderInformationPage = () => {
-  const { t, selectedCountryData, dataViewRef } = useCountryData({
+  const {
+    t,
+    selectedCountryData,
+    dataViewRef,
+    availableCountries,
+    setSelectedCountry,
+  } = useCountryData({
     defaultCountry: POLAND,
   });
 
   const { data, toName } = selectedCountryData;
 
   return (
-    <Layout hero={<HeroChooseCountry title={t("How to cross the border")} />}>
+    <Layout
+      hero={
+        <HeroChooseCountry
+          title={t("How to cross the border")}
+          {...{
+            availableCountries,
+            setSelectedCountry,
+          }}
+        />
+      }
+    >
       {data && (
         <CountryDataView
           dataViewRef={dataViewRef}

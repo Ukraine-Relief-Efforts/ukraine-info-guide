@@ -1,11 +1,13 @@
 import Hero from ".";
-import useCountryData from "../../hooks/useCountryData";
 import CountryPicker from "../CountryPicker";
-import { POLAND } from "../../configs/constants";
+import { useTranslation } from "react-i18next";
 
-const HeroChooseCountry = ({ title }) => {
-  const { t, availableCountries, selectedCountryData, setSelectedCountry } =
-    useCountryData({ defaultCountry: POLAND });
+const HeroChooseCountry = ({
+  title,
+  availableCountries,
+  setSelectedCountry,
+}) => {
+  const { t } = useTranslation();
   return (
     <Hero
       title={title}
@@ -15,7 +17,6 @@ const HeroChooseCountry = ({ title }) => {
           <CountryPicker
             {...{
               availableCountries,
-              selectedCountryData,
               setSelectedCountry,
             }}
           />
