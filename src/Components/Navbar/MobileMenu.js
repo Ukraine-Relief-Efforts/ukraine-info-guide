@@ -2,8 +2,11 @@ import closeSvg from "../../assets/close.svg";
 import Drawer from "react-modern-drawer";
 import "react-modern-drawer/dist/index.css";
 import Links from "./Links";
+import { useToggle } from "./ToggleContext";
 
-const MobileMenu = ({ t, isMenuOpen, toggleMenu }) => {
+const MobileMenu = ({ t, isMenuOpen }) => {
+  const toggleMenu = useToggle();
+
   return (
     <Drawer
       open={isMenuOpen}
