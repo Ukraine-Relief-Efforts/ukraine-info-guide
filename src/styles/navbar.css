@@ -15,11 +15,11 @@
 }
 
 .navbar-item-active {
-  @apply font-semibold text-yellow-dark;
+  @apply font-semibold text-yellow-ukraine;
 }
 
 .authentication-button {
-  @apply bg-yellow-dark text-blue-ukraine rounded-xl my-3 mr-4 py-2 px-4;
+  @apply bg-yellow-ukraine text-blue-ukraine rounded-xl my-3 mr-4 py-2 px-4 font-bold;
 }
 
 /* Mobile */
@@ -30,4 +30,3 @@
 .navbar-mobile .authentication-button {
   @apply mr-0 mb-6;
 }
-

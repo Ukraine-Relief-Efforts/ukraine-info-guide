@@ -11,6 +11,7 @@ const Links = ({ t }) => {
       <Link title={t("Border Info")} url="/border-information" />
       <Link title={t("Food and Shelter")} url="/food-and-shelter" />
       <Link title={t("Polish Asylum Form")} url="/poland-form" />
+      <Link title={t("Resources")} url="/resources" />
       <Link title={t("About")} url="/about" />
       {/* <Link title={t("Services")} url="/services" /> */}
       <LoginButton />
