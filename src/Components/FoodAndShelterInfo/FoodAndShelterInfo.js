@@ -2,7 +2,7 @@ import FoodShelterPointCard from "./FoodShelterPointCard";
 import Map from "../Map/Map";
 
 const FoodAndShelterInfo = ({ title, data }) => {
-  const { general2, foodshelter } = data;
+  const { general, reception } = data;
 
   return (
     <section className="foodshelter-card">
@@ -11,7 +11,7 @@ const FoodAndShelterInfo = ({ title, data }) => {
           <p className="font-semibold mb-5 uppercase">
             {title}
           </p>
-          {general2.map((item) => {
+          {general.map((item) => {
             return (
               <li className="mb-2" key={item}>
                 {item}
@@ -20,9 +20,9 @@ const FoodAndShelterInfo = ({ title, data }) => {
           })}
         </ul>
       </div>
-      <Map markers={foodshelter} />
+      <Map markers={reception} />
       <div className="flex flex-wrap w-full items-center justify-center">
-        {foodshelter.map((item, index) => {
+        {reception.map((item, index) => {
           return <FoodShelterPointCard data={item} key={index} />;
         })}
       </div>

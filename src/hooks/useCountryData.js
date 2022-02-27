@@ -39,7 +39,11 @@ const allCountries = (() => {
   };
 })();
 
-const useCountryData = ({ defaultCountry=null, availableCountries=[] }) => {
+const useCountryData = ({
+  defaultCountry = null,
+  availableCountries = [],
+  fetchApiDataCallback = fetchCountryBorderInfo,
+}) => {
   availableCountries = availableCountries.length
     ? availableCountries.map(code => allCountries[code])
     : Object.values(allCountries);
@@ -55,7 +59,7 @@ const useCountryData = ({ defaultCountry=null, availableCountries=[] }) => {
   const fetchCountryData = async (countryName) => {
     let data;
     try {
-      data = await fetchCountryBorderInfo(countryName, language);
+      data = await fetchApiDataCallback(countryName, language);
     } catch (error) {
       data = { error };
     }
