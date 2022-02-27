@@ -5,7 +5,6 @@ import { loadCountryData } from "../../globalState/slices/borderCrossingData";
 import Layout from "../../Components/Layout/Layout";
 import Hero from "../../Components/Hero/Hero";
 import BorderCrossingInfo from "../../Components/BorderCrossingInfo/BorderCrossingInfo";
-import CountryPicker from "../../Components/CountryPicker/CountryPicker";
 import CountryPickerV2 from "../../Components/CountryPicker/CountryPickerV2";
 
 const BorderInformationPage = () => {
