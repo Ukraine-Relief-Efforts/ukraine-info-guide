@@ -3,6 +3,7 @@ import Hero from "../../Components/Hero/Hero";
 import BorderCrossingInfo from "../../Components/BorderCrossingInfo/BorderCrossingInfo";
 import CountryPicker from "../../Components/CountryPicker/CountryPicker";
 import useCountryData from "../../hooks/useCountryData";
+import { POLAND } from "../../Constants/countryCodes";
 
 const BorderInformationPage = () => {
   const {
@@ -10,7 +11,7 @@ const BorderInformationPage = () => {
     availableCountries,
     selectedCountryData,
     setSelectedCountry,
-  } = useCountryData({ defaultCountry: "pl" });
+  } = useCountryData({ defaultCountry: POLAND });
 
   const { data, toName } = selectedCountryData;
 
@@ -39,6 +40,7 @@ const BorderInformationPage = () => {
             { to_country: t(toName) }
           )}
           data={data}
+          t={t}
         />
       )}
     </Layout>

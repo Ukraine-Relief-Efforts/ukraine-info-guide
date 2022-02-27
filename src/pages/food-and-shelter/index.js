@@ -3,6 +3,7 @@ import Hero from "../../Components/Hero/Hero";
 import FoodAndShelterInfo from "../../Components/FoodAndShelterInfo/FoodAndShelterInfo";
 import CountryPicker from "../../Components/CountryPicker/CountryPicker";
 import useCountryData from "../../hooks/useCountryData";
+import { POLAND } from "../../Constants/countryCodes";
 
 // TEMP
 import dummyData from "../../dummydata/foodshelter_data.json";
@@ -14,7 +15,7 @@ const FoodAndShelterPage = () => {
     selectedCountryData,
     setSelectedCountry,
   } = useCountryData({
-    defaultCountry: "pl",
+    defaultCountry: POLAND,
     fetchApiDataCallback: () => dummyData,
   });
 

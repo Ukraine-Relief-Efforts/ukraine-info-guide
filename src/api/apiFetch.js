@@ -14,7 +14,7 @@ export const apiGetFetch = async (endpoint, getParams) => {
 
   const json = await response.json();
 
-  if (!json)
+  if (!json || Object.keys(json).length < 1)
     throw new Error("Invalid response");
 
   return json;
