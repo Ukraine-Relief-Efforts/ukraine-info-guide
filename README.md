@@ -3,6 +3,7 @@
 ## Project Board [Here](https://github.com/orgs/Ukraine-Relief-Efforts/projects/1/views/4)
 
 [![CI Workflow Status](https://github.com/Ukraine-Relief-Efforts/ukraine-info-guide/actions/workflows/ci.yml/badge.svg)](https://github.com/Ukraine-Relief-Efforts/ukraine-info-guide/actions)
+[![Deployment Status](https://github.com/Ukraine-Relief-Efforts/ukraine-info-guide/actions/workflows/deploy-to-production.yml/badge.svg)](https://github.com/Ukraine-Relief-Efforts/ukraine-info-guide/actions)
 
 The frontend repo for the Leave Ukraine Info Guide.
 
@@ -15,6 +16,15 @@ When adding a new language, you also need to add it to the list of locales in
 `i18next-parser.config.js` and to the language picker in
 `src/Components/NavBar/LanguagePicker.js` (if you don't know how to do
 this then just create a pull request anyway and the reviewer can handle it).
+
+## Creating a PR
+
+Please base your work off of the `main` branch, and target your PR at `main`
+when you're finished.
+
+## Deploying to Production
+
+Simply merge `main` into `production` and it will be automatically deployed.
 
 ## Available Scripts
 
