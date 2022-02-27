@@ -1,6 +1,6 @@
 import React from "react";
 import Select from "react-select";
-import { useTranslation } from "react-i18next";
+import { useRouter } from "next/router";
 
 const languages = [
   { value: "en", label: "English" },
@@ -21,18 +21,21 @@ const customStyles = {
 };
 
 const LanguagePicker = () => {
-  const { i18n } = useTranslation();
+  const router = useRouter();
+
+  const updateLocale = ({ value }) =>
+    router.push(router.asPath, router.asPath, { locale: value })
 
   return (
     <div style={{ minWidth: "140px" }}>
       <Select
         styles={customStyles}
         options={languages}
-        value={languages.find(({ value }) => value === (i18n.language || "en"))}
-        onChange={({ value }) => i18n.changeLanguage(value)}
+        value={languages.find(({ value }) => value === (router.locale || "en"))}
+        onChange={updateLocale}
       />
     </div>
   );
-};
+}
 
 export default LanguagePicker;

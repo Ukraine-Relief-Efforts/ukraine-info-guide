@@ -1,6 +1,6 @@
 import Hero from ".";
 import CountryPicker from "../CountryPicker";
-import { useTranslation } from "react-i18next";
+import { useTranslation } from "next-i18next";
 
 const HeroChooseCountry = ({
   title,

@@ -1,12 +1,15 @@
 import Link from "next/link";
-import { useTranslation } from "react-i18next";
+import { useTranslation } from "next-i18next";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import Hero from "../components/Hero";
 import Layout from "../components/Layout";
-import { getCommonStaticProps } from "../utils";
 
-export const getStaticProps = async (props) => ({
-  props: await getCommonStaticProps(props),
-})
+export const getStaticProps = async ({ locale }) => ({
+  props: {
+    ...(await serverSideTranslations(locale, ["translation"])),
+  }
+});
+
 
 const Index = () => {
   const { t } = useTranslation();

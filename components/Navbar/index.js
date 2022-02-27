@@ -1,6 +1,6 @@
 import { useState } from "react";
 import NavLink from "next/link";
-import { useTranslation } from "react-i18next";
+import { useTranslation } from "next-i18next";
 import Links from "./Links";
 import MobileMenuButton from "./MobileMenuButton";
 import MobileMenu from "./MobileMenu";
@@ -17,8 +17,10 @@ const Navbar = () => {
       <section className="w-full bg-blue-ukraine text-white">
         <div className="container mx-auto max-w-6xl py-5 flex flex-row items-center">
           <div className="grow ml-4 text-xl">
-            <NavLink className="font-semibold text-yellow-ukraine" href="/">
-              LeaveUkraine.com
+            <NavLink href="/">
+              <a className="font-semibold text-yellow-ukraine">
+                LeaveUkraine.com
+              </a>
             </NavLink>
           </div>
           <MobileMenuButton />
