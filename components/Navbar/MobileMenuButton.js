@@ -7,9 +7,10 @@ const MobileMenuButton = () => {
   return (
     <MenuIcon
       alt="Open menu"
-      width={35}
+      width={40}
       onClick={toggleMenu}
-      className="cursor-pointer mr-4 ml-4 h-9 fill-yellow-ukraine lg:hidden"
+      style={{ transform: "scale(1.3)" }}
+      className="cursor-pointer mr-4 ml-4 mt-4 h-9 fill-yellow-ukraine lg:hidden"
     />
   );
 };
