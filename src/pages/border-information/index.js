@@ -11,6 +11,7 @@ const BorderInformationPage = () => {
     availableCountries,
     selectedCountryData,
     setSelectedCountry,
+    dataViewRef,
   } = useCountryData({ defaultCountry: POLAND });
 
   const { data, toName } = selectedCountryData;
@@ -35,6 +36,7 @@ const BorderInformationPage = () => {
     >
       {data && (
         <CountryDataView
+          dataViewRef={dataViewRef}
           title={t(
             "Information for Ukrainian citizens travelling {{to_country}}",
             { to_country: t(toName) }

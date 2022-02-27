@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { useTranslation } from "react-i18next";
 import { fetchCountryBorderInfo } from "../api/CountryApi";
 import { removeArrayDuplicates } from "../utils";
@@ -52,6 +52,8 @@ const useCountryData = ({
 
   defaultCountry = defaultCountry || availableCountries[0];
 
+  const dataViewRef = useRef();
+
   const [library, setLibrary] = useState({});
   const [selectedCountry, setSelectedCountry] = useState(defaultCountry);
 
@@ -101,7 +103,16 @@ const useCountryData = ({
       ...allCountries[selectedCountry],
       data: countryData,
     },
-    setSelectedCountry,
+    setSelectedCountry: (countryCode) => {
+      setSelectedCountry(countryCode);
+      console.log(dataViewRef.current);
+      if (dataViewRef.current)
+        dataViewRef.current.scrollIntoView({
+          block: "start",
+          behavior: "smooth",
+        });
+    },
+    dataViewRef,
   };
 }
 
