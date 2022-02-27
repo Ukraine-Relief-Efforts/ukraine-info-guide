@@ -1,6 +1,8 @@
-# [Leave Ukraine](https://leaveukraine.com/) Info Guide 
+# [Leave Ukraine](https://leaveukraine.com/) Info Guide
 
 ## Project Board [Here](https://github.com/orgs/Ukraine-Relief-Efforts/projects/1/views/4)
+
+[![CI Workflow Status](https://github.com/Ukraine-Relief-Efforts/ukraine-info-guide/actions/workflows/ci.yml/badge.svg)](https://github.com/Ukraine-Relief-Efforts/ukraine-info-guide/actions)
 
 The frontend repo for the Leave Ukraine Info Guide.
 
