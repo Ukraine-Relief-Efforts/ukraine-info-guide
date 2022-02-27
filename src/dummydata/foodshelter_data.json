@@ -1,0 +1,14 @@
+{
+    "general": [
+        "Places with avaliable food and shelter"
+    ],
+    "reception": [
+        {
+            "type": "Food & Accomodation",
+            "thumbnail": "https://lh5.googleusercontent.com/p/AF1QipOX5XQad8VmVGX8W8ZFHXl3zxtDFs5b45DBnR98=w408-h302-k-no",
+            "lat": 49.7833342,
+            "lon": 22.7661195,
+            "address": "Wybrzeże Marszałka Józefa Piłsudskiego 7, 37-700 Przemyśl, Poland"
+        }
+    ]
+}

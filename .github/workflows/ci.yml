@@ -9,8 +9,6 @@ jobs:
       - name: Install modules
         run: npm install --production=false
       - name: Run production build
-        env:
-          CI: false
         run: npm run build
       - name: Upload artifact
         uses: actions/upload-artifact@v2
