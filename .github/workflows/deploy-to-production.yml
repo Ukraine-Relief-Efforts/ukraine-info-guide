@@ -2,7 +2,7 @@ name: Deploy to production
 on:
   push:
     branches:
-      - 'production'
+      - production
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -17,10 +17,15 @@ jobs:
         run: npm install --production=true
       - name: Run production build
         run: npm run build
-      - name: Deploy to AWS
-        uses: lbertenasco/s3-deploy@v1
-          with:
-            folder: /
-            bucket: ${{ secrets.S3_BUCKET }}
-            dist-id: ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }}
-            invalidation: /*
+      - name: Install S3 CLI
+        run: sudo npm i -g s3-deploy
+      - name: Deploy to S3
+        run: s3-deploy \
+          './build/**' \
+          --cwd './' \
+          --bucket ${{ secrets.S3_BUCKET }} \
+          --distId ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }} \
+          --etag \
+          --gzip xml,html,htm,js,json,css,ttf,otf,svg,txt \
+          --invalidate '/*' \
+          --noCache
