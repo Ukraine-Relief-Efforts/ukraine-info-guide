@@ -8,7 +8,12 @@ const MobileMenu = ({ t }) => {
   const { toggleMenu, isMenuOpen } = useToggle();
 
   return (
-    <Drawer open={isMenuOpen} onClose={toggleMenu} direction="right">
+    <Drawer
+      className="overflow-y-hidden"
+      open={isMenuOpen}
+      onClose={toggleMenu}
+      direction="right"
+    >
       <nav className="navbar-mobile">
         <div className="w-full">
           <CloseIcon
