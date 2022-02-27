@@ -2,7 +2,7 @@ import { ReactComponent as MenuIcon } from "../../assets/menu.svg";
 import { useToggle } from "./ToggleContext";
 
 const MobileMenuButton = () => {
-  const toggleMenu = useToggle();
+  const { toggleMenu } = useToggle();
 
   return (
     <MenuIcon

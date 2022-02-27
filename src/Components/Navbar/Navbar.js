@@ -13,7 +13,7 @@ const Navbar = () => {
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
   return (
-    <ToggleProvider value={toggleMenu}>
+    <ToggleProvider value={{ toggleMenu, isMenuOpen, setIsMenuOpen }}>
       <section className="w-full bg-blue-ukraine text-white">
         <div className="container mx-auto max-w-6xl py-5 flex flex-row items-center">
           <div className="grow ml-4 text-xl">
@@ -28,7 +28,7 @@ const Navbar = () => {
             </nav>
           </div>
         </div>
-        <MobileMenu {...{ isMenuOpen, t }} />
+        <MobileMenu t={t} />
       </section>
     </ToggleProvider>
   );

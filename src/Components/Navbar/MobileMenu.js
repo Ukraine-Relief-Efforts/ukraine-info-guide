@@ -4,8 +4,8 @@ import "react-modern-drawer/dist/index.css";
 import Links from "./Links";
 import { useToggle } from "./ToggleContext";
 
-const MobileMenu = ({ t, isMenuOpen }) => {
-  const toggleMenu = useToggle();
+const MobileMenu = ({ t }) => {
+  const { toggleMenu, isMenuOpen } = useToggle();
 
   return (
     <Drawer
