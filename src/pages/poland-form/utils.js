@@ -1,111 +1,113 @@
+const t = (s) => s;
+
 export const personalDataInputs = [
     {
         name: "firstName",
-        title: "First Name"
+        title: t("First Name")
     },
     {
         name: "lastName",
-        title: "Last Name"
+        title: t("Last Name")
     },
     {
         name: "maidenName",
-        title: "Maiden Name"
+        title: t("Maiden Name")
     },
     {
         name: "fathersName",
-        title: "Father's Name"
+        title: t("Father's Name")
     },
     {
         name: "mothersName",
-        title: "Mother's Name"
+        title: t("Mother's Name")
     },
     {
         name: "sex",
-        title: "Sex"
+        title: t("Sex")
     },
     {
         name: "dateOfBirth",
-        title: "Date of Birth"
+        title: t("Date of Birth")
     },
     {
         name: "placeOfBirth",
-        title: "Place of Birth"
+        title: t("Place of Birth")
     },
     {
         name: "countryOfBirth",
-        title: "Country of Birth"
+        title: t("Country of Birth")
     },
     {
         name: "citizenships",
-        title: "Citizenships"
+        title: t("Citizenships")
     },
     {
         name: "maritalStatus",
-        title: "Marital Status"
+        title: t("Marital Status")
     },
     {
         name: "height",
-        title: "Height"
+        title: t("Height")
     },
     {
         name: "specialMarks",
-        title: "Special Marks"
+        title: t("Special Marks")
     },
     {
         name: "colorOfEyes",
-        title: "Color of Eyes"
+        title: t("Color of Eyes")
     },
     {
         name: "polishIdentificationNumber",
-        title: "Polish Identification Number"
+        title: t("Polish Identification Number")
     },
 ];
 export const travelDocumentsInputs = [
     {
         name: "series",
-        title: "Series"
+        title: t("Series")
     },
     {
         name: "number",
-        title: "Number"
+        title: t("Number")
     },
     {
         name: "dateOfIssue",
-        title: "Date of Issue"
+        title: t("Date of Issue")
     },
     {
         name: "dateOfExpiry",
-        title: "Date of Expiry"
+        title: t("Date of Expiry")
     },
     {
         name: "issuingAuthority",
-        title: "Issuing Authority"
+        title: t("Issuing Authority")
     },
     {
         name: "numberOfEnteredPersons",
-        title: "Number of Entered Persons"
+        title: t("Number of Entered Persons")
     },
 ];
 export const placeOfStayInputs = [
     {
         name: "city",
-        title: "City"
+        title: t("City")
     },
     {
         name: "street",
-        title: "Street"
+        title: t("Street")
     },
     {
         name: "buildingNumber",
-        title: "Building Number"
+        title: t("Building Number")
     },
     {
         name: "apartmentNumber",
-        title: "Apartment Number"
+        title: t("Apartment Number")
     },
     {
         name: "postalCode",
-        title: "Postal Code"
+        title: t("Postal Code")
     },
 ];
 
