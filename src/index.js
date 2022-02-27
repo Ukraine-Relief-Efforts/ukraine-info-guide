@@ -5,8 +5,6 @@ import { BrowserRouter } from "react-router-dom";
 import "./styles/index.css";
 import "./i18n/i18n";
 import App from "./App";
-import { store } from "./globalState/store";
-import { Provider } from "react-redux";
 import { Auth0Provider } from "@auth0/auth0-react";
 
 const domain = process.env.REACT_APP_AUTH0_DOMAIN;
@@ -24,14 +22,12 @@ if (app) {
   render(
     <React.StrictMode>
       <BrowserRouter>
-        <Provider store={store}>
-          <Auth0Provider
-            domain={domain}
-            clientId={clientId}
-            redirectUri={window.location.origin}>
-            <App />
-          </Auth0Provider>
-        </Provider>
+        <Auth0Provider
+          domain={domain}
+          clientId={clientId}
+          redirectUri={window.location.origin}>
+          <App />
+        </Auth0Provider>
       </BrowserRouter>
     </React.StrictMode>,
     app

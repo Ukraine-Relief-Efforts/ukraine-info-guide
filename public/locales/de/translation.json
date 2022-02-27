@@ -2,11 +2,10 @@
   "Map": "Karte",
   "Login": "Anmeldung",
   "Logout": "Ausloggen",
-  "Leave Ukraine": "Ukraine verlassen",
   "Border Info": "Grenzübergang",
+  "Food and Shelter": "Nahrung und Unterkunft",
   "Polish Asylum Form": "Polnisches Asylformular",
   "About": "Hintergrund",
-  "Services": "Dienstleistungen",
   "Poland": "Polen",
   "to Poland": "nach Polen",
   "in Poland": "in Polen",
@@ -24,6 +23,11 @@
   "How to cross the border": "Wie man die Grenze überwindet",
   "Choose a country": "Wähle ein Land",
   "Information for Ukrainian citizens travelling {{to_country}}": "Informationen für ukrainische Staatsbürger, die nach {{to_country}} reisen",
+  "Sorry! We don't have information about this border at the moment": "",
+  "Available locations for food and shelter": "Verfügbare Standorte für Lebensmittel und Unterkünfte",
+  "Information for Ukrainian citizens {{in_country}}": "Informationen für ukrainische Staatsbürger {{in_country}}",
+  "Sorry! We don't have information about this country at the moment": "",
+  "Leave Ukraine": "Ukraine verlassen",
   "Information about border crossings": "Informationen über Grenzübertritte",
   "Services we provide": "Dienstleistungen die wir anbieten",
   "Form to apply for Asylum in Poland": "Formular für einen Asylantrag in Polen",
@@ -57,7 +61,5 @@
   "Apartment number": "Wohnungsnummer",
   "Postal Code": "Postleitzahl",
   "Submit": "Absenden",
-  "Available locations for food and shelter": "Verfügbare Standorte für Lebensmittel und Unterkünfte",
-  "Information for Ukrainian citizens {{in_country}}": "Informationen für ukrainische Staatsbürger {{in_country}}",
-  "Food and Shelter": "Nahrung und Unterkunft"
+  "Services": "Dienstleistungen"
 }

@@ -1,6 +1,9 @@
 import { ReactComponent as MenuIcon } from "../../assets/menu.svg";
+import { useToggle } from "./ToggleContext";
 
-const MobileMenuButton = ({ page, toggleMenu }) => {
+const MobileMenuButton = () => {
+  const toggleMenu = useToggle();
+
   return (
     <MenuIcon
       alt="Open menu"

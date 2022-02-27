@@ -1,28 +1,25 @@
-import { useEffect } from "react";
-import { useTranslation } from "react-i18next";
-import { useSelector, useDispatch } from "react-redux";
-import { loadCountryData } from "../../globalState/slices/borderCrossingData";
 import Layout from "../../Components/Layout/Layout";
 import Hero from "../../Components/Hero/Hero";
-import FoodAndShelterInfo from "../../Components/FoodAndShelterInfo/FoodAndShelterInfo";
+import CountryDataView from "../../Components/CountryDataView/CountryDataView";
 import CountryPicker from "../../Components/CountryPicker/CountryPicker";
+import useCountryData from "../../hooks/useCountryData";
+import { POLAND } from "../../Constants/countryCodes";
+
+// TEMP
+import dummyData from "../../dummydata/foodshelter_data.json";
 
 const FoodAndShelterPage = () => {
-  const { t } = useTranslation();
-  const dispatch = useDispatch();
+  const {
+    t,
+    availableCountries,
+    selectedCountryData,
+    setSelectedCountry,
+  } = useCountryData({
+    defaultCountry: POLAND,
+    fetchApiDataCallback: () => dummyData,
+  });
 
-  const availableCountries = useSelector((state) =>
-    state.borderCrossingData.availableCountries);
-  const selectedCountry = useSelector((state) =>
-    state.borderCrossingData.selectedCountry);
-
-  const { data, inName } = availableCountries.find(({ code }) =>
-    code === selectedCountry);
-
-  useEffect(() => {
-    if (!data)
-      dispatch(loadCountryData(selectedCountry));
-  }, [selectedCountry, data, dispatch]);
+  const { data, inName } = selectedCountryData;
 
   return (
     <Layout
@@ -34,19 +31,26 @@ const FoodAndShelterPage = () => {
               <p className="text-xl font-semibold">
                 {t("Choose a country")}:
               </p>
-              <CountryPicker {...{ availableCountries, selectedCountry }} />
+              <CountryPicker {...{
+                availableCountries,
+                selectedCountryData,
+                setSelectedCountry,
+              }} />
             </section>
           }
         />
       }
     >
-      {data && <FoodAndShelterInfo
-        title={t(
-          "Information for Ukrainian citizens {{in_country}}",
-          { in_country: t(inName) },
-        )}
-        data={data}
-      />}
+      {data && (
+        <CountryDataView
+          title={t(
+            "Information for Ukrainian citizens {{in_country}}",
+            { in_country: t(inName) },
+          )}
+          errorMessage={t("Sorry! We don't have information about this country at the moment")}
+          data={data}
+        />
+      )}
     </Layout>
   );
 };

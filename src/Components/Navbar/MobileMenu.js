@@ -2,11 +2,14 @@ import closeSvg from "../../assets/close.svg";
 import Drawer from "react-modern-drawer";
 import "react-modern-drawer/dist/index.css";
 import Links from "./Links";
+import { useToggle } from "./ToggleContext";
 
-const MobileMenu = ({ t, page, toggleMenu }) => {
+const MobileMenu = ({ t, isMenuOpen }) => {
+  const toggleMenu = useToggle();
+
   return (
     <Drawer
-      open={page.menuOpen}
+      open={isMenuOpen}
       onClose={toggleMenu}
       direction="right"
     >
