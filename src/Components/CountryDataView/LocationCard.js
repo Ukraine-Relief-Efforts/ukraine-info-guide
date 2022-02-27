@@ -15,8 +15,10 @@ const LocationCard = ({ data }) => {
         </div>
       }
       {address &&
-        <div className="location-card-address">
-          <p>{address}</p>
+        <div className="location-card-address-wrapper">
+          <div className="location-card-address">
+            <p>{address}</p>
+          </div>
         </div>
       }
       {thumbnail &&
