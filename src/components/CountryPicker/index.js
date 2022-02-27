@@ -44,10 +44,7 @@ const CountryPicker = ({ availableCountries, setSelectedCountry }) => {
     <CountryItem
       key={code}
       className="bg-blue-ukraine"
-      onClick={() => {
-        console.log("onclick", code);
-        setSelectedCountry(code);
-      }}
+      onClick={() => setSelectedCountry(code)}
     >
       <StyledCountryIcon
         src={SelectCountryIcon[code]}
