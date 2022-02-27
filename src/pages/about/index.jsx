@@ -1,6 +1,7 @@
+import { useTranslation, Trans } from "react-i18next";
 import Hero from "../../Components/Hero/Hero";
 import Layout from "../../Components/Layout/Layout";
-import { useTranslation, Trans } from "react-i18next";
+import { GITHUB_URL } from "../../configs/constants";
 
 const AboutPage = () => {
   const { t } = useTranslation();
@@ -10,7 +11,7 @@ const AboutPage = () => {
       <p>
         <Trans t={t} i18nKey="Join us <1>on Github</1>">
           Join us <a
-            href="https://github.com/Ukraine-Relief-Efforts"
+            href={GITHUB_URL}
             className="link"
           >on Github</a>
         </Trans>
