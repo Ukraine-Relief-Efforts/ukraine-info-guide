@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { useSelector, useDispatch } from "react-redux";
-import { openMenu } from "../../globalState/slices/currentPage";
+import { openMenu } from "../../store/slices/currentPage";
 import Links from "./Links";
 import MobileMenuButton from "./MobileMenuButton";
 import MobileMenu from "./MobileMenu";

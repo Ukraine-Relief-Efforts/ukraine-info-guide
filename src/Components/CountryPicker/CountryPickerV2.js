@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next";
 import { useDispatch } from "react-redux";
 import styled from "styled-components";
-import { setSelectedCountry } from "../../globalState/slices/borderCrossingData";
+import { setSelectedCountry } from "../../store/slices/borderCrossingData";
 import { SelectCountryIcon } from "./CountryIconSelector";
 
 const StyledContainer = styled.div`

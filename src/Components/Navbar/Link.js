@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 import { useDispatch } from "react-redux";
-import { setCurrentPage } from "../../globalState/slices/currentPage";
+import { setCurrentPage } from "../../store/slices/currentPage";
 
 const Link = ({ title, url }) => {
   const dispatch = useDispatch();

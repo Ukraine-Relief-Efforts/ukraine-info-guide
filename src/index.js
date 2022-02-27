@@ -7,7 +7,7 @@ import { createBrowserHistory } from "history";
 import "./styles/index.css";
 import "./i18n/i18n";
 import App from "./App";
-import { store } from "./globalState/store";
+import store from "./store/configureStore";
 import { clientId, domain } from "./configs/constants";
 
 const app = document.getElementById("root");

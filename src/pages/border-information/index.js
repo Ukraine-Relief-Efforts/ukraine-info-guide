@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { useSelector, useDispatch } from "react-redux";
-import { loadCountryData } from "../../globalState/slices/borderCrossingData";
+import { loadCountryData } from "../../store/slices/borderCrossingData";
 import Layout from "../../Components/Layout/Layout";
 import Hero from "../../Components/Hero/Hero";
 import BorderCrossingInfo from "../../Components/BorderCrossingInfo/BorderCrossingInfo";
