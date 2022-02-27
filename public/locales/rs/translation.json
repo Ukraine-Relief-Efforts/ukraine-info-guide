@@ -25,7 +25,7 @@
   "Information for Ukrainian citizens travelling {{to_country}}": "Информације за држављане Украине које путују",
   "Sorry! We don't have information about this border at the moment": "Нажалост немамо никакву информацију о датој граници",
   "Available locations for food and shelter": "Доступна места за храну и склониште",
-  "Information for Ukrainian citizens {{in_country}}": "Информације за држављане Украине",
+  "Information for Ukrainian citizens {{in_country}}": "Информација за држављане Украине",
   "Sorry! We don't have information about this country at the moment": "Нажалост немамо никакву информацију о датој држави",
   "Leave Ukraine": "Напустити Украину",
   "Information about border crossings": "Информација о граничним прелазима",
@@ -61,5 +61,11 @@
   "Building Number": "Кућни број",
   "Apartment Number": "Број стана",
   "Postal Code": "Поштански број",
-  "Services": "Услуге"
+  "Services": "Услуге",
+  "Resources": "Ресурси",
+  "Useful resources": "Корисни ресурси",
+  "Border Crossings": "Гранични прелази",
+  "Medical Info/Guides": "Медицинска упутства/информација",
+  "Facebook Groups": "Групе на Facebook-ку",
+  "Reddit Posts": "Постови на Reddit-у"
 }

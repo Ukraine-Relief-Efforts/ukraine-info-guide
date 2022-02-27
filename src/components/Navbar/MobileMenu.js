@@ -1,4 +1,4 @@
-import closeSvg from "../../assets/close.svg";
+import { ReactComponent as CloseIcon } from "../../assets/close.svg";
 import Drawer from "react-modern-drawer";
 import "react-modern-drawer/dist/index.css";
 import Links from "./Links";
@@ -9,24 +9,25 @@ const MobileMenu = ({ t }) => {
 
   return (
     <Drawer
+      className="overflow-y-hidden"
       open={isMenuOpen}
       onClose={toggleMenu}
       direction="right"
     >
       <nav className="navbar-mobile">
         <div className="w-full">
-          <img
-            src={closeSvg}
+          <CloseIcon
             alt="Close menu"
-            width={40}
+            width={35}
+            height={35}
             onClick={toggleMenu}
-            className="cursor-pointer float-right mt-4 mr-4"
+            className="cursor-pointer float-right mt-4 mr-4 fill-yellow-ukraine"
           />
         </div>
         <Links t={t} />
       </nav>
     </Drawer>
   );
-}
+};
 
 export default MobileMenu;
