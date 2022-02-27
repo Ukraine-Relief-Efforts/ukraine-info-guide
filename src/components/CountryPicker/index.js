@@ -37,28 +37,26 @@ const StyledCountryIcon = styled.img`
 
 const StyledCountryName = styled.p``;
 
-const CountryPicker = ({
-  availableCountries,
-  selectedCountry,
-  setSelectedCountry,
-}) => {
+const CountryPicker = ({ availableCountries, setSelectedCountry }) => {
   const { t } = useTranslation();
 
   const countries = availableCountries.map(({ name, code }) => (
-      <CountryItem key={code} className="bg-blue-ukraine">
-        <StyledCountryIcon
-          src={SelectCountryIcon[code]}
-          alt={t(name)}
-          width={40}
-          className="cursor-pointer mt-4"
-          onClick={() => setSelectedCountry(code)}
-        />
-        <StyledCountryName className="text-white text-lg upper m4 mt-4">
-          {t(name)}
-        </StyledCountryName>
-      </CountryItem>
-    )
-  );
+    <CountryItem
+      key={code}
+      className="bg-blue-ukraine"
+      onClick={() => setSelectedCountry(code)}
+    >
+      <StyledCountryIcon
+        src={SelectCountryIcon[code]}
+        alt={t(name)}
+        width={40}
+        className="cursor-pointer mt-4"
+      />
+      <StyledCountryName className="text-white text-lg upper m4 mt-4">
+        {t(name)}
+      </StyledCountryName>
+    </CountryItem>
+  ));
 
   return <StyledContainer>{countries}</StyledContainer>;
 };
