@@ -19,7 +19,7 @@ const FoodAndShelterPage = () => {
     fetchApiDataCallback: () => dummyData,
   });
 
-  const { error, data, inName } = selectedCountryData;
+  const { data, inName } = selectedCountryData;
 
   return (
     <Layout
