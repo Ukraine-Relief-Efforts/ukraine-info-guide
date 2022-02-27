@@ -9,6 +9,11 @@
       "url": "https://www.gov.pl/web/udsc/ukraina2"
     },
     {
+      "title": "Fundacja Ocalenie, Polish site, among others with info for escape/evacuation of Poles from Ukraine",
+      "url": "https://ocalenie.org.pl/zalatwto/ewakuacja-z-ukrainy-o-czym-pamietac-uciekajac-przed-wojna"
+    },
+
+    {
       "title": "Ukraine Official Border Crossings (old)",
       "url": "https://dpsu.gov.ua/en/Where-and-how-you-can-cross-the-state-border-of-Ukraine/"
     },
@@ -19,6 +24,12 @@
     {
       "title": "Flyer in different languages for people entering Romania from Ukraine",
       "url": "https://romania.iom.int/news/useful-information-people-entering-romania-ukraine"
+    }
+  ],
+  "Accommodation": [
+    {
+      "title": "Contacts with shelters, among others in Western Ukraine",
+      "url": "https://prykhystok.in.ua/"
     }
   ],
   "Medical Info/Guides": [
