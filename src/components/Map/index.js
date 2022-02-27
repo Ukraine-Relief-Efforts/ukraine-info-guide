@@ -25,7 +25,7 @@ const Map = ({ markers }) => {
   }));
   const position = findCenter(data);
 
-  const mapRef = useRef()
+  //const mapRef = useRef()
   let location = useGeoLocation()
   let showMyLocation = () => { // either fix this or make it just request permission for location, or both
     /*
