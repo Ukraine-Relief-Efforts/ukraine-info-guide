@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { fetchCountryBorderInfo } from "../api/CountryApi";
+import { removeArrayDuplicates } from "../utils";
 import { POLAND, MOLDOVA, HUNGARY, SLOVAKIA } from "../Constants/countryCodes";
 
 const allCountries = (() => {
@@ -64,6 +65,10 @@ const useCountryData = ({
     } catch (error) {
       data = { error };
     }
+
+    // TODO: Can we remove the duplicated entries on the backend?
+    if (data?.general)
+      data.general = removeArrayDuplicates(data.general);
 
     setLibrary({
       ...library,
