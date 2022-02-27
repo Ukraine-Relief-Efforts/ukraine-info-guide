@@ -4,7 +4,7 @@ import "leaflet-defaulticon-compatibility/dist/leaflet-defaulticon-compatibility
 import "leaflet-defaulticon-compatibility";
 import "./Map.css";
 import { Marker } from "react-leaflet";
-import { useRef } from "react";
+//import { useRef } from "react";
 import MapMarker from "./MapMarker";
 import useGeoLocation from  "../../hooks/useGeoLocation";
 
