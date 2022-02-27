@@ -44,7 +44,7 @@ const Router = () => {
         <Routes>
             {routes.map(route =>
                 <Route
-                    key={route.name}
+                    key={route.path}
                     path={route.path}
                     element={route.element}
                 />
