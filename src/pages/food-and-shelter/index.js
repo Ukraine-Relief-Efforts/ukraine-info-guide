@@ -14,6 +14,7 @@ const FoodAndShelterPage = () => {
     availableCountries,
     selectedCountryData,
     setSelectedCountry,
+    dataViewRef,
   } = useCountryData({
     defaultCountry: POLAND,
     fetchApiDataCallback: () => dummyData,
@@ -43,6 +44,7 @@ const FoodAndShelterPage = () => {
     >
       {data && (
         <CountryDataView
+          dataViewRef={dataViewRef}
           title={t(
             "Information for Ukrainian citizens {{in_country}}",
             { in_country: t(inName) },
