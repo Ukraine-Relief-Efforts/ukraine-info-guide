@@ -1,4 +1,3 @@
-import { loadCountryData } from "../../globalState/slices/borderCrossingData";
 import Layout from "../../Components/Layout/Layout";
 import Hero from "../../Components/Hero/Hero";
 import FoodAndShelterInfo from "../../Components/FoodAndShelterInfo/FoodAndShelterInfo";
