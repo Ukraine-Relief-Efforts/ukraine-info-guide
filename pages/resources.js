@@ -1,8 +1,15 @@
-import { useTranslation } from "react-i18next";
-import Hero from "../../components/Hero";
-import Layout from "../../components/Layout";
+import { useTranslation } from "next-i18next";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import Hero from "../components/Hero";
+import Layout from "../components/Layout";
 
-import resourcesData from "../../dummydata/resources.json";
+import resourcesData from "../dummydata/resources.json";
+
+export const getStaticProps = async ({ locale }) => ({
+  props: {
+    ...(await serverSideTranslations(locale, ["translation"])),
+  }
+});
 
 const ResourcesPage = () => {
   const { t } = useTranslation();
