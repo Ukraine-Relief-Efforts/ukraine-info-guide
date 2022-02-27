@@ -1,0 +1,26 @@
+name: Deploy to production
+on:
+  push:
+    branches:
+      - 'production'
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    env:
+      AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+      AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+      AWS_DEFAULT_REGION: ${{ secrets.AWS_DEFAULT_REGION }}
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v2
+      - name: Install modules
+        run: npm install --production=true
+      - name: Run production build
+        run: npm run build
+      - name: Deploy to AWS
+        uses: lbertenasco/s3-deploy@v1
+          with:
+            folder: /
+            bucket: ${{ secrets.S3_BUCKET }}
+            dist-id: ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }}
+            invalidation: /*
