@@ -9,6 +9,7 @@ const MobileMenu = ({ t }) => {
 
   return (
     <Drawer
+      className="overflow-y-hidden"
       open={isMenuOpen}
       onClose={toggleMenu}
       direction="right"
@@ -27,6 +28,6 @@ const MobileMenu = ({ t }) => {
       </nav>
     </Drawer>
   );
-}
+};
 
 export default MobileMenu;
