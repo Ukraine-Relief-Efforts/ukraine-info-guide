@@ -1,12 +1,12 @@
 import LocationCard from "./LocationCard";
-import Map from "../Map/Map";
-import Spinner from "../Spinner/Spinner";
+import Map from "../Map";
+import Spinner from "../Spinner";
 
-const CountryDataView = ({ title, data, errorMessage }) => {
+const CountryDataView = ({ title, data, errorMessage, dataViewRef }) => {
   const { error, general, reception } = data;
 
   return (
-    <section className="country-data-view">
+    <section className="country-data-view" ref={dataViewRef}>
       <div className="bg-gray-200 p-3">
         <p className="font-semibold mb-5 uppercase">{title}</p>
         <ul className="country-data-view-info-list list-disc">

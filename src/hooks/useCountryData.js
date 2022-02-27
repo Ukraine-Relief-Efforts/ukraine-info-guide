@@ -1,8 +1,8 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { useTranslation } from "react-i18next";
 import { fetchCountryBorderInfo } from "../api/CountryApi";
 import { removeArrayDuplicates } from "../utils";
-import { POLAND, MOLDOVA, HUNGARY, SLOVAKIA } from "../Constants/countryCodes";
+import { POLAND, MOLDOVA, HUNGARY, SLOVAKIA } from "../configs/constants";
 
 const allCountries = (() => {
   // We don't want to translate yet but we do want i18next-parser
@@ -51,6 +51,8 @@ const useCountryData = ({
     : Object.values(allCountries);
 
   defaultCountry = defaultCountry || availableCountries[0];
+
+  const dataViewRef = useRef();
 
   const [library, setLibrary] = useState({});
   const [selectedCountry, setSelectedCountry] = useState(defaultCountry);
@@ -101,7 +103,16 @@ const useCountryData = ({
       ...allCountries[selectedCountry],
       data: countryData,
     },
-    setSelectedCountry,
+    setSelectedCountry: (countryCode) => {
+      setSelectedCountry(countryCode);
+      console.log(dataViewRef.current);
+      if (dataViewRef.current)
+        dataViewRef.current.scrollIntoView({
+          block: "start",
+          behavior: "smooth",
+        });
+    },
+    dataViewRef,
   };
 }
 

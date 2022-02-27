@@ -1,6 +1,6 @@
-import AuthenticatedUserProfile from "../AuthenticatedUserProfile/AuthenticatedUserProfile";
-import LoginButton from "../LoginButton/LoginButton";
-import LogoutButton from "../LogoutButton/LogoutButton";
+import AuthenticatedUserProfile from "../AuthenticatedUserProfile";
+import LoginButton from "../LoginButton";
+import LogoutButton from "../LogoutButton";
 import LanguagePicker from "./LanguagePicker";
 import Link from "./Link";
 

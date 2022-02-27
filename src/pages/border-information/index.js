@@ -1,9 +1,9 @@
-import Layout from "../../Components/Layout/Layout";
-import Hero from "../../Components/Hero/Hero";
-import CountryDataView from "../../Components/CountryDataView/CountryDataView";
-import CountryPicker from "../../Components/CountryPicker/CountryPicker";
+import Layout from "../../components/Layout";
+import Hero from "../../components/Hero";
+import CountryDataView from "../../components/CountryDataView";
+import CountryPicker from "../../components/CountryPicker";
 import useCountryData from "../../hooks/useCountryData";
-import { POLAND } from "../../Constants/countryCodes";
+import { POLAND } from "../../configs/constants";
 
 const BorderInformationPage = () => {
   const {
@@ -11,6 +11,7 @@ const BorderInformationPage = () => {
     availableCountries,
     selectedCountryData,
     setSelectedCountry,
+    dataViewRef,
   } = useCountryData({ defaultCountry: POLAND });
 
   const { data, toName } = selectedCountryData;
@@ -35,6 +36,7 @@ const BorderInformationPage = () => {
     >
       {data && (
         <CountryDataView
+          dataViewRef={dataViewRef}
           title={t(
             "Information for Ukrainian citizens travelling {{to_country}}",
             { to_country: t(toName) }
