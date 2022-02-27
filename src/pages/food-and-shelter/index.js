@@ -2,7 +2,7 @@ import { loadCountryData } from "../../globalState/slices/borderCrossingData";
 import Layout from "../../Components/Layout/Layout";
 import Hero from "../../Components/Hero/Hero";
 import FoodAndShelterInfo from "../../Components/FoodAndShelterInfo/FoodAndShelterInfo";
-import CountryPickerV2 from "../../Components/CountryPicker/CountryPickerV2";
+import CountryPicker from "../../Components/CountryPicker/CountryPicker";
 import useCountryData from "../../hooks/useCountryData";
 
 // TEMP
@@ -31,7 +31,7 @@ const FoodAndShelterPage = () => {
               <p className="text-xl font-semibold">
                 {t("Choose a country")}:
               </p>
-              <CountryPickerV2 {...{
+              <CountryPicker {...{
                 availableCountries,
                 selectedCountryData,
                 setSelectedCountry,
