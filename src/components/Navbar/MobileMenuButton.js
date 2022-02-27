@@ -9,7 +9,7 @@ const MobileMenuButton = () => {
       alt="Open menu"
       width={35}
       onClick={toggleMenu}
-      className="cursor-pointer mr-4 ml-4 h-9 fill-yellow-dark lg:hidden"
+      className="cursor-pointer mr-4 ml-4 h-9 fill-yellow-ukraine lg:hidden"
     />
   );
 };
