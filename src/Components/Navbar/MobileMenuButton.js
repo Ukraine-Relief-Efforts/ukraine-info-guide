@@ -1,6 +1,6 @@
 import menuSvg from "../../assets/menu.svg";
 
-const MobileMenuButton = ({ page, toggleMenu }) => {
+const MobileMenuButton = ({ toggleMenu }) => {
   return (
     <img
       src={menuSvg}

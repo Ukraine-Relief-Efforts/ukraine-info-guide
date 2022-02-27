@@ -3,10 +3,10 @@ import Drawer from "react-modern-drawer";
 import "react-modern-drawer/dist/index.css";
 import Links from "./Links";
 
-const MobileMenu = ({ t, page, toggleMenu }) => {
+const MobileMenu = ({ t, isMenuOpen, toggleMenu }) => {
   return (
     <Drawer
-      open={page.menuOpen}
+      open={isMenuOpen}
       onClose={toggleMenu}
       direction="right"
     >
