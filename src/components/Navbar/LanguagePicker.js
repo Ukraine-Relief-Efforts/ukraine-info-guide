@@ -10,6 +10,7 @@ const languages = [
   { value: "de", label: "Deutsch" },
   { value: "es", label: "Español" },
   { value: "pl", label: "Polski" },
+  { value: "kr", label: "한국어" },
 ];
 
 const customStyles = {
