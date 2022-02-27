@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import Layout from "../../components/Layout";
 import Hero from "../../components/Hero";
-import TextField from "../../Components/TextField";
+import TextField from "../../components/TextField";
 import {
     placeOfStayInputs,
     personalDataInputs,

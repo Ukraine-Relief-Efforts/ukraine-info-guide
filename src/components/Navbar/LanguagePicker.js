@@ -10,6 +10,7 @@ const languages = [
   { value: "de", label: "Deutsch" },
   { value: "es", label: "Español" },
   { value: "pl", label: "Polski" },
+  { value: "kr", label: "한국어" },
 ];
 
 const customStyles = {
@@ -23,12 +24,14 @@ const LanguagePicker = () => {
   const { i18n } = useTranslation();
 
   return (
-    <Select
-      styles={customStyles}
-      options={languages}
-      value={languages.find(({ value }) => value === (i18n.language || "en"))}
-      onChange={({ value }) => i18n.changeLanguage(value)}
-    />
+    <div style={{ minWidth: "140px" }}>
+      <Select
+        styles={customStyles}
+        options={languages}
+        value={languages.find(({ value }) => value === (i18n.language || "en"))}
+        onChange={({ value }) => i18n.changeLanguage(value)}
+      />
+    </div>
   );
 };
 
