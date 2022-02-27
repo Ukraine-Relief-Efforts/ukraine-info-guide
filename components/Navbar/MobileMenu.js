@@ -1,4 +1,4 @@
-import { ReactComponent as CloseIcon } from "../../assets/close.svg";
+import CloseIcon from "../../icons/close.svg";
 import Drawer from "react-modern-drawer";
 import "react-modern-drawer/dist/index.css";
 import Links from "./Links";

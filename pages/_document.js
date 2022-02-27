@@ -27,11 +27,10 @@ class Document extends NextDocument {
           <meta name="msapplication-TileColor" content="#ffffff" />
           <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
           <meta name="theme-color" content="#ffffff" />
-
-          <meta charset="utf-8" />
-          <meta name="viewport" content="width=device-width, initial-scale=1" />
+          <meta charSet="utf-8" />
           <meta name="theme-color" content="#000000" />
-          <title>Leave Ukraine</title>
+          <link rel="canonical" href="https://www.leaveukraine.com/" />
+          <meta name="keywords" content="ukraine, help, info, leaveukraine" />
           <meta
             name="description"
             content="Help and information for refugees trying to leave ukraine"

@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -9,13 +9,13 @@ const Footer = () => {
             <div>
               <h6 className="uppercase font-semibold mb-4 flex justify-center md:justify-start">Useful links</h6>
               <p className="mb-4">
-                <Link to="/border-information" className="text-gray-600">
-                  Border Info
+                <Link href="/border-information">
+                  <a className="text-gray-600">Border Info</a>
                 </Link>
               </p>
               <p className="mb-4">
-                <Link to="/" className="text-gray-600">
-                  Host a refugee
+                <Link href="/">
+                  <a className="text-gray-600">Host a refugee</a>
                 </Link>
               </p>
             </div>
@@ -23,23 +23,23 @@ const Footer = () => {
             <div>
               <h6 className="uppercase font-semibold mb-4 flex justify-center md:justify-start">Contacts</h6>
               <p className="flex items-center justify-center md:justify-start mb-4">
-                <Link to="/" className="text-gray-600">
-                  Twitter
+                <Link href="/">
+                  <a className="text-gray-600">Twitter</a>
                 </Link>
               </p>
               <p className="flex items-center justify-center md:justify-start mb-4">
-                <Link to="/" className="text-gray-600">
-                  Facebook
+                <Link href="/">
+                  <a className="text-gray-600">Facebook</a>
                 </Link>
               </p>
               <p className="flex items-center justify-center md:justify-start mb-4">
-                <Link to="/" className="text-gray-600">
-                  Telegram
+                <Link href="/">
+                  <a className="text-gray-600">Telegram</a>
                 </Link>
               </p>
               <p className="flex items-center justify-center md:justify-start">
-                <Link to="/" className="text-gray-600">
-                  Instagram
+                <Link href="/">
+                  <a className="text-gray-600">Instagram</a>
                 </Link>
               </p>
             </div>
@@ -48,7 +48,7 @@ const Footer = () => {
       </div>
       <div className="text-center p-6 bg-gray-200">
         <span>© {new Date().getFullYear()} Copyright </span>
-        <Link className="text-gray-600 font-semibold" to="/">
+        <Link className="text-gray-600 font-semibold" href="/">
           LeaveUkraine
         </Link>
       </div>
