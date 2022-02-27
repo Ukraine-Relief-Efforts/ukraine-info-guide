@@ -21,6 +21,10 @@ const CountryItem = styled.button`
   border-radius: 10%;
   text-align: center;
   transition: transform 0.2s;
+  @media (max-width: 450px) {
+    width: 140px;
+    height: 180px;
+  }
 
   &:hover {
     transform: scale(1.05);
