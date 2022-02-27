@@ -1,5 +1,5 @@
+import { useState } from "react";
 import { useTranslation } from "react-i18next";
-
 import Layout from "../../components/Layout";
 import Hero from "../../components/Hero";
 import TextField from "../../Components/TextField";
@@ -12,7 +12,7 @@ import {
 
 const PolandFormPage = () => {
     const { t } = useTranslation();
-    const [fieldsValues, setFieldsValues] = React.useState(initializeFieldsState());
+    const [fieldsValues, setFieldsValues] = useState(initializeFieldsState());
 
     const handleChangeInputs = ({ target }) => {
         const { name, value } = target;
