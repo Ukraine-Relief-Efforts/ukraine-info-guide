@@ -1,5 +1,5 @@
 {
-  "Map": "",
+  "Map": "Мапа",
   "Login": "Увійти",
   "Logout": "Вийти",
   "Border Info": "Інформація про Кордон",
@@ -61,5 +61,11 @@
   "Building Number": "",
   "Apartment Number": "",
   "Postal Code": "",
-  "Services": "Сервіси"
+  "Services": "Сервіси",
+  "Resources": "Ресурси",
+  "Useful resources": "Корисні ресурси",
+  "Border Crossings": "Перетин кордонів",
+  "Medical Info/Guides": "Медична інформація/Довідники",
+  "Facebook Groups": "Групи у Фейсбуці",
+  "Reddit Posts": "Пости в Реддіті"
 }
