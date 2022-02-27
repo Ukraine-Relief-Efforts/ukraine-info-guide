@@ -1,14 +1,21 @@
 import { useState } from "react";
-import { useTranslation } from "react-i18next";
-import Layout from "../../components/Layout";
-import Hero from "../../components/Hero";
-import TextField from "../../components/TextField";
+import { useTranslation } from "next-i18next";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import Layout from "../components/Layout";
+import Hero from "../components/Hero";
+import TextField from "../components/TextField";
 import {
     placeOfStayInputs,
     personalDataInputs,
     travelDocumentsInputs,
     initializeFieldsState
-} from "./utils";
+} from "../configs/polandFormConfig";
+
+export const getStaticProps = async ({ locale }) => ({
+  props: {
+    ...(await serverSideTranslations(locale, ["translation"])),
+  }
+});
 
 const PolandFormPage = () => {
     const { t } = useTranslation();
