@@ -1,6 +1,6 @@
 import Layout from "../../Components/Layout/Layout";
 import Hero from "../../Components/Hero/Hero";
-import BorderCrossingInfo from "../../Components/BorderCrossingInfo/BorderCrossingInfo";
+import CountryDataView from "../../Components/CountryDataView/CountryDataView";
 import CountryPicker from "../../Components/CountryPicker/CountryPicker";
 import useCountryData from "../../hooks/useCountryData";
 import { POLAND } from "../../Constants/countryCodes";
@@ -42,7 +42,7 @@ const FoodAndShelterPage = () => {
       }
     >
       {data && (
-        <BorderCrossingInfo
+        <CountryDataView
           title={t(
             "Information for Ukrainian citizens {{in_country}}",
             { in_country: t(inName) },
