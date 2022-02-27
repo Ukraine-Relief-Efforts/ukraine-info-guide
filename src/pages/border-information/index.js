@@ -1,9 +1,9 @@
-import Layout from "../../Components/Layout/Layout";
-import Hero from "../../Components/Hero/Hero";
-import CountryDataView from "../../Components/CountryDataView/CountryDataView";
-import CountryPicker from "../../Components/CountryPicker/CountryPicker";
+import Layout from "../../components/Layout";
+import Hero from "../../components/Hero";
+import CountryDataView from "../../components/CountryDataView";
+import CountryPicker from "../../components/CountryPicker";
 import useCountryData from "../../hooks/useCountryData";
-import { POLAND } from "../../Constants/countryCodes";
+import { POLAND } from "../../configs/constants";
 
 const BorderInformationPage = () => {
   const {

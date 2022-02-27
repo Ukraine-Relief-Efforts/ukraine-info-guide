@@ -1,6 +1,6 @@
 import LocationCard from "./LocationCard";
-import Map from "../Map/Map";
-import Spinner from "../Spinner/Spinner";
+import Map from "../Map";
+import Spinner from "../Spinner";
 
 const CountryDataView = ({ title, data, errorMessage }) => {
   const { error, general, reception } = data;

@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
 import { coordsToGoogleMapsUrl } from "../../utils";
-import NewTabLink from "../NewTabLink/NewTabLink";
+import NewTabLink from "../NewTabLink";
 
 const LocationCard = ({ data }) => {
   const { t } = useTranslation();

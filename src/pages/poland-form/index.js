@@ -1,5 +1,5 @@
-import Layout from "../../Components/Layout/Layout";
-import Hero from "../../Components/Hero/Hero";
+import Layout from "../../components/Layout";
+import Hero from "../../components/Hero";
 
 import {useTranslation} from "react-i18next";
 

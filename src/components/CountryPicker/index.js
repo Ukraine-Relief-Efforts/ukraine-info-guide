@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
 import styled from "styled-components";
-import { CountryIconSelector } from "./CountryIconSelector";
+import { SelectCountryIcon } from "./CountryIconSelector";
 
 const StyledContainer = styled.div`
   display: flex;
@@ -44,12 +44,10 @@ const CountryPicker = ({
 }) => {
   const { t } = useTranslation();
 
-  const countries = availableCountries.map(({ name, code }) => {
-    const CountryIcon = CountryIconSelector(code);
-    return (
+  const countries = availableCountries.map(({ name, code }) => (
       <CountryItem key={code} className="bg-blue-ukraine">
         <StyledCountryIcon
-          src={CountryIcon}
+          src={SelectCountryIcon[code]}
           alt={t(name)}
           width={40}
           className="cursor-pointer mt-4"
@@ -59,8 +57,8 @@ const CountryPicker = ({
           {t(name)}
         </StyledCountryName>
       </CountryItem>
-    );
-  });
+    )
+  );
 
   return <StyledContainer>{countries}</StyledContainer>;
 };
