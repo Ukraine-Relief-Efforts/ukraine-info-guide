@@ -1,6 +1,6 @@
 import { useTranslation, Trans } from "react-i18next";
-import Hero from "../../Components/Hero/Hero";
-import Layout from "../../Components/Layout/Layout";
+import Hero from "../../components/Hero/Hero";
+import Layout from "../../components/Layout/Layout";
 import { GITHUB_URL } from "../../configs/constants";
 
 const AboutPage = () => {

@@ -2,10 +2,10 @@ import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { useSelector, useDispatch } from "react-redux";
 import { loadCountryData } from "../../store/slices/borderCrossingData";
-import Layout from "../../Components/Layout/Layout";
-import Hero from "../../Components/Hero/Hero";
-import FoodAndShelterInfo from "../../Components/FoodAndShelterInfo/FoodAndShelterInfo";
-import CountryPicker from "../../Components/CountryPicker/CountryPicker";
+import Layout from "../../components/Layout/Layout";
+import Hero from "../../components/Hero/Hero";
+import FoodAndShelterInfo from "../../components/FoodAndShelterInfo/FoodAndShelterInfo";
+import CountryPicker from "../../components/CountryPicker/CountryPicker";
 
 const FoodAndShelterPage = () => {
   const { t } = useTranslation();
