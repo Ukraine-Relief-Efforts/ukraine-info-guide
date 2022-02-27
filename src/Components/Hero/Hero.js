@@ -1,11 +1,9 @@
 const Hero = ({ title, subcomponent = null }) => {
   return (
-    <div className="w-full shadow-md bg-[#FFF199] p-2">
-      <div className="max-w-6xl mx-auto justify-center items-center flex mb-5 py-16">
-        <div className="items-center">
-          <p className="text-4xl text-bold text-black text-center">{title}</p>
-          {subcomponent}
-        </div>
+    <div className="justify-center items-center flex mb-10 py-10 bg-yellow-ukraine w-full">
+      <div className="items-center">
+        <p className="text-3xl text-center font-bold">{title}</p>
+        {subcomponent}
       </div>
     </div>
   );

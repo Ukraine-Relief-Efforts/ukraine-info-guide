@@ -6,15 +6,22 @@ import Layout from "../../Components/Layout/Layout";
 import Hero from "../../Components/Hero/Hero";
 import BorderCrossingInfo from "../../Components/BorderCrossingInfo/BorderCrossingInfo";
 import CountryPicker from "../../Components/CountryPicker/CountryPicker";
+import CountryPickerV2 from "../../Components/CountryPicker/CountryPickerV2";
 
 const BorderInformationPage = () => {
   const { t } = useTranslation();
   const dispatch = useDispatch();
 
-  const availableCountries = useSelector((state) => state.borderCrossingData.availableCountries);
-  const selectedCountry = useSelector((state) => state.borderCrossingData.selectedCountry);
+  const availableCountries = useSelector(
+    (state) => state.borderCrossingData.availableCountries
+  );
+  const selectedCountry = useSelector(
+    (state) => state.borderCrossingData.selectedCountry
+  );
 
-  const { data, toName } = availableCountries.find(({ code }) => code === selectedCountry);
+  const { data, toName } = availableCountries.find(
+    ({ code }) => code === selectedCountry
+  );
 
   useEffect(() => {
     if (!data) dispatch(loadCountryData(selectedCountry));
@@ -26,15 +33,23 @@ const BorderInformationPage = () => {
         <Hero
           title={t("How to cross the border")}
           subcomponent={
-            <section className="mt-10 text-center">
+            <section className="mt-5 text-center text-blue-ukraine">
               <p className="text-xl font-semibold">{t("Choose a country")}:</p>
-              <CountryPicker {...{ availableCountries, selectedCountry }} />
+              <CountryPickerV2 {...{ availableCountries, selectedCountry }} />
             </section>
           }
         />
       }
     >
-      {data && <BorderCrossingInfo title={t("Information for Ukrainian citizens travelling {{to_country}}", { to_country: t(toName) })} data={data} />}
+      {data && (
+        <BorderCrossingInfo
+          title={t(
+            "Information for Ukrainian citizens travelling {{to_country}}",
+            { to_country: t(toName) }
+          )}
+          data={data}
+        />
+      )}
     </Layout>
   );
 };
