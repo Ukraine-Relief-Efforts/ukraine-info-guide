@@ -1,7 +1,12 @@
 import Link from "next/link";
+import { useTranslation } from "react-i18next";
 import Hero from "../components/Hero";
 import Layout from "../components/Layout";
-import { useTranslation } from "react-i18next";
+import { getCommonStaticProps } from "../utils";
+
+export const getStaticProps = async (props) => ({
+  props: await getCommonStaticProps(props),
+})
 
 const Index = () => {
   const { t } = useTranslation();

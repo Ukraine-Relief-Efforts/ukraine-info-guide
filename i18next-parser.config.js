@@ -1,8 +1,10 @@
+const { i18n } = require("./next-i18next.config");
+
 module.exports = {
 	keepRemoved: false,
 	js: ['JsxLexer'],
 	jsx: ['JsxLexer'],
-	locales: ['en', 'ua', 'ru', 'it', 'de', 'es', 'pl', 'kr'],
+	locales: i18n.locales,
 	output: 'public/locales/$LOCALE/$NAMESPACE.json',
 	input: [ 'src/**/*.js', 'src/**/*.jsx' ],
 };

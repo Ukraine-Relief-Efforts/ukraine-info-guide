@@ -1,4 +1,5 @@
 import "../styles/index.css";
+import { appWithTranslation } from "next-i18next";
 import Head from "next/head";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
@@ -17,4 +18,4 @@ const App = ({ Component, pageProps }) => (
   </>
 );
 
-export default App;
+export default appWithTranslation(App);
