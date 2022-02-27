@@ -1,30 +1,19 @@
-import { useEffect } from "react";
-import { useTranslation } from "react-i18next";
-import { useSelector, useDispatch } from "react-redux";
-import { loadCountryData } from "../../store/slices/borderCrossingData";
 import Layout from "../../components/Layout";
 import Hero from "../../components/Hero";
-import BorderCrossingInfo from "../../components/BorderCrossingInfo";
-import CountryPickerV2 from "../../components/CountryPicker/CountryPickerV2";
+import CountryDataView from "../../components/CountryDataView";
+import CountryPicker from "../../components/CountryPicker";
+import useCountryData from "../../hooks/useCountryData";
+import { POLAND } from "../../configs/constants";
 
 const BorderInformationPage = () => {
-  const { t } = useTranslation();
-  const dispatch = useDispatch();
+  const {
+    t,
+    availableCountries,
+    selectedCountryData,
+    setSelectedCountry,
+  } = useCountryData({ defaultCountry: POLAND });
 
-  const availableCountries = useSelector(
-    (state) => state.borderCrossingData.availableCountries
-  );
-  const selectedCountry = useSelector(
-    (state) => state.borderCrossingData.selectedCountry
-  );
-
-  const { data, toName } = availableCountries.find(
-    ({ code }) => code === selectedCountry
-  );
-
-  useEffect(() => {
-    if (!data) dispatch(loadCountryData(selectedCountry));
-  }, [selectedCountry, data, dispatch]);
+  const { data, toName } = selectedCountryData;
 
   return (
     <Layout
@@ -34,18 +23,23 @@ const BorderInformationPage = () => {
           subcomponent={
             <section className="mt-5 text-center text-blue-ukraine">
               <p className="text-xl font-semibold">{t("Choose a country")}:</p>
-              <CountryPickerV2 {...{ availableCountries, selectedCountry }} />
+              <CountryPicker {...{
+                availableCountries,
+                selectedCountryData,
+                setSelectedCountry,
+              }} />
             </section>
           }
         />
       }
     >
       {data && (
-        <BorderCrossingInfo
+        <CountryDataView
           title={t(
             "Information for Ukrainian citizens travelling {{to_country}}",
             { to_country: t(toName) }
           )}
+          errorMessage={t("Sorry! We don't have information about this border at the moment")}
           data={data}
         />
       )}

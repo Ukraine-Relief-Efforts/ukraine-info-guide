@@ -5,14 +5,6 @@ import "leaflet-defaulticon-compatibility";
 import "./Map.css";
 import MapMarker from "./MapMarker";
 
-const gmapsAddressToCoords = (gmaps) => {
-  if ((gmaps = gmaps.split("@")[1])) {
-    const lat = parseFloat(gmaps);
-    const lng = parseFloat(gmaps.split(",")[1]);
-    return lat && lng ? [lat, lng] : undefined;
-  }
-};
-
 const findCenter = (data) =>
   data
     .map((m) => m.position)
@@ -25,7 +17,7 @@ const findCenter = (data) =>
 const Map = ({ markers }) => {
   const data = markers.map((m) => ({
     ...m,
-    position: gmapsAddressToCoords(m.gmaps),
+    position: [ parseFloat(m.lat), parseFloat(m.lon) ],
   }));
 
   const position = findCenter(data);

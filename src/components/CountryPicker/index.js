@@ -1,7 +1,5 @@
 import { useTranslation } from "react-i18next";
-import { useDispatch } from "react-redux";
 import styled from "styled-components";
-import { setSelectedCountry } from "../../store/slices/borderCrossingData";
 import { SelectCountryIcon } from "./CountryIconSelector";
 
 const StyledContainer = styled.div`
@@ -22,6 +20,13 @@ const CountryItem = styled.button`
   height: 200px;
   border-radius: 10%;
   text-align: center;
+  transition: transform 0.2s;
+
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 1px 0px 6px -1px;
+    z-index: 2;
+  }
 `;
 
 const StyledCountryIcon = styled.img`
@@ -32,8 +37,11 @@ const StyledCountryIcon = styled.img`
 
 const StyledCountryName = styled.p``;
 
-const CountryPickerV2 = ({ availableCountries, selectedCountry }) => {
-  const dispatch = useDispatch();
+const CountryPicker = ({
+  availableCountries,
+  selectedCountry,
+  setSelectedCountry,
+}) => {
   const { t } = useTranslation();
 
   const countries = availableCountries.map(({ name, code }) => (
@@ -43,7 +51,7 @@ const CountryPickerV2 = ({ availableCountries, selectedCountry }) => {
           alt={t(name)}
           width={40}
           className="cursor-pointer mt-4"
-          onClick={() => dispatch(setSelectedCountry(code))}
+          onClick={() => setSelectedCountry(code)}
         />
         <StyledCountryName className="text-white text-lg upper m4 mt-4">
           {t(name)}
@@ -55,4 +63,4 @@ const CountryPickerV2 = ({ availableCountries, selectedCountry }) => {
   return <StyledContainer>{countries}</StyledContainer>;
 };
 
-export default CountryPickerV2;
+export default CountryPicker;
