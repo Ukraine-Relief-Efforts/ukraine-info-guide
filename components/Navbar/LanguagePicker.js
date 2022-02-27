@@ -11,6 +11,7 @@ const languages = [
   { value: "es", label: "Español" },
   { value: "pl", label: "Polski" },
   { value: "kr", label: "한국어" },
+  { value: "rs", label: "Српски"},
 ];
 
 const customStyles = {
