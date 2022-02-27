@@ -20,6 +20,13 @@ const CountryItem = styled.button`
   height: 200px;
   border-radius: 10%;
   text-align: center;
+  transition: transform 0.2s;
+
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 1px 0px 6px -1px;
+    z-index: 2;
+  }
 `;
 
 const StyledCountryIcon = styled.img`
