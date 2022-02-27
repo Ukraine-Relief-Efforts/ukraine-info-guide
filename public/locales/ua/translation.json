@@ -2,11 +2,10 @@
   "Map": "",
   "Login": "Увійти",
   "Logout": "Вийти",
-  "Leave Ukraine": "Виїхати з України",
   "Border Info": "Інформація про Кордон",
+  "Food and Shelter": "",
   "Polish Asylum Form": "",
   "About": "Інформація",
-  "Services": "Сервіси",
   "Poland": "",
   "to Poland": "",
   "in Poland": "",
@@ -24,6 +23,11 @@
   "How to cross the border": "",
   "Choose a country": "",
   "Information for Ukrainian citizens travelling {{to_country}}": "",
+  "Sorry! We don't have information about this border at the moment": "",
+  "Available locations for food and shelter": "",
+  "Information for Ukrainian citizens {{in_country}}": "",
+  "Sorry! We don't have information about this country at the moment": "",
+  "Leave Ukraine": "Виїхати з України",
   "Information about border crossings": "Інформація щодо перетину кордону",
   "Services we provide": "Послуги, що ми надаємо",
   "Form to apply for Asylum in Poland": "",
@@ -57,7 +61,5 @@
   "Apartment number": "",
   "Postal Code": "",
   "Submit": "",
-  "Available locations for food and shelter": "",
-  "Information for Ukrainian citizens {{in_country}}": "",
-  "Food and Shelter": ""
+  "Services": "Сервіси"
 }
