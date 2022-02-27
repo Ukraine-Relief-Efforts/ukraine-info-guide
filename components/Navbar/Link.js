@@ -8,13 +8,11 @@ const Link = ({ title, url }) => {
   const { setIsMenuOpen } = useToggle();
 
   return (
-    <NavLink
-      href={url}
-      onClick={() => setIsMenuOpen(false)}
-    >
+    <NavLink href={url}>
       <a
         className={`navbar-item ${isActive ? "navbar-item-active" : ""}`}
         style={{ padding: "0.3em 0.5em", fontSize: "1em" }}
+        onClick={() => setIsMenuOpen(false)}
       >
         {title}
       </a>
