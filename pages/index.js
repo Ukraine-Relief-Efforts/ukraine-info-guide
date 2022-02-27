@@ -10,7 +10,6 @@ export const getStaticProps = async ({ locale }) => ({
   }
 });
 
-
 const Index = () => {
   const { t } = useTranslation();
 
