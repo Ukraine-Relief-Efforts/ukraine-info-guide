@@ -7,7 +7,7 @@ const resourceCategories = {
   accommodation: t("Accommodation"),
   medicalInfo: t("Medical Info/Guides"),
   facebookGroups: t("Facebook Groups"),
-  redditPosts: t("redditPosts"),
+  redditPosts: t("Reddit Posts"),
 };
 
 export default resourceCategories;

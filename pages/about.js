@@ -4,6 +4,11 @@ import Hero from "../components/Hero";
 import Layout from "../components/Layout";
 import { GITHUB_URL } from "../configs/constants";
 
+const githubI18nKey = (() => {
+	const t = (s) => s;
+	return t("Join us <1>on Github</1>");
+})();
+
 export const getStaticProps = async ({ locale }) => ({
   props: {
     ...(await serverSideTranslations(locale, ["translation"])),
@@ -16,7 +21,7 @@ const AboutPage = () => {
   return (
     <Layout hero={<Hero title={t("About us")} />}>
       <p>
-        <Trans t={t} i18nKey="Join us <1>on Github</1>">
+        <Trans t={t} i18nKey={githubI18nKey}>
           Join us <a
             href={GITHUB_URL}
             className="link"
