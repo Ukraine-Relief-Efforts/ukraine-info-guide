@@ -19,10 +19,10 @@ const MobileMenu = ({ t }) => {
           <CloseIcon
             alt="Close menu"
             onClick={toggleMenu}
-            className="cursor-pointer float-right mt-8 mr-8 fill-yellow-ukraine scale-[1.3]"
+            className="cursor-pointer mt-8 mr-8 fill-yellow-ukraine scale-[1.3] ml-auto"
           />
         </div>
-        <Links t={t} />
+        <Links t={t} vertical={true} />
       </nav>
     </Drawer>
   );

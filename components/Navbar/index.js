@@ -15,7 +15,7 @@ const Navbar = () => {
   return (
     <ToggleProvider value={{ toggleMenu, isMenuOpen, setIsMenuOpen }}>
       <section className="w-full bg-blue-ukraine text-white">
-        <div className="container mx-auto max-w-6xl py-5 flex flex-row items-center">
+        <div className="container mx-auto max-w-6xl py-5 flex flex-row items-center flex-nowrap">
           <div className="grow ml-4 text-xl">
             <NavLink href="/">
               <a className="font-semibold text-yellow-ukraine">
@@ -23,12 +23,12 @@ const Navbar = () => {
               </a>
             </NavLink>
           </div>
-          <MobileMenuButton />
           <div className="hidden lg:block mx-4">
             <nav className="navbar">
-              <Links t={t} />
+              <Links t={t} vertical={false} />
             </nav>
           </div>
+          <MobileMenuButton />
         </div>
         <MobileMenu t={t} />
       </section>

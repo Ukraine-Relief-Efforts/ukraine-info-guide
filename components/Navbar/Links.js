@@ -3,21 +3,34 @@ import LoginButton from "../LoginButton";
 import LogoutButton from "../LogoutButton";
 import LanguagePicker from "./LanguagePicker";
 import Link from "./Link";
+import features from "../../configs/features";
 
-const Links = ({ t }) => {
+const getConfig = (t) => [
+  { title: t("Leave Ukraine"), url: "", inTopBar: false },
+  { title: t("Border Info"), url: "", inTopBar: true },
+  { title: t("Food and Shelter"), url: "", inTopBar: true },
+  { title: t("Polish Asylum Form"), url: "", inTopBar: false },
+  { title: t("Resources"), url: "", inTopBar: true },
+  { title: t("About"), url: "", inTopBar: false },
+  { title: t("Services"), url: "", inTopBar: false },
+];
+
+const Links = ({ t, vertical }) => {
   return (
     <>
-      {/* <Link title={t("Leave Ukraine")} url="/" /> */}
-      <Link title={t("Border Info")} url="/border-information" />
-      <Link title={t("Food and Shelter")} url="/food-and-shelter" />
-      <Link title={t("Polish Asylum Form")} url="/poland-form" />
-      <Link title={t("Resources")} url="/resources" />
-      <Link title={t("About")} url="/about" />
-      {/* <Link title={t("Services")} url="/services" /> */}
-      <LoginButton />
-      <LogoutButton />
-      <AuthenticatedUserProfile />
+      {
+        getConfig(t).map(({ inTopBar, ...rest }) =>
+          (vertical || inTopBar) && <Link {...rest} />
+        )
+      }
+      {features.login &&
+        <>
+          <LoginButton />
+          <LogoutButton />
+        </>
+      }
       <LanguagePicker />
+      <AuthenticatedUserProfile />
     </>
   );
 };
