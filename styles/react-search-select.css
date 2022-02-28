@@ -1,0 +1,26 @@
+.select-search {
+  width: 140px;
+}
+
+.select-search:not(.select-search--multiple) .select-search__input:hover {
+  @apply border-yellow-200;
+}
+
+.select-search .select-search__value {
+  @apply text-black;
+}
+
+.select-search .select-search__select .select-search__option {
+  @apply text-black;
+}
+
+.select-search .select-search__select .select-search__option.is-selected {
+  @apply text-black bg-yellow-ukraine;
+}
+
+.select-search .select-search__select .select-search__option.is-highlighted,
+.select-search
+  .select-search__select
+  .select-search__option:not(.is-selected):hover {
+  @apply bg-yellow-200;
+}

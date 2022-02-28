@@ -24,6 +24,8 @@ code {
   overflow-wrap: anywhere;
 }
 
+@import "~react-select-search/style.css";
+@import "react-search-select.css";
 @import "navbar.css";
 @import "country-data-view.css";
 @import "location-card.css";
