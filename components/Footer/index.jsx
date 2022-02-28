@@ -3,6 +3,7 @@ import Link from "next/link";
 import FooterHeader from "./FooterHeader";
 import FooterLink from "./FooterLink";
 import { TWITTER_URL, GITHUB_URL } from "../../configs/constants";
+import features from "../../configs/features";
 
 const Footer = () => {
   const { t } = useTranslation();
@@ -14,8 +15,11 @@ const Footer = () => {
           <div className="grid grid-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
             <div>
               <FooterHeader>{t("Useful links")}</FooterHeader>
+              <FooterLink href="/resources">{t("Resources")}</FooterLink>
               <FooterLink href="/border-information">{t("Border Info")}</FooterLink>
-              <FooterLink href="/#">{t("Host a refugee")}</FooterLink>
+              <FooterLink href="https://reddit.com/r/ukraine/">{t("r/ukraine")}</FooterLink>
+              {features.hostARefugee &&
+                <FooterLink href="/#">{t("Host a refugee")}</FooterLink>}
             </div>
             <div>
               <FooterHeader>Contacts</FooterHeader>
@@ -25,11 +29,11 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="text-center p-6 bg-gray-200">
+      <div className="text-center p-8 bg-gray-200">
         <span>© {new Date().getFullYear()} Copyright </span>
         <Link className="text-gray-600 font-semibold" href="/">
           LeaveUkraine
-        </Link>
+        </Link>. All rights reserved.
       </div>
     </footer>
   );
