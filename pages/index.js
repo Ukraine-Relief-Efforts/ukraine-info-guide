@@ -28,7 +28,7 @@ const Index = () => {
             <a className="link">{t("Resources")}</a>
           </Link>
         </div>
-        <div className="grow-0 space-y-4">
+        <div className="grow-0 space-y-4 mx-auto">
           <TwitterTimeline />
         </div>
       </div>
