@@ -1,6 +1,7 @@
 import Link from "next/link";
 import FooterHeader from "./FooterHeader";
 import FooterLink from "./FooterLink";
+import { TWITTER_URL, GITHUB_URL } from "../../configs/constants";
 
 const Footer = () => {
   return (
@@ -15,10 +16,8 @@ const Footer = () => {
             </div>
             <div>
               <FooterHeader>Contacts</FooterHeader>
-              <FooterLink href="/#">Twitter</FooterLink>
-              <FooterLink href="/#">Facebook</FooterLink>
-              <FooterLink href="/#">Telegram</FooterLink>
-              <FooterLink href="/#">Instagram</FooterLink>
+              <FooterLink href={TWITTER_URL}>Twitter</FooterLink>
+              <FooterLink href={GITHUB_URL}>Github</FooterLink>
             </div>
           </div>
         </div>

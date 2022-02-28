@@ -8,4 +8,5 @@ export const clientId = process.env.REACT_APP_AUTH0_CLIENT_ID;
 
 export const IS_DEVELOPMENT = process.env.NODE_ENV === 'development';
 
+export const TWITTER_URL = "https://twitter.com/TechForUkraine";
 export const GITHUB_URL = "https://github.com/Ukraine-Relief-Efforts";
