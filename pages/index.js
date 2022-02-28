@@ -16,8 +16,8 @@ const Index = () => {
 
   return (
     <Layout hero={<Hero title={t("Leave Ukraine")} />}>
-      <div className="flex flex-row grow basis-0 w-full">
-        <div className="flex flex-col items-center space-y-4 grow">
+      <div className="flex flex-col lg:flex-row grow basis-0 w-full">
+        <div className="flex flex-col items-center space-y-4 grow mb-7 lg:mb-0">
           <Link href="/border-information">
             <a className="link">{t("Information about border crossings")}</a>
           </Link>
@@ -28,7 +28,7 @@ const Index = () => {
             <a className="link">{t("Resources")}</a>
           </Link>
         </div>
-        <div className="grow-0">
+        <div className="grow-0 space-y-4">
           <TwitterTimeline />
         </div>
       </div>
