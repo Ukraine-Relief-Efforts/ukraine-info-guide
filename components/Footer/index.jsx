@@ -1,18 +1,21 @@
+import { useTranslation } from "next-i18next";
 import Link from "next/link";
 import FooterHeader from "./FooterHeader";
 import FooterLink from "./FooterLink";
 import { TWITTER_URL, GITHUB_URL } from "../../configs/constants";
 
 const Footer = () => {
+  const { t } = useTranslation();
+
   return (
     <footer className="text-center lg:text-left text-gray-600">
       <div className="max-w-6xl mx-auto">
         <div className="mx-6 py-10 text-center md:text-left">
           <div className="grid grid-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
             <div>
-              <FooterHeader>Useful links</FooterHeader>
-              <FooterLink href="/border-information">Border Info</FooterLink>
-              <FooterLink href="/#">Host a refugee</FooterLink>
+              <FooterHeader>{t("Useful links")}</FooterHeader>
+              <FooterLink href="/border-information">{t("Border Info")}</FooterLink>
+              <FooterLink href="/#">{t("Host a refugee")}</FooterLink>
             </div>
             <div>
               <FooterHeader>Contacts</FooterHeader>
