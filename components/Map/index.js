@@ -5,6 +5,7 @@ import "leaflet-defaulticon-compatibility";
 import { Marker } from "react-leaflet";
 import MapMarker from "./MapMarker";
 import useGeoLocation from  "../../hooks/useGeoLocation";
+import features from "../../configs/features";
 
 const findCenter = (data) =>
   data
@@ -24,7 +25,7 @@ const Map = ({ markers }) => {
   const position = findCenter(data);
 
   //const mapRef = useRef()
-  let location = useGeoLocation()
+  let location = features.geolocation && useGeoLocation()
   let showMyLocation = () => { // either fix this or make it just request permission for location, or both
     /*
     if(location.loaded && !location.error){
@@ -37,11 +38,13 @@ const Map = ({ markers }) => {
 
   return (
     <div>
-      <div>
-        <button className="showlocation-button" onClick={showMyLocation}>
-          Show My Location
-        </button>
-      </div>
+      {features.geolocation &&
+        <div>
+          <button className="showlocation-button" onClick={showMyLocation}>
+            Show My Location
+          </button>
+        </div>
+      }
       <MapContainer center={position} zoom={zoomLevel} scrollWheelZoom={false}>
         <TileLayer
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
@@ -50,7 +53,7 @@ const Map = ({ markers }) => {
         {data.map((m, index) => (
           <MapMarker {...m} key={index} />
         ))}
-        {location.loaded && !location.error && (
+        {features.geolocation && location.loaded && !location.error && (
           <Marker position={[location.coordinates.lat, location.coordinates.lng]}></Marker>
         )}
       </MapContainer>
