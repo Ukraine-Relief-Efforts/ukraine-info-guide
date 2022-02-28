@@ -19,8 +19,7 @@ const MobileMenu = ({ t }) => {
           <CloseIcon
             alt="Close menu"
             onClick={toggleMenu}
-            style={{ transform: "scale(1.3)" }}
-            className="cursor-pointer float-right mt-8 mr-8 fill-yellow-ukraine"
+            className="cursor-pointer float-right mt-8 mr-8 fill-yellow-ukraine scale-[1.3]"
           />
         </div>
         <Links t={t} />
