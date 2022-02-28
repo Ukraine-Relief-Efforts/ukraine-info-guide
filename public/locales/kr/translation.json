@@ -5,7 +5,7 @@
   "Border Info": "국경 정보",
   "Food and Shelter": "의식주(Food and Shelter)",
   "Polish Asylum Form": "폴란드 망명자 양식",
-  "About": "저희에 대해",
+  "About": "사이트 소개",
   "Poland": "폴란드",
   "to Poland": "폴란드행",
   "in Poland": "폴란드 내",
@@ -18,7 +18,7 @@
   "Slovakia": "슬로바키아",
   "to Slovakia": "슬로바키아행",
   "in Slovakia": "슬로바키아 내",
-  "About us": "저희에 대해",
+  "About us": "단체 소개",
   "Join us <1>on Github</1>": "<1>깃허브(Github)</1>에서 저희와 함류하세요",
   "How to cross the border": "국경을 넘는 방법",
   "Choose a country": "국가를 선택해주세요",
@@ -68,5 +68,5 @@
   "Medical Info/Guides": "의료 정보/가이드",
   "Facebook Groups": "페이스북 그룹",
   "Reddit Posts": "레딧 글",
-  "Accommodation" : ""
+  "Accommodation" : "숙박 시설"
 }
