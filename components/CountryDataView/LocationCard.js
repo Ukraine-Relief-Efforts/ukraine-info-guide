@@ -9,29 +9,29 @@ const LocationCard = ({ data }) => {
 
   return (
     <section className="location-card-reception">
-      {type &&
+      {type && type.length &&
         <div className="location-card-type">
           <p>{type}</p>
         </div>
       }
-      {address &&
+      {address && address.length &&
         <div className="location-card-address-wrapper">
           <div className="location-card-address">
             <p>{address}</p>
           </div>
         </div>
       }
-      {thumbnail &&
+      {thumbnail && thumbnail.length &&
         <div className="location-card-thumbnail">
           <img src={thumbnail} alt={address || type} />
         </div>
       }
-      {qr &&
+      {qr && qr.length &&
         <div className="location-card-qr">
           <img src={qr} alt="QR code" />
         </div>
       }
-      {mapUrl &&
+      {mapUrl && mapUrl.length &&
         <NewTabLink href={mapUrl} className="location-card-google font-semibold">
           {t("Map")}
         </NewTabLink>

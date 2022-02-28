@@ -18,10 +18,17 @@ const findCenter = (data) =>
 
 const Map = ({ markers }) => {
   const zoomLevel = 7
-  const data = markers.map((m) => ({
-    ...m,
-    position: [ parseFloat(m.lat), parseFloat(m.lon) ],
-  }));
+
+  const data = markers
+    .filter((m) => m.lat && m.lon && m.lat.length && m.lon.length)
+    .map((m) => ({
+      ...m,
+      position: [ parseFloat(m.lat), parseFloat(m.lon) ],
+    }));
+
+  if (data.length < 1)
+    return null;
+
   const position = findCenter(data);
 
   //const mapRef = useRef()
