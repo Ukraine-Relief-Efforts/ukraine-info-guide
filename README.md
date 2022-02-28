@@ -13,7 +13,7 @@ The translation files are located in `public/locales/`. You can simply copy
 one of the other languages and update the translations as needed.
 
 When adding a new language, you also need to add it to the list of locales in
-`i18next-parser.config.js` and to the language picker in
+`next-i18next.config.js` and to the language picker in
 `src/Components/NavBar/LanguagePicker.js` (if you don't know how to do
 this then just create a pull request anyway and the reviewer can handle it).
 
