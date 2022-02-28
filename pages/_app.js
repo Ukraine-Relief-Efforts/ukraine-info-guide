@@ -24,6 +24,12 @@ const App = ({ Component, pageProps }) => {
         <link rel="icon" type="image/png" sizes="96x96" href="/favicons/favicon-96x96.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png" />
         <link rel="manifest" href="/favicons/manifest.json" />
+        <meta property="og:title" content="Leave Ukraine"/>
+        <meta property="og:site_name" content="Leave Ukraine"/>
+        <meta property="og:url" content="https://leaveukraine.com/"/>
+        <meta property="og:description" content="Help and information for refugees trying to leave Ukraine"/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:image" content="https://en.wikipedia.org/wiki/File:Flag_of_Ukraine.svg"></meta>
         <meta name="msapplication-TileColor" content="#ffffff" />
         <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
         <meta name="theme-color" content="#ffffff" />
