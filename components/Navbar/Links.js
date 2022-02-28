@@ -57,7 +57,7 @@ const Links = ({ t, vertical }) => {
     <>
       {
         config.map(({ inTopBar, ...rest }) =>
-          (vertical || inTopBar) && <Link {...rest} />
+          (vertical || inTopBar) && <Link {...rest} key={rest.url} />
         )
       }
       {features.login &&

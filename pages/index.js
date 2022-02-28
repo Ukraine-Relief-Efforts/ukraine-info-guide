@@ -3,6 +3,7 @@ import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import Hero from "../components/Hero";
 import Layout from "../components/Layout";
+import TwitterTimeline from "../components/TwitterTimeline";
 
 export const getStaticProps = async ({ locale }) => ({
   props: {
@@ -15,16 +16,21 @@ const Index = () => {
 
   return (
     <Layout hero={<Hero title={t("Leave Ukraine")} />}>
-      <div className="flex flex-col items-center space-y-4">
-        <Link href="/border-information">
-          <a className="link">{t("Information about border crossings")}</a>
-        </Link>
-        <Link href="/food-and-shelter">
-          <a className="link">{t("Food and Shelter")}</a>
-        </Link>
-        <Link href="/resources">
-          <a className="link">{t("Resources")}</a>
-        </Link>
+      <div className="flex flex-row grow basis-0 w-full">
+        <div className="flex flex-col items-center space-y-4 grow">
+          <Link href="/border-information">
+            <a className="link">{t("Information about border crossings")}</a>
+          </Link>
+          <Link href="/food-and-shelter">
+            <a className="link">{t("Food and Shelter")}</a>
+          </Link>
+          <Link href="/resources">
+            <a className="link">{t("Resources")}</a>
+          </Link>
+        </div>
+        <div className="grow-0">
+          <TwitterTimeline />
+        </div>
       </div>
     </Layout>
   );
