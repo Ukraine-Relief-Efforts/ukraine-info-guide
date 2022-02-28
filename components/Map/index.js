@@ -19,6 +19,8 @@ const findCenter = (data) =>
 const Map = ({ markers }) => {
   const zoomLevel = 7
 
+  let location = useGeoLocation()
+
   const data = markers
     .filter((m) => m.lat && m.lon && m.lat.length && m.lon.length)
     .map((m) => ({
@@ -32,7 +34,6 @@ const Map = ({ markers }) => {
   const position = findCenter(data);
 
   //const mapRef = useRef()
-  let location = features.geolocation && useGeoLocation()
   let showMyLocation = () => { // either fix this or make it just request permission for location, or both
     /*
     if(location.loaded && !location.error){
