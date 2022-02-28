@@ -15,18 +15,23 @@
     "spinners-react": "^1.0.6",
     "styled-components": "^5.3.3"
   },
+  "devDependencies": {
+    "@svgr/webpack": "^6.2.1",
+    "autoprefixer": "^10.4.2",
+    "eslint": "^8.10.0",
+    "eslint-config-next": "12.1.0",
+    "i18next-parser": "^5.4.0",
+    "postcss": "^8.4.7",
+    "source-map-explorer": "^2.5.2",
+    "tailwindcss": "^3.0.23"
+  },
   "scripts": {
     "dev": "next dev",
     "start": "next start",
     "build": "next build",
+    "lint": "next lint",
     "analyze": "source-map-explorer 'build/static/js/*.js'",
     "update-translations": "npx i18next -c i18next-parser.config.js"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
   },
   "browserslist": {
     "production": [
@@ -39,13 +44,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "@svgr/webpack": "^6.2.1",
-    "autoprefixer": "^10.4.2",
-    "i18next-parser": "^5.4.0",
-    "postcss": "^8.4.7",
-    "source-map-explorer": "^2.5.2",
-    "tailwindcss": "^3.0.23"
   }
 }
