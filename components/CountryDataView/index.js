@@ -23,7 +23,7 @@ const CountryDataView = ({ title, data, errorMessage, dataViewRef }) => {
         <Spinner enabled={!error && !general && !reception} />
         {error && <p>{errorMessage}</p>}
       </div>
-      {!error && reception &&
+      {!error && reception && reception.length > 0 &&
         <>
           <Map markers={reception} />
           <div className="flex flex-wrap items-center justify-center">
