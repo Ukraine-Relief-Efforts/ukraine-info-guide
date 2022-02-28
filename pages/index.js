@@ -19,11 +19,11 @@ const Index = () => {
         <Link href="/border-information">
           <a className="link">{t("Information about border crossings")}</a>
         </Link>
-        <Link href="/about">
-          <a className="link">{t("About us")}</a>
+        <Link href="/food-and-shelter">
+          <a className="link">{t("Food and Shelter")}</a>
         </Link>
-        <Link href="/services">
-          <a className="link">{t("Services we provide")}</a>
+        <Link href="/resources">
+          <a className="link">{t("Resources")}</a>
         </Link>
       </div>
     </Layout>

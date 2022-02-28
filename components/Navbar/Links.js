@@ -6,20 +6,57 @@ import Link from "./Link";
 import features from "../../configs/features";
 
 const getConfig = (t) => [
-  { title: t("Leave Ukraine"), url: "", inTopBar: false },
-  { title: t("Border Info"), url: "", inTopBar: true },
-  { title: t("Food and Shelter"), url: "", inTopBar: true },
-  { title: t("Polish Asylum Form"), url: "", inTopBar: false },
-  { title: t("Resources"), url: "", inTopBar: true },
-  { title: t("About"), url: "", inTopBar: false },
-  { title: t("Services"), url: "", inTopBar: false },
+  {
+    title: t("Leave Ukraine"),
+    url: "/",
+    inTopBar: false,
+    enabled: true,
+  },
+  {
+    title: t("Border Info"),
+    url: "/border-information",
+    inTopBar: true,
+    enabled: true,
+  },
+  {
+    title: t("Food and Shelter"),
+    url: "/food-and-shelter",
+    inTopBar: true,
+    enabled: true,
+  },
+  {
+    title: t("Polish Asylum Form"),
+    url: "/poland-form",
+    inTopBar: false,
+    enabled: features.asylumForm,
+  },
+  {
+    title: t("Resources"),
+    url: "/resources",
+    inTopBar: true,
+    enabled: true,
+  },
+  {
+    title: t("About"),
+    url: "/about",
+    inTopBar: false,
+    enabled: features.aboutPage,
+  },
+  {
+    title: t("Services"),
+    url: "/services",
+    inTopBar: false,
+    enabled: features.servicesPage,
+  },
 ];
 
 const Links = ({ t, vertical }) => {
+  const config = getConfig(t).filter(({ enabled }) => enabled);
+
   return (
     <>
       {
-        getConfig(t).map(({ inTopBar, ...rest }) =>
+        config.map(({ inTopBar, ...rest }) =>
           (vertical || inTopBar) && <Link {...rest} />
         )
       }
@@ -29,7 +66,9 @@ const Links = ({ t, vertical }) => {
           <LogoutButton />
         </>
       }
-      <LanguagePicker />
+      <div style={{ marginTop: vertical ? "25px" : undefined }}>
+        <LanguagePicker />
+      </div>
       <AuthenticatedUserProfile />
     </>
   );
