@@ -6,5 +6,11 @@ module.exports = {
 	jsx: ['JsxLexer'],
 	locales: i18n.locales,
 	output: 'public/locales/$LOCALE/$NAMESPACE.json',
-	input: [ 'src/**/*.js', 'src/**/*.jsx' ],
+	input: [
+		'components/**/*.js',
+		'configs/**/*.js',
+		'hooks/**/*.js',
+		'pages/**/*.js',
+		'utils/**/*.js',
+	],
 };
