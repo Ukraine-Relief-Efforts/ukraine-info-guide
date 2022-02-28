@@ -1,38 +1,29 @@
 import React from "react";
-import Select from "react-select";
+import SelectSearch from "react-select-search";
 import { useTranslation } from "react-i18next";
 
 const languages = [
-  { value: "en", label: "English" },
-  { value: "ua", label: "Українська" },
-  { value: "ru", label: "Русский" },
-  { value: "it", label: "Italiano" },
-  { value: "de", label: "Deutsch" },
-  { value: "es", label: "Español" },
-  { value: "pl", label: "Polski" },
-  { value: "kr", label: "한국어" },
-  { value: "rs", label: "Српски"}
+  { value: "en", name: "English" },
+  { value: "ua", name: "Українська" },
+  { value: "ru", name: "Русский" },
+  { value: "it", name: "Italiano" },
+  { value: "de", name: "Deutsch" },
+  { value: "es", name: "Español" },
+  { value: "pl", name: "Polski" },
+  { value: "kr", name: "한국어" },
+  { value: "rs", name: "Српски" },
 ];
-
-const customStyles = {
-  option: (provided, state) => ({
-    ...provided,
-    color: state.isSelected ? "white" : "black",
-  }),
-};
 
 const LanguagePicker = () => {
   const { i18n } = useTranslation();
 
   return (
-    <div style={{ minWidth: "140px" }}>
-      <Select
-        styles={customStyles}
-        options={languages}
-        value={languages.find(({ value }) => value === (i18n.language || "en"))}
-        onChange={({ value }) => i18n.changeLanguage(value)}
-      />
-    </div>
+    <SelectSearch
+      name="language"
+      options={languages}
+      value={languages.find(({ value }) => value === (i18n.language || "en"))}
+      onChange={(value) => i18n.changeLanguage(value)}
+    />
   );
 };
 

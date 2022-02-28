@@ -18,7 +18,7 @@
     "react-modern-drawer": "^1.0.1",
     "react-router-dom": "^6.2.1",
     "react-scripts": "5.0.0",
-    "react-select": "^5.2.2",
+    "react-select-search": "^3.0.9",
     "spinners-react": "^1.0.6",
     "styled-components": "^5.3.3",
     "web-vitals": "^2.1.4"
