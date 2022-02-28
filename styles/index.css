@@ -2,8 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700;800&display=swap");
-
 body {
   margin: 0;
   font-family: "Poppins", sans-serif, -apple-system, BlinkMacSystemFont,
