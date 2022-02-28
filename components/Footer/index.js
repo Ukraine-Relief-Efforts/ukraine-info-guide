@@ -22,7 +22,7 @@ const Footer = () => {
                 <FooterLink href="/#">{t("Host a refugee")}</FooterLink>}
             </div>
             <div>
-              <FooterHeader>Contacts</FooterHeader>
+              <FooterHeader>{t("Contacts")}</FooterHeader>
               <FooterLink href={TWITTER_URL}>Twitter</FooterLink>
               <FooterLink href={GITHUB_URL}>Github</FooterLink>
             </div>
