@@ -6,13 +6,13 @@ import Link from "./Link";
 import features from "../../configs/features";
 
 const getConfig = (t) => [
-  { title: t("Leave Ukraine"), url: "", inTopBar: false },
-  { title: t("Border Info"), url: "", inTopBar: true },
-  { title: t("Food and Shelter"), url: "", inTopBar: true },
-  { title: t("Polish Asylum Form"), url: "", inTopBar: false },
-  { title: t("Resources"), url: "", inTopBar: true },
-  { title: t("About"), url: "", inTopBar: false },
-  { title: t("Services"), url: "", inTopBar: false },
+  { title: t("Leave Ukraine"), url: "/", inTopBar: false },
+  { title: t("Border Info"), url: "/border-information", inTopBar: true },
+  { title: t("Food and Shelter"), url: "/food-and-shelter", inTopBar: true },
+  { title: t("Polish Asylum Form"), url: "/poland-form", inTopBar: false },
+  { title: t("Resources"), url: "/resources", inTopBar: true },
+  { title: t("About"), url: "/about", inTopBar: false },
+  { title: t("Services"), url: "/services", inTopBar: false },
 ];
 
 const Links = ({ t, vertical }) => {
