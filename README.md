@@ -30,7 +30,7 @@ Simply merge `main` into `production` and it will be automatically deployed.
 
 In the project directory, you can run:
 
-### `npm start`
+### `npm run dev`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
@@ -40,13 +40,12 @@ You may also see any lint errors in the console.
 
 ### `npm run build`
 
-Builds the app for production to the `build` folder.
+Builds the app for production.
+
+### `npm start`
+
+Start the production server that you built with `npm  run build`.
 
 ### `npm run update-translations`
 
 Parses the code and extracts new translatable strings into the json files.
-
-### `npm test`
-
-We haven't got any test yet!
-
