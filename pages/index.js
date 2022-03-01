@@ -11,11 +11,19 @@ export const getStaticProps = async ({ locale }) => ({
   }
 });
 
+const Description = ({ t }) => (
+  <p className="opacity-70 max-w-md mt-5 text-center">
+    {t("Information collected from governments and other sources about the situation in Ukraine and how to leave")}
+  </p>
+);
+
 const Index = () => {
   const { t } = useTranslation();
 
   return (
-    <Layout hero={<Hero title={t("Leave Ukraine")} />}>
+    <Layout hero={
+      <Hero title={t("Leave Ukraine")} subcomponent={<Description t={t} />} />}
+    >
       <div className="flex flex-col lg:flex-row grow basis-0 w-full">
         <div className="flex flex-col items-center space-y-4 grow mb-7 lg:mb-0">
           <Link href="/border-information">

@@ -29,7 +29,7 @@ const App = ({ Component, pageProps }) => {
         <meta property="og:title" content="Leaving Ukraine Information" />
         <meta
           property="og:description"
-          content="Information collected from governments and other sources on the situation in Ukraine and how to leave"
+          content="Information collected from governments and other sources about the situation in Ukraine and how to leave"
         />
         <meta property="og:type" content="website" />
         <meta property="og:image" content={`${BASE_URL}logo.jpg`} />
@@ -41,10 +41,10 @@ const App = ({ Component, pageProps }) => {
         <meta charSet="utf-8" />
         <meta name="theme-color" content="#000000" />
         <link rel="canonical" href={BASE_URL} />
-        <meta name="keywords" content="leave,ukraine,leaving,help,info,information,leaveukraine,russia,putin,zelenskyy" />
+        <meta name="keywords" content="leave,ukraine,crisis,war,leaving,help,info,information,leaveukraine,russia,putin,zelenskyy" />
         <meta
           name="description"
-          content="Information collected from governments and other sources on the situation in Ukraine and how to leave"
+          content="Information collected from governments and other sources about the situation in Ukraine and how to leave"
         />
         <link rel="apple-touch-icon" href="/logo192.png" />
         <link rel="manifest" href="/manifest.json" />
