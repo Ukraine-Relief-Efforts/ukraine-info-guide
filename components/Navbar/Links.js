@@ -37,7 +37,7 @@ const getConfig = (t) => [
     enabled: true,
   },
   {
-    title: t("About"),
+    title: t("About us"),
     url: "/about",
     inTopBar: false,
     enabled: features.aboutPage,
