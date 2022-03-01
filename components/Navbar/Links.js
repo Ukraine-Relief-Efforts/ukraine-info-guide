@@ -13,6 +13,12 @@ const getConfig = (t) => [
     enabled: true,
   },
   {
+    title: t("Missile Alerts"),
+    url: "/alerts",
+    inTopBar: true,
+    enabled: true,
+  },
+  {
     title: t("Border Info"),
     url: "/border-information",
     inTopBar: true,
@@ -21,7 +27,7 @@ const getConfig = (t) => [
   {
     title: t("Food and Shelter"),
     url: "/food-and-shelter",
-    inTopBar: true,
+    inTopBar: false,
     enabled: true,
   },
   {
