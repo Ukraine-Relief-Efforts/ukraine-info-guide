@@ -2,6 +2,7 @@ export const POLAND = "pl";
 export const MOLDOVA = "md";
 export const HUNGARY = "hu";
 export const SLOVAKIA = "sk";
+export const ROMANIA = "ro";
 
 export const domain = process.env.REACT_APP_AUTH0_DOMAIN;
 export const clientId = process.env.REACT_APP_AUTH0_CLIENT_ID;
