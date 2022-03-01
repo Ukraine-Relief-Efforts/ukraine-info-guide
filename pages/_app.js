@@ -3,6 +3,7 @@ import { appWithTranslation } from "next-i18next";
 import Head from "next/head";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import { BASE_URL } from "../configs/constants";
 
 const App = ({ Component, pageProps }) => {
   return (
@@ -24,22 +25,26 @@ const App = ({ Component, pageProps }) => {
         <link rel="icon" type="image/png" sizes="96x96" href="/favicons/favicon-96x96.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png" />
         <link rel="manifest" href="/favicons/manifest.json" />
-        <meta property="og:title" content="Leave Ukraine"/>
-        <meta property="og:site_name" content="Leave Ukraine"/>
-        <meta property="og:url" content="https://leaveukraine.com/"/>
-        <meta property="og:description" content="Help and information for refugees trying to leave Ukraine"/>
-        <meta property="og:type" content="website"/>
-        <meta property="og:image" content="https://en.wikipedia.org/wiki/File:Flag_of_Ukraine.svg"></meta>
+        <meta property="og:site_name" content="Leave Ukraine" />
+        <meta property="og:title" content="Leaving Ukraine Information" />
+        <meta
+          property="og:description"
+          content="Information collected from governments and other sources on the situation in Ukraine and how to leave"
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content={`${BASE_URL}logo.jpg`} />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:site" content="@TechForUkraine" />
         <meta name="msapplication-TileColor" content="#ffffff" />
         <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
         <meta name="theme-color" content="#ffffff" />
         <meta charSet="utf-8" />
         <meta name="theme-color" content="#000000" />
-        <link rel="canonical" href="https://www.leaveukraine.com/" />
-        <meta name="keywords" content="ukraine, help, info, leaveukraine" />
+        <link rel="canonical" href={BASE_URL} />
+        <meta name="keywords" content="leave,ukraine,leaving,help,info,information,leaveukraine,russia,putin,zelenskyy" />
         <meta
           name="description"
-          content="Help and information for refugees trying to leave ukraine"
+          content="Information collected from governments and other sources on the situation in Ukraine and how to leave"
         />
         <link rel="apple-touch-icon" href="/logo192.png" />
         <link rel="manifest" href="/manifest.json" />

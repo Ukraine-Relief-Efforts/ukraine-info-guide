@@ -1,11 +1,21 @@
+import { useTranslation } from "next-i18next";
 import dynamic from "next/dynamic";
 import LocationCard from "./LocationCard";
 import Spinner from "../Spinner";
 
 const Map = dynamic(() => import("../Map"), { ssr: false });
 
+const Attribution = ({ children }) => (
+  <p className="my-3 opacity-70 text-right">
+    {children}
+  </p>
+);
+
 const CountryDataView = ({ title, data, errorMessage, dataViewRef }) => {
-  const { error, general, reception } = data;
+  const { t } = useTranslation();
+  const { error, general, reception, source, isoFormat } = data;
+  const stamp = new Date(isoFormat);
+  const time = `${stamp.toLocaleTimeString()} ${stamp.toLocaleDateString()}`;
 
   return (
     <section className="country-data-view" ref={dataViewRef}>
@@ -20,6 +30,16 @@ const CountryDataView = ({ title, data, errorMessage, dataViewRef }) => {
             ))
           }
         </ul>
+        {source && source.length > 0 &&
+          <Attribution>
+            <a href={source} className="link">{t("Source")}</a>
+          </Attribution>
+        }
+        {isoFormat && isoFormat.length > 0 &&
+          <Attribution>
+            {t("Retrieved at {{time}}", { time })}
+          </Attribution>
+        }
         <Spinner enabled={!error && !general && !reception} />
         {error && <p>{errorMessage}</p>}
       </div>

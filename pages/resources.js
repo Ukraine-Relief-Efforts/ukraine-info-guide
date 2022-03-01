@@ -24,8 +24,8 @@ const ResourcesPage = () => {
               <div>
                 {resourcesData[key].map(({ url, title }) => {
                   return (
-                    <div className="mt-4">
-                      <a key={url} href={url} className="link">
+                    <div className="mt-4" key={url}>
+                      <a href={url} className="link">
                         {title}
                       </a>
                     </div>

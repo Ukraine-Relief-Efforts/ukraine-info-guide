@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react"
+import features from "../configs/features";
 
 const useGeoLocation = () => {
     const [location, setLocation] = useState({
@@ -24,6 +25,9 @@ const useGeoLocation = () => {
     }
 
     useEffect(() => {
+        if (!features.geolocation)
+            return;
+
         if(!("geolocation" in navigator)){
             onError({
                 code: 0,

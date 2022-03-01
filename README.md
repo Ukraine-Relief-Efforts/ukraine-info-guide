@@ -5,7 +5,8 @@
 [![CI Workflow Status](https://github.com/Ukraine-Relief-Efforts/ukraine-info-guide/actions/workflows/ci.yml/badge.svg)](https://github.com/Ukraine-Relief-Efforts/ukraine-info-guide/actions)
 [![Deployment Status](https://github.com/Ukraine-Relief-Efforts/ukraine-info-guide/actions/workflows/deploy-to-production.yml/badge.svg)](https://github.com/Ukraine-Relief-Efforts/ukraine-info-guide/actions)
 
-The frontend repo for the Leave Ukraine Info Guide.
+This guide contains information about survival, opened borders, the required documents to cross said borders. It's a global website on which all valuable information will be held for Ukrainian refugees.
+
 
 ## Adding New Languages
 
