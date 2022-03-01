@@ -1,6 +1,7 @@
 import { useTranslation } from "next-i18next";
 import { coordsToGoogleMapsUrl } from "../../utils";
 import NewTabLink from "../NewTabLink";
+import features from "../../configs/features";
 
 const LocationCard = ({ data }) => {
   const { t } = useTranslation();
@@ -9,7 +10,7 @@ const LocationCard = ({ data }) => {
 
   return (
     <section className="location-card-reception">
-      {type && type.length &&
+      {features.locationCardTypes && type && type.length &&
         <div className="location-card-type">
           <p>{type}</p>
         </div>
@@ -22,8 +23,11 @@ const LocationCard = ({ data }) => {
         </div>
       }
       {thumbnail && thumbnail.length &&
-        <div className="location-card-thumbnail">
-          <img src={thumbnail} alt={address || type} />
+        <div
+          className="location-card-thumbnail mx-auto"
+          style={{ width: "150px", height: "150px" }}
+        >
+          <img src={thumbnail} alt={address || type} style={{ objectFit: "cover" }} />
         </div>
       }
       {qr && qr.length &&

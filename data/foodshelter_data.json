@@ -1,0 +1,51 @@
+{
+  "source": "https://www.aljazeera.com/news/2022/2/24poland-to-set-up-reception-centres-for-fleeing-ukrainian-refugees",
+  "general": [
+    "Places in Poland with avaliable food and shelter"
+  ],
+  "reception": [
+    {
+      "type": "Food & Accomodation",
+      "thumbnail": "https://github.com/Ukraine-Relief-Efforts/information/raw/main/assets/images/dorohusk.png",
+      "lat": "51.165247",
+      "lon": "23.8025092",
+      "address": "Suchodolski Palace Communal Culture and Tourism Center, ul. Parkowa 5, 22-175 Dorohusk"
+    },
+    {
+      "thumbnail": "https://github.com/Ukraine-Relief-Efforts/information/raw/main/assets/images/zosin.png",
+      "lat": "50.9015669",
+      "lon": "24.0190879",
+      "address": "School Complex in Horodło, ul. Piłsudskiego 58, 22-523 Horodło"
+    },
+    {
+      "thumbnail": "https://github.com/Ukraine-Relief-Efforts/information/raw/main/assets/images/dolhobyczow.png",
+      "lat": "50.5877162",
+      "lon": "24.0227292",
+      "address": "Border Culture and Recreation Center, ul. Spółdzielcza 8, 22-540 Dołhobyczów"
+    },
+    {
+      "thumbnail": "https://github.com/Ukraine-Relief-Efforts/information/raw/main/assets/images/hrebenne.png",
+      "lat": "50.3291196",
+      "lon": "23.5147481",
+      "address": "Primary School in Lubycza Królewska (back of the sports hall), ul. Jana III Sobieskiego 5, 22-680 Lubycza"
+    },
+    {
+      "thumbnail": "https://github.com/Ukraine-Relief-Efforts/information/raw/main/assets/images/budomierz.png",
+      "lat": "50.1201311",
+      "lon": "23.1029808",
+      "address": "Primary School in Krowica Sama 183, 37-625 Krowica Sama"
+    },
+    {
+      "thumbnail": "https://github.com/Ukraine-Relief-Efforts/information/raw/main/assets/images/korczowa.png",
+      "lat": "49.956138",
+      "lon": "23.0772052",
+      "address": "Common room, Korczowa 155, 37-552 Korczowa"
+    },
+    {
+      "thumbnail": "https://github.com/Ukraine-Relief-Efforts/information/raw/main/assets/images/medyka.png",
+      "lat": "49.8056973",
+      "lon": "22.9286636",
+      "address": "Sports Centre - Medyka 285, 37-732 Medyka"
+    }
+  ]
+}
