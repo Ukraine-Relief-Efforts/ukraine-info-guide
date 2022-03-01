@@ -1,4 +1,6 @@
 {
+  "Source": "",
+  "Retrieved at {{time}}": "",
   "Map": "Карта",
   "Useful links": "",
   "Resources": "Ресурсы",
@@ -67,6 +69,7 @@
   "Available locations for food and shelter": "Доступные локации с едой и укрытием",
   "Information for Ukrainian citizens {{in_country}}": "Информация для Украинцев, находящихся {{in_country}}",
   "Sorry! We don't have information about this country at the moment": "В данный момент мы не распологаем никакой информацией об этой стране",
+  "Information collected from governments and other sources about the situation in Ukraine and how to leave": "",
   "Information about border crossings": "Информация о пересечении границ",
   "Form to apply for Asylum in Poland": "Форма для запроса на Польское убежище",
   "Personal Data": "Личная информация",

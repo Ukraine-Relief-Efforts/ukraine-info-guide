@@ -5,8 +5,7 @@ import HeroChooseCountry from "../components/Hero/HeroChooseCountry";
 import useCountryData from "../hooks/useCountryData";
 import { POLAND } from "../configs/constants";
 
-// TEMP
-import dummyData from "../dummydata/foodshelter_data.json";
+import jsonData from "../data/foodshelter_data.json";
 
 export const getStaticProps = async ({ locale }) => ({
   props: {
@@ -23,7 +22,8 @@ const FoodAndShelterPage = () => {
     setSelectedCountry,
   } = useCountryData({
     defaultCountry: POLAND,
-    fetchApiDataCallback: () => dummyData,
+    availableCountries: [ POLAND ],
+    fetchApiDataCallback: () => jsonData,
   });
 
   const { data, inName } = selectedCountryData;

@@ -3,7 +3,7 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import Hero from "../components/Hero";
 import Layout from "../components/Layout";
 
-import resourcesData from "../dummydata/resources.json";
+import resourcesData from "../data/resources.json";
 
 export const getStaticProps = async ({ locale }) => ({
   props: {
@@ -24,8 +24,8 @@ const ResourcesPage = () => {
               <div>
                 {resourcesData[key].map(({ url, title }) => {
                   return (
-                    <div className="mt-4">
-                      <a key={url} href={url} className="link">
+                    <div className="mt-4" key={url}>
+                      <a href={url} className="link">
                         {title}
                       </a>
                     </div>

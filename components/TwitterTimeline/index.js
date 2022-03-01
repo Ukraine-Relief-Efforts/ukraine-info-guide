@@ -1,11 +1,20 @@
-import Script from "next/script";
+import { TwitterTimelineEmbed } from "react-twitter-embed";
+import Spinner from "../Spinner";
 
 const TwitterTimeline = () => {
   return (
-    <>
-      <a className="twitter-timeline" href="https://twitter.com/TechForUkraine?ref_src=twsrc%5Etfw">Tweets by TechForUkraine</a>
-      <Script async src="https://platform.twitter.com/widgets.js" />
-    </>
+    <div style={{ width: "300px" }}>
+      <TwitterTimelineEmbed
+        sourceType="profile"
+        screenName="TechForUkraine"
+        placeholder={
+          <div style={{ width: "300px", textAlign: "center" }}>
+            <Spinner />
+            Loading tweets
+          </div>
+        }
+      />
+    </div>
   );
 }
 

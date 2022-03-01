@@ -30,9 +30,9 @@ const Footer = () => {
         </div>
       </div>
       <div className="text-center p-8 bg-gray-200">
-        <span>© {new Date().getFullYear()} Copyright </span>
+        <span>Copyright &copy; {new Date().getFullYear()} </span>
         <Link className="text-gray-600 font-semibold" href="/">
-          LeaveUkraine
+          TechForUkraine
         </Link>. All rights reserved.
       </div>
     </footer>
