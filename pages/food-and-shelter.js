@@ -22,6 +22,7 @@ const FoodAndShelterPage = () => {
     setSelectedCountry,
   } = useCountryData({
     defaultCountry: POLAND,
+    availableCountries: [ POLAND ],
     fetchApiDataCallback: () => jsonData,
   });
 

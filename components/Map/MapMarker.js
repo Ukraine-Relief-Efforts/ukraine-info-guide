@@ -3,7 +3,7 @@ import { coordsToGoogleMapsUrl } from "../../utils";
 import NewTabLink from "../NewTabLink";
 
 const MapMarker = ({ qr, address, lat, lon, position }) => {
-  if (!position || !Number.isFinite(lat) || !Number.isFinite(lon))
+  if (!position || Number.isNaN(lat) || Number.isNaN(lon))
     return null;
 
   const url = coordsToGoogleMapsUrl(lat, lon);
