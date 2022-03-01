@@ -3,7 +3,7 @@
 ## Project Board [Here](https://github.com/orgs/Ukraine-Relief-Efforts/projects/1/views/4)
 
 [![CI Workflow Status](https://github.com/Ukraine-Relief-Efforts/ukraine-info-guide/actions/workflows/ci.yml/badge.svg)](https://github.com/Ukraine-Relief-Efforts/ukraine-info-guide/actions)
-![![Vercel](https://therealsujitk-vercel-badge.vercel.app/?app=ukraine-info-guide)](https://leaveukraine.com)
+![Vercel](https://therealsujitk-vercel-badge.vercel.app/?app=ukraine-info-guide)
 
 This guide contains information about survival, opened borders, the required documents to cross said borders. It's a global website on which all valuable information will be held for Ukrainian refugees.
 
