@@ -1,6 +1,7 @@
+const withPrefresh = require("@prefresh/next");
 const { i18n } = require("./next-i18next.config");
 
-module.exports = {
+module.exports = withPrefresh({
   i18n,
   reactStrictMode: true,
   webpack(config) {
@@ -17,4 +18,4 @@ module.exports = {
 
     return config;
   }
-};
+});
