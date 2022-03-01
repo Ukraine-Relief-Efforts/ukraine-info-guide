@@ -1,8 +1,10 @@
 import Link from "next/link";
+import { useRouter } from "next/router";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import Hero from "../components/Hero";
 import Layout from "../components/Layout";
+import IconPicker from "../components/IconPicker";
 
 export const getStaticProps = async ({ locale }) => ({
   props: {
@@ -18,23 +20,37 @@ const Description = ({ t }) => (
 
 const Index = () => {
   const { t } = useTranslation();
+  const router = useRouter();
+
+  const options = [
+    {
+      name: t("Border Crossings"),
+      icon: "/HomePageIcons/border-crossing.svg",
+      onClick: () => router.push("/border-information"),
+    },
+    {
+      name: t("Food and Shelter"),
+      icon: "/HomePageIcons/food-and-shelter.svg",
+      onClick: () => router.push("/food-and-shelter"),
+    },
+    {
+      name: t("Missile Alerts"),
+      icon: "/HomePageIcons/missile-alert.svg",
+      onClick: () => router.push("/missile-alerts"),
+    },
+    {
+      name: t("Resources"),
+      icon: "/HomePageIcons/resources.svg",
+      onClick: () => router.push("/resources"),
+    },
+  ];
 
   return (
     <Layout hero={
       <Hero title={t("Leave Ukraine")} subcomponent={<Description t={t} />} />}
     >
-      <div className="flex flex-col lg:flex-row grow basis-0 w-full">
-        <div className="flex flex-col items-center space-y-4 grow mb-7 lg:mb-0">
-          <Link href="/border-information">
-            <a className="link">{t("Information about border crossings")}</a>
-          </Link>
-          <Link href="/food-and-shelter">
-            <a className="link">{t("Food and Shelter")}</a>
-          </Link>
-          <Link href="/resources">
-            <a className="link">{t("Resources")}</a>
-          </Link>
-        </div>
+      <div className="flex flex-col w-full mb-10">
+        <IconPicker options={options} />
       </div>
     </Layout>
   );
