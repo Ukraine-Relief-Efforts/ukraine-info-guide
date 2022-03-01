@@ -1,5 +1,8 @@
-const withPrefresh = require("@prefresh/next");
 const { i18n } = require("./next-i18next.config");
+
+const withPrefresh = process.env.NODE_ENV === "development"
+  ? require("@prefresh/next")
+  : (config) => config;
 
 module.exports = withPrefresh({
   i18n,
