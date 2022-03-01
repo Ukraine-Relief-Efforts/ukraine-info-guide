@@ -24,3 +24,8 @@
   .select-search__option:not(.is-selected):hover {
   @apply bg-yellow-200;
 }
+
+/* Set fixed height for the child container to avoid unexpected scrollbars on parent containers */
+.select-search__select {
+  height: 255px;
+}
