@@ -2,7 +2,13 @@ import { useState, useRef } from "react";
 import { useTranslation } from "react-i18next";
 import { fetchCountryBorderInfo } from "../api/CountryApi";
 import { removeArrayDuplicates } from "../utils";
-import { POLAND, MOLDOVA, HUNGARY, SLOVAKIA } from "../configs/constants";
+import {
+  POLAND,
+  MOLDOVA,
+  ROMANIA,
+  HUNGARY,
+  SLOVAKIA,
+} from "../configs/constants";
 
 const allCountries = (() => {
   // We don't want to translate yet but we do want i18next-parser
@@ -23,6 +29,13 @@ const allCountries = (() => {
       toName: t("to Moldova"),
       inName: t("in Moldova"),
       apiName: "moldova",
+    },
+    [ROMANIA]: {
+      code: ROMANIA,
+      name: t("Romania"),
+      toName: t("to Romania"),
+      inName: t("in Romania"),
+      apiName: "romania",
     },
     [HUNGARY]: {
       code: HUNGARY,
