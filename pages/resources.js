@@ -3,7 +3,7 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import Hero from "../components/Hero";
 import Layout from "../components/Layout";
 
-import resourcesData from "../dummydata/resources.json";
+import resourcesData from "../data/resources.json";
 
 export const getStaticProps = async ({ locale }) => ({
   props: {
