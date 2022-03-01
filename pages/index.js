@@ -3,7 +3,6 @@ import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import Hero from "../components/Hero";
 import Layout from "../components/Layout";
-import TwitterTimeline from "../components/TwitterTimeline";
 
 export const getStaticProps = async ({ locale }) => ({
   props: {
@@ -35,9 +34,6 @@ const Index = () => {
           <Link href="/resources">
             <a className="link">{t("Resources")}</a>
           </Link>
-        </div>
-        <div className="grow-0 space-y-4 mx-auto">
-          <TwitterTimeline />
         </div>
       </div>
     </Layout>

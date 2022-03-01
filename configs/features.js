@@ -4,7 +4,7 @@ const features = {
   login: false,
   hostARefugee: false,
   asylumForm: false,
-  aboutPage: false,
+  aboutPage: true,
   servicesPage: false,
 };
 
