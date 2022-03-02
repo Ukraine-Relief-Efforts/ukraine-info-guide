@@ -25,7 +25,7 @@ const getConfig = (t) => [
     enabled: true,
   },
   {
-    title: t("Alerts"),
+    title: t("Missile Alerts"),
     url: "/alerts",
     inTopBar: true,
     enabled: true,

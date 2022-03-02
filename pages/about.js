@@ -23,7 +23,7 @@ const Project = ({ title, href, shield }) => {
     <div className="flex flex-row space-x-10">
       <NewTabLink href={href} className="link">{title}</NewTabLink>
       <div>
-        <img src={shield} />
+        <img src={shield} alt="" />
       </div>
     </div>
   );
