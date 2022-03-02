@@ -36,7 +36,7 @@ const Index = () => {
     {
       name: t("Missile Alerts"),
       icon: "/HomePageIcons/missile-alert.svg",
-      onClick: () => router.push("/missile-alerts"),
+      onClick: () => router.push("/alerts"),
     },
     {
       name: t("Resources"),
