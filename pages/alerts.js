@@ -1,10 +1,12 @@
 import { useState, useRef, useEffect } from "react";
+import { useRouter } from "next/router";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import Hero from "../components/Hero";
 import Layout from "../components/Layout";
 import MissileAlerts from "../components/MissileAlerts";
 import TelegramAlertLinks from "../components/TelegramAlertLinks";
+import { localeToTelegramAlertChannel } from "../utils";
 import features from "../configs/features";
 
 export const getStaticProps = async ({ locale }) => ({
@@ -15,6 +17,7 @@ export const getStaticProps = async ({ locale }) => ({
 
 const AlertsPage = () => {
   const { t } = useTranslation();
+  const router = useRouter();
 
   const [scriptLoaded, setScriptLoaded] = useState(false);
   const ref = useRef();
@@ -22,9 +25,10 @@ const AlertsPage = () => {
   useEffect(() => {
     if (scriptLoaded || !ref.current)
       return;
+    const channel = localeToTelegramAlertChannel(router.locale);
     const tag = document.createElement("script");
     tag.src = "https://telegram.org/js/telegram-widget.js?15"
-    tag.setAttribute("data-telegram-post", "LeaveUkraineAlertsUK/47");
+    tag.setAttribute("data-telegram-post", `${channel}/47`);
     tag.setAttribute("data-width", "100%");
     ref.current.appendChild(tag);
     setScriptLoaded(true);
