@@ -3,7 +3,12 @@ import Layout from "../components/Layout";
 import CountryDataView from "../components/CountryDataView";
 import HeroChooseCountry from "../components/Hero/HeroChooseCountry";
 import useCountryData from "../hooks/useCountryData";
-import { POLAND } from "../configs/constants";
+import {
+  POLAND,
+  MOLDOVA,
+  ROMANIA,
+  HUNGARY,
+} from "../configs/constants";
 
 export const getStaticProps = async ({ locale }) => ({
   props: {
@@ -20,6 +25,7 @@ const BorderInformationPage = () => {
     setSelectedCountry,
   } = useCountryData({
     defaultCountry: POLAND,
+    availableCountries: [ POLAND, MOLDOVA, ROMANIA, HUNGARY ],
   });
 
   const { data, toName } = selectedCountryData;
