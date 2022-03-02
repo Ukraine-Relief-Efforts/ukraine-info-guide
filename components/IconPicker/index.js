@@ -33,8 +33,8 @@ const StyledItem = styled.button`
 `;
 
 const StyledIcon = styled.img`
-  width: 120px;
-  height: 120px;
+  width: 110px;
+  height: 110px;
   margin: 0 auto;
 `;
 
