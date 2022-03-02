@@ -1,8 +1,8 @@
 import { useTranslation } from "next-i18next";
 import { coordsToGoogleMapsUrl } from "../../utils";
 import NewTabLink from "../NewTabLink";
-import features from "../../configs/features";
 import QrCode from "./QrCode";
+import features from "../../configs/features";
 
 const LocationCard = ({ data }) => {
   const { t } = useTranslation();
@@ -23,7 +23,7 @@ const LocationCard = ({ data }) => {
           </div>
         </div>
       }
-      {thumbnail && thumbnail.length &&
+      {features.locationCardThumbnails && thumbnail && thumbnail.length &&
         <div
           className="location-card-thumbnail mx-auto"
           style={{ width: "150px", height: "150px" }}

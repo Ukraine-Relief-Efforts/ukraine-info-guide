@@ -7,6 +7,7 @@ const features = {
   aboutPage: true,
   servicesPage: false,
   liveMissileAlerts: false,
+  locationCardThumbnails: false,
 };
 
 export default features;
