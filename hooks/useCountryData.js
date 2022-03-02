@@ -1,6 +1,6 @@
 import { useState, useRef } from "react";
 import { useTranslation } from "react-i18next";
-import { fetchCountryBorderInfo } from "../api/CountryApi";
+import { fetchCountryBorderInfo } from "../apiClient/CountryApi";
 import { removeArrayDuplicates } from "../utils";
 import {
   POLAND,
