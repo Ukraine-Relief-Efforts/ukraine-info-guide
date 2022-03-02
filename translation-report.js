@@ -34,4 +34,8 @@ for (const locale of locales) {
 
 console.log("\nTRANSLATION REPORT");
 
-console.table(result);
+console.table(result.sort((a, b) => {
+	if (a.percent > b.percent) return -1;
+	if (a.percent < b.percent) return 1;
+	return 0;
+}));
