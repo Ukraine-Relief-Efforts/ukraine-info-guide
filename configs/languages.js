@@ -4,6 +4,8 @@ const languages = [
   { value: "ru", name: "Русский" },
   { value: "pl", name: "Polski" },
   { value: "rs", name: "Српски" },
+  { value: "ro", name: "Romanian" },
+  { value: "hu", name: "Hungarian" },
   { value: "it", name: "Italiano" },
   { value: "de", name: "Deutsch" },
   { value: "es", name: "Español" },
