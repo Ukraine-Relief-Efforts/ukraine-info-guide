@@ -15,9 +15,7 @@ const QrCode = ({ url }) => {
         margin: 1,
         scale: 3,
       },
-      (error) => {
-        console.log("Error generating QR code:", error);
-      },
+      (error) => error && console.log("Error generating QR code:", error),
     );
   }, [ref]);
 
