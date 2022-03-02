@@ -1,6 +1,13 @@
 name: CI
 on: [push]
 jobs:
+  translation-report:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v2
+      - name: Make translation report
+        run: npm run translation-report
   build:
     runs-on: ubuntu-latest
     steps:
