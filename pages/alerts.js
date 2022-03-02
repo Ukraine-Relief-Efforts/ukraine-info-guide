@@ -43,7 +43,7 @@ const AlertsPage = () => {
     >
       <div className="text-center px-5" style={{ maxWidth: "60ch" }}>
         <p className="text-lg">
-          {t("We offer Telegram channels in 9 languages for live notifications of missile and air alerts accross Ukraine")}
+          {t("We offer Telegram channels in 9 languages for live notifications of missile and air alerts across Ukraine")}
         </p>
         <div className="my-10">
           <TelegramAlertLinks
