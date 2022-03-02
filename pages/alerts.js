@@ -28,7 +28,7 @@ const AlertsPage = () => {
     tag.setAttribute("data-width", "100%");
     ref.current.appendChild(tag);
     setScriptLoaded(true);
-  }, [scriptLoaded, ref.current]);
+  });
 
   return (
     <Layout

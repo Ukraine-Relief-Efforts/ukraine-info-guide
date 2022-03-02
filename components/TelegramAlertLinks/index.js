@@ -10,8 +10,10 @@ const TelegramAlertLinks = ({ title }) => (
     <p>{title}</p>
     <div className="flex flex-row flex-wrap mt-3 justify-center">
       {
-        languages.map(({ value, name }) =>
-          <a className="link m-3" href={makeUrl(value)}>{name}</a>
+        languages.map(({ value, name }, index) =>
+          <a className="link m-3" href={makeUrl(value)} key={index}>
+            {name}
+          </a>
         )
       }
     </div>

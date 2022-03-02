@@ -45,13 +45,13 @@ const MissileAlerts = () => {
   useEffect(() => {
     const init = async () => setAlerts(await fetchData(router.locale));
     init();
-  }, []);
+  }, [router.locale]);
 
   return (
     <Container>
       {
-        alerts.map(({ text, time }) =>
-          <Alert>
+        alerts.map(({ text, time }, index) =>
+          <Alert key={index}>
             <div>
               {parse(text)}
             </div>
