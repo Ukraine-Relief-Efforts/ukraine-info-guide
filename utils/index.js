@@ -17,5 +17,5 @@ export const localeToTelegramAlertChannel = (locale) => {
     "kr": "KO",
   };
 
-  return `LeaveUkraineAlerts${channels[locale] || "EN"}`;
+  return `UkraineAlerts${channels[locale] || "EN"}`;
 }

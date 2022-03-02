@@ -3,7 +3,7 @@ import { localeToTelegramAlertChannel } from "../../utils";
 import languages from "../../configs/languages";
 
 const makeUrl = (locale) =>
-  `https://t.me/LeaveUkraineAlerts${localeToTelegramAlertChannel(locale)}`;
+  `https://t.me/${localeToTelegramAlertChannel(locale)}`;
 
 const TelegramAlertLinks = ({ title }) => (
   <div className="text-center mt-5">
