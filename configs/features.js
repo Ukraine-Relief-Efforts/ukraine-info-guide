@@ -6,6 +6,7 @@ const features = {
   asylumForm: false,
   aboutPage: true,
   servicesPage: false,
+  liveMissileAlerts: false,
 };
 
 export default features;
