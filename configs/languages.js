@@ -1,4 +1,7 @@
-const languages = [
+// This uses "module.exports" instead of just "export" as it is included in a
+// config file where export can't be used
+
+module.exports = [
   { value: "en", name: "English" },
   { value: "ua", name: "Українська" },
   { value: "ru", name: "Русский" },
@@ -11,5 +14,3 @@ const languages = [
   { value: "es", name: "Español" },
   { value: "kr", name: "한국어" },
 ];
-
-export default languages;

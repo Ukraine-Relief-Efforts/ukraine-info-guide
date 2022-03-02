@@ -10,13 +10,12 @@ This guide contains information about survival, opened borders, the required doc
 
 ## Adding New Languages
 
-The translation files are located in `public/locales/`. You can simply copy
-one of the other languages and update the translations as needed.
+The translation files are located in `public/locales/`. You can simply copy and
+rename the `en` folder and update the translations as needed.
 
 When adding a new language, you also need to add it to the list of locales in
-`next-i18next.config.js` and in `configs/languages.js` (if you don't know how
-to do this then just create a pull request anyway and the reviewer can handle
-it).
+`configs/languages.js` (if you don't know how to do this then just create a
+pull request anyway and the reviewer can handle it).
 
 ## Creating a PR
 
