@@ -1,15 +1,17 @@
 import "../styles/index.css";
-import { appWithTranslation } from "next-i18next";
+import { appWithTranslation, useTranslation } from "next-i18next";
 import Head from "next/head";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { BASE_URL } from "../configs/constants";
 
 const App = ({ Component, pageProps }) => {
+  const { t } = useTranslation();
+
   return (
     <>
       <Head>
-        <title>Leave Ukraine</title>
+        <title>{t("Leave Ukraine")}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-icon-57x57.png" />
         <link rel="apple-touch-icon" sizes="60x60" href="/favicons/apple-icon-60x60.png" />
