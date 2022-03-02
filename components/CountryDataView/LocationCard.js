@@ -2,10 +2,11 @@ import { useTranslation } from "next-i18next";
 import { coordsToGoogleMapsUrl } from "../../utils";
 import NewTabLink from "../NewTabLink";
 import features from "../../configs/features";
+import QrCode from "./QrCode";
 
 const LocationCard = ({ data }) => {
   const { t } = useTranslation();
-  const { type, address, thumbnail, qr, lat, lon } = data;
+  const { type, address, thumbnail, lat, lon } = data;
   const mapUrl = lat && lon && coordsToGoogleMapsUrl(lat, lon);
 
   return (
@@ -30,9 +31,9 @@ const LocationCard = ({ data }) => {
           <img src={thumbnail} alt={address || type} style={{ objectFit: "cover" }} />
         </div>
       }
-      {qr && qr.length &&
-        <div className="location-card-qr">
-          <img src={qr} alt="QR code" />
+      {mapUrl &&
+        <div className="mx-auto">
+          <QrCode url={mapUrl} />
         </div>
       }
       {mapUrl && mapUrl.length &&
