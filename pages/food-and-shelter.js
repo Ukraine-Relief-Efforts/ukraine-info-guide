@@ -36,6 +36,7 @@ const FoodAndShelterPage = () => {
           {...{
             availableCountries,
             setSelectedCountry,
+            selectedCountryData,
           }}
         />
       }
