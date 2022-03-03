@@ -38,7 +38,6 @@ const BorderInformationPage = () => {
           {...{
             availableCountries,
             setSelectedCountry,
-            selectedCountryData,
           }}
         />
       }

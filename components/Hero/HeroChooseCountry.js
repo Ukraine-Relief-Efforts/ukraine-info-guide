@@ -6,7 +6,6 @@ const HeroChooseCountry = ({
   title,
   availableCountries,
   setSelectedCountry,
-  selectedCountryData,
 }) => {
   const { t } = useTranslation();
   return (
@@ -19,7 +18,6 @@ const HeroChooseCountry = ({
             {...{
               availableCountries,
               setSelectedCountry,
-              selectedCountryData,
             }}
           />
         </section>
