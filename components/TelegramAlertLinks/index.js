@@ -1,6 +1,9 @@
 import { localeToTelegramAlertChannel } from "../../utils";
 import languages from "../../configs/languages";
 
+const channels = languages.filter(({ value }) =>
+  [ "en", "ua", "ru", "pl", "rs", "hu", "de", "es", "ro" ].includes(value));
+
 const makeUrl = (locale) =>
   `https://t.me/${localeToTelegramAlertChannel(locale)}`;
 
@@ -9,7 +12,7 @@ const TelegramAlertLinks = ({ title }) => (
     <p>{title}</p>
     <div className="flex flex-row flex-wrap mt-3 justify-center">
       {
-        languages.map(({ value, name }, index) =>
+        channels.map(({ value, name }, index) =>
           <a className="link m-3" href={makeUrl(value)} key={index}>
             {name}
           </a>
