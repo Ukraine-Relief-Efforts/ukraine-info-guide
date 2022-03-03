@@ -39,10 +39,10 @@ const AboutPage = () => {
       </p>
       <p className="p-5" style={{ maxWidth: "70ch" }}>
         {t("We're an international team of people working to fuel and organize the creation of software aimed at helping the Ukrainian people during the current war with Russia")}. {t("Our organization has developed technologies such as a missile/air alarm system, a website that encompasses information for Ukrainian refugees, and impending others")}. {t("Contribution to our open source technologies is valued")}. <Trans t={t} i18nKey={githubI18nKey}>
-          For more information, find us <a
+          For more information, find us on <a
             href={GITHUB_URL}
             className="link"
-          >on Github</a>.
+          >Github</a>.
         </Trans>
       </p>
       <div className="flex flex-col items-center mt-10 space-y-5">
@@ -52,12 +52,25 @@ const AboutPage = () => {
         <Project
           title="LeaveUkraine"
           href="https://leaveukraine.com"
-          shield="https://img.shields.io/github/issues/Ukraine-Relief-Efforts/ukraine-info-guide"
+          shield="https://img.shields.io/github/stars/Ukraine-Relief-Efforts/ukraine-info-guide?label=LeaveUkraine&style=flat-square"
         />
         <Project
           title="Alarm Bot"
           href="https://github.com/Ukraine-Relief-Efforts/AlarmBot"
-          shield="https://img.shields.io/github/issues/Ukraine-Relief-Efforts/AlarmBot"
+          shield="https://img.shields.io/github/stars/Ukraine-Relief-Efforts/AlarmBot?label=AlarmBot&style=flat-square"
+        />
+        <p className="text-lg">
+          {t("Socials")}:
+        </p>
+        <Project
+          title="Twitter"
+          href="https://twitter.com/techfor_"
+          shield="https://img.shields.io/badge/techfor__-Follow%20Us-blue"
+        />
+        <Project
+          title="Instagram"
+          href="https://www.instagram.com/techfor.io/"
+          shield="https://img.shields.io/badge/techfor.io-Follow%20Us-blue"
         />
       </div>
       <div className="mt-20">

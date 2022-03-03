@@ -2,7 +2,7 @@ import { useTranslation } from "next-i18next";
 import Link from "next/link";
 import FooterHeader from "./FooterHeader";
 import FooterLink from "./FooterLink";
-import { TWITTER_URL, GITHUB_URL } from "../../configs/constants";
+import { TWITTER_URL, GITHUB_URL, INSTAGRAM_URL } from "../../configs/constants";
 import features from "../../configs/features";
 
 const Footer = () => {
@@ -24,6 +24,7 @@ const Footer = () => {
             <div>
               <FooterHeader>{t("Contacts")}</FooterHeader>
               <FooterLink href={TWITTER_URL}>Twitter</FooterLink>
+              <FooterLink href={INSTAGRAM_URL}>Instagram</FooterLink>
               <FooterLink href={GITHUB_URL}>Github</FooterLink>
             </div>
           </div>
