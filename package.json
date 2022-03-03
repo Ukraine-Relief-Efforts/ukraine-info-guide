@@ -26,6 +26,7 @@
     "babel-plugin-styled-components": "^2.0.6",
     "eslint": "^8.10.0",
     "eslint-config-next": "12.1.0",
+    "glob-parent": "^6.0.2",
     "i18next-parser": "^5.4.0",
     "postcss": "^8.4.7",
     "source-map-explorer": "^2.5.2",
