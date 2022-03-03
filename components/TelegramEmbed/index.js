@@ -16,7 +16,7 @@ const TelegramEmbed = () => {
       setPostNumber(data?.alerts[0]?.post);
     };
     fetchData();
-  });
+  }, []);
 
   useEffect(() => {
     if (scriptLoaded || !ref.current || !postNumber)
