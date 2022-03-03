@@ -1,4 +1,4 @@
-const { i18n } = require("./next-i18next.config");
+const { i18n } = require("../../next-i18next.config");
 const fs = require("fs");
 
 const result = [];
