@@ -2,6 +2,7 @@ import { useState, useRef, useEffect } from "react";
 import { useRouter } from "next/router";
 import { localeToTelegramAlertChannel } from "../../utils";
 import { fetchMissileAlerts } from "../../apiClient/AlertsApi";
+import Spinner from "../Spinner";
 
 const TelegramEmbed = () => {
   const router = useRouter();
@@ -30,9 +31,9 @@ const TelegramEmbed = () => {
     setScriptLoaded(true);
   }, [postNumber]);
 
-  return (
-    <div ref={ref} style={{ maxWidth: "400px", margin: "0 auto" }} />
-  );
+  return postNumber
+    ? <div ref={ref} style={{ maxWidth: "400px", margin: "0 auto" }} />
+    : <Spinner />;
 }
 
 export default TelegramEmbed;
