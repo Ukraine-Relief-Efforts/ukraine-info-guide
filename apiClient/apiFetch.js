@@ -1,9 +1,9 @@
 export const apiGetFetch = async (endpoint, getParams) => {
   const baseUrl = "https://g11d3ghry9.execute-api.us-east-1.amazonaws.com/v1/";
 
-  let url = `${baseUrl}${endpoint}?`;
+  let url = endpoint[0] === "/" ? `${endpoint}?` : `${baseUrl}${endpoint}?`;
   for (const param in getParams)
-    url += `${param}=${getParams[param]}`;
+    url += `${param}=${getParams[param]}&`;
 
   const response = await fetch(url, {
     method: "GET",
