@@ -17,7 +17,7 @@ const QrCode = ({ url }) => {
       },
       (error) => error && console.log("Error generating QR code:", error),
     );
-  }, [ref]);
+  }, [ref, url]);
 
   return (
     <canvas ref={ref} />

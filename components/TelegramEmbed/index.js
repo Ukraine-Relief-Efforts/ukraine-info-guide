@@ -17,7 +17,7 @@ const TelegramEmbed = () => {
       setPostNumber(data?.alerts[0]?.post);
     };
     fetchData();
-  }, []);
+  }, [router.locale]);
 
   useEffect(() => {
     if (scriptLoaded || !ref.current || !postNumber)
@@ -29,7 +29,7 @@ const TelegramEmbed = () => {
     tag.setAttribute("data-width", "100%");
     ref.current.appendChild(tag);
     setScriptLoaded(true);
-  }, [postNumber]);
+  }, [postNumber, scriptLoaded, router.locale]);
 
   return postNumber
     ? <div ref={ref} style={{ maxWidth: "400px", margin: "0 auto" }} />

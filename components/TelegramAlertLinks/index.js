@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { localeToTelegramAlertChannel } from "../../utils";
 import languages from "../../configs/languages";
 
