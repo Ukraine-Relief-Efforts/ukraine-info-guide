@@ -22,7 +22,8 @@ const StyledItem = styled.button`
   transition: transform 0.2s;
   @media (max-width: 450px) {
     width: 140px;
-    height: 180px;
+    height: 200px;
+    padding-bottom: 5px;
   }
 
   &:hover {

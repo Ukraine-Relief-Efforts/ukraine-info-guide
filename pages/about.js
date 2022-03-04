@@ -7,8 +7,8 @@ import TwitterTimeline from "../components/TwitterTimeline";
 import { GITHUB_URL } from "../configs/constants";
 
 const githubI18nKey = (() => {
-	const t = (s) => s;
-	return t("Join us <1>on Github</1>");
+  const t = (s) => s;
+  return t("Join us <1>on Github</1>");
 })();
 
 export const getStaticProps = async ({ locale }) => ({
@@ -19,10 +19,12 @@ export const getStaticProps = async ({ locale }) => ({
 
 const Project = ({ title, href, shield }) => {
   return (
-    <div className="flex flex-row space-x-10">
+    <div className="flex flex-row items-center justify-center space-x-10 w-full">
       <NewTabLink href={href} className="link">{title}</NewTabLink>
       <div>
-        <img src={shield} alt="" />
+        <NewTabLink href={href}>
+          <img src={shield} alt="" />
+        </NewTabLink>
       </div>
     </div>
   );

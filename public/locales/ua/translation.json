@@ -1,7 +1,9 @@
 {
+  "Map": "Мапа",
   "Source": "Джерело",
   "Retrieved at {{time}}": "Отримано о {{time}}",
-  "Map": "Мапа",
+  "Border Crossings": "Перетин кордонів",
+  "Locations": "",
   "Useful links": "Корисні посилання",
   "Resources": "Ресурси",
   "Border Info": "Інформація про Кордон",
@@ -45,7 +47,6 @@
   "Postal Code": "\tі́ндекс",
   "General Help": "Загальна Допомога",
   "Legal Help": "Юридична Допомога",
-  "Border Crossings": "Перетин кордонів",
   "Accommodation": "Житло",
   "Medical Info/Guides": "Медична інформація/Довідники",
   "Facebook Groups": "Групи у Фейсбуці",

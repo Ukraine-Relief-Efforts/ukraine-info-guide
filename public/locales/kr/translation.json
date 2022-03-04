@@ -1,7 +1,9 @@
 {
+  "Map": "지도",
   "Source": "출처",
   "Retrieved at {{time}}": "{{time}}에 검색됨",
-  "Map": "지도",
+  "Border Crossings": "국경을 넘는 것",
+  "Locations": "",
   "Useful links": "유용한 링크들",
   "Resources": "정보",
   "Border Info": "국경 정보",
@@ -45,7 +47,6 @@
   "Postal Code": "우편 번호(Postal Code)",
   "General Help": "일반 도움말",
   "Legal Help": "법률 도움말",
-  "Border Crossings": "국경을 넘는 것",
   "Accommodation": "숙박 시설",
   "Medical Info/Guides": "의료 정보/가이드",
   "Facebook Groups": "페이스북 그룹",

@@ -1,7 +1,9 @@
 {
+  "Map": "Карта",
   "Source": "Источник",
   "Retrieved at {{time}}": "Получено",
-  "Map": "Карта",
+  "Border Crossings": "Пересечения границ",
+  "Locations": "",
   "Useful links": "Полезные ссылки",
   "Resources": "Ресурсы",
   "Border Info": "Информация о границе",
@@ -45,7 +47,6 @@
   "Postal Code": "Почтовый индекс",
   "General Help": "Общая Помощь",
   "Legal Help": "Юридическая Помощь",
-  "Border Crossings": "Пересечения границ",
   "Accommodation": "Жилье",
   "Medical Info/Guides": "Медицинская информация/Справочники",
   "Facebook Groups": "Группы в Фейсбуке",

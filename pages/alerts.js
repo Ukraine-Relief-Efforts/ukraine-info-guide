@@ -31,7 +31,7 @@ const AlertsPage = () => {
         <p className="text-lg">
           {t("We offer Telegram channels in multiple languages for live notifications of missile and air alerts across Ukraine")}
         </p>
-        <div className="my-10">
+        <div className="mt-10 mb-20">
           <TelegramAlertLinks
             title={t("Choose your language")}
           />
