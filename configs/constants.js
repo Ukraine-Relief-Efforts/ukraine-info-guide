@@ -10,6 +10,7 @@ export const clientId = process.env.REACT_APP_AUTH0_CLIENT_ID;
 export const IS_DEVELOPMENT = process.env.NODE_ENV === 'development';
 
 export const BASE_URL = "https://leaveukraine.com/";
+export const API_BASE_URL = "https://g11d3ghry9.execute-api.us-east-1.amazonaws.com/v1/";
 
 export const TWITTER_HANDLE = "techfor_";
 export const INSTAGRAM_HANDLE = "techfor_";
