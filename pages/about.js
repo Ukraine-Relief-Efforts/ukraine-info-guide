@@ -43,8 +43,8 @@ const AboutPage = () => {
           For more information, find us on <a
             href={GITHUB_URL}
             className="link"
-          >Github</a>.
-        </Trans>
+          >Github</a>
+        </Trans>.
       </p>
       <div className="flex flex-col items-center mt-10 space-y-5">
         <p className="text-lg">
