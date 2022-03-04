@@ -1,5 +1,4 @@
 import { useTranslation } from "next-i18next";
-import Link from "next/link";
 import FooterHeader from "./FooterHeader";
 import FooterLink from "./FooterLink";
 import NewTabLink from "../NewTabLink";
