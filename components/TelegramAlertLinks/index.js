@@ -11,15 +11,17 @@ const makeUrl = (locale) =>
   `https://t.me/${localeToTelegramAlertChannel(locale)}`;
 
 const ChannelLink = ({ value, name, className }) => (
-  <a className={`link m-3 ${className}`} href={makeUrl(value)}>
-    {name}
-  </a>
+  <div className="m-3">
+    <a className={`link ${className ?? ""}`} href={makeUrl(value)}>
+      {name}
+    </a>
+  </div>
 );
 
 const AllChannels = ({ title }) => (
-  <div className="flex flex-row flex-wrap mt-3 justify-center">
+  <div className="flex flex-col mt-3">
     <p>{title}</p>
-    <div>
+    <div className="flex flex-row flex-wrap justify-center">
       {
         channels.map((locale, index) =>
           <ChannelLink key={index} {...locale} />)
