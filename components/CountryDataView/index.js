@@ -31,7 +31,7 @@ const CountryDataView = ({ title, data, errorMessage, dataViewRef }) => {
 
   return (
     <section className="country-data-view" ref={dataViewRef}>
-      <div className="bg-gray-200 p-3">
+      <div className="bg-gray-200 p-3 rounded">
         <div className="text-center">
           <p className="font-semibold mt-5 mb-5 uppercase">
             {title}
