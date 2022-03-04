@@ -1,7 +1,9 @@
 {
+  "Map": "Mapa",
   "Source": "",
   "Retrieved at {{time}}": "",
-  "Map": "Mapa",
+  "Border Crossings": "",
+  "Locations": "",
   "Useful links": "",
   "Resources": "",
   "Border Info": "Informacje o Granicy",
@@ -45,7 +47,6 @@
   "Postal Code": "",
   "General Help": "",
   "Legal Help": "",
-  "Border Crossings": "",
   "Accommodation": "",
   "Medical Info/Guides": "",
   "Facebook Groups": "",

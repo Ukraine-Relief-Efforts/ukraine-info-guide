@@ -1,7 +1,9 @@
 {
+  "Map": "Мапа",
   "Source": "Извор",
   "Retrieved at {{time}}": "Преузето",
-  "Map": "Мапа",
+  "Border Crossings": "Гранични прелази",
+  "Locations": "",
   "Useful links": "Користни линкови",
   "Resources": "Ресурси",
   "Border Info": "Подаци о граници",
@@ -45,7 +47,6 @@
   "Postal Code": "Поштански број",
   "General Help": "Помоћ",
   "Legal Help": "Легална помоћ",
-  "Border Crossings": "Гранични прелази",
   "Accommodation": "Смештај",
   "Medical Info/Guides": "Медицинска информација/упутства",
   "Facebook Groups": "Групе на Facebook-у",

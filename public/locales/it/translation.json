@@ -1,7 +1,9 @@
 {
+  "Map": "Mappa",
   "Source": "Fonte",
   "Retrieved at {{time}}": "Aggiornato alle {{time}}",
-  "Map": "Mappa",
+  "Border Crossings": "Attraversare le frontiere",
+  "Locations": "",
   "Useful links": "Link utili",
   "Resources": "Risorse",
   "Border Info": "Informazioni sulla Frontiera",
@@ -45,7 +47,6 @@
   "Postal Code": "Codice postale",
   "General Help": "Aiuto generale",
   "Legal Help": "Aiuto legale",
-  "Border Crossings": "Attraversare le frontiere",
   "Accommodation": "Alloggio",
   "Medical Info/Guides": "Info/Guide mediche",
   "Facebook Groups": "Gruppi Facebook",
