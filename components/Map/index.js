@@ -16,7 +16,7 @@ const findCenter = (data) =>
     )
     .map((n) => n / data.length);
 
-const Map = ({ markers }) => {
+const Map = ({ markers, mapRef }) => {
   const zoomLevel = 7
 
   let location = useGeoLocation()
@@ -45,7 +45,7 @@ const Map = ({ markers }) => {
   }
 
   return (
-    <div>
+    <div ref={mapRef}>
       {features.geolocation &&
         <div>
           <button className="showlocation-button" onClick={showMyLocation}>
