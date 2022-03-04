@@ -2,9 +2,10 @@ import { useState } from "react";
 import { useRouter } from "next/router";
 import { localeToTelegramAlertChannel } from "../../utils";
 import languages from "../../configs/languages";
+import { TELEGRAM_LANGUAGES } from "../../configs/constants";
 
 const channels = languages.filter(({ value }) =>
-  [ "en", "ua", "ru", "pl", "rs", "hu", "de", "es", "ro" ].includes(value));
+  TELEGRAM_LANGUAGES.includes(value));
 
 const makeUrl = (locale) =>
   `https://t.me/${localeToTelegramAlertChannel(locale)}`;
