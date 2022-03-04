@@ -17,9 +17,9 @@ const findCenter = (data) =>
     .map((n) => n / data.length);
 
 const Map = ({ markers, mapRef }) => {
-  const zoomLevel = 7
+  const zoomLevel = 6;
 
-  let location = useGeoLocation()
+  let location = useGeoLocation();
 
   const data = markers
     .filter((m) => m.lat && m.lon && m.lat.length && m.lon.length)
