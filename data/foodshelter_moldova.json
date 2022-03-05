@@ -1,37 +1,37 @@
 {
-    "source": "https://www.google.com/maps/search/gurudwara/@47.0010187,28.5627475,8.72z/data=!4m2!2m1!6e2",
-    "general": [
-      "Places in Moldova with available food and shelter",
-      "Gurudwaras are known to provide food and shelter."
-    ],
-    "reception": [
-        {
-          "type": "Food & Accomodation - Gurudwara",
-          "thumbnail": "https://maps.gstatic.com/tactile/pane/default_geocode-1x.png",
-          "lat": "47.12369282277384",
-          "lon": "28.869369343221255",
-          "address": "Strada Izvoarelor 11, Vaslui, România, Moldova"
-        },
-        {
-          "type": "Food & Accomodation - Gurudwara",
-          "thumbnail": "https://maps.gstatic.com/tactile/pane/default_geocode-1x.png",
-          "lat": "47.12369282277384",
-          "lon": "28.869369343221255",
-          "address": "Strada Izvoarelor 11, Vaslui, România, Moldova"
-        },
-        {
-          "type": "Food & Accomodation - Gurudwara",
-          "thumbnail": "https://maps.gstatic.com/tactile/pane/default_geocode-1x.png",
-          "lat": "47.042367021215654",
-          "lon": "28.892368730885536",
-          "address": "Strada Petru Zadnipru 14/4, Chișinău, Moldova"
-        },
-        {
-          "type": "Food & Accomodation - Gurudwara",
-          "thumbnail": "https://maps.gstatic.com/tactile/pane/default_geocode-1x.png",
-          "lat": "47.031619897933815",
-          "lon": "28.791610716684698",
-          "address": "Ion Pelivan St 13A, Chișinău 2064, Moldova"
-        }
-    ]
-  }
+  "source": "https://www.google.com/maps/search/gurudwara/@47.0010187,28.5627475,8.72z/data=!4m2!2m1!6e2",
+  "general": [
+    "Places in Moldova with available food and shelter",
+    "Gurudwaras are known to provide food and shelter."
+  ],
+  "reception": [
+      {
+        "type": "Food & Shelter - Gurudwara",
+        "thumbnail": "https://maps.gstatic.com/tactile/pane/default_geocode-1x.png",
+        "lat": "47.12369282277384",
+        "lon": "28.869369343221255",
+        "address": "Strada Izvoarelor 11, Vaslui, România, Moldova"
+      },
+      {
+        "type": "Food & Shelter - Gurudwara",
+        "thumbnail": "https://maps.gstatic.com/tactile/pane/default_geocode-1x.png",
+        "lat": "47.12369282277384",
+        "lon": "28.869369343221255",
+        "address": "Strada Izvoarelor 11, Vaslui, România, Moldova"
+      },
+      {
+        "type": "Food & Shelter - Gurudwara",
+        "thumbnail": "https://maps.gstatic.com/tactile/pane/default_geocode-1x.png",
+        "lat": "47.042367021215654",
+        "lon": "28.892368730885536",
+        "address": "Strada Petru Zadnipru 14/4, Chișinău, Moldova"
+      },
+      {
+        "type": "Food & Shelter - Gurudwara",
+        "thumbnail": "https://maps.gstatic.com/tactile/pane/default_geocode-1x.png",
+        "lat": "47.031619897933815",
+        "lon": "28.791610716684698",
+        "address": "Ion Pelivan St 13A, Chișinău 2064, Moldova"
+      }
+  ]
+}
