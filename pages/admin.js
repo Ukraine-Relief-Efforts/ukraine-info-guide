@@ -1,8 +1,8 @@
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useUser } from "@auth0/nextjs-auth0"
-import Hero from "../components/Hero";
 import Layout from "../components/Layout";
+import Hero from "../components/Hero";
 import Spinner from "../components/Spinner";
 import {
   LoggedInIndex,

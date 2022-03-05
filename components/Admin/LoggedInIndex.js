@@ -4,9 +4,14 @@ const LoggedInIndex = () => {
   const { t } = useTranslation();
 
   return (
-    <a className="link" href="/api/auth/logout">
-      {t("Logout")}
-    </a>
+    <>
+      <a className="link" href="/admin/translations">
+        {t("Edit Translations")}
+      </a>
+      <a className="link" href="/api/auth/logout">
+        {t("Logout")}
+      </a>
+    </>
   );
 }
 
