@@ -25,7 +25,16 @@
   @apply bg-yellow-200;
 }
 
-/* Set fixed height for the child container to avoid unexpected scrollbars on parent containers */
-.select-search__select {
-  height: 255px;
+/* Set fixed height to the dropdown menu */
+/* (which is located inside of a mobile panel) to avoid parent element overflowing vertically */
+.navbar-mobile .select-search:not(.select-search--multiple) .select-search__select {
+  height: 185px;
+}
+
+/* When the workspace resolution is lower than the specified maximum,
+/* force dropdown menu options to open upwards rather than downwards */
+@media (max-height: 650px) {
+  .navbar-mobile .select-search:not(.select-search--multiple) .select-search__select {
+    top: -195px;
+  }
 }
