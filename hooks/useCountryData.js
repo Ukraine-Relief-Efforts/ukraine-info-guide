@@ -11,6 +11,13 @@ import {
   SLOVAKIA,
 } from "../configs/constants";
 
+import polandFSdata from "../data/foodshelter_poland.json";
+import hungaryFSdata from "../data/foodshelter_hungary.json";
+import romaniaFSdata from "../data/foodshelter_romania.json";
+import slovakiaFSdata from "../data/foodshelter_slovakia.json";
+import moldovaFSdata from "../data/foodshelter_moldova.json";
+import allFSdata from "../data/foodshelter_all.json";
+
 const allCountries = (() => {
   // We don't want to translate yet but we do want i18next-parser
   // to find these strings
@@ -120,6 +127,7 @@ const useCountryData = ({
     if (countries) {
       const data = countries[countryName];
       if (data) {
+        console.log(data)
         return data;
       }
     }
@@ -128,7 +136,28 @@ const useCountryData = ({
     return null;
   }
 
+  const getFSCountryData = (countryName) => {
+    let data = null
+    switch(countryName) {
+      case "poland":
+        data = polandFSdata; break;
+      case "hungary":
+        data = hungaryFSdata; break;
+      case "slovakia":
+        data = slovakiaFSdata; break;
+      case "moldova":
+        data = moldovaFSdata; break;
+      case "romania":
+        data = romaniaFSdata; break;
+      default:
+        data = allFSdata
+    }
+
+    return data
+  }
+
   const countryData = getCountryData(allCountries[selectedCountry].apiName)
+  const countryFSData = getFSCountryData(allCountries[selectedCountry].apiName)
 
   return {
     t,
@@ -136,6 +165,7 @@ const useCountryData = ({
     selectedCountryData: {
       ...allCountries[selectedCountry],
       data: countryData,
+      FSdata: countryFSData
     },
     setSelectedCountry: (countryCode) => {
       router.replace(`${router.route}#${countryCode}`);
