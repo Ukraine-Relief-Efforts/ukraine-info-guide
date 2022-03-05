@@ -1,7 +1,7 @@
 {
   "Map": "Карта",
   "Source": "Источник",
-  "Retrieved at {{time}}": "Получено",
+  "Retrieved at {{time}}": "Получено {{time}}",
   "Border Crossings": "Пересечения границ",
   "Locations": "Локации",
   "Useful links": "Полезные ссылки",
@@ -66,7 +66,7 @@
   "Slovakia": "Словакия",
   "to Slovakia": "в Словакию",
   "in Slovakia": "в Словакии",
-  "Join us <1>on Github</1>": "Присоединиться к нам <1>в GitHub</1>",
+  "Join us <1>on Github</1>": "Присоединиться к нам <1>на GitHub</1>",
   "Hi! We are Tech For Ukraine": "Привет! Мы Технологии за Украины",
   "We're an international team of people working to fuel and organize the creation of software aimed at helping the Ukrainian people during the current war with Russia": "Мы интернациональная команда людей, работающих над подпиткой и организацией создания программного обеспечения, направленного на помощь украинскому народу во время нынешней войны с Россией",
   "Our organization has developed technologies such as a missile/air alarm system, a website that encompasses information for Ukrainian refugees, and impending others": "Наша организация разработала такие технологии, как система ракетно-воздушной сигнализации, веб-сайт, содержащий информацию для украинских беженцев, и другие надвигающиеся технологии",

@@ -5,7 +5,7 @@ import HeroChooseCountry from "../components/Hero/HeroChooseCountry";
 import useCountryData from "../hooks/useCountryData";
 import { POLAND } from "../configs/constants";
 
-import jsonData from "../data/foodshelter_data.json";
+import jsonData from "../data/foodshelter_poland.json";
 
 export const getStaticProps = async ({ locale }) => ({
   props: {

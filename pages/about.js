@@ -4,7 +4,21 @@ import Hero from "../components/Hero";
 import Layout from "../components/Layout";
 import NewTabLink from "../components/NewTabLink";
 import TwitterTimeline from "../components/TwitterTimeline";
-import { GITHUB_URL } from "../configs/constants";
+import { 
+  TWITTER_URL,
+  INSTAGRAM_URL,
+  GITHUB_URL,
+  ALARM_BOT_URL,
+  LEAVE_UKRAINE_URL
+} from "../configs/constants";
+import {
+  TWITTER_SHIELD,
+  INSTAGRAM_SHIELD,
+  ALARM_BOT_SHIELD,
+  LEAVE_UKRAINE_SHIELD
+} from "../configs/constants";
+
+
 
 const githubI18nKey = (() => {
   const t = (s) => s;
@@ -48,30 +62,30 @@ const AboutPage = () => {
       </p>
       <div className="flex flex-col items-center mt-10 space-y-5">
         <p className="text-lg">
-          {t("Projects")}:
-        </p>
-        <Project
-          title="LeaveUkraine"
-          href="https://leaveukraine.com"
-          shield="https://img.shields.io/github/stars/Ukraine-Relief-Efforts/ukraine-info-guide?label=LeaveUkraine&style=flat-square"
-        />
-        <Project
-          title="Alarm Bot"
-          href="https://github.com/Ukraine-Relief-Efforts/AlarmBot"
-          shield="https://img.shields.io/github/stars/Ukraine-Relief-Efforts/AlarmBot?label=AlarmBot&style=flat-square"
-        />
-        <p className="text-lg">
           {t("Socials")}:
         </p>
         <Project
           title="Twitter"
-          href="https://twitter.com/techfor_"
-          shield="https://img.shields.io/badge/techfor__-Follow%20Us-blue"
+          href={TWITTER_URL}
+          shield={TWITTER_SHIELD}
         />
         <Project
           title="Instagram"
-          href="https://www.instagram.com/techfor.io/"
-          shield="https://img.shields.io/badge/techfor.io-Follow%20Us-blue"
+          href={INSTAGRAM_URL}
+          shield={INSTAGRAM_SHIELD}
+        />
+         <p className="text-lg">
+          {t("Projects")}:
+        </p>
+        <Project
+          title="Alarm Bot"
+          href={ALARM_BOT_URL}
+          shield={ALARM_BOT_SHIELD}
+        />
+        <Project
+          title="LeaveUkraine"
+          href={LEAVE_UKRAINE_URL}
+          shield={LEAVE_UKRAINE_SHIELD}
         />
       </div>
       <div className="mt-20">

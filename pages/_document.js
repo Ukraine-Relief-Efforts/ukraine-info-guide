@@ -5,6 +5,7 @@ import NextDocument, {
   NextScript,
 } from "next/document";
 import { ServerStyleSheet } from "styled-components";
+import { FONT_URL } from "../configs/constants";
 
 class Document extends NextDocument {
   static getInitialProps({ renderPage }) {
@@ -21,7 +22,7 @@ class Document extends NextDocument {
       <Html lang="en">
         <Head>
           <link
-            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700;800&display=swap"
+            href={FONT_URL}
             rel="stylesheet"
           />
           {this.props.styleTags}

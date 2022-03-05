@@ -33,7 +33,7 @@ const AlertsPage = () => {
         </p>
         <div className="mt-10 mb-20">
           <TelegramAlertLinks
-            title={t("Choose your language")}
+            title={t("Preferred language channel")}
           />
         </div>
         <TelegramEmbed />
