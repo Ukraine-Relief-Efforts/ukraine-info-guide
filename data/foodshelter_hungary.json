@@ -1,23 +1,37 @@
 {
-    "source": "https://www.google.com/maps/search/gurudwara/@46.9115407,18.9821591,7.99z/data=!4m2!2m1!6e2",
-    "general": [
-      "Places in Hungary with available food and shelter",
-      "Gurudwaras are known to provide food and shelter."
-    ],
-    "reception": [
-        {
-          "type": "Food & Accomodation - Gurudwara",
-          "thumbnail": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=_i1DuWOvlYw8lKBiuSNOYg&cb_client=search.gws-prod.gps&w=408&h=240&yaw=280.35623&pitch=0&thumbfov=100",
-          "lat": "47.4203552471614",
-          "lon": "19.38916478641253",
-          "address": "Gyömrő, 2230 Hungary"
-        },
-        {
-          "type": "Food & Accomodation - Gurudwara",
-          "thumbnail": "https://maps.gstatic.com/tactile/pane/default_geocode-1x.png",
-          "lat": "47.67920202845151",
-          "lon": "19.51749435479264",
-          "address": "47.67873291331907, 19.5171358958609"
-        }
-    ]
-  }
+  "source": "https://www.google.com/maps/search/gurudwara/@46.9115407,18.9821591,7.99z/data=!4m2!2m1!6e2",
+  "general": [
+    "Places in Hungary with available food and shelter",
+    "Gurudwaras are known to provide food and shelter."
+  ],
+  "reception": [
+      {
+        "type": "Food & Shelter - Gurudwara",
+        "thumbnail": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=_i1DuWOvlYw8lKBiuSNOYg&cb_client=search.gws-prod.gps&w=408&h=240&yaw=280.35623&pitch=0&thumbfov=100",
+        "lat": "47.4203552471614",
+        "lon": "19.38916478641253",
+        "address": "Gyömrő, 2230 Hungary"
+      },
+      {
+        "type": "Food & Shelter - Gurudwara",
+        "thumbnail": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=49EkN2xMc0WQyF-snmIwLw&cb_client=search.gws-prod.gps&w=408&h=240&yaw=280.5272&pitch=0&thumbfov=100",
+        "lat": "46.041979288527415",
+        "lon": "18.226832500675123",
+        "address": "Pécs, Aidinger János út 26, 7632 Hungary"
+      },
+      {
+        "type": "Food & Shelter - Gurudwara",
+        "thumbnail": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=OTj0U4sibgSeYkMwAuwLTQ&cb_client=search.gws-prod.gps&w=408&h=240&yaw=45.74112&pitch=0&thumbfov=100",
+        "lat": "46.922562719709155",
+        "lon": "18.10222183442943",
+        "address": "Siófok, Bocskai u. 20, 8600 Hungary"
+      },
+      {
+        "type": "Food & Shelter - Gurudwara",
+        "thumbnail": "https://maps.gstatic.com/tactile/pane/default_geocode-1x.png",
+        "lat": "47.67920202845151",
+        "lon": "19.51749435479264",
+        "address": "47.67873291331907, 19.5171358958609"
+      }
+  ]
+}

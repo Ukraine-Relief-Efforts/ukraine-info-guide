@@ -2,10 +2,9 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import Layout from "../components/Layout";
 import CountryDataView from "../components/CountryDataView";
 import HeroChooseCountry from "../components/Hero/HeroChooseCountry";
+import { fetchCountryFoodShelterInfo } from "../apiClient/CountryApi";
 import useCountryData from "../hooks/useCountryData";
-import { POLAND } from "../configs/constants";
-
-import jsonData from "../data/foodshelter_poland.json";
+import { POLAND, HUNGARY, ROMANIA, SLOVAKIA, MOLDOVA } from "../configs/constants";
 
 export const getStaticProps = async ({ locale }) => ({
   props: {
@@ -22,17 +21,16 @@ const FoodAndShelterPage = () => {
     setSelectedCountry,
   } = useCountryData({
     defaultCountry: POLAND,
-    availableCountries: [ POLAND ],
-    fetchApiDataCallback: () => jsonData,
+    availableCountries: [ POLAND, HUNGARY, ROMANIA, SLOVAKIA, MOLDOVA ],
   });
 
-  const { data, inName } = selectedCountryData;
+  const { FSdata, inName } = selectedCountryData;
 
   return (
     <Layout
       hero={
         <HeroChooseCountry
-          title={t("Available locations for food and shelter")}
+          title={t("Available locations for food, shelter, and accodomation")}
           {...{
             availableCountries,
             setSelectedCountry,
@@ -40,7 +38,7 @@ const FoodAndShelterPage = () => {
         />
       }
     >
-      {data && (
+      {FSdata && (
         <CountryDataView
           dataViewRef={dataViewRef}
           title={t("Information for Ukrainian citizens {{in_country}}", {
@@ -49,7 +47,7 @@ const FoodAndShelterPage = () => {
           errorMessage={t(
             "Sorry! We don't have information about this country at the moment"
           )}
-          data={data}
+          data={FSdata}
         />
       )}
     </Layout>
