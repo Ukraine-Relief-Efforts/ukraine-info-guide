@@ -1,41 +1,48 @@
 import { useEffect } from "react";
+import Link from "next/link";
 import { useRouter } from "next/router";
 import { useUser } from "@auth0/nextjs-auth0"
+import { useTranslation } from "next-i18next";
 import Layout from "../Layout";
 import Hero from "../Hero";
 import Spinner from "../Spinner";
 
-const Wrapper = ({ title, error, children }) => (
-  <Layout hero={
-    <Hero title={title} />}
-  >
-    <div className="flex flex-col mb-10">
-      {error && <p>{error}</p>}
-      {children}
-    </div>
-  </Layout>
-);
-
 const AdminLayout = ({ title, children }) => {
   const { user, error, isLoading } = useUser();
   const router = useRouter();
+  const { t } = useTranslation();
 
   useEffect(() => {
     if (!isLoading && !user)
       router.replace("/");
   }, [user, isLoading]);
 
-  if (isLoading)
-    return (
-      <Wrapper {...{ title, error }}>
-        <Spinner />
-      </Wrapper>
-    );
-
   return (
-    <Wrapper {...{ title, error }}>
-      {user && children}
-    </Wrapper>
+    <Layout
+      hero={
+        <Hero
+          title={title}
+          subcomponent={
+            <div className="w-full text-center mt-5">
+              <Link href="/admin">
+                <a className="link">
+                  {t("Return to admin panel")}
+                </a>
+              </Link>
+            </div>
+          }
+        />
+      }
+    >
+      <div className="flex flex-col mb-10">
+        {error && <p>{error}</p>}
+        {
+          isLoading
+            ? <Spinner />
+            : user && children
+        }
+      </div>
+    </Layout>
   );
 }
 
