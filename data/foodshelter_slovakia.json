@@ -1,0 +1,86 @@
+{
+    "source": "https://www.google.com/maps/search/gurudwara/@48.6889634,20.7523692,8.97z/data=!4m2!2m1!6e2",
+    "general": [
+      "Places in Slovakia with available food and shelter",
+      "Gurudwaras are known to provide food and shelter."
+    ],
+    "reception": [
+        {
+          "type": "Food & Accomodation - Gurudwara",
+          "thumbnail": "https://lh5.googleusercontent.com/p/AF1QipNDNB_UtjPIhE4pwTLosKVciTzi0E36MfD0jCKR=w426-h240-k-no",
+          "lat": "49.30825598433464",
+          "lon": "21.57105251301109",
+          "address": "Centrálna 64, 089 01 Svidník, Slovakia"
+        },
+        {
+          "type": "Food & Accomodation - Gurudwara",
+          "thumbnail": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=PLqFbnu8o7Of7yNQWUHYJg&cb_client=search.gws-prod.gps&w=408&h=240&yaw=67.60729&pitch=0&thumbfov=100",
+          "lat": "49.15928266515521",
+          "lon": "21.663234360034796",
+          "address": "Breznica 26, 091 01 Breznica, Slovakia"
+        },
+        {
+          "type": "Food & Accomodation - Gurudwara",
+          "thumbnail": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=nBhPuFreyC9u1bz7PvXIhg&cb_client=search.gws-prod.gps&w=408&h=240&yaw=56.414677&pitch=0&thumbfov=100",
+          "lat": "48.63432283980153",
+          "lon": "21.929396291170935",
+          "address": "Budkovce 122, 072 15 Budkovce, Slovakia"
+        },
+        {
+          "type": "Food & Accomodation - Gurudwara",
+          "thumbnail": "https://lh5.googleusercontent.com/p/AF1QipOa9g6Y7NzHnodLAQrCDEJyQRktKJCOZ7x8l7Vp=w408-h272-k-no",
+          "lat": "48.46530578505486",
+          "lon": "21.85999383525781",
+          "address": "Hlavná 65, 076 37 Rad, Slovakia"
+        },
+        {
+          "type": "Food & Accomodation - Gurudwara",
+          "thumbnail": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=FUHLZakCNsTXlOQ0mvfrAQ&cb_client=search.gws-prod.gps&w=408&h=240&yaw=224.38705&pitch=0&thumbfov=100",
+          "lat": "48.99396578995102",
+          "lon": "21.272527688738553",
+          "address": "Námestie Krista Kráľa 1, 080 01 Prešov-Sekčov, Slovakia"
+        },
+        {
+          "type": "Food & Accomodation - Gurudwara",
+          "thumbnail": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=u5sccOoQ7IAHWbBCBM0MgQ&cb_client=search.gws-prod.gps&w=408&h=240&yaw=11.11647&pitch=0&thumbfov=100",
+          "lat": "48.978826185082056",
+          "lon": "21.268518075859735",
+          "address": "Solivarská 1413, 080 05 Prešov-Solivar, Slovakia"
+        },
+        {
+          "type": "Food & Accomodation - Gurudwara",
+          "thumbnail": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=3ZKuN9i9VvQaeIDJQKS7kg&cb_client=search.gws-prod.gps&w=408&h=240&yaw=317.05493&pitch=0&thumbfov=100",
+          "lat": "48.77524580387066",
+          "lon": "21.20498696841227",
+          "address": "Kadlubská 210, 040 01 Kavečany, Slovakia"
+        },
+        {
+          "type": "Food & Accomodation - Gurudwara",
+          "thumbnail": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=kc1CA9P2ZdJDTYaYJte_Xg&cb_client=search.gws-prod.gps&w=408&h=240&yaw=173.97609&pitch=0&thumbfov=100",
+          "lat": "48.73211086341899",
+          "lon": "21.343582372490246",
+          "address": "Košické Olšany 186, 044 42 Košické Olšany, Slovakia"
+        },
+        {
+          "type": "Food & Accomodation - Gurudwara",
+          "thumbnail": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=j1XRtkHmZVuG2tnZyBiQcA&cb_client=search.gws-prod.gps&w=408&h=240&yaw=231.1358&pitch=0&thumbfov=100",
+          "lat": "49.0102791532691",
+          "lon": "21.125434362200455",
+          "address": "Jozefa Dobranského 32/8, 08232 Svinia, 082 32, Slovakia"
+        },
+        {
+          "type": "Food & Accomodation - Gurudwara",
+          "thumbnail": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=gGAqrJvwSgA46S3Vm1GbPw&cb_client=search.gws-prod.gps&w=408&h=240&yaw=267.4757&pitch=0&thumbfov=100",
+          "lat": "48.9458949664251",
+          "lon": "20.706779215169238",
+          "address": "Spišský Hrušov 213, 05363, Slovakia"
+        },
+        {
+          "type": "Food & Accomodation - Gurudwara",
+          "thumbnail": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=MLgWvH0rr0qqb5dAYjcLOg&cb_client=search.gws-prod.gps&w=408&h=240&yaw=175.11778&pitch=0&thumbfov=100",
+          "lat": "48.9268797423773",
+          "lon": "21.59722889677627",
+          "address": "094 35 Soľ, Slovakia"
+        }
+    ]
+  }
