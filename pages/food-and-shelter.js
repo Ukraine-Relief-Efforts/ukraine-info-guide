@@ -2,7 +2,6 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import Layout from "../components/Layout";
 import CountryDataView from "../components/CountryDataView";
 import HeroChooseCountry from "../components/Hero/HeroChooseCountry";
-import { fetchCountryFoodShelterInfo } from "../apiClient/CountryApi";
 import useCountryData from "../hooks/useCountryData";
 import { POLAND, HUNGARY, ROMANIA, SLOVAKIA, MOLDOVA } from "../configs/constants";
 
