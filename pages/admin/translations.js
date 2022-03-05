@@ -1,6 +1,12 @@
+import { useState } from "react";
+import { useRouter } from "next/router";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
-import { AdminLayout } from "../../components/Admin";
+import {
+  AdminLayout,
+  TranslationEditor,
+} from "../../components/Admin";
+import LanguagePicker from "../../components/Navbar/LanguagePicker";
 
 export const getStaticProps = async ({ locale }) => ({
   props: {
@@ -10,10 +16,16 @@ export const getStaticProps = async ({ locale }) => ({
 
 const AdminPage = () => {
   const { t } = useTranslation();
+  const router = useRouter();
+  const [lang, setLang] = useState(router.locale);
 
   return (
     <AdminLayout title={t("Edit Translations")}>
-      <div className="flex flex-col mb-10">
+      <div className="flex flex-col mx-5">
+        <div className="mb-5 flex justify-center">
+          <LanguagePicker onChange={setLang} />
+        </div>
+        <TranslationEditor t={t} lang={lang} />
       </div>
     </AdminLayout>
   );

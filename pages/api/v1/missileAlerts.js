@@ -9,6 +9,11 @@ const readDOM = async (locale) => {
   }
 
 const missileAlertsHandler = async (req, res) => {
+  if (req.method !== "GET") {
+    res.status(405).send();
+    return;
+  }
+
   const num_results = req.query.count || 10;
 
   try {

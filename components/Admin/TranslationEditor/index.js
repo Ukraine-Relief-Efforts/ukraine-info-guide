@@ -1,16 +1,14 @@
 import { useState, useEffect } from "react";
-import { useMsal } from "@azure/msal-react";
 import { toast } from "react-hot-toast";
 import {
   fetchTranslations,
   updateTranslations,
-} from "../../apiClient/TranslationsApi";
-import TextField from "../TextField";
-import Spinner from "../Spinner";
+} from "../../../apiClient/TranslationsApi";
+import TextField from "../../TextField";
+import Spinner from "../../Spinner";
 import SaveButton from "./SaveButton";
 
 const TranslationEditor = ({ t, lang }) => {
-  const msal = useMsal();
   const [data, setData] = useState();
 
   useEffect(() => {
@@ -43,7 +41,7 @@ const TranslationEditor = ({ t, lang }) => {
     for (const item of data)
       output[item.key] = item.value;
     try {
-      await updateTranslations(msal, lang, output);
+      await updateTranslations(lang, output);
       toast.success(t("Saved!"));
     } catch (e) {
       toast.error(t("Something went wrong!"));
