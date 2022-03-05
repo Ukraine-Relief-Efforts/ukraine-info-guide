@@ -1,8 +1,15 @@
-import { useState, useRef } from "react";
-import { useTranslation } from "react-i18next";
-import { fetchCountryBorderInfo } from "../api/CountryApi";
+import { useState, useRef, useEffect } from "react";
+import { useRouter } from "next/router";
+import { useTranslation } from "next-i18next";
+import { fetchCountryBorderInfo } from "../apiClient/CountryApi";
 import { removeArrayDuplicates } from "../utils";
-import { POLAND, MOLDOVA, HUNGARY, SLOVAKIA } from "../configs/constants";
+import {
+  POLAND,
+  MOLDOVA,
+  ROMANIA,
+  HUNGARY,
+  SLOVAKIA,
+} from "../configs/constants";
 
 const allCountries = (() => {
   // We don't want to translate yet but we do want i18next-parser
@@ -24,6 +31,13 @@ const allCountries = (() => {
       inName: t("in Moldova"),
       apiName: "moldova",
     },
+    [ROMANIA]: {
+      code: ROMANIA,
+      name: t("Romania"),
+      toName: t("to Romania"),
+      inName: t("in Romania"),
+      apiName: "romania",
+    },
     [HUNGARY]: {
       code: HUNGARY,
       name: t("Hungary"),
@@ -41,6 +55,15 @@ const allCountries = (() => {
   };
 })();
 
+const getHashCountry = (defaultCountry, availableCountries) =>
+  (typeof window !== "undefined" &&
+      window.location.hash &&
+      window.location.hash.length === 3 &&
+      availableCountries.find(({ code }) =>
+        code === window.location.hash.slice(1)))
+  ? window.location.hash.slice(1)
+  : defaultCountry;
+
 const useCountryData = ({
   defaultCountry = null,
   availableCountries = [],
@@ -52,10 +75,21 @@ const useCountryData = ({
 
   defaultCountry = defaultCountry || availableCountries[0];
 
+  const router = useRouter();
+
   const dataViewRef = useRef();
 
   const [library, setLibrary] = useState({});
-  const [selectedCountry, setSelectedCountry] = useState(defaultCountry);
+
+  const [selectedCountry, setSelectedCountry] =
+    useState(getHashCountry(defaultCountry, availableCountries));
+
+  useEffect(() => {
+    const handler = () =>
+      setSelectedCountry(getHashCountry(defaultCountry, availableCountries));
+    window.addEventListener("hashchange", handler);
+    return () => window.removeEventListener("hashchange", handler);
+  });
 
   const { t, i18n } = useTranslation();
   const { language } = i18n;
@@ -104,6 +138,7 @@ const useCountryData = ({
       data: countryData,
     },
     setSelectedCountry: (countryCode) => {
+      router.replace(`${router.route}#${countryCode}`);
       setSelectedCountry(countryCode);
       if (dataViewRef.current)
         dataViewRef.current.scrollIntoView({
