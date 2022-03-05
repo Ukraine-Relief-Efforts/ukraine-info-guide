@@ -3,6 +3,7 @@ import FooterHeader from "./FooterHeader";
 import FooterLink from "./FooterLink";
 import NewTabLink from "../NewTabLink";
 import {
+  REDDIT_URL,
   TWITTER_URL,
   GITHUB_URL,
   INSTAGRAM_URL,
@@ -21,7 +22,7 @@ const Footer = () => {
               <FooterHeader>{t("Useful links")}</FooterHeader>
               <FooterLink href="/resources">{t("Resources")}</FooterLink>
               <FooterLink href="/border-information">{t("Border Info")}</FooterLink>
-              <FooterLink href="https://reddit.com/r/ukraine/">{t("r/ukraine")}</FooterLink>
+              <FooterLink href={REDDIT_URL}>{t("r/ukraine")}</FooterLink>
               {features.hostARefugee &&
                 <FooterLink href="/#">{t("Host a refugee")}</FooterLink>}
             </div>
