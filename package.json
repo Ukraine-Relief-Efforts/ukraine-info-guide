@@ -12,6 +12,7 @@
     "next-i18next": "^10.5.0",
     "preact": "^10.6.6",
     "qrcode": "^1.5.0",
+    "react-hot-toast": "^2.2.0",
     "react-leaflet": "^3.2.5",
     "react-modern-drawer": "^1.0.1",
     "react-select-search": "^3.0.9",
