@@ -18,7 +18,7 @@ code {
 }
 
 .link {
-  @apply text-blue-ukraine border-b border-b-blue-ukraine hover:text-blue-500 space-y-4;
+  @apply text-blue-ukraine border-b border-b-blue-ukraine hover:text-blue-500 space-y-4 cursor-pointer;
   overflow-wrap: anywhere;
 }
 

@@ -1,21 +1,21 @@
 import { useEffect } from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { useUser } from "@auth0/nextjs-auth0"
+import { useSession } from "next-auth/react";
 import { useTranslation } from "next-i18next";
 import Layout from "../Layout";
 import Hero from "../Hero";
 import Spinner from "../Spinner";
 
 const AdminLayout = ({ title, children }) => {
-  const { user, error, isLoading } = useUser();
-  const router = useRouter();
+  const { data: session, status } = useSession();
   const { t } = useTranslation();
+  const router = useRouter();
 
   useEffect(() => {
-    if (!isLoading && !user)
+    if (!session?.user && status !== "loading")
       router.replace("/");
-  }, [user, isLoading]);
+  }, [session?.user]);
 
   return (
     <Layout
@@ -35,12 +35,9 @@ const AdminLayout = ({ title, children }) => {
       }
     >
       <div className="flex flex-col mb-10 w-full px-5">
-        {error && <p>{error}</p>}
-        {
-          isLoading
-            ? <Spinner />
-            : user && children
-        }
+        {status === "loading"
+          ? <Spinner />
+          : session?.user && children}
       </div>
     </Layout>
   );

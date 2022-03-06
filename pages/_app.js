@@ -1,13 +1,13 @@
 import "../styles/index.css";
 import { appWithTranslation, useTranslation } from "next-i18next";
 import Head from "next/head";
-import { UserProvider } from '@auth0/nextjs-auth0';
+import { SessionProvider } from "next-auth/react";
 import { Toaster } from "react-hot-toast";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { BASE_URL } from "../configs/constants";
 
-const App = ({ Component, pageProps }) => {
+const App = ({ Component, pageProps: { session, ...pageProps } }) => {
   const { t } = useTranslation();
 
   return (
@@ -54,12 +54,12 @@ const App = ({ Component, pageProps }) => {
         <link rel="manifest" href="/manifest.json" />
       </Head>
       <div className="grid grid-rows-[auto_1fr_auto] min-h-screen">
-        <UserProvider>
+        <SessionProvider session={session}>
           <Toaster />
           <Navbar />
           <Component {...pageProps} />
           <Footer />
-        </UserProvider>
+        </SessionProvider>
       </div>
     </>
   );

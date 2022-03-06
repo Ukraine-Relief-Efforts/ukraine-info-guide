@@ -1,4 +1,4 @@
-import { withApiAuthRequired, getSession } from "@auth0/nextjs-auth0";
+import { getSession } from "next-auth/react";
 import nodemailer from "nodemailer";
 
 const translationsHandler = async (req, res) => {
@@ -7,7 +7,13 @@ const translationsHandler = async (req, res) => {
     return;
   }
 
-  const { user } = getSession(req, res);
+  const session = await getSession({ req });
+  if (!session?.user?.email) {
+    res.status(401).send();
+    return;
+  }
+
+  const { email } = session.user;
   const { data, lang } = req.body;
 
   for (const key in data)
@@ -29,7 +35,7 @@ const translationsHandler = async (req, res) => {
     from: `"Translation Update Service" <${process.env.EMAIL_SENDER}>`,
     to: process.env.EMAIL_I18N_TARGET,
     subject: `Update '${lang}' translations for leaveukraine.com`,
-    text: `${user.name} updated '${lang}' translations for leaveukraine.com`,
+    text: `${email} updated '${lang}' translations for leaveukraine.com`,
     attachments: [
       {
         filename: "translation.json",
@@ -43,4 +49,4 @@ const translationsHandler = async (req, res) => {
   res.json({ updated: true });
 }
 
-export default withApiAuthRequired(translationsHandler);
+export default translationsHandler;

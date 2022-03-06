@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { signOut } from "next-auth/react";
 import { useTranslation } from "next-i18next";
 
 const LoggedInIndex = () => {
@@ -16,11 +17,9 @@ const LoggedInIndex = () => {
           {t("Edit Translations")}
         </a>
       </Link>
-      <Link href="/api/auth/logout">
-        <a className="link">
-          {t("Logout")}
-        </a>
-      </Link>
+      <a className="link" onClick={signOut}>
+        {t("Logout")}
+      </a>
     </div>
   );
 }
