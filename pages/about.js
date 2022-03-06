@@ -70,9 +70,9 @@ const AboutPage = () => {
         <p>
             <Trans t={t} i18nKey={emailI18nKey}>
                 To submit feedback, please email <a
-                href={EMAIL}
+                href={"mailto:" + EMAIL}
                 className="link"
-            >ukraine@techfor.io</a>
+            >{EMAIL}</a>
             </Trans>.
         </p>
       <div className="flex flex-col items-center mt-10 space-y-5">
