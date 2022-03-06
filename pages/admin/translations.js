@@ -21,7 +21,7 @@ const AdminPage = () => {
 
   return (
     <AdminLayout title={t("Edit Translations")}>
-      <div className="flex flex-col mx-5">
+      <div className="flex flex-col text-center">
         <div className="mb-5 flex justify-center">
           <LanguagePicker onChange={setLang} />
         </div>

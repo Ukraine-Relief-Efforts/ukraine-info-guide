@@ -34,7 +34,7 @@ const AdminLayout = ({ title, children }) => {
         />
       }
     >
-      <div className="flex flex-col mb-10">
+      <div className="flex flex-col mb-10 w-full px-5">
         {error && <p>{error}</p>}
         {
           isLoading

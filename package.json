@@ -5,6 +5,8 @@
   "dependencies": {
     "@auth0/nextjs-auth0": "^1.7.0",
     "cheerio": "^1.0.0-rc.10",
+    "gridjs": "^5.0.2",
+    "gridjs-react": "^5.0.2",
     "html-react-parser": "^1.4.8",
     "leaflet": "^1.7.1",
     "leaflet-defaulticon-compatibility": "^0.1.1",
@@ -12,6 +14,7 @@
     "next-i18next": "^10.5.0",
     "preact": "^10.6.6",
     "qrcode": "^1.5.0",
+    "react-data-grid": "^7.0.0-beta.11",
     "react-hot-toast": "^2.2.0",
     "react-leaflet": "^3.2.5",
     "react-modern-drawer": "^1.0.1",
