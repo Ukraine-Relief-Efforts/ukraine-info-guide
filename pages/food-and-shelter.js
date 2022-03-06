@@ -41,7 +41,7 @@ const FoodAndShelterPage = () => {
   } = useCountryData({
     defaultCountry: POLAND,
     availableCountries: [ POLAND, HUNGARY, ROMANIA, SLOVAKIA, MOLDOVA ],
-    fetchApiDataCallback: (countryName, language) => fsData[countryName],
+    fetchApiDataCallback: (countryName) => fsData[countryName],
   });
 
   const { data, inName } = selectedCountryData;

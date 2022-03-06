@@ -1,5 +1,5 @@
-import LoggedInIndex from "./LoggedInIndex";;
-import LoggedOutIndex from "./LoggedOutIndex";;
+import LoggedInIndex from "./LoggedInIndex";
+import LoggedOutIndex from "./LoggedOutIndex";
 import AdminLayout from "./AdminLayout";
 import TranslationEditor from "./TranslationEditor";
 

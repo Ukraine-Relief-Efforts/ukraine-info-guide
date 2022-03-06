@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { useTranslation } from "next-i18next";
 
 const LoggedInIndex = () => {
@@ -5,15 +6,21 @@ const LoggedInIndex = () => {
 
   return (
     <div className="flex flex-col items-center space-y-5">
-      <a className="link" href="/admin/refugee-database">
-        {t("Refugee Database")}
-      </a>
-      <a className="link" href="/admin/translations">
-        {t("Edit Translations")}
-      </a>
-      <a className="link" href="/api/auth/logout">
-        {t("Logout")}
-      </a>
+      <Link href="/admin/refugee-database">
+        <a className="link">
+          {t("Refugee Database")}
+        </a>
+      </Link>
+      <Link href="/admin/translations">
+        <a className="link">
+          {t("Edit Translations")}
+        </a>
+      </Link>
+      <Link href="/api/auth/logout">
+        <a className="link">
+          {t("Logout")}
+        </a>
+      </Link>
     </div>
   );
 }

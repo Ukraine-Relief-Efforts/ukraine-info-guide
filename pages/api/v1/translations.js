@@ -30,6 +30,9 @@ const translationsHandler = async (req, res) => {
 
   await writeFile(path, output);
 
+  // TODO: Send make commit and pull request
+  console.log(user);
+
 
   res.json({ updated: 0 });
 }
