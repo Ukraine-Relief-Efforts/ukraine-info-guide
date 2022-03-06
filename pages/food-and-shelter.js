@@ -50,7 +50,7 @@ const FoodAndShelterPage = () => {
     <Layout
       hero={
         <HeroChooseCountry
-          title={t("Available locations for food, shelter, and accodomation")}
+          title={t("Available locations for food and shelter")}
           {...{
             availableCountries,
             setSelectedCountry,
