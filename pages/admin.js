@@ -1,6 +1,6 @@
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
-import { useUser } from "@auth0/nextjs-auth0"
+import { useSession } from "next-auth/react";
 import Layout from "../components/Layout";
 import Hero from "../components/Hero";
 import Spinner from "../components/Spinner";
@@ -17,20 +17,16 @@ export const getStaticProps = async ({ locale }) => ({
 
 const AdminPage = () => {
   const { t } = useTranslation();
-  const { user, error, isLoading } = useUser();
-
-  if (isLoading)
-    return <Spinner />;
+  const { data: session, status } = useSession();
 
   return (
     <Layout hero={
       <Hero title={t("Admin Panel")} />}
     >
       <div className="flex flex-col mb-10">
-        {error && <p>{error}</p>}
-        {isLoading
+        {status === "loading"
           ? <Spinner />
-          : user
+          : session?.user
             ? <LoggedInIndex />
             : <LoggedOutIndex />
         }
