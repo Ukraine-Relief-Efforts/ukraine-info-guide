@@ -7,6 +7,8 @@ export const ROMANIA = "ro";
 export const domain = process.env.REACT_APP_AUTH0_DOMAIN;
 export const clientId = process.env.REACT_APP_AUTH0_CLIENT_ID;
 
+export const EMAIL = `ukraine@techfor.io`;
+
 export const IS_DEVELOPMENT = process.env.NODE_ENV === "development";
 
 export const BASE_URL = "https://leaveukraine.com/";
