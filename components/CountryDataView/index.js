@@ -12,7 +12,13 @@ const Attribution = ({ children }) => (
   </p>
 );
 
-const CountryDataView = ({ title, data, errorMessage, dataViewRef }) => {
+const CountryDataView = ({
+  title,
+  mapTitle,
+  data,
+  errorMessage,
+  dataViewRef,
+}) => {
   const { t } = useTranslation();
 
   const { error, general, reception, source, isoFormat } = data;
@@ -69,7 +75,7 @@ const CountryDataView = ({ title, data, errorMessage, dataViewRef }) => {
       {hasMap &&
         <>
           <p className="mt-10 font-semibold text-center uppercase">
-            {t("Border Crossings")}
+            {mapTitle}
           </p>
           <Map markers={reception} mapRef={mapRef} />
           <p className="mt-10 mb-1 font-semibold text-center uppercase">

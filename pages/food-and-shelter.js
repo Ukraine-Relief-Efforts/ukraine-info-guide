@@ -64,6 +64,7 @@ const FoodAndShelterPage = () => {
           title={t("Information for Ukrainian citizens {{in_country}}", {
             in_country: t(inName),
           })}
+          mapTitle={t("Food and Shelter")}
           errorMessage={t(
             "Sorry! We don't have information about this country at the moment"
           )}
