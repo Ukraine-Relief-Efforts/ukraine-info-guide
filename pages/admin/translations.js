@@ -25,7 +25,10 @@ const AdminPage = () => {
         <div className="mb-5 flex justify-center">
           <LanguagePicker onChange={setLang} />
         </div>
-        <TranslationEditor t={t} lang={lang} />
+        {lang === "en"
+          ? t("English cannot be edited")
+          : <TranslationEditor t={t} lang={lang} />
+        }
       </div>
     </AdminLayout>
   );
