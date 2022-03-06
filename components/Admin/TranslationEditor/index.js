@@ -55,7 +55,7 @@ const TranslationEditor = ({ t, lang }) => {
         data.map(({ key, value }) =>
           <>
             <hr />
-            <div key={key} className="flex flex-row items-center">
+            <div key={key} className="flex flex-row items-center space-x-2">
               <div className="grow basis-0 my-3">
                 {key}
               </div>

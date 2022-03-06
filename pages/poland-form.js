@@ -30,13 +30,17 @@ const PolandFormPage = () => {
         event.preventDefault();
     };
 
-    const renderTextField = ({ name, title }) => <TextField
-        key={name}
-        title={title}
-        name={name}
-        value={fieldsValues[name]}
-        onChange={handleChangeInputs}
-    />
+    const renderTextField = ({ name, title }) => (
+      <div className="mb-5">
+        <TextField
+            key={name}
+            title={title}
+            name={name}
+            value={fieldsValues[name]}
+            onChange={handleChangeInputs}
+        />
+      </div>
+    );
 
     return (
         <Layout hero={<Hero title={t("Form to apply for Asylum in Poland")}/>}>
