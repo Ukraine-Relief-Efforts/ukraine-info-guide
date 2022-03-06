@@ -1,4 +1,5 @@
 import { withApiAuthRequired, getSession } from "@auth0/nextjs-auth0";
+import nodemailer from "nodemailer";
 import {
   readFile as readFileCallback,
   writeFile as writeFileCallback,
@@ -30,11 +31,32 @@ const translationsHandler = async (req, res) => {
 
   await writeFile(path, output);
 
-  // TODO: Send make commit and pull request
-  console.log(user);
+  const transporter = nodemailer.createTransport({
+    host: process.env.EMAIL_HOST,
+    port: parseInt(process.env.EMAIL_PORT),
+    secure: false,
+    auth: {
+      user: process.env.EMAIL_USER,
+      pass: process.env.EMAIL_PASSWORD,
+    },
+  });
 
+  const info = await transporter.sendMail({
+    from: `"Translation Update Service" <${process.env.EMAIL_SENDER}>`,
+    to: process.env.EMAIL_I18N_TARGET,
+    subject: `Update '${lang}' translations for leaveukraine.com`,
+    text: `${user.name} updated '${lang}' translations for leaveukraine.com`,
+    attachments: [
+      {
+        filename: "translation.json",
+        path,
+      },
+    ],
+  });
 
-  res.json({ updated: 0 });
+  console.log("Sent translation update message:", info);
+
+  res.json({ updated: true });
 }
 
 export default withApiAuthRequired(translationsHandler);
