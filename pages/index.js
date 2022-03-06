@@ -17,7 +17,7 @@ const Description = ({ t }) => (
   </p>
 );
 
-const Index = () => {
+const IndexPage = () => {
   const { t } = useTranslation();
   const router = useRouter();
 
@@ -55,4 +55,4 @@ const Index = () => {
   );
 }
 
-export default Index;
+export default IndexPage;
