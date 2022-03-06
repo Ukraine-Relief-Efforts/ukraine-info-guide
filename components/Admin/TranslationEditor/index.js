@@ -49,7 +49,7 @@ const TranslationEditor = ({ t, lang }) => {
   }
 
   return (
-    <div className="flex flex-col text-left">
+    <div className="flex flex-col text-left w-full">
       <SaveButton t={t} onSubmit={onSubmit} />
       {
         data.map(({ key, value }) =>
