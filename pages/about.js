@@ -26,7 +26,7 @@ const githubI18nKey = (() => {
 
 const emailI18nKey = (() => {
   const t = (s) => s;
-  return t("To submit feedback, please email <1>ukraine@techfor.io</1>");
+  return t("To submit feedback, please email <1>{{email}}</1>");
 })();
 
 export const getStaticProps = async ({locale}) => ({
@@ -66,12 +66,12 @@ const AboutPage = () => {
         </Trans>.
       </p>
       <p>
-        <Trans t={t} i18nKey={emailI18nKey}>
+        <Trans t={t} i18nKey={emailI18nKey} email={EMAIL}>
           To submit feedback, please email <a
             href={"mailto:" + EMAIL}
             className="link"
           >{EMAIL}</a>
-        </Trans>.
+        </Trans>
       </p>
 
       <div className="mt-5 container mx-auto">
