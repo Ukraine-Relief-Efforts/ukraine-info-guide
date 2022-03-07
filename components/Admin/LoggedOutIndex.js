@@ -5,7 +5,7 @@ const LoggedOutIndex = () => {
   const { t } = useTranslation();
 
   return (
-    <a className="link" onClick={() => signIn()}>
+    <a className="link" onClick={() => signIn("cognito")}>
       {t("Login")}
     </a>
   );
