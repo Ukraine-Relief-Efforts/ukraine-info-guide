@@ -80,12 +80,13 @@ const useCountryData = ({
 
   const [library, setLibrary] = useState({});
 
-  const [selectedCountry, setSelectedCountry] =
-    useState(getHashCountry(defaultCountry, availableCountries));
+  const selectedCountryHash = getHashCountry(defaultCountry, availableCountries);
+  const [selectedCountry, setSelectedCountry] = useState(selectedCountryHash);
 
   useEffect(() => {
-    const handler = () =>
-      setSelectedCountry(getHashCountry(defaultCountry, availableCountries));
+    const nextCountryHash = getHashCountry(defaultCountry, availableCountries);
+    const handler = () => setSelectedCountry(nextCountryHash);
+
     window.addEventListener("hashchange", handler);
     return () => window.removeEventListener("hashchange", handler);
   });
@@ -112,11 +113,10 @@ const useCountryData = ({
 
   const getCountryData = (countryName) => {
     const countries = library[language];
-    if (countries) {
-      const data = countries[countryName];
-      if (data)
-        return data;
-    }
+    const data = countries ? countries[countryName] : null;
+
+    if (data)
+      return data;
 
     fetchCountryData(countryName);
     return null;
