@@ -3,6 +3,13 @@ export const MOLDOVA = "md";
 export const HUNGARY = "hu";
 export const SLOVAKIA = "sk";
 export const ROMANIA = "ro";
+export const RUSSIA = "ru";
+export const SERBIA = "rs";
+export const GERMANY = "de";
+export const SPAIN = "es";
+export const ENGLAND = "en";
+export const UKRAINE = "ua";
+export const KOREAN = "kr";
 
 export const domain = process.env.REACT_APP_AUTH0_DOMAIN;
 export const clientId = process.env.REACT_APP_AUTH0_CLIENT_ID;
@@ -31,22 +38,21 @@ export const GITHUB_URL = `https://github.com/${GITHUB_HANDLE}`;
 export const REDDIT_URL = `https://reddit.com/${REDDIT_HANDLE}`;
 
 export const TWITTER_SHIELD = `https://img.shields.io/badge/${TWITTER_HANDLE}_-Follow%20Us-blue`;
-export const INSTAGRAM_SHIELD =
-  "https://img.shields.io/badge/techfor.io-Follow%20Us-blue";
+export const INSTAGRAM_SHIELD = `https://img.shields.io/badge/${INSTAGRAM_HANDLE}_-Follow%20Us-blue`;
 export const ALARM_BOT_SHIELD = `https://img.shields.io/github/stars/${GITHUB_HANDLE}/${ALARM_BOT_HANDLE}?label=AlarmBot&style=flat-square`;
 export const LEAVE_UKRAINE_SHIELD = `https://img.shields.io/github/stars/${GITHUB_HANDLE}/ukraine-info-guide?label=LeaveUkraine&style=flat-square`;
 
-export const ALARM_BOT_URL = `https://github.com/Ukraine-Relief-Efforts/${ALARM_BOT_HANDLE}`;
+export const ALARM_BOT_URL = `https://github.com/${GITHUB_HANDLE}/${ALARM_BOT_HANDLE}`;
 export const LEAVE_UKRAINE_URL = `https://${LEAVE_UKRAINE_HANDLE}.com`;
 
 export const TELEGRAM_LANGUAGES = [
-  "en",
-  "ua",
-  "ru",
-  "pl",
-  "rs",
-  "hu",
-  "de",
-  "es",
-  "ro",
+  ENGLAND,
+  UKRAINE,
+  RUSSIA,
+  POLAND,
+  SERBIA,
+  HUNGARY,
+  GERMANY,
+  SPAIN,
+  ROMANIA,
 ];
