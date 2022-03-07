@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@auth0/auth0-react": "^1.9.0",
+    "@sentry/nextjs": "^6.18.1",
     "cheerio": "^1.0.0-rc.10",
     "html-react-parser": "^1.4.8",
     "leaflet": "^1.7.1",
