@@ -1,0 +1,81 @@
+{
+  "General Help": [
+    {
+      "title": "Accommodation, food and news - Romanian solidarity for Ukraine",
+      "url": " https://refugees.ro/"
+    },
+    {
+      "title": "Helping Ukraine - Polish Government",
+      "url": "https://pomagamukrainie.gov.pl/"
+    }
+  ],
+  "Legal Help": [
+    {
+      "title": "Law of Ukraine - Foreigners",
+      "url": " https://iom.org.ua/en/legislation/migration-related-legislation/on-the-legal-status-of-foreigners-and-stateless-persons.html"
+    }
+  ],
+  "Border Crossings": [
+    {
+      "title": "Moldovan Border Crossings",
+      "url": "https://www.border.gov.md/index.php/informare"
+    },
+    {
+      "title": "Polish Border Crossings",
+      "url": "https://www.gov.pl/web/udsc/ukraina2"
+    },
+    {
+      "title": "Fundacja Ocalenie, Polish site, among others with info for escape/evacuation of Poles from Ukraine",
+      "url": "https://ocalenie.org.pl/zalatwto/ewakuacja-z-ukrainy-o-czym-pamietac-uciekajac-przed-wojna"
+    },
+
+    {
+      "title": "Ukraine Official Border Crossings (old)",
+      "url": "https://dpsu.gov.ua/en/Where-and-how-you-can-cross-the-state-border-of-Ukraine/"
+    },
+    {
+      "title": "Updated official Information for people enter Romania from Ukraine",
+      "url": "https://dopomoha.ro/en"
+    },
+    {
+      "title": "Flyer in different languages for people entering Romania from Ukraine",
+      "url": "https://romania.iom.int/news/useful-information-people-entering-romania-ukraine"
+    }
+  ],
+  "Accommodation": [
+    {
+      "title": "Contacts with shelters, among others in Western Ukraine",
+      "url": "https://prykhystok.in.ua/"
+    }
+  ],
+  "Medical Info/Guides": [
+    {
+      "title": "Ranger Medic Handbook (pdf)",
+      "url": "http://www.patriotresistance.com/ranger_medic_handbook_2007_1_.pdf"
+    },
+    {
+      "title": "iOS App: Army Combat Lifesaver CLS",
+      "url": "https://apps.apple.com/ch/app/army-combat-lifesaver-cls/id1141687949"
+    }
+  ],
+  "Facebook Groups": [
+    {
+      "title": "UNIȚI PENTRU UCRAINA (Romania)",
+      "url": "https://www.facebook.com/groups/unitipentruucraina"
+    },
+    {
+      "title": "Switzerland with Ukraine",
+      "url": "https://www.facebook.com/groups/529855118408513"
+    }
+  ],
+  "Reddit Posts": [
+    {
+      "title": "Tips on how to survive a war zone as a civilian",
+      "url": "https://www.reddit.com/r/ukraine/comments/t0dby0/tips_on_how_to_survive_a_war_zone_as_a_civilian/"
+    },
+    {
+      "title": "If you see any of these markings, cover or destroy them",
+      "url": "https://www.reddit.com/r/ukraine/comments/t0h6qn/if_you_see_any_of_these_markings_cover_or_destroy/"
+    }
+  ]
+}

@@ -1,3 +1,9 @@
-# https://www.robotstxt.org/robotstxt.html
+# *
 User-agent: *
-Disallow:
+Allow: /
+
+# Host
+Host: https://leaveukraine.com/
+
+# Sitemaps
+Sitemap: https://leaveukraine.com/sitemap.xml

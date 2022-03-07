@@ -1,0 +1,14 @@
+name: API Sanity Check
+on:
+  schedule:
+    - cron: '0 */2 * * *'
+jobs:
+  api-sanity-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v2
+      - name: Install modules
+        run: npm install --production=false
+      - name: Run API sanity check
+        run: npm run api-sanity-check

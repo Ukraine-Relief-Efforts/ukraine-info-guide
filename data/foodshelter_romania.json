@@ -1,0 +1,37 @@
+{
+  "source": "https://www.google.com/maps/search/gurudwara/@45.6284605,24.2625293,7.74z/data=!4m2!2m1!6e2",
+  "general": [
+    "Places in Romania with available food and shelter",
+    "Gurudwaras are known to provide food and shelter."
+  ],
+  "reception": [
+      {
+        "type": "Food & Shelter - Gurudwara",
+        "thumbnail": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=lTjVMzuggfDgzj_jRvLetA&cb_client=search.gws-prod.gps&w=408&h=240&yaw=0.7947561&pitch=0&thumbfov=100",
+        "lat": "46.72242231278214",
+        "lon": "26.69894228944659",
+        "address": "Buhuși 605100, Romania"
+      },
+      {
+        "type": "Food & Shelter - Gurudwara",
+        "thumbnail": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=3ENZGnKfXQokHOqnL-GxNg&cb_client=search.gws-prod.gps&w=408&h=240&yaw=172.75916&pitch=0&thumbfov=100",
+        "lat": "44.92139891776364",
+        "lon": "25.455577742368117",
+        "address": "Şoseaua Găeşti 3, Târgoviște, Romania"
+      },
+      {
+        "type": "Food & Shelter - Gurudwara",
+        "thumbnail": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=-AU3NVP5ktzwfkoeY_hFog&cb_client=search.gws-prod.gps&w=408&h=240&yaw=101.118515&pitch=0&thumbfov=100",
+        "lat": "44.46968487577023",
+        "lon": "26.090769368325407",
+        "address": "Str. Cehov Anton, 2, Bucuresti-Sector 1, Bucuresti, București 014192, Romania"
+      },
+      {
+        "type": "Food & Shelter - Gurudwara",
+        "thumbnail": "https://maps.gstatic.com/tactile/pane/default_geocode-1x.png",
+        "lat": "47.435676966833945",
+        "lon": "26.564556470071338",
+        "address": "Dolheștii Mici 727181, Romania"
+      }
+  ]
+}

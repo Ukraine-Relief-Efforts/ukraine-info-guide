@@ -1,0 +1,40 @@
+.select-search {
+  width: 135px;
+}
+
+.select-search:not(.select-search--multiple) .select-search__input:hover {
+  @apply border-yellow-200;
+}
+
+.select-search .select-search__value {
+  @apply text-black;
+}
+
+.select-search .select-search__select .select-search__option {
+  @apply text-black;
+}
+
+.select-search .select-search__select .select-search__option.is-selected {
+  @apply text-black bg-yellow-ukraine;
+}
+
+.select-search .select-search__select .select-search__option.is-highlighted,
+.select-search
+  .select-search__select
+  .select-search__option:not(.is-selected):hover {
+  @apply bg-yellow-200;
+}
+
+/* Set fixed height to the dropdown menu */
+/* (which is located inside of a mobile panel) to avoid parent element overflowing vertically */
+.navbar-mobile .select-search:not(.select-search--multiple) .select-search__select {
+  height: 185px;
+}
+
+/* When the workspace resolution is lower than the specified maximum,
+/* force dropdown menu options to open upwards rather than downwards */
+@media (max-height: 650px) {
+  .navbar-mobile .select-search:not(.select-search--multiple) .select-search__select {
+    top: -195px;
+  }
+}
