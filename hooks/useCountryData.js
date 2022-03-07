@@ -56,8 +56,7 @@ const allCountries = (() => {
 
 const getHashCountry = (defaultCountry, availableCountries) =>
   (typeof window !== "undefined" &&
-      window.location.hash &&
-      window.location.hash.length === 3 &&
+      window.location.hash?.length === 3 &&
       availableCountries.find(({ code }) =>
         code === window.location.hash.slice(1)))
   ? window.location.hash.slice(1)
