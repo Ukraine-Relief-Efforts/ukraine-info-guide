@@ -22,7 +22,8 @@ const StyledItem = styled.button`
   transition: transform 0.2s;
   @media (max-width: 450px) {
     width: 140px;
-    height: 180px;
+    height: 200px;
+    padding-bottom: 5px;
   }
 
   &:hover {
@@ -33,8 +34,8 @@ const StyledItem = styled.button`
 `;
 
 const StyledIcon = styled.img`
-  width: 120px;
-  height: 120px;
+  width: 110px;
+  height: 110px;
   margin: 0 auto;
 `;
 

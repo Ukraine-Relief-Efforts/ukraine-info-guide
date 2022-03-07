@@ -1,9 +1,11 @@
+const languages = require("./configs/languages");
+
 const IS_DEVELOPMENT = process.env.NODE_ENV === 'development';
 
 module.exports = {
   i18n: {
     defaultLocale: 'en',
-    locales: ['en', 'ua', 'ru', 'it', 'de', 'es', 'pl', 'kr', 'rs'],
+    locales: languages.map(({ value }) => value),
     defaultNS: "translation",
     fallbackLng: 'en',
     returnEmptyString: false,

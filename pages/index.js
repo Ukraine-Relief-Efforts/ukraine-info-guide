@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { useRouter } from "next/router";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
@@ -18,7 +17,7 @@ const Description = ({ t }) => (
   </p>
 );
 
-const Index = () => {
+const IndexPage = () => {
   const { t } = useTranslation();
   const router = useRouter();
 
@@ -56,4 +55,4 @@ const Index = () => {
   );
 }
 
-export default Index;
+export default IndexPage;

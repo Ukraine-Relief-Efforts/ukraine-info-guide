@@ -3,9 +3,27 @@ import Layout from "../components/Layout";
 import CountryDataView from "../components/CountryDataView";
 import HeroChooseCountry from "../components/Hero/HeroChooseCountry";
 import useCountryData from "../hooks/useCountryData";
-import { POLAND } from "../configs/constants";
+import {
+  POLAND,
+  HUNGARY,
+  ROMANIA,
+  SLOVAKIA,
+  MOLDOVA,
+} from "../configs/constants";
 
-import jsonData from "../data/foodshelter_data.json";
+import polandFSdata from "../data/foodshelter_poland.json";
+import hungaryFSdata from "../data/foodshelter_hungary.json";
+import romaniaFSdata from "../data/foodshelter_romania.json";
+import slovakiaFSdata from "../data/foodshelter_slovakia.json";
+import moldovaFSdata from "../data/foodshelter_moldova.json";
+
+const fsData = {
+  "poland": polandFSdata,
+  "hungary": hungaryFSdata,
+  "romania": romaniaFSdata,
+  "slovakia": slovakiaFSdata,
+  "moldova": moldovaFSdata,
+};
 
 export const getStaticProps = async ({ locale }) => ({
   props: {
@@ -22,8 +40,8 @@ const FoodAndShelterPage = () => {
     setSelectedCountry,
   } = useCountryData({
     defaultCountry: POLAND,
-    availableCountries: [ POLAND ],
-    fetchApiDataCallback: () => jsonData,
+    availableCountries: [ POLAND, HUNGARY, ROMANIA, SLOVAKIA, MOLDOVA ],
+    fetchApiDataCallback: (countryName) => fsData[countryName],
   });
 
   const { data, inName } = selectedCountryData;
@@ -46,6 +64,7 @@ const FoodAndShelterPage = () => {
           title={t("Information for Ukrainian citizens {{in_country}}", {
             in_country: t(inName),
           })}
+          mapTitle={t("Food and Shelter")}
           errorMessage={t(
             "Sorry! We don't have information about this country at the moment"
           )}

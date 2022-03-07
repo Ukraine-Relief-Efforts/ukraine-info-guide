@@ -1,6 +1,3 @@
-import AuthenticatedUserProfile from "../AuthenticatedUserProfile";
-import LoginButton from "../LoginButton";
-import LogoutButton from "../LogoutButton";
 import LanguagePicker from "./LanguagePicker";
 import Link from "./Link";
 import features from "../../configs/features";
@@ -46,7 +43,7 @@ const getConfig = (t) => [
     title: t("About us"),
     url: "/about",
     inTopBar: false,
-    enabled: features.aboutPage,
+    enabled: true,
   },
   {
     title: t("Services"),
@@ -66,16 +63,9 @@ const Links = ({ t, vertical }) => {
           (vertical || inTopBar) && <Link {...rest} key={rest.url} />
         )
       }
-      {features.login &&
-        <>
-          <LoginButton />
-          <LogoutButton />
-        </>
-      }
       <div style={{ marginTop: vertical ? "25px" : undefined }}>
         <LanguagePicker />
       </div>
-      <AuthenticatedUserProfile />
     </>
   );
 };

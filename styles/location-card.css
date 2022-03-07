@@ -4,7 +4,7 @@
 }
 
 .location-card-reception {
-  @apply bg-blue-ukraine rounded-lg px-2 pb-4 m-2 2xl:w-2/6 2xl:mr-5 max-w-6xl min-h-[300px] flex flex-col justify-between;
+  @apply bg-blue-ukraine rounded-lg px-2 pb-4 m-2 2xl:w-2/6 2xl:mr-5 max-w-6xl min-h-[340px] flex flex-col justify-between;
   max-width: 280px;
 }
 
@@ -22,7 +22,7 @@
 
 .location-card-address-wrapper {
   z-index: 2;
-  height: 110px;
+  height: auto;
   overflow: hidden;
   text-overflow: ellipsis;
   display: block;

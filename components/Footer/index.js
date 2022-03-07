@@ -1,8 +1,13 @@
 import { useTranslation } from "next-i18next";
-import Link from "next/link";
 import FooterHeader from "./FooterHeader";
 import FooterLink from "./FooterLink";
-import { TWITTER_URL, GITHUB_URL } from "../../configs/constants";
+import NewTabLink from "../NewTabLink";
+import {
+  REDDIT_URL,
+  TWITTER_URL,
+  GITHUB_URL,
+  INSTAGRAM_URL,
+} from "../../configs/constants";
 import features from "../../configs/features";
 
 const Footer = () => {
@@ -17,13 +22,14 @@ const Footer = () => {
               <FooterHeader>{t("Useful links")}</FooterHeader>
               <FooterLink href="/resources">{t("Resources")}</FooterLink>
               <FooterLink href="/border-information">{t("Border Info")}</FooterLink>
-              <FooterLink href="https://reddit.com/r/ukraine/">{t("r/ukraine")}</FooterLink>
+              <FooterLink href={REDDIT_URL}>{t("r/ukraine")}</FooterLink>
               {features.hostARefugee &&
                 <FooterLink href="/#">{t("Host a refugee")}</FooterLink>}
             </div>
             <div>
               <FooterHeader>{t("Contacts")}</FooterHeader>
               <FooterLink href={TWITTER_URL}>Twitter</FooterLink>
+              <FooterLink href={INSTAGRAM_URL}>Instagram</FooterLink>
               <FooterLink href={GITHUB_URL}>Github</FooterLink>
             </div>
           </div>
@@ -31,9 +37,9 @@ const Footer = () => {
       </div>
       <div className="text-center p-8 bg-gray-200">
         <span>Copyright &copy; {new Date().getFullYear()} </span>
-        <Link className="text-gray-600 font-semibold" href="/">
-          TechForUkraine
-        </Link>. All rights reserved.
+        <NewTabLink className="text-gray-600 font-semibold" href={TWITTER_URL}>
+          Tech For
+        </NewTabLink>. All rights reserved.
       </div>
     </footer>
   );

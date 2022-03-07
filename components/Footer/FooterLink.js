@@ -1,10 +1,10 @@
-import Link from "next/link";
+import NewTabLink from "../NewTabLink";
 
 const FooterLink = ({ href, children }) => (
   <p className="mb-4">
-    <Link href={href}>
-      <a className="text-gray-600">{children}</a>
-    </Link>
+    <NewTabLink href={href} className="text-gray-600">
+      {children}
+    </NewTabLink>
   </p>
 );
 
