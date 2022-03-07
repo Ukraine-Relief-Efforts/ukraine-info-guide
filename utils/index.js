@@ -1,7 +1,6 @@
 import {
-  POLAND, ENGLAND, GERMANY,
-  HUNGARY, ROMANIA, RUSSIA,
-  SPAIN, SERBIA, UKRAINE
+  POLAND, ENGLAND, GERMANY, KOREAN, SPAIN,
+  HUNGARY, ROMANIA, RUSSIA, SERBIA, UKRAINE
 } from "../configs/constants";
 
 export const coordsToGoogleMapsUrl = (lat, lon) =>
@@ -20,7 +19,7 @@ export const localeToTelegramAlertChannel = (locale) => {
     [POLAND]: "PO",
     [GERMANY]: "GE",
     [SPAIN]: "SP",
-    "kr": "KO",
+    [KOREAN]: "KO",
     [HUNGARY]: "HU",
     [ROMANIA]: "RO",
   };

@@ -9,6 +9,7 @@ export const GERMANY = "de";
 export const SPAIN = "es";
 export const ENGLAND = "en";
 export const UKRAINE = "ua";
+export const KOREAN = "kr";
 
 export const domain = process.env.REACT_APP_AUTH0_DOMAIN;
 export const clientId = process.env.REACT_APP_AUTH0_CLIENT_ID;
