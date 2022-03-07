@@ -84,8 +84,8 @@ const useCountryData = ({
   const [selectedCountry, setSelectedCountry] = useState(selectedCountryHash);
 
   useEffect(() => {
-    const nextCountryHash = getHashCountry(defaultCountry, availableCountries);
-    const handler = () => setSelectedCountry(nextCountryHash);
+    const nextCountryHash = () => getHashCountry(defaultCountry, availableCountries);
+    const handler = () => setSelectedCountry(nextCountryHash());
 
     window.addEventListener("hashchange", handler);
     return () => window.removeEventListener("hashchange", handler);
