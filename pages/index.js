@@ -4,6 +4,7 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import Hero from "../components/Hero";
 import Layout from "../components/Layout";
 import IconPicker from "../components/IconPicker";
+import features from "../configs/features";
 
 export const getStaticProps = async ({ locale }) => ({
   props: {
@@ -21,28 +22,28 @@ const IndexPage = () => {
   const { t } = useTranslation();
   const router = useRouter();
 
-  const options = [
-    {
-      name: t("Border Crossings"),
-      icon: "/HomePageIcons/border-crossing.svg",
-      onClick: () => router.push("/border-information"),
-    },
-    {
+  const options = [];
+  options.push({
+    name: t("Border Crossings"),
+    icon: "/HomePageIcons/border-crossing.svg",
+    onClick: () => router.push("/border-information"),
+  });
+  if (features.foodAndShelterPage)
+    options.push({
       name: t("Food and Shelter"),
       icon: "/HomePageIcons/food-and-shelter.svg",
       onClick: () => router.push("/food-and-shelter"),
-    },
-    {
-      name: t("Missile Alerts"),
-      icon: "/HomePageIcons/missile-alert.svg",
-      onClick: () => router.push("/alerts"),
-    },
-    {
-      name: t("Resources"),
-      icon: "/HomePageIcons/resources.svg",
-      onClick: () => router.push("/resources"),
-    },
-  ];
+    });
+  options.push({
+    name: t("Missile Alerts"),
+    icon: "/HomePageIcons/missile-alert.svg",
+    onClick: () => router.push("/alerts"),
+  });
+  options.push({
+    name: t("Resources"),
+    icon: "/HomePageIcons/resources.svg",
+    onClick: () => router.push("/resources"),
+  });
 
   return (
     <Layout hero={

@@ -10,7 +10,7 @@ const Attribution = ({ children }) => (
   </p>
 );
 
-const CountryDataView = ({
+const CountryDataView2 = ({
   title,
   mapTitle,
   data,
@@ -36,6 +36,14 @@ const CountryDataView = ({
 
   return (
     <section className="country-data-view" ref={dataViewRef}>
+      {hasMap &&
+        <>
+          <p className="mt-10 font-semibold text-center uppercase">
+            {mapTitle}
+          </p>
+          <Map markers={reception} kmlUrl={kmlUrl} mapRef={mapRef} />
+        </>
+      }
       <div className="bg-gray-200 p-3 rounded">
         <div className="text-center">
           <p className="font-semibold mt-5 mb-5 uppercase">
@@ -73,10 +81,6 @@ const CountryDataView = ({
       </div>
       {hasMap &&
         <>
-          <p className="mt-10 font-semibold text-center uppercase">
-            {mapTitle}
-          </p>
-          <Map markers={reception} kmlUrl={kmlUrl} mapRef={mapRef} />
           <p className="mt-10 mb-1 font-semibold text-center uppercase">
             {t("Locations")}
           </p>
@@ -91,4 +95,4 @@ const CountryDataView = ({
   );
 };
 
-export default CountryDataView;
+export default CountryDataView2;

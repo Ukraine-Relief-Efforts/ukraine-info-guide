@@ -1,6 +1,6 @@
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import Layout from "../components/Layout";
-import CountryDataView from "../components/CountryDataView";
+import CountryDataView from "../components/CountryDataView/CountryDataView2";
 import HeroChooseCountry from "../components/Hero/HeroChooseCountry";
 import useCountryData from "../hooks/useCountryData";
 import {
@@ -30,6 +30,8 @@ const BorderInformationPage = () => {
 
   const { data, toName } = selectedCountryData;
 
+  const kmlUrl = "/ukraine-border.kml";
+
   return (
     <Layout
       hero={
@@ -54,6 +56,7 @@ const BorderInformationPage = () => {
             "Sorry! We don't have information about this border at the moment"
           )}
           data={data}
+          kmlUrl="/ukraine-border.kml"
         />
       )}
     </Layout>

@@ -19,7 +19,7 @@ const getConfig = (t) => [
     title: t("Food and Shelter"),
     url: "/food-and-shelter",
     inTopBar: true,
-    enabled: true,
+    enabled: features.foodAndShelterPage,
   },
   {
     title: t("Missile Alerts"),
@@ -36,7 +36,7 @@ const getConfig = (t) => [
   {
     title: t("Resources"),
     url: "/resources",
-    inTopBar: false,
+    inTopBar: !features.foodAndShelterPage,
     enabled: true,
   },
   {
