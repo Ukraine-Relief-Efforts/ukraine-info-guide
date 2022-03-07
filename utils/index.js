@@ -1,3 +1,9 @@
+import {
+  POLAND, ENGLAND, GERMANY,
+  HUNGARY, ROMANIA, RUSSIA,
+  SPAIN, SERBIA, UKRAINE
+} from "../configs/constants";
+
 export const coordsToGoogleMapsUrl = (lat, lon) =>
   `https://maps.google.com/?q=${lat},${lon}`;
 
@@ -7,17 +13,17 @@ export const removeArrayDuplicates =
 export const localeToTelegramAlertChannel = (locale) => {
   const channels = {
     "it": "IT",
-    "rs": "SE",
-    "ru": "RU",
-    "ua": "UK",
-    "en": "EN",
-    "pl": "PO",
-    "de": "GE",
-    "es": "SP",
+    [SERBIA]: "SE",
+    [RUSSIA]: "RU",
+    [UKRAINE]: "UK",
+    [ENGLAND]: "EN",
+    [POLAND]: "PO",
+    [GERMANY]: "GE",
+    [SPAIN]: "SP",
     "kr": "KO",
-    "hu": "HU",
-    "ro": "RO",
+    [HUNGARY]: "HU",
+    [ROMANIA]: "RO",
   };
 
-  return `UkraineAlerts${channels[locale] || "EN"}`;
+  return `UkraineAlerts${channels[locale] || ENGLAND}`;
 }

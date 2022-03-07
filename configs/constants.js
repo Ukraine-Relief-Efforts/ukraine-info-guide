@@ -3,6 +3,12 @@ export const MOLDOVA = "md";
 export const HUNGARY = "hu";
 export const SLOVAKIA = "sk";
 export const ROMANIA = "ro";
+export const RUSSIA = "ru";
+export const SERBIA = "rs";
+export const GERMANY = "de";
+export const SPAIN = "es";
+export const ENGLAND = "en";
+export const UKRAINE = "ua";
 
 export const domain = process.env.REACT_APP_AUTH0_DOMAIN;
 export const clientId = process.env.REACT_APP_AUTH0_CLIENT_ID;
@@ -39,13 +45,13 @@ export const ALARM_BOT_URL = `https://github.com/${GITHUB_HANDLE}/${ALARM_BOT_HA
 export const LEAVE_UKRAINE_URL = `https://${LEAVE_UKRAINE_HANDLE}.com`;
 
 export const TELEGRAM_LANGUAGES = [
-  "en",
-  "ua",
-  "ru",
-  "pl",
-  "rs",
-  "hu",
-  "de",
-  "es",
-  "ro",
+  ENGLAND,
+  UKRAINE,
+  RUSSIA,
+  POLAND,
+  SERBIA,
+  HUNGARY,
+  GERMANY,
+  SPAIN,
+  ROMANIA,
 ];
