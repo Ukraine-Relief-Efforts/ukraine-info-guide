@@ -56,7 +56,7 @@ const AboutPage = () => {
       <p className="text-xl mt-5 mb-10">
         {t("Hi! We are Tech For Ukraine")} &#127482;&#127462;
       </p>
-      <p className="p-5" style={{maxWidth: "70ch"}}>
+      <p className="p-5 max-w-[70ch]">
         {t("We're an international team of people working to fuel and organize the creation of software aimed at helping the Ukrainian people during the current war with Russia")}.&nbsp;
         {t("Our organization has developed technologies such as a missile/air alarm system, a website that encompasses information for Ukrainian refugees, and impending others")}.&nbsp;
         {t("Contribution to our open source technologies is valued")}.&nbsp;
