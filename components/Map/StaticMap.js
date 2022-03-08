@@ -69,7 +69,9 @@ const Map = ({ markers = [], kmlUrl, mapRef }) => {
             </LayerGroup>
         }
         {features.geolocation && location.loaded && !location.error && (
-          <Marker position={[location.coordinates.lat, location.coordinates.lng]}></Marker>
+          <Marker
+            position={[location.coordinates.lat, location.coordinates.lng]}
+          />
         )}
       </MapContainer>
     </div>

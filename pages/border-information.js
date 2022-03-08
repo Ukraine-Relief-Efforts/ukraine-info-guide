@@ -1,7 +1,7 @@
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import Layout from "../components/Layout";
 import CountryDataView from "../components/CountryDataView/CountryDataView2";
-import HeroChooseCountry from "../components/Hero/HeroChooseCountry";
+import Hero from "../components/Hero";
 import useCountryData from "../hooks/useCountryData";
 import {
   POLAND,
@@ -26,6 +26,7 @@ const BorderInformationPage = () => {
   } = useCountryData({
     defaultCountry: POLAND,
     availableCountries: [ POLAND, MOLDOVA, ROMANIA, HUNGARY ],
+    useLocationFalse: false,
   });
 
   const { data, toName } = selectedCountryData;
@@ -33,32 +34,18 @@ const BorderInformationPage = () => {
   const kmlUrl = "/ukraine-border.kml";
 
   return (
-    <Layout
-      hero={
-        <HeroChooseCountry
-          title={t("How to cross the border")}
-          {...{
-            availableCountries,
-            setSelectedCountry,
-          }}
-        />
-      }
-    >
-      {data && (
-        <CountryDataView
-          dataViewRef={dataViewRef}
-          title={t(
-            "Information for Ukrainian citizens travelling {{to_country}}",
-            { to_country: t(toName) }
-          )}
-          mapTitle={t("Border Crossings")}
-          errorMessage={t(
-            "Sorry! We don't have information about this border at the moment"
-          )}
-          data={data}
-          kmlUrl="/ukraine-border.kml"
-        />
-      )}
+    <Layout hero={<Hero title={t("How to cross the border")}/>}>
+      <CountryDataView
+        dataViewRef={dataViewRef}
+        title={t(
+          "Information for Ukrainian citizens travelling {{to_country}}",
+          { to_country: t(toName) }
+        )}
+        errorMessage={t(
+          "Sorry! We don't have information about this border at the moment"
+        )}
+        {...{ data, kmlUrl, availableCountries, setSelectedCountry }}
+      />
     </Layout>
   );
 };
