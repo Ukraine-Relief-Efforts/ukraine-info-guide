@@ -31,7 +31,7 @@ const BorderInformationPage = () => {
 
   const { data, toName } = selectedCountryData;
 
-  const kmlUrl = "/ukraine-border.kml";
+  const kmlUrl = "/api/v1/country-kml";
 
   return (
     <Layout hero={<Hero title={t("How to cross the border")}/>}>
