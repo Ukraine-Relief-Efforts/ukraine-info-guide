@@ -28,24 +28,25 @@ const OldStyleContent = ({ address, url }) => (
 );
 
 const NewStyleContent = ({
+  t,
   name,
   delayByBus,
   delayByCar,
   delayByFoot,
+  recommendedTime,
   url,
-}) => {
-  return (
-    <div className="flex flex-col items-center">
-      <span className="font-semibold mb-3">{name}</span>
-      {delayByBus && <span>Delay by bus: {delayByBus}</span>}
-      {delayByCar && <span>Delay by car: {delayByCar}</span>}
-      {delayByFoot && <span>Delay by foot: {delayByFoot}</span>}
-      <span className="link mt-3">
-        <NewTabLink href={url}>Google Maps</NewTabLink>
-      </span>
-    </div>
-  );
-}
+}) => (
+  <div className="flex flex-col items-center">
+    <span className="font-semibold mb-3">{name}</span>
+    {delayByBus && <span>{t("Delay by bus")}: {delayByBus}</span>}
+    {delayByCar && <span>{t("Delay by car")}: {delayByCar}</span>}
+    {delayByFoot && <span>{t("Delay by foot")}: {delayByFoot}</span>}
+    {recommendedTime && <span>{t("Recommended time")}: {recommendedTime}</span>}
+    <span className="link mt-3">
+      <NewTabLink href={url}>{t("Google Maps")}</NewTabLink>
+    </span>
+  </div>
+);
 
 const MapMarker = (props) => {
   const { address, lat, lon, position, color = "blue" } = props;

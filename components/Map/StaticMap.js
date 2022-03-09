@@ -1,3 +1,4 @@
+import { useTranslation } from "next-i18next";
 import { MapContainer, TileLayer, LayerGroup } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import "leaflet-defaulticon-compatibility/dist/leaflet-defaulticon-compatibility.css";
@@ -18,6 +19,8 @@ const findCenter = (data) =>
     .map((n) => n / data.length);
 
 const Map = ({ markers = [], kmlUrl, mapRef }) => {
+  const { t } = useTranslation();
+
   const zoomLevel = 7;
 
   let location = useGeoLocation();
@@ -61,7 +64,7 @@ const Map = ({ markers = [], kmlUrl, mapRef }) => {
         />
         {
           kmlUrl
-            ? <KmlLayer path={kmlUrl} centered />
+            ? <KmlLayer t={t} path={kmlUrl} centered />
             : <LayerGroup>
               {data.map((m, index) => (
                 <MapMarker {...m} key={index} />

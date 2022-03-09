@@ -5,25 +5,31 @@ import MapMarker from "./MapMarker";
 const normalizedNames = {
   "CONTACT NO.": "phone",
   "Colour": "color",
+  "CODE": "color",
   "Coordinates": "coords",
   "GMAPS COORDINATES": "coords",
+  "GEOLOCATION": "coords",
   "DATE LAST CONTACTED": "dateLastContacted",
   "TIME LAST CONTACTED": "timeLastContacted",
   "DELAY BY BUS": "delayByBus",
   "DELAY BY CAR": "delayByCar",
+  "Затримка на машині": "delayByCar",
   "DELAY BY FOOT": "delayByFoot",
+  "Рекомендований час прибуття": "recommendedTime",
 };
 
 const getColor = (c) => {
-  c = c.toLowerCase();
-  if (c.indexOf("red") > -1) return "red";
-  if (c.indexOf("orange") > -1) return "orange";
-  if (c.indexOf("green") > -1) return "green";
-  if (c.indexOf("tbd") > -1) return "blue";
+  if (typeof c === "string") {
+    c = c.toLowerCase();
+    if (c.indexOf("green") > -1) return "green";
+    if (c.indexOf("orange") > -1) return "orange";
+    if (c.indexOf("red") > -1) return "red";
+    if (c.indexOf("tbd") > -1 || c.indexOf("blue") > -1) return "blue";
+  }
   return "black";
 }
 
-const KmlLayer = ({ path, centered }) => {
+const KmlLayer = ({ t, path, centered }) => {
   const [data, setData] = useState();
   const ref = useRef();
   const map = useMap();
@@ -82,7 +88,7 @@ const KmlLayer = ({ path, centered }) => {
       {
         data && data.map((item, index) => {
           return (
-            <MapMarker key={index} {...item} />
+            <MapMarker t={t} key={index} {...item} />
           );
         })
       }
