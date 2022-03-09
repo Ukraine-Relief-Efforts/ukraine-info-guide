@@ -32,6 +32,7 @@ const BorderInformationPage = () => {
   const { data, toName } = selectedCountryData;
 
   const kmlUrl = "/api/v1/country-kml";
+  const kmlSource = "https://www.google.com/maps/d/u/0/viewer?mid=1s5tABxCBpgKYxMi1GHqt8zFAisiz7qRF&hl=en_US&ll=47.42056877966478%2C28.175586786855995&z=6";
 
   return (
     <Layout hero={<Hero title={t("How to cross the border")} compact />}>
@@ -44,7 +45,7 @@ const BorderInformationPage = () => {
         errorMessage={t(
           "Sorry! We don't have information about this border at the moment"
         )}
-        {...{ data, kmlUrl, availableCountries, setSelectedCountry }}
+        {...{ data, kmlUrl, kmlSource, availableCountries, setSelectedCountry }}
       />
     </Layout>
   );

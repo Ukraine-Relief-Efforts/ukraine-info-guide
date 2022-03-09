@@ -6,6 +6,7 @@ import "leaflet-defaulticon-compatibility";
 import { Marker } from "react-leaflet";
 import MapMarker from "./MapMarker";
 import KmlLayer from "./KmlLayer";
+import Tiles from "./Tiles";
 import useGeoLocation from  "../../hooks/useGeoLocation";
 import features from "../../configs/features";
 
@@ -18,7 +19,7 @@ const findCenter = (data) =>
     )
     .map((n) => n / data.length);
 
-const Map = ({ markers = [], kmlUrl, mapRef }) => {
+const Map = ({ markers = [], kmlUrl, kmlSource, mapRef }) => {
   const { t } = useTranslation();
 
   const zoomLevel = 7;
@@ -58,10 +59,7 @@ const Map = ({ markers = [], kmlUrl, mapRef }) => {
         </div>
       }
       <MapContainer center={position} zoom={zoomLevel} scrollWheelZoom={false}>
-        <TileLayer
-          attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-        />
+        <Tiles source={kmlSource} />
         {
           kmlUrl
             ? <KmlLayer t={t} path={kmlUrl} centered />
