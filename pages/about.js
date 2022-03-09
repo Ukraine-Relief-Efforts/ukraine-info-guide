@@ -65,7 +65,7 @@ const AboutPage = () => {
           >Github</a>
         </Trans>.
       </p>
-      <p>
+      <p className="mt-5 mb-10">
         <Trans t={t} i18nKey={emailI18nKey} email={EMAIL}>
           To submit feedback, please email <a
             href={"mailto:" + EMAIL}
