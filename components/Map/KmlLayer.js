@@ -12,9 +12,12 @@ const normalizedNames = {
   "DATE LAST CONTACTED": "dateLastContacted",
   "TIME LAST CONTACTED": "timeLastContacted",
   "DELAY BY BUS": "delayByBus",
+  "Затримка автобусом": "delayByBus",
   "DELAY BY CAR": "delayByCar",
   "Затримка на машині": "delayByCar",
   "DELAY BY FOOT": "delayByFoot",
+  "Затримка пішки": "delayByFoot",
+  "Дані про трафік": "trafficData",
   "Рекомендований час прибуття": "recommendedTime",
 };
 

@@ -1,5 +1,5 @@
 import { useTranslation } from "next-i18next";
-import { MapContainer, TileLayer, LayerGroup } from "react-leaflet";
+import { MapContainer, LayerGroup } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import "leaflet-defaulticon-compatibility/dist/leaflet-defaulticon-compatibility.css";
 import "leaflet-defaulticon-compatibility";

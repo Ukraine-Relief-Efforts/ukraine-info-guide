@@ -34,6 +34,7 @@ const NewStyleContent = ({
   delayByCar,
   delayByFoot,
   recommendedTime,
+  trafficData,
   url,
 }) => (
   <div className="flex flex-col items-center">
@@ -42,6 +43,11 @@ const NewStyleContent = ({
     {delayByCar && <span>{t("Delay by car")}: {delayByCar}</span>}
     {delayByFoot && <span>{t("Delay by foot")}: {delayByFoot}</span>}
     {recommendedTime && <span>{t("Recommended time")}: {recommendedTime}</span>}
+    {trafficData && trafficData.length &&
+      <NewTabLink href={trafficData}>
+        {t("Traffic Data")}
+      </NewTabLink>
+    }
     <span className="link mt-3">
       <NewTabLink href={url}>{t("Google Maps")}</NewTabLink>
     </span>
