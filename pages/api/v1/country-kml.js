@@ -33,8 +33,7 @@ const countryKmlHandler = async (req, res) => {
     const cached = await readFile(path);
     res.status(200).send(cached);
     return;
-  } catch (e) {
-  }
+  } catch (e) {} // eslint-disable-line
 
   try {
     const result = await fetch(kmlUrl);

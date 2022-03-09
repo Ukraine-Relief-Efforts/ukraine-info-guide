@@ -19,7 +19,6 @@ const CountryDataView2 = ({
   availableCountries,
   setSelectedCountry,
   errorMessage,
-  dataViewRef,
 }) => {
   const { t } = useTranslation();
 
