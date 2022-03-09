@@ -34,7 +34,7 @@ const BorderInformationPage = () => {
   const kmlUrl = "/api/v1/country-kml";
 
   return (
-    <Layout hero={<Hero title={t("How to cross the border")}/>}>
+    <Layout hero={<Hero title={t("How to cross the border")} compact />}>
       <CountryDataView
         dataViewRef={dataViewRef}
         title={t(
