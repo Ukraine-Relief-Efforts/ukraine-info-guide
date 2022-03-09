@@ -48,7 +48,7 @@ const CountryDataView2 = ({
           {t("Choose a country")}:
         </p>
         <CountryPicker {...{ availableCountries, setSelectedCountry }} />
-        <div className="text-center mt-10" ref={dataViewRef}>
+        <div className="text-center mt-10">
           <p className="font-semibold mt-5 mb-5 uppercase">
             {title}
           </p>
