@@ -1,5 +1,6 @@
 .select-search {
   width: 135px;
+  z-index: 700;
 }
 
 .select-search:not(.select-search--multiple) .select-search__input:hover {

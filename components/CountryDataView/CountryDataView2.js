@@ -3,6 +3,7 @@ import { useTranslation } from "next-i18next";
 import LocationCard from "./LocationCard";
 import Spinner from "../Spinner";
 import Map from "../Map";
+import CountryPicker from "../CountryPicker";
 
 const Attribution = ({ children }) => (
   <p className="my-3 opacity-70 text-right">
@@ -10,17 +11,22 @@ const Attribution = ({ children }) => (
   </p>
 );
 
-const CountryDataView = ({
+const CountryDataView2 = ({
   title,
-  mapTitle,
   data,
   kmlUrl,
+  kmlSource,
+  availableCountries,
+  setSelectedCountry,
   errorMessage,
-  dataViewRef,
 }) => {
   const { t } = useTranslation();
 
-  const { error, general, reception, source, isoFormat } = data;
+  const { error, general, reception, source, isoFormat } = data || {
+    general: [],
+    reception: [],
+  };
+
   const stamp = new Date(isoFormat);
   const time = `${stamp.toLocaleTimeString()} ${stamp.toLocaleDateString()}`;
 
@@ -28,34 +34,30 @@ const CountryDataView = ({
 
   const mapRef = useRef();
 
-  const scrollToMap = () =>
-      mapRef.current && mapRef.current.scrollIntoView({
-        block: "start",
-        behavior: "smooth",
-      });
-
   return (
-    <section className="country-data-view" ref={dataViewRef}>
-      <div className="bg-gray-200 p-3 rounded">
-        <div className="text-center">
-          <p className="font-semibold mt-5 mb-5 uppercase">
+    <section className="country-data-view">
+      {hasMap &&
+        <Map markers={reception} {...{ kmlUrl, kmlSource, mapRef }} />
+      }
+      <div className="bg-gray-200 p-3 rounded pt-10">
+        <p className="text-xl font-semibold text-blue-ukraine text-center">
+          {t("Choose a country")}:
+        </p>
+        <CountryPicker {...{ availableCountries, setSelectedCountry }} />
+        <div className="text-center mt-10 mb-5">
+          <p className="font-semibold uppercase">
             {title}
           </p>
-          {hasMap &&
-            <p className="mb-7">
-              <a className="link cursor-pointer" onClick={scrollToMap}>
-                {t("Map")}
-              </a>
-            </p>
-          }
         </div>
         <ul className="country-data-view-info-list list-disc">
           {!error && general &&
-            general.map((item, index) => (
-              <li className="mb-2" key={index}>
-                {item}
-              </li>
-            ))
+            general.length
+              ? general.map((item, index) => (
+                <li className="mb-2" key={index}>
+                  {item}
+                </li>
+              ))
+              : <Spinner />
           }
         </ul>
         {source && source.length > 0 &&
@@ -73,10 +75,6 @@ const CountryDataView = ({
       </div>
       {hasMap &&
         <>
-          <p className="mt-10 font-semibold text-center uppercase">
-            {mapTitle}
-          </p>
-          <Map markers={reception} kmlUrl={kmlUrl} mapRef={mapRef} />
           <p className="mt-10 mb-1 font-semibold text-center uppercase">
             {t("Locations")}
           </p>
@@ -91,4 +89,4 @@ const CountryDataView = ({
   );
 };
 
-export default CountryDataView;
+export default CountryDataView2;

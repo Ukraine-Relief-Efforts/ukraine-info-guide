@@ -66,6 +66,7 @@ const useCountryData = ({
   defaultCountry = null,
   availableCountries = [],
   fetchApiDataCallback = fetchCountryBorderInfo,
+  useLocationHash = true,
 }) => {
   availableCountries = availableCountries.length
     ? availableCountries.map(code => allCountries[code])
@@ -131,7 +132,8 @@ const useCountryData = ({
       data: countryData,
     },
     setSelectedCountry: (countryCode) => {
-      router.replace(`${router.route}#${countryCode}`);
+      if (useLocationHash)
+        router.replace(`${router.route}#${countryCode}`);
       setSelectedCountry(countryCode);
       if (dataViewRef.current)
         dataViewRef.current.scrollIntoView({

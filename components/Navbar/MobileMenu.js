@@ -13,6 +13,7 @@ const MobileMenu = ({ t }) => {
       open={isMenuOpen}
       onClose={toggleMenu}
       direction="right"
+      zIndex={10000}
     >
       <nav className="navbar-mobile">
         <div className="w-full">
