@@ -4,7 +4,7 @@ const IS_DEVELOPMENT = process.env.NODE_ENV === 'development';
 
 module.exports = {
   i18n: {
-    defaultLocale: 'en',
+    defaultLocale: 'ua',
     locales: languages.map(({ value }) => value),
     defaultNS: "translation",
     fallbackLng: 'en',
