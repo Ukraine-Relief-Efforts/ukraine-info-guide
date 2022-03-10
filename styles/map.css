@@ -3,6 +3,12 @@
   height: 90vh;
 }
 
+@media (max-width: 850px) {
+  .leaflet-container {
+    height: 70vh;
+  }
+}
+
 @media (max-width: 650px) {
   .leaflet-container {
     height: 50vh;
