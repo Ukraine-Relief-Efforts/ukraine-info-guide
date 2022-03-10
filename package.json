@@ -15,7 +15,6 @@
     "nodemailer": "^6.7.2",
     "preact": "^10.6.6",
     "qrcode": "^1.5.0",
-    "react-data-grid": "^7.0.0-beta.11",
     "react-hot-toast": "^2.2.0",
     "react-leaflet": "^3.2.5",
     "react-modern-drawer": "^1.0.1",
