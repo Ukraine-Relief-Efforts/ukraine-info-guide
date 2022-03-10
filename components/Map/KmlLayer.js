@@ -52,7 +52,7 @@ const KmlLayer = ({ t, path, centered }) => {
 
         result.name = place.querySelector("name")?.innerHTML;
 
-        const data = place.querySelector("ExtendedData")?.children;
+        const data = place.querySelector("ExtendedData")?.children || [];
         for (const item of data) {
           const itemName = item.attributes?.name?.value;
           const itemValue = item.querySelector("value")?.innerHTML;
