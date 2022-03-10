@@ -15,7 +15,7 @@ const AdminLayout = ({ title, children }) => {
   useEffect(() => {
     if (!session?.user && status !== "loading")
       router.replace("/");
-  }, [session?.user]);
+  }, [session?.user, router, status]);
 
   return (
     <Layout

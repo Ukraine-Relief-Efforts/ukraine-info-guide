@@ -1,0 +1,1996 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Ukraine Border Crossing Survey</name>
+    <description><![CDATA[Green: <3Hrs / Orange: <8Hrs / Red: >8Hrs<br>---------<br>TELEGRAM: https://t.me/ua_border_survey<br><br>We are regularly reaching out for updates, and will add information as it comes in.<br>---------<br>Primary data, sourced by calling border crossings directly and asking for estimate waiting time for people arriving at the border at time of call.<br><br>Durations are approximate and can change quickly, we're doing our best to get data flowing faster as we get more volunteers on board.]]></description>
+    <Style id="icon-1899-000000-normal">
+      <IconStyle>
+        <color>ff000000</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1899-000000-highlight">
+      <IconStyle>
+        <color>ff000000</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1899-000000">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-000000-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-000000-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1899-0288D1-normal">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1899-0288D1-highlight">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1899-0288D1">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-0288D1-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-0288D1-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1899-558B2F-normal">
+      <IconStyle>
+        <color>ff2f8b55</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1899-558B2F-highlight">
+      <IconStyle>
+        <color>ff2f8b55</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1899-558B2F">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-558B2F-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-558B2F-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1899-A52714-normal">
+      <IconStyle>
+        <color>ff1427a5</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1899-A52714-highlight">
+      <IconStyle>
+        <color>ff1427a5</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1899-A52714">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-A52714-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-A52714-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1899-F57C00-normal">
+      <IconStyle>
+        <color>ff007cf5</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1899-F57C00-highlight">
+      <IconStyle>
+        <color>ff007cf5</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1899-F57C00">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-F57C00-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-F57C00-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Folder>
+      <name>Moldova and Romania</name>
+      <Placemark>
+        <name>Sculeni (MD/RO)</name>
+        <description><![CDATA[CONTACT NO.: +373 22 574 111<br>DELAY BY BUS: 5 Hrs<br>DELAY BY CAR: 5 Hrs<br>DELAY BY FOOT: 1.5 Hrs<br>DATE LAST CONTACTED: 07.03.2022<br>TIME LAST CONTACTED: 20:20<br>Coordinates: 47.317334, 27.6107802<br>Colour: Orange (3-8 Hours by Car)]]></description>
+        <styleUrl>#icon-1899-F57C00</styleUrl>
+        <ExtendedData>
+          <Data name="CONTACT NO.">
+            <value>+373 22 574 111</value>
+          </Data>
+          <Data name="DELAY BY BUS">
+            <value>5 Hrs</value>
+          </Data>
+          <Data name="DELAY BY CAR">
+            <value>5 Hrs</value>
+          </Data>
+          <Data name="DELAY BY FOOT">
+            <value>1.5 Hrs</value>
+          </Data>
+          <Data name="DATE LAST CONTACTED">
+            <value>07.03.2022</value>
+          </Data>
+          <Data name="TIME LAST CONTACTED">
+            <value>20:20</value>
+          </Data>
+          <Data name="Coordinates">
+            <value>47.317334, 27.6107802</value>
+          </Data>
+          <Data name="Colour">
+            <value>Orange (3-8 Hours by Car)</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            27.6107802,47.317334,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Mayaky - Palanca (UA/MD)</name>
+        <description><![CDATA[CONTACT NO.: +373 242 47 384<br>DELAY BY BUS: 8 Hrs<br>DELAY BY CAR: 8 Hrs<br>DELAY BY FOOT: 2-3 Hrs<br>DATE LAST CONTACTED: 07.03.2022<br>TIME LAST CONTACTED: 16:30<br>Coordinates: 46.412166, 30.1447053<br>Colour: Red (>8 Hours by Car)]]></description>
+        <styleUrl>#icon-1899-A52714</styleUrl>
+        <ExtendedData>
+          <Data name="CONTACT NO.">
+            <value>+373 242 47 384</value>
+          </Data>
+          <Data name="DELAY BY BUS">
+            <value>8 Hrs</value>
+          </Data>
+          <Data name="DELAY BY CAR">
+            <value>8 Hrs</value>
+          </Data>
+          <Data name="DELAY BY FOOT">
+            <value>2-3 Hrs</value>
+          </Data>
+          <Data name="DATE LAST CONTACTED">
+            <value>07.03.2022</value>
+          </Data>
+          <Data name="TIME LAST CONTACTED">
+            <value>16:30</value>
+          </Data>
+          <Data name="Coordinates">
+            <value>46.412166, 30.1447053</value>
+          </Data>
+          <Data name="Colour">
+            <value><![CDATA[Red (>8 Hours by Car)]]></value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            30.1447053,46.412166,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Udobne-Palanca (UA/MD)</name>
+        <description><![CDATA[CONTACT NO.: +380 4849 68878<br>DELAY BY BUS: 3 Hrs<br>DELAY BY CAR: 3 Hrs<br>DELAY BY FOOT: 1.5 Hrs<br>DATE LAST CONTACTED: 07.03.2022<br>TIME LAST CONTACTED: 12:15<br>Coordinates: 46.3858088, 30.0880056<br>Colour: Orange (3-8 Hours by Car)]]></description>
+        <styleUrl>#icon-1899-F57C00</styleUrl>
+        <ExtendedData>
+          <Data name="CONTACT NO.">
+            <value>+380 4849 68878</value>
+          </Data>
+          <Data name="DELAY BY BUS">
+            <value>3 Hrs</value>
+          </Data>
+          <Data name="DELAY BY CAR">
+            <value>3 Hrs</value>
+          </Data>
+          <Data name="DELAY BY FOOT">
+            <value>1.5 Hrs</value>
+          </Data>
+          <Data name="DATE LAST CONTACTED">
+            <value>07.03.2022</value>
+          </Data>
+          <Data name="TIME LAST CONTACTED">
+            <value>12:15</value>
+          </Data>
+          <Data name="Coordinates">
+            <value>46.3858088, 30.0880056</value>
+          </Data>
+          <Data name="Colour">
+            <value>Orange (3-8 Hours by Car)</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            30.0880056,46.3858088,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Tudora (UA/MD)</name>
+        <description><![CDATA[CONTACT NO.: +373 242 25 279<br>DELAY BY BUS: 3-4h<br>DELAY BY CAR: 3-4h<br>DELAY BY FOOT: 1h<br>DATE LAST CONTACTED: 07.03.2022<br>TIME LAST CONTACTED: 11:30<br>Coordinates: 46.3867855, 29.9804663<br>Colour: Orange (3-8 Hours by Car)]]></description>
+        <styleUrl>#icon-1899-F57C00</styleUrl>
+        <ExtendedData>
+          <Data name="CONTACT NO.">
+            <value>+373 242 25 279</value>
+          </Data>
+          <Data name="DELAY BY BUS">
+            <value>3-4h</value>
+          </Data>
+          <Data name="DELAY BY CAR">
+            <value>3-4h</value>
+          </Data>
+          <Data name="DELAY BY FOOT">
+            <value>1h</value>
+          </Data>
+          <Data name="DATE LAST CONTACTED">
+            <value>07.03.2022</value>
+          </Data>
+          <Data name="TIME LAST CONTACTED">
+            <value>11:30</value>
+          </Data>
+          <Data name="Coordinates">
+            <value>46.3867855, 29.9804663</value>
+          </Data>
+          <Data name="Colour">
+            <value>Orange (3-8 Hours by Car)</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            29.9804663,46.3867855,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Lisne-Saiti (UA/MD)</name>
+        <description><![CDATA[CONTACT NO.: +373 243 52 460<br>DELAY BY BUS: 2-3 Hrs<br>DELAY BY CAR: 2-3 Hrs !!BAD ROAD QUALITY!!<br>DELAY BY FOOT: 0.5 Hrs<br>DATE LAST CONTACTED: 07.03.2022<br>TIME LAST CONTACTED: 11:25<br>Coordinates: 46.490853, 29.3596143<br>Colour: Green (<3 Hours by Car)]]></description>
+        <styleUrl>#icon-1899-558B2F</styleUrl>
+        <ExtendedData>
+          <Data name="CONTACT NO.">
+            <value>+373 243 52 460</value>
+          </Data>
+          <Data name="DELAY BY BUS">
+            <value>2-3 Hrs</value>
+          </Data>
+          <Data name="DELAY BY CAR">
+            <value>2-3 Hrs !!BAD ROAD QUALITY!!</value>
+          </Data>
+          <Data name="DELAY BY FOOT">
+            <value>0.5 Hrs</value>
+          </Data>
+          <Data name="DATE LAST CONTACTED">
+            <value>07.03.2022</value>
+          </Data>
+          <Data name="TIME LAST CONTACTED">
+            <value>11:25</value>
+          </Data>
+          <Data name="Coordinates">
+            <value>46.490853, 29.3596143</value>
+          </Data>
+          <Data name="Colour">
+            <value><![CDATA[Green (<3 Hours by Car)]]></value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            29.3596143,46.490853,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Serpneva-Basarabeasca (UA/MD)</name>
+        <description><![CDATA[CONTACT NO.: +373 297 25 699<br>DELAY BY BUS: 2 Hrs<br>DELAY BY CAR: 2 Hrs<br>DELAY BY FOOT: 0.5 Hrs<br>DATE LAST CONTACTED: 07.03.2022<br>TIME LAST CONTACTED: 17:50<br>Coordinates: 46.3203666, 28.9979182<br>Colour: Green (<3 Hours by Car)]]></description>
+        <styleUrl>#icon-1899-558B2F</styleUrl>
+        <ExtendedData>
+          <Data name="CONTACT NO.">
+            <value>+373 297 25 699</value>
+          </Data>
+          <Data name="DELAY BY BUS">
+            <value>2 Hrs</value>
+          </Data>
+          <Data name="DELAY BY CAR">
+            <value>2 Hrs</value>
+          </Data>
+          <Data name="DELAY BY FOOT">
+            <value>0.5 Hrs</value>
+          </Data>
+          <Data name="DATE LAST CONTACTED">
+            <value>07.03.2022</value>
+          </Data>
+          <Data name="TIME LAST CONTACTED">
+            <value>17:50</value>
+          </Data>
+          <Data name="Coordinates">
+            <value>46.3203666, 28.9979182</value>
+          </Data>
+          <Data name="Colour">
+            <value><![CDATA[Green (<3 Hours by Car)]]></value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            28.9979182,46.3203666,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Giurgiulesti - Galati (MD/RO)</name>
+        <description><![CDATA[CONTACT NO.: +373 299 68 401<br>DELAY BY BUS: 2-3 Hrs<br>DELAY BY CAR: 2-3 Hrs<br>DELAY BY FOOT: 0.5 Hrs<br>DATE LAST CONTACTED: 07.03.2022<br>TIME LAST CONTACTED: 16:40<br>Coordinates: 45.4732777, 28.198669<br>Colour: Green (<3 Hours by Car)]]></description>
+        <styleUrl>#icon-1899-558B2F</styleUrl>
+        <ExtendedData>
+          <Data name="CONTACT NO.">
+            <value>+373 299 68 401</value>
+          </Data>
+          <Data name="DELAY BY BUS">
+            <value>2-3 Hrs</value>
+          </Data>
+          <Data name="DELAY BY CAR">
+            <value>2-3 Hrs</value>
+          </Data>
+          <Data name="DELAY BY FOOT">
+            <value>0.5 Hrs</value>
+          </Data>
+          <Data name="DATE LAST CONTACTED">
+            <value>07.03.2022</value>
+          </Data>
+          <Data name="TIME LAST CONTACTED">
+            <value>16:40</value>
+          </Data>
+          <Data name="Coordinates">
+            <value>45.4732777, 28.198669</value>
+          </Data>
+          <Data name="Colour">
+            <value><![CDATA[Green (<3 Hours by Car)]]></value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            28.198669,45.4732777,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Dyakovo - Halmeu (UA/RO)</name>
+        <description><![CDATA[CONTACT NO.: +40 261 773 037 <br>DELAY BY BUS: 3-4 Hrs<br>DELAY BY CAR: 3-4 Hrs<br>DELAY BY FOOT: 1 Hrs<br>DATE LAST CONTACTED: 07.03.2022<br>TIME LAST CONTACTED: 11:30<br>Coordinates: 47.9958189, 23.0015991<br>Colour: Orange (3-8 Hours by Car)]]></description>
+        <styleUrl>#icon-1899-F57C00</styleUrl>
+        <ExtendedData>
+          <Data name="CONTACT NO.">
+            <value>+40 261 773 037 </value>
+          </Data>
+          <Data name="DELAY BY BUS">
+            <value>3-4 Hrs</value>
+          </Data>
+          <Data name="DELAY BY CAR">
+            <value>3-4 Hrs</value>
+          </Data>
+          <Data name="DELAY BY FOOT">
+            <value>1 Hrs</value>
+          </Data>
+          <Data name="DATE LAST CONTACTED">
+            <value>07.03.2022</value>
+          </Data>
+          <Data name="TIME LAST CONTACTED">
+            <value>11:30</value>
+          </Data>
+          <Data name="Coordinates">
+            <value>47.9958189, 23.0015991</value>
+          </Data>
+          <Data name="Colour">
+            <value>Orange (3-8 Hours by Car)</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            23.0015991,47.9958189,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Solotvyno - Sighetu Marmatiei (UA/RO)</name>
+        <description><![CDATA[CONTACT NO.: +40 262 311 070<br>DELAY BY BUS: No bus crossing<br>DELAY BY CAR: 2-3 Hrs<br>DELAY BY FOOT: 0.5 Hrs<br>DATE LAST CONTACTED: 07.03.2022<br>TIME LAST CONTACTED: 16:55<br>Coordinates: 47.9408044, 23.8746956<br>Colour: Green (<3 Hours by Car)]]></description>
+        <styleUrl>#icon-1899-558B2F</styleUrl>
+        <ExtendedData>
+          <Data name="CONTACT NO.">
+            <value>+40 262 311 070</value>
+          </Data>
+          <Data name="DELAY BY BUS">
+            <value>No bus crossing</value>
+          </Data>
+          <Data name="DELAY BY CAR">
+            <value>2-3 Hrs</value>
+          </Data>
+          <Data name="DELAY BY FOOT">
+            <value>0.5 Hrs</value>
+          </Data>
+          <Data name="DATE LAST CONTACTED">
+            <value>07.03.2022</value>
+          </Data>
+          <Data name="TIME LAST CONTACTED">
+            <value>16:55</value>
+          </Data>
+          <Data name="Coordinates">
+            <value>47.9408044, 23.8746956</value>
+          </Data>
+          <Data name="Colour">
+            <value><![CDATA[Green (<3 Hours by Car)]]></value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            23.8746956,47.9408044,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Porubne - Siret (UA/RO)</name>
+        <description><![CDATA[CONTACT NO.: +40 230 280 661<br>DELAY BY BUS: 12 Hrs<br>DELAY BY CAR: 12 Hrs<br>DELAY BY FOOT: 3 Hrs<br>DATE LAST CONTACTED: 07.03.2022<br>TIME LAST CONTACTED: 16:50<br>Coordinates: 47.9879863, 26.0612718<br>Colour: Red (>8 Hours by Car)]]></description>
+        <styleUrl>#icon-1899-A52714</styleUrl>
+        <ExtendedData>
+          <Data name="CONTACT NO.">
+            <value>+40 230 280 661</value>
+          </Data>
+          <Data name="DELAY BY BUS">
+            <value>12 Hrs</value>
+          </Data>
+          <Data name="DELAY BY CAR">
+            <value>12 Hrs</value>
+          </Data>
+          <Data name="DELAY BY FOOT">
+            <value>3 Hrs</value>
+          </Data>
+          <Data name="DATE LAST CONTACTED">
+            <value>07.03.2022</value>
+          </Data>
+          <Data name="TIME LAST CONTACTED">
+            <value>16:50</value>
+          </Data>
+          <Data name="Coordinates">
+            <value>47.9879863, 26.0612718</value>
+          </Data>
+          <Data name="Colour">
+            <value><![CDATA[Red (>8 Hours by Car)]]></value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            26.0612718,47.9879863,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Orlivka - Isaccea (UA/RO)</name>
+        <description><![CDATA[CONTACT NO.: +40 240 541 614<br>DELAY BY BUS: 8 Hrs<br>DELAY BY CAR: 8 Hrs<br>DELAY BY FOOT: 4 Hrs<br>DATE LAST CONTACTED: 07.03.2022<br>TIME LAST CONTACTED: 16:30<br>Coordinates: 45.2913017, 28.4586138<br>Colour: Red (>8 Hours by Car)]]></description>
+        <styleUrl>#icon-1899-A52714</styleUrl>
+        <ExtendedData>
+          <Data name="CONTACT NO.">
+            <value>+40 240 541 614</value>
+          </Data>
+          <Data name="DELAY BY BUS">
+            <value>8 Hrs</value>
+          </Data>
+          <Data name="DELAY BY CAR">
+            <value>8 Hrs</value>
+          </Data>
+          <Data name="DELAY BY FOOT">
+            <value>4 Hrs</value>
+          </Data>
+          <Data name="DATE LAST CONTACTED">
+            <value>07.03.2022</value>
+          </Data>
+          <Data name="TIME LAST CONTACTED">
+            <value>16:30</value>
+          </Data>
+          <Data name="Coordinates">
+            <value>45.2913017, 28.4586138</value>
+          </Data>
+          <Data name="Colour">
+            <value><![CDATA[Red (>8 Hours by Car)]]></value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            28.4586138,45.2913017,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Leuseni - Albita (MD/RO)</name>
+        <description><![CDATA[CONTACT NO.: +373 227 88 888<br>DELAY BY BUS: 5 Hrs<br>DELAY BY CAR: 5 Hrs<br>DELAY BY FOOT: 1.5 Hrs<br>DATE LAST CONTACTED: 07.03.2022<br>TIME LAST CONTACTED: 20:00<br>Coordinates: 46.7926847, 28.1557488<br>Colour: Orange (3-8 Hours by Car)]]></description>
+        <styleUrl>#icon-1899-F57C00</styleUrl>
+        <ExtendedData>
+          <Data name="CONTACT NO.">
+            <value>+373 227 88 888</value>
+          </Data>
+          <Data name="DELAY BY BUS">
+            <value>5 Hrs</value>
+          </Data>
+          <Data name="DELAY BY CAR">
+            <value>5 Hrs</value>
+          </Data>
+          <Data name="DELAY BY FOOT">
+            <value>1.5 Hrs</value>
+          </Data>
+          <Data name="DATE LAST CONTACTED">
+            <value>07.03.2022</value>
+          </Data>
+          <Data name="TIME LAST CONTACTED">
+            <value>20:00</value>
+          </Data>
+          <Data name="Coordinates">
+            <value>46.7926847, 28.1557488</value>
+          </Data>
+          <Data name="Colour">
+            <value>Orange (3-8 Hours by Car)</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            28.1557488,46.7926847,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Reni - Giurgiulesti (UA/MD)</name>
+        <description><![CDATA[CONTACT NO.: +373 299 68 399 / +373 299 68 471<br>DELAY BY BUS: 3 Hrs<br>DELAY BY CAR: 3-4 Hrs<br>DELAY BY FOOT: 1 Hrs<br>DATE LAST CONTACTED: 07.03.2022<br>TIME LAST CONTACTED: 16:30<br>Coordinates: 45.480876, 28.2240151<br>Colour: Orange (3-8 Hours by Car)]]></description>
+        <styleUrl>#icon-1899-F57C00</styleUrl>
+        <ExtendedData>
+          <Data name="CONTACT NO.">
+            <value>+373 299 68 399 / +373 299 68 471</value>
+          </Data>
+          <Data name="DELAY BY BUS">
+            <value>3 Hrs</value>
+          </Data>
+          <Data name="DELAY BY CAR">
+            <value>3-4 Hrs</value>
+          </Data>
+          <Data name="DELAY BY FOOT">
+            <value>1 Hrs</value>
+          </Data>
+          <Data name="DATE LAST CONTACTED">
+            <value>07.03.2022</value>
+          </Data>
+          <Data name="TIME LAST CONTACTED">
+            <value>16:30</value>
+          </Data>
+          <Data name="Coordinates">
+            <value>45.480876, 28.2240151</value>
+          </Data>
+          <Data name="Colour">
+            <value>Orange (3-8 Hours by Car)</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            28.2240151,45.480876,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Yampil - Cosauti (UA/MD)</name>
+        <description><![CDATA[CONTACT NO.: CLOSED<br>DELAY BY BUS: CLOSED<br>DELAY BY CAR: CLOSED<br>DELAY BY FOOT: CLOSED<br>DATE LAST CONTACTED: CLOSED<br>TIME LAST CONTACTED: CLOSED<br>Coordinates: 48.23903752126841, 28.297989163584784<br>Colour: CLOSED]]></description>
+        <styleUrl>#icon-1899-000000</styleUrl>
+        <ExtendedData>
+          <Data name="CONTACT NO.">
+            <value>CLOSED</value>
+          </Data>
+          <Data name="DELAY BY BUS">
+            <value>CLOSED</value>
+          </Data>
+          <Data name="DELAY BY CAR">
+            <value>CLOSED</value>
+          </Data>
+          <Data name="DELAY BY FOOT">
+            <value>CLOSED</value>
+          </Data>
+          <Data name="DATE LAST CONTACTED">
+            <value>CLOSED</value>
+          </Data>
+          <Data name="TIME LAST CONTACTED">
+            <value>CLOSED</value>
+          </Data>
+          <Data name="Coordinates">
+            <value>48.23903752126841, 28.297989163584784</value>
+          </Data>
+          <Data name="Colour">
+            <value>CLOSED</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            28.2979891635848,48.2390375212684,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Cahul - Oancea (MD/RO)</name>
+        <description><![CDATA[CONTACT NO.: +373 299 32 178<br>DELAY BY BUS: 3-5 Hrs<br>DELAY BY CAR: 3-5 Hrs<br>DELAY BY FOOT: 1.5 Hrs<br>DATE LAST CONTACTED: 07.03.2022<br>TIME LAST CONTACTED: 20:30<br>Coordinates: 45.9173568, 28.1204809<br>Colour: Orange (3-8 Hours by Car)]]></description>
+        <styleUrl>#icon-1899-F57C00</styleUrl>
+        <ExtendedData>
+          <Data name="CONTACT NO.">
+            <value>+373 299 32 178</value>
+          </Data>
+          <Data name="DELAY BY BUS">
+            <value>3-5 Hrs</value>
+          </Data>
+          <Data name="DELAY BY CAR">
+            <value>3-5 Hrs</value>
+          </Data>
+          <Data name="DELAY BY FOOT">
+            <value>1.5 Hrs</value>
+          </Data>
+          <Data name="DATE LAST CONTACTED">
+            <value>07.03.2022</value>
+          </Data>
+          <Data name="TIME LAST CONTACTED">
+            <value>20:30</value>
+          </Data>
+          <Data name="Coordinates">
+            <value>45.9173568, 28.1204809</value>
+          </Data>
+          <Data name="Colour">
+            <value>Orange (3-8 Hours by Car)</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            28.1204809,45.9173568,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Stinca - Costesti (MD/RO)</name>
+        <description><![CDATA[CONTACT NO.: +373 256 32 232<br>DELAY BY BUS: 1 Hrs<br>DELAY BY CAR: 1.5 Hrs<br>DELAY BY FOOT: 1 Hrs<br>DATE LAST CONTACTED: 05.03.2022<br>TIME LAST CONTACTED: 16:00<br>Coordinates: 47.8399933, 27.226863<br>Colour: Green (<3 Hours by Car)]]></description>
+        <styleUrl>#icon-1899-558B2F</styleUrl>
+        <ExtendedData>
+          <Data name="CONTACT NO.">
+            <value>+373 256 32 232</value>
+          </Data>
+          <Data name="DELAY BY BUS">
+            <value>1 Hrs</value>
+          </Data>
+          <Data name="DELAY BY CAR">
+            <value>1.5 Hrs</value>
+          </Data>
+          <Data name="DELAY BY FOOT">
+            <value>1 Hrs</value>
+          </Data>
+          <Data name="DATE LAST CONTACTED">
+            <value>05.03.2022</value>
+          </Data>
+          <Data name="TIME LAST CONTACTED">
+            <value>16:00</value>
+          </Data>
+          <Data name="Coordinates">
+            <value>47.8399933, 27.226863</value>
+          </Data>
+          <Data name="Colour">
+            <value><![CDATA[Green (<3 Hours by Car)]]></value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            27.226863,47.8399933,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Vynohradivka - Vulcanesti (UA/MD)</name>
+        <description><![CDATA[CONTACT NO.: +380 445 276 363 / +373 293 21 430<br>DELAY BY BUS: 2-3 Hrs<br>DELAY BY CAR: 2-3 Hrs<br>DELAY BY FOOT: 1 Hrs<br>DATE LAST CONTACTED: 07.03.2022<br>TIME LAST CONTACTED: 11:30<br>Coordinates: 45.6972344, 28.5019423<br>Colour: Green (<3 Hours by Car)]]></description>
+        <styleUrl>#icon-1899-558B2F</styleUrl>
+        <ExtendedData>
+          <Data name="CONTACT NO.">
+            <value>+380 445 276 363 / +373 293 21 430</value>
+          </Data>
+          <Data name="DELAY BY BUS">
+            <value>2-3 Hrs</value>
+          </Data>
+          <Data name="DELAY BY CAR">
+            <value>2-3 Hrs</value>
+          </Data>
+          <Data name="DELAY BY FOOT">
+            <value>1 Hrs</value>
+          </Data>
+          <Data name="DATE LAST CONTACTED">
+            <value>07.03.2022</value>
+          </Data>
+          <Data name="TIME LAST CONTACTED">
+            <value>11:30</value>
+          </Data>
+          <Data name="Coordinates">
+            <value>45.6972344, 28.5019423</value>
+          </Data>
+          <Data name="Colour">
+            <value><![CDATA[Green (<3 Hours by Car)]]></value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            28.5019423,45.6972344,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Mogyliv Podilskiy - Otaci (UA/MD)</name>
+        <description><![CDATA[CONTACT NO.: +373 271 79 200<br>DELAY BY BUS: 4-5 Hrs<br>DELAY BY CAR: 4-5 Hrs<br>DELAY BY FOOT: 1.5 Hrs<br>DATE LAST CONTACTED: 07.03.2022<br>TIME LAST CONTACTED: 10:10<br>Coordinates: 48.4442323, 27.7903786<br>Colour: Orange (3-8 Hours by Car)]]></description>
+        <styleUrl>#icon-1899-F57C00</styleUrl>
+        <ExtendedData>
+          <Data name="CONTACT NO.">
+            <value>+373 271 79 200</value>
+          </Data>
+          <Data name="DELAY BY BUS">
+            <value>4-5 Hrs</value>
+          </Data>
+          <Data name="DELAY BY CAR">
+            <value>4-5 Hrs</value>
+          </Data>
+          <Data name="DELAY BY FOOT">
+            <value>1.5 Hrs</value>
+          </Data>
+          <Data name="DATE LAST CONTACTED">
+            <value>07.03.2022</value>
+          </Data>
+          <Data name="TIME LAST CONTACTED">
+            <value>10:10</value>
+          </Data>
+          <Data name="Coordinates">
+            <value>48.4442323, 27.7903786</value>
+          </Data>
+          <Data name="Colour">
+            <value>Orange (3-8 Hours by Car)</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            27.7903786,48.4442323,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Lipcani - Radauti Prut (MD/RO)</name>
+        <description><![CDATA[CONTACT NO.: +373 247 61 828<br>DELAY BY BUS: 2 Hrs<br>DELAY BY CAR: 2 Hrs<br>DELAY BY FOOT: 0.5 Hrs<br>DATE LAST CONTACTED: 07.03.2022<br>TIME LAST CONTACTED: 11:15<br>Coordinates: 48.253201, 26.8026659<br>Colour: Green (<3 Hours by Car)]]></description>
+        <styleUrl>#icon-1899-558B2F</styleUrl>
+        <ExtendedData>
+          <Data name="CONTACT NO.">
+            <value>+373 247 61 828</value>
+          </Data>
+          <Data name="DELAY BY BUS">
+            <value>2 Hrs</value>
+          </Data>
+          <Data name="DELAY BY CAR">
+            <value>2 Hrs</value>
+          </Data>
+          <Data name="DELAY BY FOOT">
+            <value>0.5 Hrs</value>
+          </Data>
+          <Data name="DATE LAST CONTACTED">
+            <value>07.03.2022</value>
+          </Data>
+          <Data name="TIME LAST CONTACTED">
+            <value>11:15</value>
+          </Data>
+          <Data name="Coordinates">
+            <value>48.253201, 26.8026659</value>
+          </Data>
+          <Data name="Colour">
+            <value><![CDATA[Green (<3 Hours by Car)]]></value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            26.8026659,48.253201,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Sokyryany - Ocnita (UA/MD)</name>
+        <description><![CDATA[CONTACT NO.: +373 271 21 059<br>DELAY BY BUS: 1 Hrs<br>DELAY BY CAR: 1 Hrs<br>DELAY BY FOOT: 0.5 Hrs<br>DATE LAST CONTACTED: 07.03.2022<br>TIME LAST CONTACTED: 10:45<br>Coordinates: 48.4381722, 27.4635635<br>Colour: Green (<3 Hours by Car)]]></description>
+        <styleUrl>#icon-1899-558B2F</styleUrl>
+        <ExtendedData>
+          <Data name="CONTACT NO.">
+            <value>+373 271 21 059</value>
+          </Data>
+          <Data name="DELAY BY BUS">
+            <value>1 Hrs</value>
+          </Data>
+          <Data name="DELAY BY CAR">
+            <value>1 Hrs</value>
+          </Data>
+          <Data name="DELAY BY FOOT">
+            <value>0.5 Hrs</value>
+          </Data>
+          <Data name="DATE LAST CONTACTED">
+            <value>07.03.2022</value>
+          </Data>
+          <Data name="TIME LAST CONTACTED">
+            <value>10:45</value>
+          </Data>
+          <Data name="Coordinates">
+            <value>48.4381722, 27.4635635</value>
+          </Data>
+          <Data name="Colour">
+            <value><![CDATA[Green (<3 Hours by Car)]]></value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            27.4635635,48.4381722,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Roshoshany - Briceni (UA/MD)</name>
+        <description><![CDATA[CONTACT NO.: +373 247 93 019 / +373 247 93 002<br>DELAY BY BUS: 1.5 Hrs<br>DELAY BY CAR: 1.5 Hrs<br>DELAY BY FOOT: 0.5 Hrs<br>DATE LAST CONTACTED: 07.03.2022<br>TIME LAST CONTACTED: 11:00<br>Coordinates: 48.3763294, 27.0465724<br>Colour: Green (<3 Hours by Car)]]></description>
+        <styleUrl>#icon-1899-558B2F</styleUrl>
+        <ExtendedData>
+          <Data name="CONTACT NO.">
+            <value>+373 247 93 019 / +373 247 93 002</value>
+          </Data>
+          <Data name="DELAY BY BUS">
+            <value>1.5 Hrs</value>
+          </Data>
+          <Data name="DELAY BY CAR">
+            <value>1.5 Hrs</value>
+          </Data>
+          <Data name="DELAY BY FOOT">
+            <value>0.5 Hrs</value>
+          </Data>
+          <Data name="DATE LAST CONTACTED">
+            <value>07.03.2022</value>
+          </Data>
+          <Data name="TIME LAST CONTACTED">
+            <value>11:00</value>
+          </Data>
+          <Data name="Coordinates">
+            <value>48.3763294, 27.0465724</value>
+          </Data>
+          <Data name="Colour">
+            <value><![CDATA[Green (<3 Hours by Car)]]></value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            27.0465724,48.3763294,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Mamalyha - Criva (UA/MD)</name>
+        <description><![CDATA[CONTACT NO.: +373 247 47 211<br>DELAY BY BUS: 4 Hrs<br>DELAY BY CAR: 4 Hrs<br>DELAY BY FOOT: 1 Hrs<br>DATE LAST CONTACTED: 07.03.2022<br>TIME LAST CONTACTED: 16:45<br>Coordinates: 48.264994, 26.6253074<br>Colour: Orange (3-8 Hours by Car)]]></description>
+        <styleUrl>#icon-1899-F57C00</styleUrl>
+        <ExtendedData>
+          <Data name="CONTACT NO.">
+            <value>+373 247 47 211</value>
+          </Data>
+          <Data name="DELAY BY BUS">
+            <value>4 Hrs</value>
+          </Data>
+          <Data name="DELAY BY CAR">
+            <value>4 Hrs</value>
+          </Data>
+          <Data name="DELAY BY FOOT">
+            <value>1 Hrs</value>
+          </Data>
+          <Data name="DATE LAST CONTACTED">
+            <value>07.03.2022</value>
+          </Data>
+          <Data name="TIME LAST CONTACTED">
+            <value>16:45</value>
+          </Data>
+          <Data name="Coordinates">
+            <value>48.264994, 26.6253074</value>
+          </Data>
+          <Data name="Colour">
+            <value>Orange (3-8 Hours by Car)</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            26.6253074,48.264994,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Kelmentsi - Larga (UA/MD)</name>
+        <description><![CDATA[CONTACT NO.: +373 247 51 391<br>DELAY BY BUS: 1hr<br>DELAY BY CAR: 1 hr<br>DELAY BY FOOT: 0.5 hrs<br>DATE LAST CONTACTED: 07.03.2022<br>TIME LAST CONTACTED: 11:10<br>Coordinates: 48.4141802, 26.8426605<br>Colour: Green (<3 Hours by Car)]]></description>
+        <styleUrl>#icon-1899-558B2F</styleUrl>
+        <ExtendedData>
+          <Data name="CONTACT NO.">
+            <value>+373 247 51 391</value>
+          </Data>
+          <Data name="DELAY BY BUS">
+            <value>1hr</value>
+          </Data>
+          <Data name="DELAY BY CAR">
+            <value>1 hr</value>
+          </Data>
+          <Data name="DELAY BY FOOT">
+            <value>0.5 hrs</value>
+          </Data>
+          <Data name="DATE LAST CONTACTED">
+            <value>07.03.2022</value>
+          </Data>
+          <Data name="TIME LAST CONTACTED">
+            <value>11:10</value>
+          </Data>
+          <Data name="Coordinates">
+            <value>48.4141802, 26.8426605</value>
+          </Data>
+          <Data name="Colour">
+            <value><![CDATA[Green (<3 Hours by Car)]]></value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            26.8426605,48.4141802,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>!! TRANSNISTRIA - CLOSED !!</name>
+        <description><![CDATA[CONTACT NO.: CLOSED<br>DELAY BY BUS: CLOSED<br>DELAY BY CAR: CLOSED<br>DELAY BY FOOT: CLOSED<br>DATE LAST CONTACTED: CLOSED<br>TIME LAST CONTACTED: CLOSED<br>Coordinates: 48.1337422, 28.7409073<br>Colour: CLOSED]]></description>
+        <styleUrl>#icon-1899-000000</styleUrl>
+        <ExtendedData>
+          <Data name="CONTACT NO.">
+            <value>CLOSED</value>
+          </Data>
+          <Data name="DELAY BY BUS">
+            <value>CLOSED</value>
+          </Data>
+          <Data name="DELAY BY CAR">
+            <value>CLOSED</value>
+          </Data>
+          <Data name="DELAY BY FOOT">
+            <value>CLOSED</value>
+          </Data>
+          <Data name="DATE LAST CONTACTED">
+            <value>CLOSED</value>
+          </Data>
+          <Data name="TIME LAST CONTACTED">
+            <value>CLOSED</value>
+          </Data>
+          <Data name="Coordinates">
+            <value>48.1337422, 28.7409073</value>
+          </Data>
+          <Data name="Colour">
+            <value>CLOSED</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            28.7409073,48.1337422,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>!! TRANSNISTRIA - CLOSED !!</name>
+        <description><![CDATA[CONTACT NO.: CLOSED<br>DELAY BY BUS: CLOSED<br>DELAY BY CAR: CLOSED<br>DELAY BY FOOT: CLOSED<br>DATE LAST CONTACTED: CLOSED<br>TIME LAST CONTACTED: CLOSED<br>Coordinates: 47.9610856, 28.9245942<br>Colour: CLOSED]]></description>
+        <styleUrl>#icon-1899-000000</styleUrl>
+        <ExtendedData>
+          <Data name="CONTACT NO.">
+            <value>CLOSED</value>
+          </Data>
+          <Data name="DELAY BY BUS">
+            <value>CLOSED</value>
+          </Data>
+          <Data name="DELAY BY CAR">
+            <value>CLOSED</value>
+          </Data>
+          <Data name="DELAY BY FOOT">
+            <value>CLOSED</value>
+          </Data>
+          <Data name="DATE LAST CONTACTED">
+            <value>CLOSED</value>
+          </Data>
+          <Data name="TIME LAST CONTACTED">
+            <value>CLOSED</value>
+          </Data>
+          <Data name="Coordinates">
+            <value>47.9610856, 28.9245942</value>
+          </Data>
+          <Data name="Colour">
+            <value>CLOSED</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            28.9245942,47.9610856,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>!! TRANSNISTRIA - CLOSED !!</name>
+        <description><![CDATA[CONTACT NO.: CLOSED<br>DELAY BY BUS: CLOSED<br>DELAY BY CAR: CLOSED<br>DELAY BY FOOT: CLOSED<br>DATE LAST CONTACTED: CLOSED<br>TIME LAST CONTACTED: CLOSED<br>Coordinates: 47.8796563, 29.2734429<br>Colour: CLOSED]]></description>
+        <styleUrl>#icon-1899-000000</styleUrl>
+        <ExtendedData>
+          <Data name="CONTACT NO.">
+            <value>CLOSED</value>
+          </Data>
+          <Data name="DELAY BY BUS">
+            <value>CLOSED</value>
+          </Data>
+          <Data name="DELAY BY CAR">
+            <value>CLOSED</value>
+          </Data>
+          <Data name="DELAY BY FOOT">
+            <value>CLOSED</value>
+          </Data>
+          <Data name="DATE LAST CONTACTED">
+            <value>CLOSED</value>
+          </Data>
+          <Data name="TIME LAST CONTACTED">
+            <value>CLOSED</value>
+          </Data>
+          <Data name="Coordinates">
+            <value>47.8796563, 29.2734429</value>
+          </Data>
+          <Data name="Colour">
+            <value>CLOSED</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            29.2734429,47.8796563,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>!! TRANSNISTRIA - CLOSED !!</name>
+        <description><![CDATA[CONTACT NO.: CLOSED<br>DELAY BY BUS: CLOSED<br>DELAY BY CAR: CLOSED<br>DELAY BY FOOT: CLOSED<br>DATE LAST CONTACTED: CLOSED<br>TIME LAST CONTACTED: CLOSED<br>Coordinates: 47.7108439, 29.2113997<br>Colour: CLOSED]]></description>
+        <styleUrl>#icon-1899-000000</styleUrl>
+        <ExtendedData>
+          <Data name="CONTACT NO.">
+            <value>CLOSED</value>
+          </Data>
+          <Data name="DELAY BY BUS">
+            <value>CLOSED</value>
+          </Data>
+          <Data name="DELAY BY CAR">
+            <value>CLOSED</value>
+          </Data>
+          <Data name="DELAY BY FOOT">
+            <value>CLOSED</value>
+          </Data>
+          <Data name="DATE LAST CONTACTED">
+            <value>CLOSED</value>
+          </Data>
+          <Data name="TIME LAST CONTACTED">
+            <value>CLOSED</value>
+          </Data>
+          <Data name="Coordinates">
+            <value>47.7108439, 29.2113997</value>
+          </Data>
+          <Data name="Colour">
+            <value>CLOSED</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            29.2113997,47.7108439,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>!! TRANSNISTRIA - CLOSED !!</name>
+        <description><![CDATA[CONTACT NO.: CLOSED<br>DELAY BY BUS: CLOSED<br>DELAY BY CAR: CLOSED<br>DELAY BY FOOT: CLOSED<br>DATE LAST CONTACTED: CLOSED<br>TIME LAST CONTACTED: CLOSED<br>Coordinates: 47.4028302, 29.3289728<br>Colour: CLOSED]]></description>
+        <styleUrl>#icon-1899-000000</styleUrl>
+        <ExtendedData>
+          <Data name="CONTACT NO.">
+            <value>CLOSED</value>
+          </Data>
+          <Data name="DELAY BY BUS">
+            <value>CLOSED</value>
+          </Data>
+          <Data name="DELAY BY CAR">
+            <value>CLOSED</value>
+          </Data>
+          <Data name="DELAY BY FOOT">
+            <value>CLOSED</value>
+          </Data>
+          <Data name="DATE LAST CONTACTED">
+            <value>CLOSED</value>
+          </Data>
+          <Data name="TIME LAST CONTACTED">
+            <value>CLOSED</value>
+          </Data>
+          <Data name="Coordinates">
+            <value>47.4028302, 29.3289728</value>
+          </Data>
+          <Data name="Colour">
+            <value>CLOSED</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            29.3289728,47.4028302,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>!! TRANSNISTRIA - CLOSED !!</name>
+        <description><![CDATA[CONTACT NO.: CLOSED<br>DELAY BY BUS: CLOSED<br>DELAY BY CAR: CLOSED<br>DELAY BY FOOT: CLOSED<br>DATE LAST CONTACTED: CLOSED<br>TIME LAST CONTACTED: CLOSED<br>Coordinates: 47.3442211, 29.5809363<br>Colour: CLOSED]]></description>
+        <styleUrl>#icon-1899-000000</styleUrl>
+        <ExtendedData>
+          <Data name="CONTACT NO.">
+            <value>CLOSED</value>
+          </Data>
+          <Data name="DELAY BY BUS">
+            <value>CLOSED</value>
+          </Data>
+          <Data name="DELAY BY CAR">
+            <value>CLOSED</value>
+          </Data>
+          <Data name="DELAY BY FOOT">
+            <value>CLOSED</value>
+          </Data>
+          <Data name="DATE LAST CONTACTED">
+            <value>CLOSED</value>
+          </Data>
+          <Data name="TIME LAST CONTACTED">
+            <value>CLOSED</value>
+          </Data>
+          <Data name="Coordinates">
+            <value>47.3442211, 29.5809363</value>
+          </Data>
+          <Data name="Colour">
+            <value>CLOSED</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            29.5809363,47.3442211,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>!! TRANSNISTRIA - CLOSED !!</name>
+        <description><![CDATA[CONTACT NO.: CLOSED<br>DELAY BY BUS: CLOSED<br>DELAY BY CAR: CLOSED<br>DELAY BY FOOT: CLOSED<br>DATE LAST CONTACTED: CLOSED<br>TIME LAST CONTACTED: CLOSED<br>Coordinates: 46.9827563, 29.5971531<br>Colour: CLOSED]]></description>
+        <styleUrl>#icon-1899-000000</styleUrl>
+        <ExtendedData>
+          <Data name="CONTACT NO.">
+            <value>CLOSED</value>
+          </Data>
+          <Data name="DELAY BY BUS">
+            <value>CLOSED</value>
+          </Data>
+          <Data name="DELAY BY CAR">
+            <value>CLOSED</value>
+          </Data>
+          <Data name="DELAY BY FOOT">
+            <value>CLOSED</value>
+          </Data>
+          <Data name="DATE LAST CONTACTED">
+            <value>CLOSED</value>
+          </Data>
+          <Data name="TIME LAST CONTACTED">
+            <value>CLOSED</value>
+          </Data>
+          <Data name="Coordinates">
+            <value>46.9827563, 29.5971531</value>
+          </Data>
+          <Data name="Colour">
+            <value>CLOSED</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            29.5971531,46.9827563,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>!! TRANSNISTRIA - CLOSED !!</name>
+        <description><![CDATA[CONTACT NO.: CLOSED<br>DELAY BY BUS: CLOSED<br>DELAY BY CAR: CLOSED<br>DELAY BY FOOT: CLOSED<br>DATE LAST CONTACTED: CLOSED<br>TIME LAST CONTACTED: CLOSED<br>Coordinates: 46.923092, 29.6814128<br>Colour: CLOSED]]></description>
+        <styleUrl>#icon-1899-000000</styleUrl>
+        <ExtendedData>
+          <Data name="CONTACT NO.">
+            <value>CLOSED</value>
+          </Data>
+          <Data name="DELAY BY BUS">
+            <value>CLOSED</value>
+          </Data>
+          <Data name="DELAY BY CAR">
+            <value>CLOSED</value>
+          </Data>
+          <Data name="DELAY BY FOOT">
+            <value>CLOSED</value>
+          </Data>
+          <Data name="DATE LAST CONTACTED">
+            <value>CLOSED</value>
+          </Data>
+          <Data name="TIME LAST CONTACTED">
+            <value>CLOSED</value>
+          </Data>
+          <Data name="Coordinates">
+            <value>46.923092, 29.6814128</value>
+          </Data>
+          <Data name="Colour">
+            <value>CLOSED</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            29.6814128,46.923092,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>!! TRANSNISTRIA - CLOSED !!</name>
+        <description><![CDATA[CONTACT NO.: CLOSED<br>DELAY BY BUS: CLOSED<br>DELAY BY CAR: CLOSED<br>DELAY BY FOOT: CLOSED<br>DATE LAST CONTACTED: CLOSED<br>TIME LAST CONTACTED: CLOSED<br>Coordinates: 46.8611501, 29.7500945<br>Colour: CLOSED]]></description>
+        <styleUrl>#icon-1899-000000</styleUrl>
+        <ExtendedData>
+          <Data name="CONTACT NO.">
+            <value>CLOSED</value>
+          </Data>
+          <Data name="DELAY BY BUS">
+            <value>CLOSED</value>
+          </Data>
+          <Data name="DELAY BY CAR">
+            <value>CLOSED</value>
+          </Data>
+          <Data name="DELAY BY FOOT">
+            <value>CLOSED</value>
+          </Data>
+          <Data name="DATE LAST CONTACTED">
+            <value>CLOSED</value>
+          </Data>
+          <Data name="TIME LAST CONTACTED">
+            <value>CLOSED</value>
+          </Data>
+          <Data name="Coordinates">
+            <value>46.8611501, 29.7500945</value>
+          </Data>
+          <Data name="Colour">
+            <value>CLOSED</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            29.7500945,46.8611501,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>!! TRANSNISTRIA - CLOSED !!</name>
+        <description><![CDATA[CONTACT NO.: CLOSED<br>DELAY BY BUS: CLOSED<br>DELAY BY CAR: CLOSED<br>DELAY BY FOOT: CLOSED<br>DATE LAST CONTACTED: CLOSED<br>TIME LAST CONTACTED: CLOSED<br>Coordinates: 46.7377964, 29.970403<br>Colour: CLOSED]]></description>
+        <styleUrl>#icon-1899-000000</styleUrl>
+        <ExtendedData>
+          <Data name="CONTACT NO.">
+            <value>CLOSED</value>
+          </Data>
+          <Data name="DELAY BY BUS">
+            <value>CLOSED</value>
+          </Data>
+          <Data name="DELAY BY CAR">
+            <value>CLOSED</value>
+          </Data>
+          <Data name="DELAY BY FOOT">
+            <value>CLOSED</value>
+          </Data>
+          <Data name="DATE LAST CONTACTED">
+            <value>CLOSED</value>
+          </Data>
+          <Data name="TIME LAST CONTACTED">
+            <value>CLOSED</value>
+          </Data>
+          <Data name="Coordinates">
+            <value>46.7377964, 29.970403</value>
+          </Data>
+          <Data name="Colour">
+            <value>CLOSED</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            29.970403,46.7377964,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>!! TRANSNISTRIA - CLOSED !!</name>
+        <description><![CDATA[CONTACT NO.: CLOSED<br>DELAY BY BUS: CLOSED<br>DELAY BY CAR: CLOSED<br>DELAY BY FOOT: CLOSED<br>DATE LAST CONTACTED: CLOSED<br>TIME LAST CONTACTED: CLOSED<br>Coordinates: 46.5849329, 29.9630823<br>Colour: CLOSED]]></description>
+        <styleUrl>#icon-1899-000000</styleUrl>
+        <ExtendedData>
+          <Data name="CONTACT NO.">
+            <value>CLOSED</value>
+          </Data>
+          <Data name="DELAY BY BUS">
+            <value>CLOSED</value>
+          </Data>
+          <Data name="DELAY BY CAR">
+            <value>CLOSED</value>
+          </Data>
+          <Data name="DELAY BY FOOT">
+            <value>CLOSED</value>
+          </Data>
+          <Data name="DATE LAST CONTACTED">
+            <value>CLOSED</value>
+          </Data>
+          <Data name="TIME LAST CONTACTED">
+            <value>CLOSED</value>
+          </Data>
+          <Data name="Coordinates">
+            <value>46.5849329, 29.9630823</value>
+          </Data>
+          <Data name="Colour">
+            <value>CLOSED</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            29.9630823,46.5849329,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Poland</name>
+      <Placemark>
+        <name>Budomierz-Hruszów.</name>
+        <description><![CDATA[CONTACT NO.: +48 16 672 88 00<br>DELAY BY BUS: 10h<br>DELAY BY CAR: 10h<br>DELAY BY FOOT: 3h<br>DATE LAST CONTACTED: 07.03.2022<br>TIME LAST CONTACTED: 15:30<br>GMAPS COORDINATES: 50.0969171, 23.2791148<br>Colour: Red]]></description>
+        <styleUrl>#icon-1899-A52714</styleUrl>
+        <ExtendedData>
+          <Data name="CONTACT NO.">
+            <value>+48 16 672 88 00</value>
+          </Data>
+          <Data name="DELAY BY BUS">
+            <value>10h</value>
+          </Data>
+          <Data name="DELAY BY CAR">
+            <value>10h</value>
+          </Data>
+          <Data name="DELAY BY FOOT">
+            <value>3h</value>
+          </Data>
+          <Data name="DATE LAST CONTACTED">
+            <value>07.03.2022</value>
+          </Data>
+          <Data name="TIME LAST CONTACTED">
+            <value>15:30</value>
+          </Data>
+          <Data name="GMAPS COORDINATES">
+            <value>50.0969171, 23.2791148</value>
+          </Data>
+          <Data name="Colour">
+            <value>Red</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            23.2791148,50.0969171,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Dołhobyczów-Uhrynów.</name>
+        <description><![CDATA[CONTACT NO.: +48 84 653 14 00<br>DELAY BY BUS: 3h<br>DELAY BY CAR: 3h<br>DELAY BY FOOT: 1h<br>DATE LAST CONTACTED: 06.03.2022<br>TIME LAST CONTACTED: 11:00<br>GMAPS COORDINATES: 50.5780723, 24.0903271<br>Colour: Orange]]></description>
+        <styleUrl>#icon-1899-F57C00</styleUrl>
+        <ExtendedData>
+          <Data name="CONTACT NO.">
+            <value>+48 84 653 14 00</value>
+          </Data>
+          <Data name="DELAY BY BUS">
+            <value>3h</value>
+          </Data>
+          <Data name="DELAY BY CAR">
+            <value>3h</value>
+          </Data>
+          <Data name="DELAY BY FOOT">
+            <value>1h</value>
+          </Data>
+          <Data name="DATE LAST CONTACTED">
+            <value>06.03.2022</value>
+          </Data>
+          <Data name="TIME LAST CONTACTED">
+            <value>11:00</value>
+          </Data>
+          <Data name="GMAPS COORDINATES">
+            <value>50.5780723, 24.0903271</value>
+          </Data>
+          <Data name="Colour">
+            <value>Orange</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            24.0903271,50.5780723,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Dorohusk-Jagodzin.</name>
+        <description><![CDATA[CONTACT NO.: +48 82 566 62 00<br>DELAY BY BUS: 3h<br>DELAY BY CAR: 3h<br>DELAY BY FOOT: 1.5h<br>DATE LAST CONTACTED: 07.03.2020<br>TIME LAST CONTACTED: 13:00<br>GMAPS COORDINATES: 51.1825845, 23.8038319<br>Colour: Green]]></description>
+        <styleUrl>#icon-1899-558B2F</styleUrl>
+        <ExtendedData>
+          <Data name="CONTACT NO.">
+            <value>+48 82 566 62 00</value>
+          </Data>
+          <Data name="DELAY BY BUS">
+            <value>3h</value>
+          </Data>
+          <Data name="DELAY BY CAR">
+            <value>3h</value>
+          </Data>
+          <Data name="DELAY BY FOOT">
+            <value>1.5h</value>
+          </Data>
+          <Data name="DATE LAST CONTACTED">
+            <value>07.03.2020</value>
+          </Data>
+          <Data name="TIME LAST CONTACTED">
+            <value>13:00</value>
+          </Data>
+          <Data name="GMAPS COORDINATES">
+            <value>51.1825845, 23.8038319</value>
+          </Data>
+          <Data name="Colour">
+            <value>Green</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            23.8038319,51.1825845,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Hrebenne-Rawa Ruska.</name>
+        <description><![CDATA[CONTACT NO.: +48 84 667 45 00<br>DELAY BY BUS: 4h<br>DELAY BY CAR: 4h<br>DELAY BY FOOT: 1h<br>DATE LAST CONTACTED: 06.03.2022<br>TIME LAST CONTACTED: 18:30<br>GMAPS COORDINATES: 50.2758148, 23.5890301<br>Colour: Orange]]></description>
+        <styleUrl>#icon-1899-F57C00</styleUrl>
+        <ExtendedData>
+          <Data name="CONTACT NO.">
+            <value>+48 84 667 45 00</value>
+          </Data>
+          <Data name="DELAY BY BUS">
+            <value>4h</value>
+          </Data>
+          <Data name="DELAY BY CAR">
+            <value>4h</value>
+          </Data>
+          <Data name="DELAY BY FOOT">
+            <value>1h</value>
+          </Data>
+          <Data name="DATE LAST CONTACTED">
+            <value>06.03.2022</value>
+          </Data>
+          <Data name="TIME LAST CONTACTED">
+            <value>18:30</value>
+          </Data>
+          <Data name="GMAPS COORDINATES">
+            <value>50.2758148, 23.5890301</value>
+          </Data>
+          <Data name="Colour">
+            <value>Orange</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            23.5890301,50.2758148,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Korczowa-Krakowiec.</name>
+        <description><![CDATA[CONTACT NO.: + 48 16 624 64 00<br>DELAY BY BUS: 12-18hrs <br>DELAY BY CAR: 12-18hrs<br>DELAY BY FOOT: 8h<br>DATE LAST CONTACTED: 07.03.2022<br>TIME LAST CONTACTED: 15:30<br>GMAPS COORDINATES: 49.9549958, 23.1139333<br>Colour: Red]]></description>
+        <styleUrl>#icon-1899-A52714</styleUrl>
+        <ExtendedData>
+          <Data name="CONTACT NO.">
+            <value>+ 48 16 624 64 00</value>
+          </Data>
+          <Data name="DELAY BY BUS">
+            <value>12-18hrs </value>
+          </Data>
+          <Data name="DELAY BY CAR">
+            <value>12-18hrs</value>
+          </Data>
+          <Data name="DELAY BY FOOT">
+            <value>8h</value>
+          </Data>
+          <Data name="DATE LAST CONTACTED">
+            <value>07.03.2022</value>
+          </Data>
+          <Data name="TIME LAST CONTACTED">
+            <value>15:30</value>
+          </Data>
+          <Data name="GMAPS COORDINATES">
+            <value>49.9549958, 23.1139333</value>
+          </Data>
+          <Data name="Colour">
+            <value>Red</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            23.1139333,49.9549958,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Krościenko-Smolnica.</name>
+        <description><![CDATA[CONTACT NO.: +48 13 465 83 00<br>DELAY BY BUS: 12h<br>DELAY BY CAR: 12h<br>DELAY BY FOOT: 8h<br>DATE LAST CONTACTED: 07.03.2022<br>TIME LAST CONTACTED: 15:00<br>GMAPS COORDINATES: 49.4811472, 22.7012271<br>Colour: Red]]></description>
+        <styleUrl>#icon-1899-A52714</styleUrl>
+        <ExtendedData>
+          <Data name="CONTACT NO.">
+            <value>+48 13 465 83 00</value>
+          </Data>
+          <Data name="DELAY BY BUS">
+            <value>12h</value>
+          </Data>
+          <Data name="DELAY BY CAR">
+            <value>12h</value>
+          </Data>
+          <Data name="DELAY BY FOOT">
+            <value>8h</value>
+          </Data>
+          <Data name="DATE LAST CONTACTED">
+            <value>07.03.2022</value>
+          </Data>
+          <Data name="TIME LAST CONTACTED">
+            <value>15:00</value>
+          </Data>
+          <Data name="GMAPS COORDINATES">
+            <value>49.4811472, 22.7012271</value>
+          </Data>
+          <Data name="Colour">
+            <value>Red</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            22.7012271,49.4811472,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Medyka-Szeginie.</name>
+        <description><![CDATA[CONTACT NO.: +48 166 765 500<br>DELAY BY BUS: 12h<br>DELAY BY CAR: 12h<br>DELAY BY FOOT: 5h<br>DATE LAST CONTACTED: 04.03.2022<br>TIME LAST CONTACTED: 19:30<br>GMAPS COORDINATES: 49.7999204, 22.946815<br>Colour: Red]]></description>
+        <styleUrl>#icon-1899-A52714</styleUrl>
+        <ExtendedData>
+          <Data name="CONTACT NO.">
+            <value>+48 166 765 500</value>
+          </Data>
+          <Data name="DELAY BY BUS">
+            <value>12h</value>
+          </Data>
+          <Data name="DELAY BY CAR">
+            <value>12h</value>
+          </Data>
+          <Data name="DELAY BY FOOT">
+            <value>5h</value>
+          </Data>
+          <Data name="DATE LAST CONTACTED">
+            <value>04.03.2022</value>
+          </Data>
+          <Data name="TIME LAST CONTACTED">
+            <value>19:30</value>
+          </Data>
+          <Data name="GMAPS COORDINATES">
+            <value>49.7999204, 22.946815</value>
+          </Data>
+          <Data name="Colour">
+            <value>Red</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            22.946815,49.7999204,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Zosin-Uściług.</name>
+        <description><![CDATA[CONTACT NO.: +48 846 975 600 / +48 846 514 320<br>DELAY BY BUS: 4h<br>DELAY BY CAR: 4h<br>DELAY BY FOOT: 1h<br>DATE LAST CONTACTED: 07.03.2022<br>TIME LAST CONTACTED: 17:30<br>GMAPS COORDINATES: 50.8586552, 24.1383767<br>Colour: Orange]]></description>
+        <styleUrl>#icon-1899-F57C00</styleUrl>
+        <ExtendedData>
+          <Data name="CONTACT NO.">
+            <value>+48 846 975 600 / +48 846 514 320</value>
+          </Data>
+          <Data name="DELAY BY BUS">
+            <value>4h</value>
+          </Data>
+          <Data name="DELAY BY CAR">
+            <value>4h</value>
+          </Data>
+          <Data name="DELAY BY FOOT">
+            <value>1h</value>
+          </Data>
+          <Data name="DATE LAST CONTACTED">
+            <value>07.03.2022</value>
+          </Data>
+          <Data name="TIME LAST CONTACTED">
+            <value>17:30</value>
+          </Data>
+          <Data name="GMAPS COORDINATES">
+            <value>50.8586552, 24.1383767</value>
+          </Data>
+          <Data name="Colour">
+            <value>Orange</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            24.1383767,50.8586552,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Slovakia and Hungary</name>
+      <Placemark>
+        <name>Ublya - Malyi Bereznyi (UA/SK)</name>
+        <description><![CDATA[CONTACT NO.: +421 313 522 090 <br>DELAY BY BUS: ~6 Hrs<br>DELAY BY CAR: ~6 Hrs<br>DELAY BY FOOT: ~4 Hrs<br>DATE LAST CONTACTED: Indirect report 01.03.2022<br>TIME LAST CONTACTED: Indirect report<br>Coordinates: 48.8838074, 22.4202754<br>Colour: Orange]]></description>
+        <styleUrl>#icon-1899-F57C00</styleUrl>
+        <ExtendedData>
+          <Data name="CONTACT NO.">
+            <value>+421 313 522 090 </value>
+          </Data>
+          <Data name="DELAY BY BUS">
+            <value>~6 Hrs</value>
+          </Data>
+          <Data name="DELAY BY CAR">
+            <value>~6 Hrs</value>
+          </Data>
+          <Data name="DELAY BY FOOT">
+            <value>~4 Hrs</value>
+          </Data>
+          <Data name="DATE LAST CONTACTED">
+            <value>Indirect report 01.03.2022</value>
+          </Data>
+          <Data name="TIME LAST CONTACTED">
+            <value>Indirect report</value>
+          </Data>
+          <Data name="Coordinates">
+            <value>48.8838074, 22.4202754</value>
+          </Data>
+          <Data name="Colour">
+            <value>Orange</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            22.4202754,48.8838074,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Uzhhorod - Vyšné Nemecké (UA / SK)</name>
+        <description><![CDATA[CONTACT NO.: +421 961 754 155<br>DELAY BY BUS: ~8 Hrs<br>DELAY BY CAR: ~8 Hrs<br>DELAY BY FOOT: ~2-3 Hrs<br>DATE LAST CONTACTED: Indirect report 03.03.2022<br>TIME LAST CONTACTED: Indirect report<br>Coordinates: 48.6549602, 22.2652423<br>Colour: Red]]></description>
+        <styleUrl>#icon-1899-A52714</styleUrl>
+        <ExtendedData>
+          <Data name="CONTACT NO.">
+            <value>+421 961 754 155</value>
+          </Data>
+          <Data name="DELAY BY BUS">
+            <value>~8 Hrs</value>
+          </Data>
+          <Data name="DELAY BY CAR">
+            <value>~8 Hrs</value>
+          </Data>
+          <Data name="DELAY BY FOOT">
+            <value>~2-3 Hrs</value>
+          </Data>
+          <Data name="DATE LAST CONTACTED">
+            <value>Indirect report 03.03.2022</value>
+          </Data>
+          <Data name="TIME LAST CONTACTED">
+            <value>Indirect report</value>
+          </Data>
+          <Data name="Coordinates">
+            <value>48.6549602, 22.2652423</value>
+          </Data>
+          <Data name="Colour">
+            <value>Red</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            22.2652423,48.6549602,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Velyki Selmentsi - Mali Selmentsi (UA/SK)</name>
+        <description><![CDATA[CONTACT NO.: +421 566 285 080<br>DELAY BY BUS: NO BUS<br>DELAY BY CAR: NO CAR<br>DELAY BY FOOT: ~2 Hrs<br>DATE LAST CONTACTED: Indirect report 02.03.2022<br>TIME LAST CONTACTED: Indirect report<br>Coordinates: 48.5109711, 22.1539513<br>Colour: Orange]]></description>
+        <styleUrl>#icon-1899-F57C00</styleUrl>
+        <ExtendedData>
+          <Data name="CONTACT NO.">
+            <value>+421 566 285 080</value>
+          </Data>
+          <Data name="DELAY BY BUS">
+            <value>NO BUS</value>
+          </Data>
+          <Data name="DELAY BY CAR">
+            <value>NO CAR</value>
+          </Data>
+          <Data name="DELAY BY FOOT">
+            <value>~2 Hrs</value>
+          </Data>
+          <Data name="DATE LAST CONTACTED">
+            <value>Indirect report 02.03.2022</value>
+          </Data>
+          <Data name="TIME LAST CONTACTED">
+            <value>Indirect report</value>
+          </Data>
+          <Data name="Coordinates">
+            <value>48.5109711, 22.1539513</value>
+          </Data>
+          <Data name="Colour">
+            <value>Orange</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            22.1539513,48.5109711,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Chop (Tisa) - Zachon (UA/HU)</name>
+        <description><![CDATA[CONTACT NO.: +36 45 360 311<br>DELAY BY BUS: ~18 Hrs<br>DELAY BY CAR: ~18 Hrs<br>DELAY BY FOOT: NO FOOT<br>DATE LAST CONTACTED: Indirect report 01.03.2022<br>TIME LAST CONTACTED: Indirect report<br>Coordinates: 48.4148634, 22.1713477<br>Colour: Red]]></description>
+        <styleUrl>#icon-1899-A52714</styleUrl>
+        <ExtendedData>
+          <Data name="CONTACT NO.">
+            <value>+36 45 360 311</value>
+          </Data>
+          <Data name="DELAY BY BUS">
+            <value>~18 Hrs</value>
+          </Data>
+          <Data name="DELAY BY CAR">
+            <value>~18 Hrs</value>
+          </Data>
+          <Data name="DELAY BY FOOT">
+            <value>NO FOOT</value>
+          </Data>
+          <Data name="DATE LAST CONTACTED">
+            <value>Indirect report 01.03.2022</value>
+          </Data>
+          <Data name="TIME LAST CONTACTED">
+            <value>Indirect report</value>
+          </Data>
+          <Data name="Coordinates">
+            <value>48.4148634, 22.1713477</value>
+          </Data>
+          <Data name="Colour">
+            <value>Red</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            22.1713477,48.4148634,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Dzvinkove - Lonyai (UA/HU)</name>
+        <description><![CDATA[CONTACT NO.: +36 42 381 277 ext. 7855<br>DELAY BY BUS: ~6 Hrs /closes 00:00 to 08:00<br>DELAY BY CAR: ~6 Hrs /closes 00:00 to 08:00<br>DELAY BY FOOT: ~3 Hrs /closes 00:00 to 08:00<br>DATE LAST CONTACTED: Indirect report, 04.03.2022<br>TIME LAST CONTACTED: Indirect report<br>Coordinates: 48.3180505, 22.3187134<br>Colour: Orange]]></description>
+        <styleUrl>#icon-1899-F57C00</styleUrl>
+        <ExtendedData>
+          <Data name="CONTACT NO.">
+            <value>+36 42 381 277 ext. 7855</value>
+          </Data>
+          <Data name="DELAY BY BUS">
+            <value>~6 Hrs /closes 00:00 to 08:00</value>
+          </Data>
+          <Data name="DELAY BY CAR">
+            <value>~6 Hrs /closes 00:00 to 08:00</value>
+          </Data>
+          <Data name="DELAY BY FOOT">
+            <value>~3 Hrs /closes 00:00 to 08:00</value>
+          </Data>
+          <Data name="DATE LAST CONTACTED">
+            <value>Indirect report, 04.03.2022</value>
+          </Data>
+          <Data name="TIME LAST CONTACTED">
+            <value>Indirect report</value>
+          </Data>
+          <Data name="Coordinates">
+            <value>48.3180505, 22.3187134</value>
+          </Data>
+          <Data name="Colour">
+            <value>Orange</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            22.3187134,48.3180505,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Kosino - Barabas (UA/HU)</name>
+        <description><![CDATA[CONTACT NO.: +36 45 570 163<br>DELAY BY BUS: <br>DELAY BY CAR: <br>DELAY BY FOOT: <br>DATE LAST CONTACTED: <br>TIME LAST CONTACTED: <br>Coordinates: 48.2457925, 22.4458413<br>Colour: TBD]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="CONTACT NO.">
+            <value>+36 45 570 163</value>
+          </Data>
+          <Data name="DELAY BY BUS">
+            <value/>
+          </Data>
+          <Data name="DELAY BY CAR">
+            <value/>
+          </Data>
+          <Data name="DELAY BY FOOT">
+            <value/>
+          </Data>
+          <Data name="DATE LAST CONTACTED">
+            <value/>
+          </Data>
+          <Data name="TIME LAST CONTACTED">
+            <value/>
+          </Data>
+          <Data name="Coordinates">
+            <value>48.2457925, 22.4458413</value>
+          </Data>
+          <Data name="Colour">
+            <value>TBD</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            22.4458413,48.2457925,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Luzhanka - Beregsuranyi (UA/HU)</name>
+        <description><![CDATA[CONTACT NO.: +36 42 381 277<br>DELAY BY BUS: <br>DELAY BY CAR: <br>DELAY BY FOOT: <br>DATE LAST CONTACTED: <br>TIME LAST CONTACTED: <br>Coordinates: 48.16488450463399, 22.57283991210489<br>Colour: TBD]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="CONTACT NO.">
+            <value>+36 42 381 277</value>
+          </Data>
+          <Data name="DELAY BY BUS">
+            <value/>
+          </Data>
+          <Data name="DELAY BY CAR">
+            <value/>
+          </Data>
+          <Data name="DELAY BY FOOT">
+            <value/>
+          </Data>
+          <Data name="DATE LAST CONTACTED">
+            <value/>
+          </Data>
+          <Data name="TIME LAST CONTACTED">
+            <value/>
+          </Data>
+          <Data name="Coordinates">
+            <value>48.16488450463399, 22.57283991210489</value>
+          </Data>
+          <Data name="Colour">
+            <value>TBD</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            22.5728399121049,48.164884504634,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Vilok - Tiszabecsi (UA/HU)</name>
+        <description><![CDATA[CONTACT NO.: +36 44 502 781<br>DELAY BY BUS: <br>DELAY BY CAR: <br>DELAY BY FOOT: <br>DATE LAST CONTACTED: <br>TIME LAST CONTACTED: <br>Coordinates: 48.09314931700095, 22.83435074074474<br>Colour: TBD]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="CONTACT NO.">
+            <value>+36 44 502 781</value>
+          </Data>
+          <Data name="DELAY BY BUS">
+            <value/>
+          </Data>
+          <Data name="DELAY BY CAR">
+            <value/>
+          </Data>
+          <Data name="DELAY BY FOOT">
+            <value/>
+          </Data>
+          <Data name="DATE LAST CONTACTED">
+            <value/>
+          </Data>
+          <Data name="TIME LAST CONTACTED">
+            <value/>
+          </Data>
+          <Data name="Coordinates">
+            <value>48.09314931700095, 22.83435074074474</value>
+          </Data>
+          <Data name="Colour">
+            <value>TBD</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            22.8343507407447,48.093149317001,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>

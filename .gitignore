@@ -28,3 +28,6 @@ yarn-error.log*
 
 # nextjs
 .next
+
+# Cached server files
+country-kml-*.kml

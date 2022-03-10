@@ -56,8 +56,7 @@ const allCountries = (() => {
 
 const getHashCountry = (defaultCountry, availableCountries) =>
   (typeof window !== "undefined" &&
-      window.location.hash &&
-      window.location.hash.length === 3 &&
+      window.location.hash?.length === 3 &&
       availableCountries.find(({ code }) =>
         code === window.location.hash.slice(1)))
   ? window.location.hash.slice(1)
@@ -67,6 +66,7 @@ const useCountryData = ({
   defaultCountry = null,
   availableCountries = [],
   fetchApiDataCallback = fetchCountryBorderInfo,
+  useLocationHash = true,
 }) => {
   availableCountries = availableCountries.length
     ? availableCountries.map(code => allCountries[code])
@@ -80,12 +80,13 @@ const useCountryData = ({
 
   const [library, setLibrary] = useState({});
 
-  const [selectedCountry, setSelectedCountry] =
-    useState(getHashCountry(defaultCountry, availableCountries));
+  const selectedCountryHash = getHashCountry(defaultCountry, availableCountries);
+  const [selectedCountry, setSelectedCountry] = useState(selectedCountryHash);
 
   useEffect(() => {
-    const handler = () =>
-      setSelectedCountry(getHashCountry(defaultCountry, availableCountries));
+    const nextCountryHash = () => getHashCountry(defaultCountry, availableCountries);
+    const handler = () => setSelectedCountry(nextCountryHash());
+
     window.addEventListener("hashchange", handler);
     return () => window.removeEventListener("hashchange", handler);
   });
@@ -112,11 +113,10 @@ const useCountryData = ({
 
   const getCountryData = (countryName) => {
     const countries = library[language];
-    if (countries) {
-      const data = countries[countryName];
-      if (data)
-        return data;
-    }
+    const data = countries ? countries[countryName] : null;
+
+    if (data)
+      return data;
 
     fetchCountryData(countryName);
     return null;
@@ -132,7 +132,8 @@ const useCountryData = ({
       data: countryData,
     },
     setSelectedCountry: (countryCode) => {
-      router.replace(`${router.route}#${countryCode}`);
+      if (useLocationHash)
+        router.replace(`${router.route}#${countryCode}`);
       setSelectedCountry(countryCode);
       if (dataViewRef.current)
         dataViewRef.current.scrollIntoView({
