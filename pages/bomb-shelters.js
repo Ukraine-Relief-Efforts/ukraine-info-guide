@@ -13,8 +13,8 @@ export const getStaticProps = async ({ locale }) => ({
 const BombSheltersPage = () => {
   const { t } = useTranslation();
 
-  const kmlUrl = "/api/v1/country-kml";
-  const kmlSource = "https://www.google.com/maps/d/u/0/viewer?mid=1s5tABxCBpgKYxMi1GHqt8zFAisiz7qRF&hl=en_US&ll=47.42056877966478%2C28.175586786855995&z=6";
+  const kmlUrl = "/api/v1/shelter-kml";
+  const kmlSource = "https://visitukraine.today/blog/101/bomb-shelters-shelters-and-defense-structures-in-the-regions-of-ukraine";
 
   return (
     <Layout hero={<Hero title={t("Bomb Shelters")} compact />}>

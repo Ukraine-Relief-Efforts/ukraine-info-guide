@@ -25,9 +25,9 @@ const cachedKmlHandler = ({
   const cachedPath = getCachedPath();
 
   try {
-    const cached = await readFile(cachedPath);
-    res.status(200).json(JSON.parse(cached));
-    return;
+    // const cached = await readFile(cachedPath);
+    // res.status(200).json(JSON.parse(cached));
+    // return;
   } catch (e) {} // eslint-disable-line
 
   try {
@@ -35,6 +35,7 @@ const cachedKmlHandler = ({
     const text = await result.text();
     const parser = new KmlParser(text);
     const json = parser.toJson(normalizedNames);
+    console.log(json);
     res.status(200).json(json);
     console.log("Fetched new KML");
 

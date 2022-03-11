@@ -31,3 +31,4 @@ yarn-error.log*
 
 # Cached server files
 country-kml-*.json
+shelter-kml-*.json

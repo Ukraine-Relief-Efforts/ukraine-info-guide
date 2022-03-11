@@ -36,7 +36,7 @@ const NewStyleContent = ({
   recommendedTime,
   trafficData,
   url,
-}) => (console.log(trafficData), (
+}) => (
   <div className="flex flex-col items-center">
     <span className="font-semibold mb-3">{name}</span>
     {delayByBus && <span>{t("Delay by bus")}: {delayByBus}</span>}
@@ -48,11 +48,13 @@ const NewStyleContent = ({
         {t("Traffic Data")}
       </NewTabLink>
     }
-    <span className="link mt-3">
-      <NewTabLink href={url}>{t("Google Maps")}</NewTabLink>
-    </span>
+    {url &&
+      <span className="link mt-3">
+        <NewTabLink href={url}>{t("Google Maps")}</NewTabLink>
+      </span>
+    }
   </div>
-));
+);
 
 const MapMarker = (props) => {
   const { address, lat, lon, position, color = "blue" } = props;
@@ -71,15 +73,17 @@ const MapMarker = (props) => {
             justifyContent: "center",
           }}
         >
-          {
+          {/*
             address
               ? <OldStyleContent address={address} url={url} />
-              : <NewStyleContent {...props} url={url} />
+              : "a"
+              */
           }
         </div>
       </Popup>
     </Marker>
   );
+              // : <NewStyleContent {...props} url={url} />
 };
 
 export default MapMarker;
