@@ -33,10 +33,7 @@ const Map = ({ markers = [], kmlUrl, kmlSource, mapRef }) => {
       position: [ parseFloat(m.lat), parseFloat(m.lon) ],
     }));
 
-  if (data.length < 1)
-    return null;
-
-  const position = findCenter(data);
+  const position = data.length > 0 ? findCenter(data) : [45, 23];
 
   //const mapRef = useRef()
   let showMyLocation = () => { // either fix this or make it just request permission for location, or both
@@ -64,7 +61,7 @@ const Map = ({ markers = [], kmlUrl, kmlSource, mapRef }) => {
           kmlUrl
             ? <KmlLayer t={t} path={kmlUrl} centered />
             : <LayerGroup>
-              {data.map((m, index) => (
+              {data && data.map((m, index) => (
                 <MapMarker {...m} key={index} />
               ))}
             </LayerGroup>
