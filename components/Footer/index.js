@@ -30,7 +30,7 @@ const Footer = () => {
               <FooterHeader>{t("Contacts")}</FooterHeader>
               <FooterLink href={TWITTER_URL}>Twitter</FooterLink>
               <FooterLink href={INSTAGRAM_URL}>Instagram</FooterLink>
-              <FooterLink href={GITHUB_URL}>Github</FooterLink>
+              <FooterLink href={GITHUB_URL}>GitHub</FooterLink>
             </div>
           </div>
         </div>

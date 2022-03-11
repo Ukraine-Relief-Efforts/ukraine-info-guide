@@ -64,7 +64,7 @@ const AboutPage = () => {
           For more information, find us on <a
             href={GITHUB_URL}
             className="link"
-          >Github</a>
+          >GitHub</a>
         </Trans>.
       </p>
       <p className="mt-5 mb-10">
