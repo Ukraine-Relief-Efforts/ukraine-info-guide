@@ -36,7 +36,7 @@ const NewStyleContent = ({
   recommendedTime,
   trafficData,
   url,
-}) => (
+}) => (console.log(trafficData), (
   <div className="flex flex-col items-center">
     <span className="font-semibold mb-3">{name}</span>
     {delayByBus && <span>{t("Delay by bus")}: {delayByBus}</span>}
@@ -52,7 +52,7 @@ const NewStyleContent = ({
       <NewTabLink href={url}>{t("Google Maps")}</NewTabLink>
     </span>
   </div>
-);
+));
 
 const MapMarker = (props) => {
   const { address, lat, lon, position, color = "blue" } = props;

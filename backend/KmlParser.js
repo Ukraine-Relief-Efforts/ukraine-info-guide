@@ -17,8 +17,8 @@ class KmlParser {
 
 			const data = place.querySelector("ExtendedData")?.children || [];
 			for (const item of data) {
-				const itemName = item.attributes?.name?.value;
-				const itemValue = item.querySelector("value")?.innerHTML;
+				const itemName = item.attributes?.name?.value.trim();
+				const itemValue = item.querySelector("value")?.innerHTML.trim();
 				result[normalizedNames[itemName] || itemName] = itemValue;
 			}
 
