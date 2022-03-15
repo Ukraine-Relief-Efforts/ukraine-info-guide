@@ -21,7 +21,7 @@ import {
 
 const githubI18nKey = (() => {
   const t = (s) => s;
-  return t("Join us <1>on Github</1>");
+  return t("Join us <1>on GitHub</1>");
 })();
 
 const emailI18nKey = (() => {
