@@ -37,7 +37,7 @@ const NewStyleContent = ({
   trafficData,
   url,
 }) => (
-  <div className="flex flex-col items-center">
+  <div className="flex flex-col items-center text-center">
     <span className="font-semibold mb-3">{name}</span>
     {delayByBus && <span>{t("Delay by bus")}: {delayByBus}</span>}
     {delayByCar && <span>{t("Delay by car")}: {delayByCar}</span>}
@@ -73,17 +73,15 @@ const MapMarker = (props) => {
             justifyContent: "center",
           }}
         >
-          {/*
+          {
             address
               ? <OldStyleContent address={address} url={url} />
-              : "a"
-              */
+              : <NewStyleContent {...props} url={url} />
           }
         </div>
       </Popup>
     </Marker>
   );
-              // : <NewStyleContent {...props} url={url} />
 };
 
 export default MapMarker;
