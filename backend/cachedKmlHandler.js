@@ -25,9 +25,9 @@ const cachedKmlHandler = ({
   const cachedPath = getCachedPath();
 
   try {
-    // const cached = await readFile(cachedPath);
-    // res.status(200).json(JSON.parse(cached));
-    // return;
+    const cached = await readFile(cachedPath);
+    res.status(200).json(JSON.parse(cached));
+    return;
   } catch (e) {} // eslint-disable-line
 
   try {
