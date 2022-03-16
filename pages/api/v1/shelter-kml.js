@@ -1,17 +1,20 @@
 import cachedKmlHandler from "../../../backend/cachedKmlHandler";
 
-const countryKmlHandler = cachedKmlHandler({
-  kmlUrl: "https://www.google.com/maps/d/u/0/kml?forcekml=1&mid=1s5tABxCBpgKYxMi1GHqt8zFAisiz7qRF",
+const shelterKmlHandler = cachedKmlHandler({
+  kmlUrl: "https://www.google.com/maps/d/u/0/kml?mid=1nv3QreO1QS5_AmRRNLHXu7u99sKJ6JRR&forcekml=1",
   getCachedPath: () => {
     const now = new Date(Date.now());
     const month = now.getMonth();
     const day = now.getDay();
     const hour = now.getHours();
-    return `./country-kml-${month}-${day}-${hour}.json`;
+    return `./shelter-kml-${month}-${day}-${hour}.json`;
   },
-  oldCacheRegex: /country-kml-.*\.json/,
-  backupPath: "./public/country-kml-backup.json",
+  oldCacheRegex: /shelter-kml-.*\.json/,
+  backupPath: "./public/shelter-kml-backup.json",
   normalizedNames: {
+    "Район": "region",
+    "Координати укриття": "coords",
+
     "CONTACT NO.": "phone",
     "Colour": "color",
     "CODE": "color",
@@ -31,4 +34,4 @@ const countryKmlHandler = cachedKmlHandler({
   },
 });
 
-export default countryKmlHandler;
+export default shelterKmlHandler;
