@@ -28,11 +28,12 @@ const IndexPage = () => {
     icon: "/HomePageIcons/border-crossing.svg",
     onClick: () => router.push("/border-information"),
   });
-  options.push({
-    name: t("Bomb Shelters"),
-    icon: "/HomePageIcons/bomb-shelters.svg",
-    onClick: () => router.push("/bomb-shelters"),
-  });
+  if (features.bombShelters)
+    options.push({
+      name: t("Bomb Shelters"),
+      icon: "/HomePageIcons/bomb-shelters.svg",
+      onClick: () => router.push("/bomb-shelters"),
+    });
   if (features.foodAndShelterPage)
     options.push({
       name: t("Food and Shelter"),
