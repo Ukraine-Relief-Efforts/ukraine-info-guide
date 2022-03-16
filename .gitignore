@@ -30,4 +30,5 @@ yarn-error.log*
 .next
 
 # Cached server files
-country-kml-*.kml
+country-kml-*.json
+shelter-kml-*.json

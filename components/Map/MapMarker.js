@@ -37,7 +37,7 @@ const NewStyleContent = ({
   trafficData,
   url,
 }) => (
-  <div className="flex flex-col items-center">
+  <div className="flex flex-col items-center text-center">
     <span className="font-semibold mb-3">{name}</span>
     {delayByBus && <span>{t("Delay by bus")}: {delayByBus}</span>}
     {delayByCar && <span>{t("Delay by car")}: {delayByCar}</span>}
@@ -48,9 +48,11 @@ const NewStyleContent = ({
         {t("Traffic Data")}
       </NewTabLink>
     }
-    <span className="link mt-3">
-      <NewTabLink href={url}>{t("Google Maps")}</NewTabLink>
-    </span>
+    {url &&
+      <span className="link mt-3">
+        <NewTabLink href={url}>{t("Google Maps")}</NewTabLink>
+      </span>
+    }
   </div>
 );
 

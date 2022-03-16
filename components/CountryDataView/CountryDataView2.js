@@ -35,9 +35,11 @@ const CountryDataView2 = ({
   const mapRef = useRef();
 
   return (
-    <section className="country-data-view">
+    <section className="country-data-view w-full">
       {hasMap &&
-        <Map markers={reception} {...{ kmlUrl, kmlSource, mapRef }} />
+        <div className="w-full">
+          <Map {...{ kmlUrl, kmlSource, mapRef }} />
+        </div>
       }
       <div className="bg-gray-200 p-3 rounded pt-10">
         <p className="text-xl font-semibold text-blue-ukraine text-center">
