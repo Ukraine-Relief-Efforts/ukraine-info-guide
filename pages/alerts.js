@@ -6,6 +6,7 @@ import MissileAlerts from "../components/MissileAlerts";
 import TelegramAlertLinks from "../components/TelegramAlertLinks";
 import TelegramEmbed from "../components/TelegramEmbed";
 import AndroidButton from "../components/AndroidButton";
+import IosButton from "../components/IosButton";
 import features from "../configs/features";
 
 export const getStaticProps = async ({ locale }) => ({
@@ -23,8 +24,9 @@ const AlertsPage = () => {
         <Hero
           title={t("Missile Alerts")}
           subcomponent={
-            <div className="mt-6">
+            <div className="flex flex-col sm:flex-row items-center mt-6">
               <AndroidButton />
+              <IosButton />
             </div>
           }
         />
