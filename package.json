@@ -18,7 +18,7 @@
     "qrcode": "^1.5.0",
     "react-hot-toast": "^2.2.0",
     "react-leaflet": "^3.2.5",
-    "react-modern-drawer": "^1.0.1",
+    "react-modern-drawer": "^1.0.2",
     "react-select-search": "^3.0.9",
     "react-twitter-embed": "^4.0.4",
     "spinners-react": "^1.0.6",
