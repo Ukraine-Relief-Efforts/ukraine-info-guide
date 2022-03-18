@@ -20,8 +20,8 @@ const Footer = () => {
           <div className="grid grid-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
             <div>
               <FooterHeader>{t("Useful links")}</FooterHeader>
-              <FooterLink href="/resources">{t("Resources")}</FooterLink>
-              <FooterLink href="/border-information">{t("Border Info")}</FooterLink>
+              <FooterLink href="resources">{t("Resources")}</FooterLink>
+              <FooterLink href="border-information">{t("Border Info")}</FooterLink>
               <FooterLink href={REDDIT_URL}>{t("r/ukraine")}</FooterLink>
               {features.hostARefugee &&
                 <FooterLink href="/#">{t("Host a refugee")}</FooterLink>}
@@ -30,7 +30,7 @@ const Footer = () => {
               <FooterHeader>{t("Contacts")}</FooterHeader>
               <FooterLink href={TWITTER_URL}>Twitter</FooterLink>
               <FooterLink href={INSTAGRAM_URL}>Instagram</FooterLink>
-              <FooterLink href={GITHUB_URL}>Github</FooterLink>
+              <FooterLink href={GITHUB_URL}>GitHub</FooterLink>
             </div>
           </div>
         </div>

@@ -5,6 +5,8 @@ import Layout from "../components/Layout";
 import MissileAlerts from "../components/MissileAlerts";
 import TelegramAlertLinks from "../components/TelegramAlertLinks";
 import TelegramEmbed from "../components/TelegramEmbed";
+import AndroidButton from "../components/AndroidButton";
+import IosButton from "../components/IosButton";
 import features from "../configs/features";
 
 export const getStaticProps = async ({ locale }) => ({
@@ -21,15 +23,18 @@ const AlertsPage = () => {
       hero={
         <Hero
           title={t("Missile Alerts")}
-          subtitle={<p>
-            Receive live notifications on your phone from access Ukraine
-          </p>}
+          subcomponent={
+            <div className="flex flex-col sm:flex-row items-center mt-6">
+              <AndroidButton />
+              <IosButton />
+            </div>
+          }
         />
       }
     >
       <div className="text-center px-5" style={{ maxWidth: "60ch" }}>
         <p className="text-lg">
-          {t("We offer Telegram channels in multiple languages for live notifications of missile and air alerts across Ukraine")}
+          {t("We offer apps and Telegram channels in multiple languages for live notifications of missile and air alerts across Ukraine")}
         </p>
         <div className="mt-10 mb-20">
           <TelegramAlertLinks

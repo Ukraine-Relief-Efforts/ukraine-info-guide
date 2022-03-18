@@ -1,10 +1,8 @@
 import { useRef } from "react";
 import { useTranslation } from "next-i18next";
-import dynamic from "next/dynamic";
 import LocationCard from "./LocationCard";
 import Spinner from "../Spinner";
-
-const Map = dynamic(() => import("../Map"), { ssr: false });
+import Map from "../Map";
 
 const Attribution = ({ children }) => (
   <p className="my-3 opacity-70 text-right">
@@ -16,6 +14,7 @@ const CountryDataView = ({
   title,
   mapTitle,
   data,
+  kmlUrl,
   errorMessage,
   dataViewRef,
 }) => {
@@ -25,7 +24,7 @@ const CountryDataView = ({
   const stamp = new Date(isoFormat);
   const time = `${stamp.toLocaleTimeString()} ${stamp.toLocaleDateString()}`;
 
-  const hasMap = !error && reception && reception.length > 0;
+  const hasMap = (!error && reception && reception.length > 0) || kmlUrl;
 
   const mapRef = useRef();
 
@@ -77,7 +76,7 @@ const CountryDataView = ({
           <p className="mt-10 font-semibold text-center uppercase">
             {mapTitle}
           </p>
-          <Map markers={reception} mapRef={mapRef} />
+          <Map markers={reception} kmlUrl={kmlUrl} mapRef={mapRef} />
           <p className="mt-10 mb-1 font-semibold text-center uppercase">
             {t("Locations")}
           </p>

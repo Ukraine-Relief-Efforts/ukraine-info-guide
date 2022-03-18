@@ -3,20 +3,27 @@ import "gridjs/dist/theme/mermaid.css";
 
 // TODO: Translate these when we know what the actual schema looks like
 const columns = [
-  "First Name",
-  "Last Name",
-  "Address",
+  "Case Number",
+  "Client Number",
+  "Full name",
+  "Languages",
+  "Phone",
+  "Email/Social Media",
+  "Gender",
+  "Date of Birth",
+  "Current Location/Time Zone",
+  "Destination",
+  "Passport Country",
+  "Secondary ID/Documentation",
+  "Case Manager",
+  "Case Notes",
 ];
 
 const rows = [
-  [ "A", "Example", "1 Example Street" ],
-  [ "B", "Example", "2 Example Street" ],
-  [ "C", "Example", "3 Example Street" ],
-  [ "D", "Example", "4 Example Street" ],
-  [ "E", "Example", "5 Example Street" ],
-  [ "F", "Example", "6 Example Street" ],
-  [ "G", "Example", "7 Example Street" ],
-  [ "H", "Example", "8 Example Street" ],
+  [
+    "123", "432", "An Example Name", "Ukrainian", "123 456 789", "a@b.com",
+    "Male", "01/02/03", "Poland", "France", "Ukraine", "None", "Mr Example", "",
+  ],
 ];
 
 const RefugeeDatabase = () => {
@@ -29,6 +36,8 @@ const RefugeeDatabase = () => {
         enabled: true,
         limit: 5,
       }}
+      resizable
+      sort
     />
   );
 }

@@ -1,9 +1,20 @@
 .leaflet-container {
   width: 100%;
   height: 90vh;
-  z-index: 1;
-  margin: 1em auto;
 }
+
+@media (max-width: 850px) {
+  .leaflet-container {
+    height: 70vh;
+  }
+}
+
+@media (max-width: 650px) {
+  .leaflet-container {
+    height: 55vh;
+  }
+}
+
 .showlocation-button{
   @apply py-2 px-4 rounded-lg bg-gray-300 flex flex-col items-center justify-center;
 }

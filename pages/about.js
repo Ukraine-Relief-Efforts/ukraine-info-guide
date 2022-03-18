@@ -21,7 +21,7 @@ import {
 
 const githubI18nKey = (() => {
   const t = (s) => s;
-  return t("Join us <1>on Github</1>");
+  return t("Join us <1>on GitHub</1>");
 })();
 
 const emailI18nKey = (() => {
@@ -56,21 +56,23 @@ const AboutPage = () => {
       <p className="text-xl mt-5 mb-10">
         {t("Hi! We are Tech For Ukraine")} &#127482;&#127462;
       </p>
-      <p className="p-5" style={{maxWidth: "70ch"}}>
-        {t("We're an international team of people working to fuel and organize the creation of software aimed at helping the Ukrainian people during the current war with Russia")}. {t("Our organization has developed technologies such as a missile/air alarm system, a website that encompasses information for Ukrainian refugees, and impending others")}. {t("Contribution to our open source technologies is valued")}.
+      <p className="p-5 max-w-[70ch]">
+        {t("We're an international team of people working to fuel and organize the creation of software aimed at helping the Ukrainian people during the current war with Russia")}.{" "}
+        {t("Our organization has developed technologies such as a missile/air alarm system, a website that encompasses information for Ukrainian refugees, and impending others")}.{" "}
+        {t("Contribution to our open source technologies is valued")}.{" "}
         <Trans t={t} i18nKey={githubI18nKey}>
           For more information, find us on <a
             href={GITHUB_URL}
             className="link"
-          >Github</a>
+          >GitHub</a>
         </Trans>.
       </p>
-      <p>
+      <p className="mt-5 mb-10">
         <Trans t={t} i18nKey={emailI18nKey} email={EMAIL}>
           To submit feedback, please email <a
             href={"mailto:" + EMAIL}
             className="link"
-          >{EMAIL}</a>
+          >{{email: EMAIL}}</a>
         </Trans>
       </p>
 

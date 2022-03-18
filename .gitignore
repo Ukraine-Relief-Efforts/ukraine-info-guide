@@ -31,3 +31,7 @@ yarn-error.log*
 
 # Sentry
 .sentryclirc
+
+# Cached server files
+country-kml-*.json
+shelter-kml-*.json
