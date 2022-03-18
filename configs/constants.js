@@ -45,6 +45,9 @@ export const LEAVE_UKRAINE_SHIELD = `https://img.shields.io/github/stars/${GITHU
 export const ALARM_BOT_URL = `https://github.com/${GITHUB_HANDLE}/${ALARM_BOT_HANDLE}`;
 export const LEAVE_UKRAINE_URL = `https://${LEAVE_UKRAINE_HANDLE}.com`;
 
+export const ANDROID_URL = "https://play.google.com/store/apps/details?id=com.polemics.tech_for_ukraine&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1";
+export const IOS_URL = "https://apps.apple.com/us/app/ukraine-safety-alerts/id1613373267";
+
 export const TELEGRAM_LANGUAGES = [
   ENGLAND,
   UKRAINE,
