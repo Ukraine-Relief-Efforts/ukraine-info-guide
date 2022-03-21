@@ -6,7 +6,7 @@
     "cheerio": "^1.0.0-rc.10",
     "gridjs": "^5.0.2",
     "gridjs-react": "^5.0.2",
-    "html-react-parser": "^1.4.8",
+    "html-react-parser": "^1.4.9",
     "jsdom": "^19.0.0",
     "leaflet": "^1.7.1",
     "leaflet-defaulticon-compatibility": "^0.1.1",
