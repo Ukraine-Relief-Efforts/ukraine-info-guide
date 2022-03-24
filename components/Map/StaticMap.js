@@ -4,6 +4,7 @@ import "leaflet/dist/leaflet.css";
 import "leaflet-defaulticon-compatibility/dist/leaflet-defaulticon-compatibility.css";
 import "leaflet-defaulticon-compatibility";
 import { Marker } from "react-leaflet";
+import { useState } from "react";
 import MapMarker from "./MapMarker";
 import KmlLayer from "./KmlLayer";
 import Tiles from "./Tiles";
@@ -24,8 +25,6 @@ const Map = ({ markers = [], kmlUrl, kmlSource, mapRef }) => {
 
   const zoomLevel = 7;
 
-  let location = useGeoLocation();
-
   const data = markers
     .filter((m) => m.lat && m.lon && m.lat.length && m.lon.length)
     .map((m) => ({
@@ -35,24 +34,28 @@ const Map = ({ markers = [], kmlUrl, kmlSource, mapRef }) => {
 
   const position = data.length > 0 ? findCenter(data) : [45, 23];
 
-  //const mapRef = useRef()
+  const [enableGeolocation, setEnableGeolocation] = useState(false)
+  let location = useGeoLocation(enableGeolocation)
+  const allowLocation = () => {
+    setEnableGeolocation(true)
+    console.log("enable geo:" + enableGeolocation)
+  }
+
+  /*
   let showMyLocation = () => { // either fix this or make it just request permission for location, or both
-    /*
     if(location.loaded && !location.error){
       mapRef.current.leafletElement.flyTo([location.coordinates.lat, location.coordinates.lng], zoomLevel, {animate: true})
     } else {
-      alert(location.error.message)
+      console.log("geolocation failed") //alert(location.error.message)
     }
-    */
   }
+  */
 
   return (
     <div ref={mapRef}>
       {features.geolocation &&
         <div>
-          <button className="showlocation-button" onClick={showMyLocation}>
-            Show My Location
-          </button>
+          <button className="showlocation-button" onClick={allowLocation}>Show My Location</button>
         </div>
       }
       <MapContainer center={position} zoom={zoomLevel} scrollWheelZoom={false}>
