@@ -1,7 +1,9 @@
 import { useEffect, useState } from "react"
 import features from "../configs/features";
 
-const useGeoLocation = () => {
+const useGeoLocation = (geoRequested) => {
+    console.log("request geo: " + geoRequested)
+
     const [location, setLocation] = useState({
         loaded:false,
         coordinates: {lat: "", lng: ""}
@@ -25,8 +27,10 @@ const useGeoLocation = () => {
     }
 
     useEffect(() => {
-        if (!features.geolocation)
+        if (!features.geolocation || !geoRequested){
+            console.log("failed")
             return;
+        }
 
         if(!("geolocation" in navigator)){
             onError({
@@ -35,7 +39,8 @@ const useGeoLocation = () => {
             })
         }
         navigator.geolocation.getCurrentPosition(onSuccess, onError)
-    }, [])
+        console.log("navigator requested")
+    }, [geoRequested])
 
     return location
 }
