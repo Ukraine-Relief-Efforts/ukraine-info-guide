@@ -19,7 +19,7 @@ const Navbar = () => {
           <div className="grow ml-4 text-xl">
             <NavLink href="/">
               <a className="font-semibold text-yellow-ukraine">
-                LeaveUkraine.com
+                UASafety.org
               </a>
             </NavLink>
           </div>

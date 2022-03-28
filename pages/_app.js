@@ -13,7 +13,7 @@ const App = ({ Component, pageProps: { session, ...pageProps } }) => {
   return (
     <>
       <Head>
-        <title>{t("Leave Ukraine")}</title>
+        <title>{t("Ukraine Safety")}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-icon-57x57.png" />
         <link rel="apple-touch-icon" sizes="60x60" href="/favicons/apple-icon-60x60.png" />
@@ -29,7 +29,7 @@ const App = ({ Component, pageProps: { session, ...pageProps } }) => {
         <link rel="icon" type="image/png" sizes="96x96" href="/favicons/favicon-96x96.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png" />
         <link rel="manifest" href="/favicons/manifest.json" />
-        <meta property="og:site_name" content="Leave Ukraine" />
+        <meta property="og:site_name" content="Ukraine Safety" />
         <meta property="og:title" content="Leaving Ukraine Information" />
         <meta
           property="og:description"
@@ -45,7 +45,7 @@ const App = ({ Component, pageProps: { session, ...pageProps } }) => {
         <meta charSet="utf-8" />
         <meta name="theme-color" content="#000000" />
         <link rel="canonical" href={BASE_URL} />
-        <meta name="keywords" content="leave,ukraine,crisis,war,leaving,help,info,information,leaveukraine,russia,putin,zelenskyy" />
+        <meta name="keywords" content="leave,ukraine,ua,safety,,safe,invasion,crisis,war,leaving,help,info,information,leaveukraine,russia,putin,zelenskyy" />
         <meta
           name="description"
           content="Information collected from governments and other sources about the situation in Ukraine and how to leave"
