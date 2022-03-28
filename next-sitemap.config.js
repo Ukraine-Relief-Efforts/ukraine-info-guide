@@ -2,6 +2,20 @@
 
 module.exports = {
 	siteUrl: "https://uasafety.org/",
-	generateRobotsTxt: true,
 	sitemapSize: 7000,
+	exclude: [
+		"*/admin*",
+		"*/food-and-shelter",
+		"*/poland-form",
+	],
+	generateRobotsTxt: true,
+	robotsTxtOptions: {
+		policies: [
+			{
+				userAgent: "*",
+				allow: "/",
+				disallow: "/admin*",
+			}
+		],
+	},
 };
