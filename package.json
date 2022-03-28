@@ -29,7 +29,7 @@
     "@svgr/webpack": "^6.2.1",
     "autoprefixer": "^10.4.4",
     "babel-plugin-styled-components": "^2.0.6",
-    "eslint": "^8.11.0",
+    "eslint": "^8.12.0",
     "eslint-config-next": "12.1.0",
     "glob-parent": "^6.0.2",
     "i18next-parser": "^6.0.0",
