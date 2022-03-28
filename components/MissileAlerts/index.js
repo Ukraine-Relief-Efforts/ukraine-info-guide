@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import styled from "styled-components";
 import parse from "html-react-parser";
-import { LEAVE_UKRAINE_URL } from "../../configs/constants";
+import { BASE_URL } from "../../configs/constants";
 
 
 const fetchData = async (locale) => {
@@ -23,7 +23,7 @@ const Container = styled.div`
     flex-direction: column-reverse;
     max-width: 600px;
 
-    i, a[href=${LEAVE_UKRAINE_URL}] {
+    i, a[href=${BASE_URL}] {
         display: none;
     }
 `;

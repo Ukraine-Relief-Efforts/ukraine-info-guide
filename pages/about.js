@@ -9,14 +9,14 @@ import {
   INSTAGRAM_URL,
   GITHUB_URL,
   ALARM_BOT_URL,
-  LEAVE_UKRAINE_URL,
+  BASE_URL,
   EMAIL,
 } from "../configs/constants";
 import {
   TWITTER_SHIELD,
   INSTAGRAM_SHIELD,
   ALARM_BOT_SHIELD,
-  LEAVE_UKRAINE_SHIELD
+  UA_SAFETY_SHIELD
 } from "../configs/constants";
 
 const githubI18nKey = (() => {
@@ -102,9 +102,9 @@ const AboutPage = () => {
                 shield={ALARM_BOT_SHIELD}
               />
               <Project
-                title="LeaveUkraine"
-                href={LEAVE_UKRAINE_URL}
-                shield={LEAVE_UKRAINE_SHIELD}
+                title="UASafety"
+                href={BASE_URL}
+                shield={UA_SAFETY_SHIELD}
               />
             </div>
           </div>

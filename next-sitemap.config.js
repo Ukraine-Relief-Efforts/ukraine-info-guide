@@ -1,7 +1,21 @@
 /** @type {import('next-sitemap').IConfig} */
 
 module.exports = {
-  siteUrl: "https://leaveukraine.com/",
-  generateRobotsTxt: true,
-  sitemapSize: 7000,
+	siteUrl: "https://uasafety.org/",
+	sitemapSize: 7000,
+	exclude: [
+		"*/admin*",
+		"*/food-and-shelter",
+		"*/poland-form",
+	],
+	generateRobotsTxt: true,
+	robotsTxtOptions: {
+		policies: [
+			{
+				userAgent: "*",
+				allow: "/",
+				disallow: "/admin*",
+			}
+		],
+	},
 };
