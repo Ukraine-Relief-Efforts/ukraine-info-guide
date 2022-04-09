@@ -4,7 +4,7 @@ import features from "../../configs/features";
 
 const getConfig = (t) => [
   {
-    title: t("Leave Ukraine"),
+    title: t("UA Safety"),
     url: "/",
     inTopBar: false,
     enabled: true,

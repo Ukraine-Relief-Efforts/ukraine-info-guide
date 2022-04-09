@@ -8,6 +8,7 @@ import {
   MOLDOVA,
   ROMANIA,
   HUNGARY,
+  SLOVAKIA,
 } from "../configs/constants";
 
 export const getStaticProps = async ({ locale }) => ({
@@ -25,7 +26,7 @@ const BorderInformationPage = () => {
     setSelectedCountry,
   } = useCountryData({
     defaultCountry: POLAND,
-    availableCountries: [ POLAND, MOLDOVA, ROMANIA, HUNGARY ],
+    availableCountries: [ POLAND, MOLDOVA, ROMANIA, HUNGARY, SLOVAKIA ],
     useLocationFalse: false,
   });
 

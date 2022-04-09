@@ -34,8 +34,8 @@ const translationsHandler = async (req, res) => {
   const info = await transporter.sendMail({
     from: `"Translation Update Service" <${process.env.EMAIL_SENDER}>`,
     to: process.env.EMAIL_I18N_TARGET,
-    subject: `Update '${lang}' translations for leaveukraine.com`,
-    text: `${email} updated '${lang}' translations for leaveukraine.com`,
+    subject: `Update '${lang}' translations for uasafety.org`,
+    text: `${email} updated '${lang}' translations for uasafety.org`,
     attachments: [
       {
         filename: "translation.json",

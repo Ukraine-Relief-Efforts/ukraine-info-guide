@@ -1,9 +1,10 @@
 # *
 User-agent: *
 Allow: /
+Disallow: /admin*
 
 # Host
-Host: https://leaveukraine.com/
+Host: https://uasafety.org/
 
 # Sitemaps
-Sitemap: https://leaveukraine.com/sitemap.xml
+Sitemap: https://uasafety.org/sitemap.xml

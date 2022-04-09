@@ -72,7 +72,7 @@ const IndexPage = () => {
 
   return (
     <Layout hero={
-      <Hero title={t("Leave Ukraine")} subcomponent={<Description t={t} />} />}
+      <Hero title={t("Ukraine Safety")} subcomponent={<Description t={t} />} />}
     >
       <div className="flex flex-col w-full mb-10">
         <IconPicker options={options} />
