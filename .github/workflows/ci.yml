@@ -1,5 +1,7 @@
 name: CI
 on: [push]
+env:
+  DISABLE_SENTRY: true
 jobs:
   translation-report:
     runs-on: ubuntu-latest
