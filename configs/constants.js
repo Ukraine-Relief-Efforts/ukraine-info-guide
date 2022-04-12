@@ -57,3 +57,17 @@ export const TELEGRAM_LANGUAGES = [
   SPAIN,
   ROMANIA,
 ];
+
+export const getReportMissingPersonsLink = (router) => {
+  const locales = {
+    en: "en",
+    ua: "uk",
+    ru: "ru",
+    it: "it",
+    es: "es",
+  };
+
+  const locale = locales[router.locale] || "uk";
+
+  return `https://oic.icmp.int/index.php?w=mp_reg&l=${locale}`;
+}

@@ -1,5 +1,6 @@
 import LanguagePicker from "./LanguagePicker";
 import Link from "./Link";
+import { getReportMissingPersonsLink } from "../../configs/constants";
 import features from "../../configs/features";
 
 const getConfig = (t) => [
@@ -13,6 +14,12 @@ const getConfig = (t) => [
     title: t("Border Info"),
     url: "/border-information",
     inTopBar: true,
+    enabled: true,
+  },
+  {
+    title: t("Report Missing Persons"),
+    url: getReportMissingPersonsLink,
+    inTopBar: false,
     enabled: true,
   },
   {
