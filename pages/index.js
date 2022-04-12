@@ -1,6 +1,7 @@
 import { useRouter } from "next/router";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { getReportMissingPersonsLink } from "../configs/constants";
 import Hero from "../components/Hero";
 import Layout from "../components/Layout";
 import IconPicker from "../components/IconPicker";
@@ -44,6 +45,11 @@ const IndexPage = () => {
     name: t("Missile Alerts"),
     icon: "/HomePageIcons/missile-alert.svg",
     onClick: () => router.push("/alerts"),
+  });
+  options.push({
+    name: t("Report Missing Persons"),
+    icon: "/HomePageIcons/people.svg",
+    onClick: () => router.push(getReportMissingPersonsLink(router)),
   });
   options.push({
     name: t("Resources"),

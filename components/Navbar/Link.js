@@ -4,6 +4,10 @@ import { useToggle } from "./ToggleContext";
 
 const Link = ({ title, url, customStyle }) => {
   const router = useRouter();
+
+  if (typeof url === "function")
+    url = url(router);
+
   const isActive = router.pathname === url;
   const { setIsMenuOpen } = useToggle();
 
