@@ -35,7 +35,7 @@
     "glob-parent": "^6.0.2",
     "i18next-parser": "^6.3.0",
     "jest": "^27.5.1",
-    "next-sitemap": "^2.5.19",
+    "next-sitemap": "^2.5.20",
     "node-fetch": "2.6.7",
     "postcss": "^8.4.12",
     "source-map-explorer": "^2.5.2",
