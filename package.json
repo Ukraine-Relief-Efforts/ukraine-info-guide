@@ -33,7 +33,7 @@
     "eslint": "^8.17.0",
     "eslint-config-next": "12.1.6",
     "glob-parent": "^6.0.2",
-    "i18next-parser": "^6.4.0",
+    "i18next-parser": "^6.5.0",
     "jest": "^28.1.0",
     "next-sitemap": "^3.0.5",
     "node-fetch": "2.6.7",
