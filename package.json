@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@sentry/nextjs": "^7.1.1",
+    "@sentry/nextjs": "^7.3.0",
     "cheerio": "^1.0.0-rc.11",
     "gridjs": "^5.0.2",
     "gridjs-react": "^5.0.2",
