@@ -8,7 +8,7 @@
     "gridjs": "^5.0.2",
     "gridjs-react": "^5.0.2",
     "html-react-parser": "^3.0.0",
-    "jsdom": "^19.0.0",
+    "jsdom": "^20.0.0",
     "leaflet": "^1.8.0",
     "leaflet-defaulticon-compatibility": "^0.1.1",
     "next": "^12.1.6",
