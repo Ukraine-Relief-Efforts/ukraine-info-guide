@@ -23,7 +23,7 @@
     "react-select-search": "^3.0.9",
     "react-twitter-embed": "^4.0.4",
     "spinners-react": "^1.0.7",
-    "styled-components": "^5.3.5"
+    "styled-components": "^5.3.6"
   },
   "devDependencies": {
     "@prefresh/next": "^1.6.0",
