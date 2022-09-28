@@ -20,7 +20,7 @@
     "react-hot-toast": "^2.4.0",
     "react-leaflet": "^3.2.5",
     "react-modern-drawer": "^1.1.1",
-    "react-select-search": "^3.0.9",
+    "react-select-search": "^4.1.2",
     "react-twitter-embed": "^4.0.4",
     "spinners-react": "^1.0.7",
     "styled-components": "^5.3.6"
