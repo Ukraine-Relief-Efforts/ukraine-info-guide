@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@sentry/nextjs": "^7.7.0",
+    "@sentry/nextjs": "^7.14.0",
     "cheerio": "^1.0.0-rc.12",
     "gridjs": "^5.0.2",
     "gridjs-react": "^5.0.2",
@@ -23,7 +23,7 @@
     "react-select-search": "^3.0.9",
     "react-twitter-embed": "^4.0.4",
     "spinners-react": "^1.0.7",
-    "styled-components": "^5.3.5"
+    "styled-components": "^5.3.6"
   },
   "devDependencies": {
     "@prefresh/next": "^1.6.0",
