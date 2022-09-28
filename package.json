@@ -5,7 +5,7 @@
   "dependencies": {
     "@sentry/nextjs": "^7.14.0",
     "cheerio": "^1.0.0-rc.12",
-    "gridjs": "^5.0.2",
+    "gridjs": "^5.1.0",
     "gridjs-react": "^5.0.2",
     "html-react-parser": "^3.0.4",
     "jsdom": "^20.0.0",
@@ -18,7 +18,7 @@
     "preact": "^10.11.0",
     "qrcode": "^1.5.1",
     "react-hot-toast": "^2.4.0",
-    "react-leaflet": "^3.2.5",
+    "react-leaflet": "^4.1.0",
     "react-modern-drawer": "^1.1.2",
     "react-select-search": "^4.1.2",
     "react-twitter-embed": "^4.0.4",
